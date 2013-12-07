@@ -1,0 +1,2790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+
+<TEI
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    >
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Periegesis</title>
+                <author>Rufus Festus Avienus</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Original TEI-conformant XML edition</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Based on web page submitted to Latin Library web site by Juan José Marcos
+                    (Plasencia, Spain), from the edition of A. Schulten in Fontes Hispaniae
+                    Antiquae, Vol. I. (Barcelona 1922)</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            
+                <l
+                    n="1">Qua protenta iacent vastae divortia terrae</l>
+                <l
+                    n="2">et qua praecipiti volvuntur prona meatu</l>
+                <l
+                    n="3">flumina per terras, qua priscis inclyta muris</l>
+                <l
+                    n="4">oppida nituntur, genus hoc procul omne animantum</l>
+                <l
+                    n="5">qua colit, Aoniis perget stilus impiger orsis.</l>
+                <l
+                    n="6">ardua res, musae. deus, en deus intrat Apollo</l>
+                <l
+                    n="7">pectora, fatidicae quatiens penetralia Cirrhae.</l>
+                <l
+                    n="8">Pierides, toto celeres Helicone venite,</l>
+                <l
+                    n="9">concinat et Phoebo vester chorus; Oceanumque,</l>
+                <l
+                    n="10">carminis auspicium, primum memorate camenae.</l>
+                <l
+                    n="11">Oceani nam terra salo praecingitur omnis,</l>
+                <l
+                    n="12">parva ut caeruleo caput effert insula ponto:</l>
+                <l
+                    n="13">nec tamen extremo teres est situs undique in orbe,</l>
+                <l
+                    n="14">qua colitur populis, qua tellus paret aratro;</l>
+                <l
+                    n="15">sed, matutino qua caelum sole rubescit,</l>
+                <l
+                    n="16">latior, accisi curvatur caespitis arvo,</l>
+                <l
+                    n="17">cetera protentus. tria sunt confinia terrae</l>
+                <l
+                    n="18">unius: est primum Libyae Europaeque Asiaeque.</l>
+                <l
+                    n="19">Aequore ab Hesperio qua se salis insinuat vis,</l>
+                <l
+                    n="20">terrarumque cavis illabitur, arduus Atlas</l>
+                <l
+                    n="21">qua iuga celsa tumet, Libyae sese explicat ora:</l>
+                <l
+                    n="22">finis huic Gades, septenaque gurgite vasto</l>
+                <l
+                    n="23">ora procul Nili, Phariorum ubi gleba recumbit,</l>
+                <l
+                    n="24">et Pelusiaci celebrantur templa Canopi.</l>
+                <l
+                    n="25">Europaeque dehinc laevum est latus: at procul ambas</l>
+                <l
+                    n="26">una Asia, inclinans geminis se cornibus, urget</l>
+                <l
+                    n="27">desuper, ac rupti divortia continet orbis.</l>
+                <l
+                    n="28">Europam atque Asiam Tanais disterminat amnis</l>
+                <l
+                    n="29">hic se Sarmaticis evolvens finibus alta</l>
+                <l
+                    n="30">scissus Araseo prius aequore, iam suus unda</l>
+                <l
+                    n="31">effluit in Scythiam: procul hinc Maeotida Tethyn</l>
+                <l
+                    n="32">intrat, et inserto freta pellit vasta fluento,</l>
+                <l
+                    n="33">Ismaricique riget semper flabris aquilonis.</l>
+                <l
+                    n="34">at qua piscosi gurges strepit Hellesponti,</l>
+                <l
+                    n="35">vis obliqua sali tepidum procumbit in austrum,</l>
+                <l
+                    n="36">terrarumque trium modus est mare, donec in alti</l>
+                <l
+                    n="37">ora procul Nili late Thetis efflua serpat.</l>
+                <l
+                    n="38">altera pars orbem telluris limite findit.</l>
+                <l
+                    n="39">caespes terga iacens Asiae succedit in oras,</l>
+                <l
+                    n="40">immensusque modi protenditur. hic latus artans</l>
+                <l
+                    n="41">Caspia contingit freta desuper, atque tumenti</l>
+                <l
+                    n="42">proximus Euxino est: Asiam conterminus iste</l>
+                <l
+                    n="43">Europamque secat. tellus sese altera in austrum</l>
+                <l
+                    n="44">porrigit, insertoque sinus interiacet agro</l>
+                <l
+                    n="45">aestuat); et Libycis Asiam discernit ab oris</l>
+                <l
+                    n="46">sic diversa fuit sententia, rite quis orbi</l>
+                <l
+                    n="47">limes haberetur. totum hoc circumlatrat aestus,</l>
+                <l
+                    n="48">et maris infesti moles ligat. una furenti</l>
+                <l
+                    n="49">natura est pelago, pelagi sed nomina mille,</l>
+                <l
+                    n="50">aequor ut innumeris terrarum admoverit oris.</l>
+                <l
+                    n="51">qua se blanda satis intendunt flabra favoni,</l>
+                <l
+                    n="52">Hesperium Oceano mare terras intrat ab alto.</l>
+                <l
+                    n="53">axe Lycaoniae rursum facis, atque ubi dura</l>
+                <l
+                    n="54">belligeratores nutrit tellus Arimaspas,</l>
+                <l
+                    n="55">nomine Saturni late iacet aequoris unda.</l>
+                <l
+                    n="56">hic densata sali stant marmora, pigraque ponti</l>
+                <l
+                    n="57">se natura tenet, numquam ruit effluus umor:</l>
+                <l
+                    n="58">mortuus hic Graio perhibetur gurges in usu</l>
+                <l
+                    n="59">denique, quod lento stupeat plaga salsa profundo,</l>
+                <l
+                    n="60">vel quod sole carens pars orbis taetra rigescat.</l>
+                <l
+                    n="61">vis hebes has oras ardor Titanius afflat,</l>
+                <l
+                    n="62">vis evecta dies illuminat, omneque late</l>
+                <l
+                    n="63">at qua prima dies rutilo sustollitur ortu,</l>
+                <l
+                    n="64">aureus et tremulas late rubor inficit undas,</l>
+                <l
+                    n="65">Eoum pelagus, freta dicunt Indica pandi.</l>
+                <l
+                    n="66">propter Erythraei tenduntur dorsa profundi,</l>
+                <l
+                    n="67">Aethiopumque salum diffunditur. hic notus aethram</l>
+                <l
+                    n="68">urit, et hic aestu radiorum Phoebus anhelo</l>
+                <l
+                    n="69">arva coquit: sterilis regio est, et inhospita late</l>
+                <l
+                    n="70">aret humus, cassaeque solo torrentur harenae.</l>
+                <l
+                    n="71">Oceanus sic cuncta vago complectitur aestu,</l>
+                <l
+                    n="72">undique sic unus terras interminus ambit,</l>
+                <l
+                    n="73">innumerosque sinus cavat illabentibus undis</l>
+                <l
+                    n="74">desuper: e multis celebri sub nomine tantum</l>
+                <l
+                    n="75">quattuor infuso late sale terga dehiscunt.</l>
+                <l
+                    n="76">primus in orbe sinus vasti maris aequora gignit,</l>
+                <l
+                    n="77">gurgitis Hesperii: procul hic protentus in ortus</l>
+                <l
+                    n="78">faucibus a Libycis aestum trahit, atque ubi laetam</l>
+                <l
+                    n="79">caespite sub pingui pandit Pamphylia glebam,</l>
+                <l
+                    n="80">deficit, et curva sinuatur litoris ora.</l>
+                <l
+                    n="81">alter item est primo brevior, maiorque duobus.</l>
+                <l
+                    n="82">hic prolapsus aquaest, boreali fusus ab alto,</l>
+                <l
+                    n="83">terga procelloso turgescit Caspia fluctu.</l>
+                <l
+                    n="84">Hyrcanum hoc pelagus pars nominat. hinc duo rursum</l>
+                <l
+                    n="85">ora patent ponti: geminus sinus aequoris intrat,</l>
+                <l
+                    n="86">telluremque cavat, qua se notus axe tepenti</l>
+                <l
+                    n="87">erigit. horum unus vada longe Persica fundit,</l>
+                <l
+                    n="88">Caspia conversus procul in freta; porrigiturque</l>
+                <l
+                    n="89">quartus Arabs, tumet hic rapido per aperta fluento,</l>
+                <l
+                    n="90">Eusinumque salum videt eminus. en tibi rursum</l>
+                <l
+                    n="91">aequoris Hesperii tractus loquar: istius unda</l>
+                <l
+                    n="92">lambit terga soli, qua se vagus explicat orbis.</l>
+                <l
+                    n="93">nam vel caeruleo loca circumplectitur aestu,</l>
+                <l
+                    n="94">vel celso demissa iugo confinia radit,</l>
+                <l
+                    n="95">moenia vel fusi praestringit gurgite ponti.</l>
+                <l
+                    n="96">in zephyrum tellus extenditur, oraque terrae</l>
+                <l
+                    n="97">ultima proceras subducit in astra columnas.</l>
+                <l
+                    n="98">Hic modus est orbis Gadir locus, hic tumet Atlas</l>
+                <l
+                    n="99">arduus, hic duro torquetur cardine caelum,</l>
+                <l
+                    n="100">hic circumfusis vestitur nubibus axis.</l>
+                <l
+                    n="101">et primum ruptas se pontus Hibericus illinc</l>
+                <l
+                    n="102">inserit in terras: caput autem principiumque</l>
+                <l
+                    n="103">Europae et Libyae est. mediis infunditur oris,</l>
+                <l
+                    n="104">irrepitque salum. scopuli stant ardui utrimque:</l>
+                <l
+                    n="105">unus enim Europam, Libyam procul aspicit alter.</l>
+                <l
+                    n="106">sic discreta freto procera cacumina celsis</l>
+                <l
+                    n="107">emicuere iugis, sic intrant saxa profundum,</l>
+                <l
+                    n="108">sic subeunt nubes, sic caelum vertice fulcit</l>
+                <l
+                    n="109">Maura Abila, et dorso consurgit Hiberica Calpe.</l>
+                <l
+                    n="110">Gallicus hinc aestus provolvitur. hic super urbem</l>
+                <l
+                    n="111">Massiliam gens Graia colit, Ligurumque tumescit</l>
+                <l
+                    n="112">aequor, et indomito tellus iacet Itala regno.</l>
+                <l
+                    n="113">Ausonis haec regio est; pubi genus ab Iove summo.</l>
+                <l
+                    n="114">qua se flabra trucis boreae per inhospita terrae</l>
+                <l
+                    n="115">eructant caelo, populis caput Aeneadarum,</l>
+                <l
+                    n="116">alba dehinc cautes est terminus: haec freta propter</l>
+                <l
+                    n="117">Trinacriae summa consurgit litoris ora.</l>
+                <l
+                    n="118">evolvuntur item vada fusi caerula ponti;</l>
+                <l
+                    n="119">insula qua Cyrnus fluctu madet alludente,</l>
+                <l
+                    n="120">litoris ostriferi protendens latius undam,</l>
+                <l
+                    n="121">Sardiniamque dehinc moles circumflua cingit</l>
+                <l
+                    n="122">aequoris, et cano spumant freta concita fluctu.</l>
+                <l
+                    n="123">hinc Tyrrhena sali sunt agmina, qua notus axem</l>
+                <l
+                    n="124">umidus inclinat: qua lux se rursus eoa</l>
+                <l
+                    n="125">emergit pelago, Siculi maris aestuat unda,</l>
+                <l
+                    n="126">obliquumque quatit gurges protentior altum</l>
+                <l
+                    n="127">usque in saxosi Pachyni iuga. plurimus inde</l>
+                <l
+                    n="128">in Cretam trahitur ponti tumor: hicque procul se</l>
+                <l
+                    n="129">inclinat rupes, atque obvia fluctibus altis</l>
+                <l
+                    n="130">ingreditur pelagus Gortynia moenia iuxta,</l>
+                <l
+                    n="131">ac procumbentis sola propter pinguia Phaesti.</l>
+                <l
+                    n="132">Prona mari cautes extenditur, ut ferus ora</l>
+                <l
+                    n="133">est aries, ultroque minax petit obvia fronte:</l>
+                <l
+                    n="134">denique sic olli nomen prior indidit aetas:</l>
+                <l
+                    n="135">nec minus Italiam cornu prospectat acuto</l>
+                <l
+                    n="136">litoris, et rapidi perflatur Iapygis ore.</l>
+                <l
+                    n="137">hinc se rursus aquis Hadriatica marmora fundunt</l>
+                <l
+                    n="138">in borean, zephyrumque dehinc deflexa parumper</l>
+                <l
+                    n="139">alta petunt, rauco penitus repentia fluctu:</l>
+                <l
+                    n="140">hic sinus Ionius curvatur litoris acta,</l>
+                <l
+                    n="141">caespitis et gemini tellus irrumpitur alto.</l>
+                <l
+                    n="142">nam qua caeruleis pontus sese inserit undis,</l>
+                <l
+                    n="143">Illyris in dextris pandit regionibus agros,</l>
+                <l
+                    n="144">Emathiamque super sulcat genus acre virorum:</l>
+                <l
+                    n="145">Ausonidum laevast. hinc longo caespite tellus</l>
+                <l
+                    n="146">funditur, et varia populorum pube domantur</l>
+                <l
+                    n="147">arva soli. trina haec pelagi circumtonat unda.</l>
+                <l
+                    n="148">nam qua se zephyri sustollunt flabra, profundum</l>
+                <l
+                    n="149">Tyrrheni est pelagi; qua se notus erigit aethra,</l>
+                <l
+                    n="150">Sicanum late fluitat mare: qua procul autem</l>
+                <l
+                    n="151">spirat ab eois pulcher regionibus eurus,</l>
+                <l
+                    n="152">Ionii sunt terga sali. sic Itala tellus</l>
+                <l
+                    n="153">a circumfusis latus amplum lambitur undis.</l>
+                <l
+                    n="154">efflua post Siculi moles evolvitur alti,</l>
+                <l
+                    n="155">inque notum late vada ponti caerula serpunt,</l>
+                <l
+                    n="156">donec harenosae se attollant aequore Syrtes,</l>
+                <l
+                    n="157">infidumque rati tenuent mare. languida quippe</l>
+                <l
+                    n="158">aequore iam fesso sese trahit unda per ambas.</l>
+                <l
+                    n="159">montibus ab Siculis capit autem prona meatum,</l>
+                <l
+                    n="160">Cretaeisque iugis mox Syrtes inter oberrat</l>
+                <l
+                    n="161">parcior, et tenui praetexens ima fluento.</l>
+                <l
+                    n="162">rursus ab Idaea Salmonide porrigit aequor</l>
+                <l
+                    n="163">se geminum: nautae Pharium dixere profundum,</l>
+                <l
+                    n="164">quod procul in Casiae vergit confinia cautis:</l>
+                <l
+                    n="165">Sidoniique dehinc late salis aestuat unda,</l>
+                <l
+                    n="166">Issicus immodico donec sinus ore patescat,</l>
+                <l
+                    n="167">aequoris et nostri sit terminus: arva ubi late</l>
+                <l
+                    n="168">pinguia proceris Cilicum versantur aratris.</l>
+                <l
+                    n="169">curva salo forma est: hinc sese marmora ponti</l>
+                <l
+                    n="170">in zephyrum torquent, ac flexu lubricus errat</l>
+                <l
+                    n="171">gurges, et exesas illabitur unda lacunas.</l>
+                <l
+                    n="172">sic virosorum prolixa volumina sese</l>
+                <l
+                    n="173">sponte cerastorum facili sub viscere curvant;</l>
+                <l
+                    n="174">sic spiras crebro sinuat draco, seque vel orbe</l>
+                <l
+                    n="175">colligit inclinans, vel pronis agmina longe</l>
+                <l
+                    n="176">tractibus absolvit: stridet nemus undique totum,</l>
+                <l
+                    n="177">pestifero afflatu serpens vagus inquinat aethram.</l>
+                <l
+                    n="178">haut secus illapso penetrantur litora fluctu,</l>
+                <l
+                    n="179">et rursum tellus init aequora: iugis ubique</l>
+                <l
+                    n="180">mugitus pelago est, gemitu loca cuncta resultant.</l>
+                <l
+                    n="181">Imminet huic late Pamphylia, subluit illic</l>
+                <l
+                    n="182">unda Chelidonias, illisum murmurat aequor,</l>
+                <l
+                    n="183">saepius et crebra spumescunt aequora rupe,</l>
+                <l
+                    n="184">terminus his cautis Patareidis eminet arcis.</l>
+                <l
+                    n="185">ac rursum in zephyrum vada semet caerula curvant.</l>
+                <l
+                    n="186">hinc salis Aegaei tractus tonat, inque Bootis</l>
+                <l
+                    n="187">plaustra dehinc rapidi flectuntur marmora Nerei,</l>
+                <l
+                    n="188">saxosis Sporadum saepe obluctantia ripis.</l>
+                <l
+                    n="189">non aliud tanta consurgit mole profundum,</l>
+                <l
+                    n="190">non sic curva Thetis fluctu tumet: extimus olli</l>
+                <l
+                    n="191">in Tenedum cursus, pelagi caput incipit Imbro.</l>
+                <l
+                    n="192">caespitis hinc proni protendens dorsa Propontis,</l>
+                <l
+                    n="193">flatibus ex boreae tepidum procumbit in austrum,</l>
+                <l
+                    n="194">immensaeque Asiae populos alit ubere terrae.</l>
+                <l
+                    n="195">hinc artas inter fauces atque obvia saxa</l>
+                <l
+                    n="196">Thracius angustas discludit Bosphorus oras,</l>
+                <l
+                    n="197">Bosphorus Inachiae subvector virginis olim.</l>
+                <l
+                    n="198">nam vicina sibi stant litora; terraque parci</l>
+                <l
+                    n="199">faucibus oris hiat, pronam sinus evomit undam:</l>
+                <l
+                    n="200">proxima non alibi tantum divortia cernas</l>
+                <l
+                    n="201">caespitis: hac pecoris cursu sternacis in aequor</l>
+                <l
+                    n="202">Inachis illata est; sic pectus canduit ira,</l>
+                <l
+                    n="203">Paelicis et tanto divam dolor extulit igni.</l>
+                <l
+                    n="204">illic instabili fama est sale saxa moveri,</l>
+                <l
+                    n="205">inferrique sibi flabris urgentibus oras:</l>
+                <l
+                    n="206">hic rigidas errare ferunt per marmora cautes,</l>
+                <l
+                    n="207">et nunc ora sali vastas praetendere rupes,</l>
+                <l
+                    n="208">nunc aperire sinum: gemit amplo murmure pontus,</l>
+                <l
+                    n="209">seu quod collisas Thetis indignata per arces</l>
+                <l
+                    n="210">saeviat obiectis; seu quod brevis exitus undas</l>
+                <l
+                    n="211">exerat, et strictis eructet faucibus aequor.</l>
+                <l
+                    n="212">interius lato pontus se gurgite fundit,</l>
+                <l
+                    n="213">undarumque procul latus explicat, aurea Phoebi</l>
+                <l
+                    n="214">qua rota purpureo repetit convexa sub ortu.</l>
+                <l
+                    n="215">sic obliqua maris panduntur denique dorsa,</l>
+                <l
+                    n="216">ut matutinis inclinent aequora habenis,</l>
+                <l
+                    n="217">longior aut boreae concedat gurges in axem.</l>
+                <l
+                    n="218">Pontus enim nostrae sinus est amplissimus undae.</l>
+                <l
+                    n="219">Huic Asia ab laevis praecingitur Europamque</l>
+                <l
+                    n="220">excipit, adversusque dehinc se Thracius artat</l>
+                <l
+                    n="221">Bosphorus et tenui vix panditur oris hiatu</l>
+                <l
+                    n="222">at qua diducto pontus distenditur aestu,</l>
+                <l
+                    n="223">et porrecta mari terrae iuga longius intrant</l>
+                <l
+                    n="224">in pelagus, tractuque vago sua litora linquunt,</l>
+                <l
+                    n="225">caespite Paphlagonum prodit saxosa Carambis.</l>
+                <l
+                    n="226">altera se cautes similis procul arietis ori,</l>
+                <l
+                    n="227">dura pruinoso qua torpet Taurica caelo,</l>
+                <l
+                    n="228">exerit, et tenta late premit aequora fronte.</l>
+                <l
+                    n="229">eminus ista notum videt, arctos eminus illa.</l>
+                <l
+                    n="230">porro inter fluctus ac fusi marmora ponti</l>
+                <l
+                    n="231">proxima celsorum sic sunt sibi dorsa iugorum,</l>
+                <l
+                    n="232">quamvis vasta sali moles interfluit arces,</l>
+                <l
+                    n="233">ut gemini sit forma maris. sed brachia pontus,</l>
+                <l
+                    n="234">finibus arctois, eoae lucis in ortum,</l>
+                <l
+                    n="235">et qua prona dies atris involvitur umbris,</l>
+                <l
+                    n="236">molliter inclinans, Scythici speciem facit arcus;</l>
+                <l
+                    n="237">at tepidi de parte noti directior oram,</l>
+                <l
+                    n="238">continuumque iacens, rigidi sub imagine nervi</l>
+                <l
+                    n="239">tenditur: excedit confinia sola Carambis</l>
+                <l
+                    n="240">in borean vergens. boreali rursus in arcto</l>
+                <l
+                    n="241">ore sinus patulo Maeotidis alta paludis</l>
+                <l
+                    n="242">aequora prorumpunt: Scytha late barbarus oras</l>
+                <l
+                    n="243">incolit, et matrem ponti cognominat undam.</l>
+                <l
+                    n="244">sola parens ponto, genetrix haec sola fluentost:</l>
+                <l
+                    n="245">hoc se fonte trahunt vaga glauci marmora ponti,</l>
+                <l
+                    n="246">Cimmerio prolapsa sinu; nam Bosphorus illic</l>
+                <l
+                    n="247">Cimmerius fauces aperit: circumque superque</l>
+                <l
+                    n="248">Cimmeris, gens dura, colunt. hic ardua Taurus</l>
+                <l
+                    n="249">in iuga consurgit, caelumque cacumine fulcit</l>
+                <l
+                    n="250">verticis, et celsis late caput inserit astris.</l>
+                <l
+                    n="251">huc, mirante salo, quondam sese intulit Argo</l>
+                <l
+                    n="252">Thessala, et innantem stupuerunt aequora cumbam.</l>
+                <l
+                    n="253">sic vasti moles pelagi interfunditur oras:</l>
+                <l
+                    n="254">sic se forma maris toto procul explicat orhe.</l>
+                <l
+                    n="255">Nunc tibi tellurem versu loquar: incute docto,</l>
+                <l
+                    n="256">Phoebe, chelyn plectro. musis intermina vita</l>
+                <l
+                    n="257">permanet, et memori laus semper pullulat aevo.</l>
+                <l
+                    n="258">indefessa tuae sint mentis acumina, lector,</l>
+                <l
+                    n="259">sudorisque mei patulo bibe carmina rictu:</l>
+                <l
+                    n="260">dulcis in his haustus, meritum grave, gratia perpes.</l>
+                <l
+                    n="261">Ergo solum terraeque Libystidis ora per austrum</l>
+                <l
+                    n="262">tenditur, eoae procul in confinia lucis.</l>
+                <l
+                    n="263">Gades principium est; caput huius caespitis autem</l>
+                <l
+                    n="264">artius angusto conducit litora tractu,</l>
+                <l
+                    n="265">Oceanique salum cuneo subit: istius orae</l>
+                <l
+                    n="266">terminus immensis Arabum concluditur undis.</l>
+                <l
+                    n="267">at latus hoc terra diffusius explicat agros,</l>
+                <l
+                    n="268">arvaque tenta patent. haec pingui caespite tellus</l>
+                <l
+                    n="269">Aethiopum est nutrix, qui nigros propter Erembas</l>
+                <l
+                    n="270">extremi Libyae curvo sola vomere sulcant:</l>
+                <l
+                    n="271">et rursum Aethiopes soli subiecta cadenti</l>
+                <l
+                    n="272">arva tenent. sic scissa virum gens ultima terrae</l>
+                <l
+                    n="273">incolit: hos afflant rutilae incunabula lucis;</l>
+                <l
+                    n="274">hi iam praecipitis terrentur solis habenis.</l>
+                <l
+                    n="275">propter proceras zephyri regione columnas</l>
+                <l
+                    n="276">Mauri habitant; his fluxa fides et inhospita semper</l>
+                <l
+                    n="277">corda rigent; trahitur duris vaga vita rapinis.</l>
+                <l
+                    n="278">proxima se late Numidarum pascua tendunt,</l>
+                <l
+                    n="279">Massyliique super populi per aperta locorum</l>
+                <l
+                    n="280">palantes agitant. certi laris inscia gens est:</l>
+                <l
+                    n="281">nunc in dumosas erepunt denique rupis,</l>
+                <l
+                    n="282">nunc quatiunt campos, nunc silvas inter oberrant</l>
+                <l
+                    n="283">coniugibus natisque simul: cibus aspera glando</l>
+                <l
+                    n="284">omnibus: haud ollis sulcatur caespes aratro:</l>
+                <l
+                    n="285">non his mugitus pecudum strepit. inclyta post hos</l>
+                <l
+                    n="286">moenia consurgunt Tyriae Carthaginis: illa</l>
+                <l
+                    n="287">urbs Phoenissa prius, Libyci nunc ruris alumna,</l>
+                <l
+                    n="288">paci blanda quies, et bello prompta cruento.</l>
+                <l
+                    n="289">ast hinc in Syrtim praeceps ruit unda minorem,</l>
+                <l
+                    n="290">ulteriusque dehinc qua lux se reddit Olympo,</l>
+                <l
+                    n="291">maior vasta sibi late trahit aequora Syrtis,</l>
+                <l
+                    n="292">infidumque rati pelagus furit: ardua quippe</l>
+                <l
+                    n="293">undarum moles Tyrrheno cogitur aestu,</l>
+                <l
+                    n="294">curvatumque salum quatit amplo litora fluctu;</l>
+                <l
+                    n="295">ecce alias lento prorepit gurgite Nereus,</l>
+                <l
+                    n="296">undaque vix tenuis siccas praetexit harenas.</l>
+                <l
+                    n="297">immemor ergo modi semper natura duabus</l>
+                <l
+                    n="298">Syrtibus, et classem sors crebro caeca fatigat.</l>
+                <l
+                    n="299">ambarum medio procera Neapolis arcem</l>
+                <l
+                    n="300">surrigit: hanc rursum gens late prisca virorum</l>
+                <l
+                    n="301">Lotophagi includunt: diros Nasamonas at inde</l>
+                <l
+                    n="302">aspice, quis quondam populorum examina multa</l>
+                <l
+                    n="303">versavere solum, multo sonuere per agros</l>
+                <l
+                    n="304">balatu pecudes: nunc lati iugera campi</l>
+                <l
+                    n="305">et grege nuda iacent, et sunt cultoribus orba.</l>
+                <l
+                    n="306">Ausonis haec duro vastavit dextera bello:</l>
+                <l
+                    n="307">Ausonis invicti gens roboris una per orbem</l>
+                <l
+                    n="308">arma tulit: pubem Latiam ferus horruit Hister,</l>
+                <l
+                    n="309">Romanas aquilas Rhodanus tremit, Italidum vi</l>
+                <l
+                    n="310">maesta paludivagos Germania flevit alumnos.</l>
+                <l
+                    n="311">Illi caeruleas attingunt aequoris undas:</l>
+                <l
+                    n="312">at qua navigero tellus discedit ab aestu,</l>
+                <l
+                    n="313">innumerae gentes, populorum examina mille</l>
+                <l
+                    n="314">arva tenent. hic fata canit venerabilis Hammon,</l>
+                <l
+                    n="315">mugit harenosis nemus illic denique lucis.</l>
+                <l
+                    n="316">astat Cyrene propter vetus, erigiturque</l>
+                <l
+                    n="317">urbs procera arces, et Apolline dives alumno:</l>
+                <l
+                    n="318">Marmaridae iuxta; procul hi tamen ultima regni</l>
+                <l
+                    n="319">Aegypto inclinant: tergo Gaetulia glebam</l>
+                <l
+                    n="320">protinus hinc Garamas late confinia tendit,</l>
+                <l
+                    n="321">trux Garamas, pedibus pernix, et harundinis usu</l>
+                <l
+                    n="322">nobilis: at quantum terrarum interna recedunt,</l>
+                <l
+                    n="323">ut procul Oceano tellus vicina madescat,</l>
+                <l
+                    n="324">Aethiopum populos alit ampli caespitis ora,</l>
+                <l
+                    n="325">terminus Aethiopum populos adit ultima Cerne.</l>
+                <l
+                    n="326">post Blemyes medii succedunt solis habenas,</l>
+                <l
+                    n="327">corpora proceri, nigri cute, viscera sicci,</l>
+                <l
+                    n="328">et circumvincti nervis exstantibus artus.</l>
+                <l
+                    n="329">hi celeri molles currunt pede semper harenas,</l>
+                <l
+                    n="330">nec tamen impressae linquunt vestigia plantae.</l>
+                <l
+                    n="331">eminus evolvunt hinc sese pinguia Nili</l>
+                <l
+                    n="332">flumina, et intenti prolabitur aequoris unda.</l>
+                <l
+                    n="333">hic qua secretis incidit flexibus agros,</l>
+                <l
+                    n="334">Aethiopum lingua Siris ruit: utque Syenen</l>
+                <l
+                    n="335">caerulus accedens diti loca flumine adulat,</l>
+                <l
+                    n="336">nomine se claro Nilum trahit, inque iacentem</l>
+                <l
+                    n="337">Aegyptum fusus fluctu premit arva marito,</l>
+                <l
+                    n="338">fecundatque solum: procul illinc agmina cogit</l>
+                <l
+                    n="339">in borean, scissusque vagis amfractibus aequor</l>
+                <l
+                    n="340">non olli compar quisquam fluit, inclyta quamquam</l>
+                <l
+                    n="341">undique se totis eructent flumina terris.</l>
+                <l
+                    n="342">Nilus enim immensos vitam dispergit in agros,</l>
+                <l
+                    n="343">et fovet invecto sata gurgite: Nilus honorem</l>
+                <l
+                    n="344">telluri reparat: Nilus freta maxima pellit.</l>
+                <l
+                    n="345">hic Asiam ab Libya disterminat, axe favoni</l>
+                <l
+                    n="346">secernens Libyam; redeuntis solis ab ortu</l>
+                <l
+                    n="347">disiungens Asiae medio confinia fluctu.</l>
+                <l
+                    n="348">nec procul illa virum gens incolit, axibus olim</l>
+                <l
+                    n="349">quae prior humanas leges et iura notavit,</l>
+                <l
+                    n="350">vomere quae duro, quae longi pondere aratri</l>
+                <l
+                    n="351">sollicitavit humum, quae fetus edere sulcis</l>
+                <l
+                    n="352">tellurem docuit, quae caedens partibus aethram</l>
+                <l
+                    n="353">prodidit obliquo solem decurrere caelo.</l>
+                <l
+                    n="354">istius ergo tibi formam regionis et oras</l>
+                <l
+                    n="355">expediam versu. blandus praetenditur aer,</l>
+                <l
+                    n="356">prodigus herbarum caespes iacet, aspera nusquam</l>
+                <l
+                    n="357">culmina consurgunt, portus cavat ora frequentis.</l>
+                <l
+                    n="358">quidquid terra dehinc redeuntis sufficit anni</l>
+                <l
+                    n="359">tempore, prae cunctis stupeas specieque modoque.</l>
+                <l
+                    n="360">trina loco frons est, sed laxior axe Bootis,</l>
+                <l
+                    n="361">luce sub eoa constrictior, usque Syenen</l>
+                <l
+                    n="362">tenditur, unde pii volvuntur flumina Nili.</l>
+                <l
+                    n="363">hic urbs est Thebae, Thebae quae moenibus altis</l>
+                <l
+                    n="364">praecinxere larem: Memnon ubi Tithoneus</l>
+                <l
+                    n="365">suspectat roseas Aurorae matris habenas.</l>
+                <l
+                    n="366">pars quae coeaneo discedit ab aequore, septem</l>
+                <l
+                    n="367">oppida sustentat: notiam pars vergit in oram,</l>
+                <l
+                    n="368">et modus est olli Serbonidis alta paludis;</l>
+                <l
+                    n="369">altera pulsatur genitalibus ore favoni.</l>
+                <l
+                    n="370">hic urbem posuit Pellaeae dextera gentis;</l>
+                <l
+                    n="371">hic inter celsas late surgentia nubes</l>
+                <l
+                    n="372">templa Sinopaei Iovis astant nixa columnis,</l>
+                <l
+                    n="373">divite saxorum circumvestita metallo,</l>
+                <l
+                    n="374">auro fulta gravi, niveo radiantia dente.</l>
+                <l
+                    n="375">nec minus hic speculae vertex subducitur, ex quo</l>
+                <l
+                    n="376">cernere sit longe Pallenidis intima terrae.</l>
+                <l
+                    n="377">at qua surgenti terrae pars conscia Phoebost,</l>
+                <l
+                    n="378">aggere murorum Pelusia moenia surgunt.</l>
+                <l
+                    n="379">gens hic docta sali tumido freta gurgite currit,</l>
+                <l
+                    n="380">inque procellosos lembum convertere fluctus</l>
+                <l
+                    n="381">ludum habet, et rauca vitam producit in unda.</l>
+                <l
+                    n="382">Talis forma iacet Libyae, talique recessu</l>
+                <l
+                    n="383">ab zephyro eoum tellus incumbit in axem.</l>
+                <l
+                    n="384">istius extenti sola caespitis undique sulcant</l>
+                <l
+                    n="385">gentes innumerae, quae sparsae litore longo</l>
+                <l
+                    n="386">Oceani australis vada late caerula tangunt;</l>
+                <l
+                    n="387">et quae multimodis media tellure agitantes</l>
+                <l
+                    n="388">arva domant, et quae Tritonidis alta paludis</l>
+                <l
+                    n="389">ut circumfuso populorum examine cingunt.</l>
+                <l
+                    n="390">Nunc tibi et Europae fabor latus: haec, ubi terras</l>
+                <l
+                    n="391">intrat Atlantei vis aequoris, accipit ortum.</l>
+                <l
+                    n="392">unus utramque sali fluxus secat, et procul unum</l>
+                <l
+                    n="393">distinet os ambas: eadem insinuatio ponti</l>
+                <l
+                    n="394">Europam et Libyam rapido disterminat aestu.</l>
+                <l
+                    n="395">sed prior illa tamen tepido perfunditur austro,</l>
+                <l
+                    n="396">haec subit insanos tergum curvata aquilones.</l>
+                <l
+                    n="397">ambae Asiam rursum simili sub limite tangunt:</l>
+                <l
+                    n="398">aequus utrimque modus protenditur: at simul ambas</l>
+                <l
+                    n="399">si conferre sibi quisquam velit, una parumper</l>
+                <l
+                    n="400">ut credatur humus, mediique interflua ponti</l>
+                <l
+                    n="401">subtrahat; extemplo, quali nux pinea formast,</l>
+                <l
+                    n="402">singula versanti talis succedet imago</l>
+                <l
+                    n="403">Europae et Libyae: sic nam latus explicat ambas,</l>
+                <l
+                    n="404">unum et utrique caput, similis quoque finis utrique</l>
+                <l
+                    n="405">sed tamen Hesperii qua spectant aequoris undam,</l>
+                <l
+                    n="406">ambae producto coeunt sibi caespite terrae;</l>
+                <l
+                    n="407">qua matutinis sol istas ignibus afflat,</l>
+                <l
+                    n="408">latior ambabus species distenditur. unum</l>
+                <l
+                    n="409">hoc agili sub mente tenens, velut obvia habebis</l>
+                <l
+                    n="410">cetera terrarum. tellus Europa columnis</l>
+                <l
+                    n="411">proxuma magnanimos alit aequo caespite Hiberos.</l>
+                <l
+                    n="412">hi super Oceani borealis frigida tangunt</l>
+                <l
+                    n="413">aequora, et excursu diffusi latius agri</l>
+                <l
+                    n="414">arva tenent, duris nimium vicina Britannis;</l>
+                <l
+                    n="415">flavaque caesariem Germania porrigit oram,</l>
+                <l
+                    n="416">dumosa Hercyniae peragrans confinia silvae.</l>
+                <l
+                    n="417">Inde Pyrenaei turgescunt dorsa nivalis,</l>
+                <l
+                    n="418">Gallorumque truces populi per inhospita terrae</l>
+                <l
+                    n="419">vitam agitant: tum caeruleum Padus evomit antro</l>
+                <l
+                    n="420">hic prius Heridani propter nemorosa fluenta</l>
+                <l
+                    n="421">fleverunt liquidae lapsum Phaethonta sorores,</l>
+                <l
+                    n="422">mutataeque manus planxerunt pectora ramis.</l>
+                <l
+                    n="423">Nec procul hinc rigidis insurgunt rupibus Alpes,</l>
+                <l
+                    n="424">nascentemque diem celso iuga vertice cernunt.</l>
+                <l
+                    n="425">porro inter cautes et saxa sonantia Rhenus,</l>
+                <l
+                    n="426">vertice qua nubes nebulosus fulcit Adulas,</l>
+                <l
+                    n="427">urget aquas, glaucoque rapax rotat agmine molem</l>
+                <l
+                    n="428">gurgitis, Oceani donec borealis in undas</l>
+                <l
+                    n="429">effluat, et celeri perrumpat marmora fluctu.</l>
+                <l
+                    n="430">quin et Danubium produnt secreta repente</l>
+                <l
+                    n="431">barbara, sed discors tamen est natura fluento.</l>
+                <l
+                    n="432">Abnoba mons Histro pater est: cadit Abnobae hiatu</l>
+                <l
+                    n="433">flumen; in eoos autem convertitur axes,</l>
+                <l
+                    n="434">Euxinoque salo provolvitur; ora per aequor</l>
+                <l
+                    n="435">quinque vomunt amnem, qua se procul insula Peuce</l>
+                <l
+                    n="436">exerit: hunc rigidi qua spirant flabra aquilonis,</l>
+                <l
+                    n="437">Sarmata, Germani, Geta, Basternaeque feroces,</l>
+                <l
+                    n="438">Dacorumque tenent populi, tenet acer Halanus,</l>
+                <l
+                    n="439">Incola Taurisci Scytha litoris; indeque rursum</l>
+                <l
+                    n="440">dira Melanchlaeni gens circumfusa vagatur.</l>
+                <l
+                    n="441">proxima Neurorum regio est, celeresque Geloni,</l>
+                <l
+                    n="442">praecinctique sagis semper pictis Agathyrsi.</l>
+                <l
+                    n="443">inde Borysthenii vis sese fluminis effert</l>
+                <l
+                    n="444">Euxinum in pelagus: tunc aequora Panticapaei</l>
+                <l
+                    n="445">ardescique tibi celso de vertice surgunt</l>
+                <l
+                    n="446">Riphaei montis, ubi dura saepe sub arcto</l>
+                <l
+                    n="447">densa pruinosos eructant nubila nimbos.</l>
+                <l
+                    n="448">hic dites venae niveum gignunt crystallum,</l>
+                <l
+                    n="449">adque hic indomito tellus adamante rigescit</l>
+                <l
+                    n="450">inter Riphaeos et proceros Agathyrsos.</l>
+                <l
+                    n="451">haec gentes Histrum, qua se plaga dura Bootis</l>
+                <l
+                    n="452">porrigit, incumbunt: medii de parte diei</l>
+                <l
+                    n="453">per dumosorum reptantes dorsa iugorum</l>
+                <l
+                    n="454">Gerrhae habitant. Gerrhas attingunt oppida late</l>
+                <l
+                    n="455">Norica, et immodicae rursum sola pinguia glebae</l>
+                <l
+                    n="456">Pannonia exercet. borean subit altior agro</l>
+                <l
+                    n="457">Moesus, et extento post tergum caespite Thracas</l>
+                <l
+                    n="458">plurimus excedit: tunc ipsi maxima Thraces</l>
+                <l
+                    n="459">vomere sollicitant curvo loca: denique longo</l>
+                <l
+                    n="460">qua porrecta iacet spatio piscosa Propontis,</l>
+                <l
+                    n="461">et qua praecipiti fluctu furit Hellespontus,</l>
+                <l
+                    n="462">Aegaeumque dehinc procul in mare, plurima Thraces</l>
+                <l
+                    n="463">arva tenent: hic mellifluis Pallena sub antris</l>
+                <l
+                    n="464">Lychnitis rutilae flammas alit: hic et iaspis</l>
+                <l
+                    n="465">fulva micat stellis, quantum convexa per aethrae</l>
+                <l
+                    n="466">ignea perpetuis ardescunt sidera flammis.</l>
+                <l
+                    n="467">Hic rursum occiduis Europam fabor ab oris.</l>
+                <l
+                    n="468">haec tamquam speculis adsurgens plurima trinis,</l>
+                <l
+                    n="469">spectat Achaemeniae lucis iubar: unus Hiberos</l>
+                <l
+                    n="470">limes habet, limes tenet alter denique Graios,</l>
+                <l
+                    n="471">Ausoniae medius protendit latius arva.</l>
+                <l
+                    n="472">Oceani vicina salo qua gleba recumbit,</l>
+                <l
+                    n="473">Oceani Hesperii, tumet illic ardua Calpe;</l>
+                <l
+                    n="474">Hic Hispanus ager, tellus ibi dives Hiberum:</l>
+                <l
+                    n="475">Tartesusque super sustollitur: indeque Cemsi</l>
+                <l
+                    n="476">gens agit, in rupis vestigia Pyrenaeae</l>
+                <l
+                    n="477">protendens populos: medio se limite gleba</l>
+                <l
+                    n="478">Ausonis effundit; mediam secat Appenninus</l>
+                <l
+                    n="479">Ausoniam: nam qua boreali vertice ad aethra</l>
+                <l
+                    n="480">concrescunt Alpes, surgit caput Appennino;</l>
+                <l
+                    n="481">et qua Sicanii tellus madet aequoris aestu,</l>
+                <l
+                    n="482">ut protelatae molis iuga gurgite condit.</l>
+                <l
+                    n="483">huic circa multae sola sulcant proxima gentes;</l>
+                <l
+                    n="484">et tamen has omnes solers tibi musa loquetur.</l>
+                <l
+                    n="485">prima vetustorum gens est ibi Tyrrhenorum:</l>
+                <l
+                    n="486">inde Pelasga manus, Cyllenae e finibus olim</l>
+                <l
+                    n="487">quae petit Hesperii freta gurgitis, arva retentat</l>
+                <l
+                    n="488">Itala: tum multa tenduntur parte Latini,</l>
+                <l
+                    n="489">per quos flaventis Tybris pater explicat undas,</l>
+                <l
+                    n="490">Romanosque lares lapsu praelambit alumno.</l>
+                <l
+                    n="491">hinc Campanus ager glebam iacit: hic freta quondam</l>
+                <l
+                    n="492">Parthenopen blando labentem in marmora ponti</l>
+                <l
+                    n="493">suscepere sinu: tepidum si rursus in austrum</l>
+                <l
+                    n="494">convertare oculos, nemorosi maxima cernes</l>
+                <l
+                    n="495">culmina Piceni: coma largi palmitis illic</l>
+                <l
+                    n="496">tenditur, ac fuso Bacchus tegit arva flagello.</l>
+                <l
+                    n="497">tunc Lucanorum regio insurgentibus alte</l>
+                <l
+                    n="498">cautibus horrescit: scrupus sola creber iniqua</l>
+                <l
+                    n="499">asperat, et denso caecantur stipite silvae.</l>
+                <l
+                    n="500">Britius hinc dumos acer colit inter, et arces</l>
+                <l
+                    n="501">intendant pelagus, displosisque aequora terris</l>
+                <l
+                    n="502">instabile inclinent semper mare, qua vel eois</l>
+                <l
+                    n="503">Hadrias unda vadis largam procul expuit algam,</l>
+                <l
+                    n="504">vel qua Tyrrheni praeceps involvitur aestus.</l>
+                <l
+                    n="505">ad zephyri hinc rupes dorsum tumet, inque Bootis</l>
+                <l
+                    n="506">plaustra patens albo consurgit vertice saxum.</l>
+                <l
+                    n="507">huc se prisca Locri gens intulit, et sale longo</l>
+                <l
+                    n="508">eminus invecti, qua pontum gurgite rumpit</l>
+                <l
+                    n="509">flumen Alex, Graiae rexerunt lintea cumbae.</l>
+                <l
+                    n="510">hinc Metapontini discurrunt latius arvo:</l>
+                <l
+                    n="511">inde Croton priscis attollit moenia muris:</l>
+                <l
+                    n="512">Aesarus hic amnis salsa convertitur unda,</l>
+                <l
+                    n="513">et Iunone calent hic arae praesule semper.</l>
+                <l
+                    n="514">nec minus exciti post flumina dira tonantis</l>
+                <l
+                    n="515">infortunatae Sybaris vicina ruinast;</l>
+                <l
+                    n="516">Samnitaeque truces habitant confinia: post hos</l>
+                <l
+                    n="517">gens Marsum quondam tenuit loca: tumque Tarentum</l>
+                <l
+                    n="518">surgit, Amyclaei suboles praedura tyranni.</l>
+                <l
+                    n="519">hinc iacet in patulos proiecta Calabria campos,</l>
+                <l
+                    n="520">et super arenti tenduntur Iapyges agro.</l>
+                <l
+                    n="521">huc se praecipiti cogit ferus Hadria ponto.</l>
+                <l
+                    n="522">hic Aquileia decens celsis caput inserit astris:</l>
+                <l
+                    n="523">Tergestumque dehinc curvi salis incubat oram,</l>
+                <l
+                    n="524">extimus Ionii qua se sinus aequoris abdit.</l>
+                <l
+                    n="525">tot populi Ausoniam circumdant moenibus altis,</l>
+                <l
+                    n="526">Italiam cingunt tot diti caespite gentes.</l>
+                <l
+                    n="527">in iubar eoum rursum se pervia flectunt</l>
+                <l
+                    n="528">aequora, et Assyrium suspectant eminus axem</l>
+                <l
+                    n="529">Ionii freta glauca sali, primosque Liburnos</l>
+                <l
+                    n="530">praestringunt pelago; gens Hylli plurima rursum</l>
+                <l
+                    n="531">accolit: hic tenui tellus discluditur aestu.</l>
+                <l
+                    n="532">Illyris ora dehinc distenditur: hicque periclis</l>
+                <l
+                    n="533">saepe carinarum famosa Ceraunia surgunt.</l>
+                <l
+                    n="534">tum prorepentis qua sunt vada turgida Nerei,</l>
+                <l
+                    n="535">Harmoniae et Cadmi sustentat gleba sepulchrum</l>
+                <l
+                    n="536">barbara: nam longo iactati saepius orbe,</l>
+                <l
+                    n="537">postquam liquerunt Hismeni fluminis undam,</l>
+                <l
+                    n="538">hic in caeruleos mutati membra dracones</l>
+                <l
+                    n="539">absolvere diem, finemque dedere labori.</l>
+                <l
+                    n="540">nec minus hic aliut monstri genus arbiter aethrae</l>
+                <l
+                    n="541">edidit: adsistunt scopuli duo, cumque quid atri</l>
+                <l
+                    n="542">imminet eventus, ut vulgi corda fatiget</l>
+                <l
+                    n="543">sors rerum, et gentes terat inclementia fati,</l>
+                <l
+                    n="544">et motantur humo, et coeunt sibi vertice saxa.</l>
+                <l
+                    n="545">sed qua mitis item spirat notus, Oriciumque</l>
+                <l
+                    n="546">pulsant flabra solum, Graiae confinia terrae</l>
+                <l
+                    n="547">incipiunt aperire latus, prolixaque longis</l>
+                <l
+                    n="548">iugera producunt spatiis, praecincta duobus</l>
+                <l
+                    n="549">aequoris infusi procursibus: hanc freta quippe</l>
+                <l
+                    n="550">Aegaei lambunt pelagi; citus Hadria rursum</l>
+                <l
+                    n="551">subluit hanc fluctu: gemino sic gurgite late</l>
+                <l
+                    n="552">Graia madet tellus, sortitaque marmora ventos</l>
+                <l
+                    n="553">quaeque suos, imo turgescunt mota profundo.</l>
+                <l
+                    n="554">Eurus in Aegaeum contorquet flabra: cadentis</l>
+                <l
+                    n="555">parte poli zephyris Hadriatica terga tumescunt.</l>
+                <l
+                    n="556">insula se rursum Pelopis visentibus offert,</l>
+                <l
+                    n="557">insula quae platani folio compar sedet. Isthmi</l>
+                <l
+                    n="558">quippe caput summum conducitur, artaque vergit</l>
+                <l
+                    n="559">in borean tellus, et Graios adiacet agros:</l>
+                <l
+                    n="560">cetera sub folii specie distenditur arva,</l>
+                <l
+                    n="561">ac per utrumque latus sinuoso saepe recedit</l>
+                <l
+                    n="562">caespite: sed tepido qua tellus tunditur austro,</l>
+                <l
+                    n="563">Graiorum Triphylis sterili se porrigit ora.</l>
+                <l
+                    n="564">hinc sacer Alpheus flumen trahit, et vagus aequor</l>
+                <l
+                    n="565">influit Eurotas. Pisanos alter adulat,</l>
+                <l
+                    n="566">alter Amyclaeas celeri secat agmine terras.</l>
+                <l
+                    n="567">insula qua curvas inclinat concava valles,</l>
+                <l
+                    n="568">Arcades immensum propter degunt Erymanthum.</l>
+                <l
+                    n="569">hic distentus aquas sata lambit pinguia Ladon.</l>
+                <l
+                    n="570">iuxta Argivus ager, iuxta sunt culta Laconum:</l>
+                <l
+                    n="571">illos prima dies, celer istos aspicit auster.</l>
+                <l
+                    n="572">Isthmi terga dehinc geminus circumlatrat aestus,</l>
+                <l
+                    n="573">parte Ephyres, piceas qua nos agit atra tenebras,</l>
+                <l
+                    n="574">et matutinus qua lucem proserit ortus.</l>
+                <l
+                    n="575">hic usu Graio nomen tenet unda Saronis.</l>
+                <l
+                    n="576">Atticus hanc ultra limes iacet, Attica tellus</l>
+                <l
+                    n="577">belligeratorum genetrix memoranda virorum.</l>
+                <l
+                    n="578">fertilis haec herbis Illissum subvehit amnem:</l>
+                <l
+                    n="579">Illissi boreas stagno tulit Orithyiam.</l>
+                <l
+                    n="580">Boeotumque dehinc sese confinia iungunt,</l>
+                <l
+                    n="581">et Locris, et patuli sulcator Thessalus agri,</l>
+                <l
+                    n="582">et Macetum praepingue solum; tumet arduus Hemus,</l>
+                <l
+                    n="583">Threiciumque caput subducitur: adiacet Hemum</l>
+                <l
+                    n="584">partibus ab zephyri Dodonae vatis alumnus.</l>
+                <l
+                    n="585">axe noti rigidas subter rupes Aracynthi</l>
+                <l
+                    n="586">gens Aetola colit; campis ibi pulcher apertis</l>
+                <l
+                    n="587">labitur, et virides sulcans terras Achelous</l>
+                <l
+                    n="588">irruit Hadriaci tergum maris; hicque frequentes</l>
+                <l
+                    n="589">fluctibus attolluntur Echinades: haut procul inde</l>
+                <l
+                    n="590">prisca Cephallenae consurgunt oppida terrae.</l>
+                <l
+                    n="591">Delphica quin etiam miscet confinia Phocis,</l>
+                <l
+                    n="592">lucis in exortum protentior; inque Booten</l>
+                <l
+                    n="593">Thermopylae cedunt. hic se Parnasia rupes</l>
+                <l
+                    n="594">erigit: hic celeri Cephisus volvitur unda:</l>
+                <l
+                    n="595">hic quondam Python transactus harundine membra,</l>
+                <l
+                    n="596">sanguinis et cassus prolixa volumina solvit.</l>
+                <l
+                    n="597">illic saepe deum conspeximus arridentem,</l>
+                <l
+                    n="598">inter turicremas hic Phoebum vidimus aras.</l>
+                <l
+                    n="599">Nunc ut quaeque vago surrexerit insula ponto,</l>
+                <l
+                    n="600">ordine quo steterint pelago circumflua saxa,</l>
+                <l
+                    n="601">expediam. cumbae ducatur cursus ab unda</l>
+                <l
+                    n="602">gurgitis occidui: precor, aspirate, camenae,</l>
+                <l
+                    n="603">Inter et oppositas intendite lintea terras.</l>
+                <l
+                    n="604">Gadir prima fretum solida supereminet arce,</l>
+                <l
+                    n="605">Attollitque caput geminis inserta columnis.</l>
+                <l
+                    n="606">Haec Cotinussa prius fuerat sub nomine prisco,</l>
+                <l
+                    n="607">Tartesumque dehinc Tyrii dixere coloni,</l>
+                <l
+                    n="608">barbara quin etiam Gades hanc lingua frequentat:</l>
+                <l
+                    n="609">Poenus quippe locum Gadir vocat undique saeptum</l>
+                <l
+                    n="610">aggere praeducto. Tyrii per inhospita late</l>
+                <l
+                    n="611">aequora provecti, tenuere ut caespitis oram,</l>
+                <l
+                    n="612">constituere domus; dant hi quoque maxima templa</l>
+                <l
+                    n="613">Amphitryoniadae, numenque verentur alumnum.</l>
+                <l
+                    n="614">insula se propter Gymnesia tollit ab alto,</l>
+                <l
+                    n="615">ac dilecta vago pecori consurgit Ebusus,</l>
+                <l
+                    n="616">Sardiniaeque arces, et inhorrens Corsica silvis:</l>
+                <l
+                    n="617">Aeolidesque dehinc tumidis se fluctibus edunt</l>
+                <l
+                    n="618">insulae, et inserto canescunt undique ponto.</l>
+                <l
+                    n="619">has dudum tenuit rex Aeolus: Aeolus illic</l>
+                <l
+                    n="620">hospita iactatis indulsit litora nautis,</l>
+                <l
+                    n="621">Aeolus imperio summi Iovis arbiter alto</l>
+                <l
+                    n="622">impositus pelago est, effundere carcere ventos</l>
+                <l
+                    n="623">et sedare salum. septem sese aequoris aestu</l>
+                <l
+                    n="624">emergunt arces: celsam rex Aeolus aulam</l>
+                <l
+                    n="625">hic habuit. tunc Ausoniam se pandit in oram</l>
+                <l
+                    n="626">tellus Trinacria et patulo distenditur agro.</l>
+                <l
+                    n="627">haec autem trinis laterum procursibus astat,</l>
+                <l
+                    n="628">ternaque caeruleis longe iuga porrigit undis.</l>
+                <l
+                    n="629">in matutinos Pachynos producitur ortus:</l>
+                <l
+                    n="630">pars tepet ab zephyro Lilybeia: celsa Peloris</l>
+                <l
+                    n="631">tota sereniferae pulsatur flatibus ursae.</l>
+                <l
+                    n="632">hic iter infidum pelagi, miserandaque fata</l>
+                <l
+                    n="633">involvere salo fluctuque hausere voraci</l>
+                <l
+                    n="634">saepe ratis. urgent angustae marmora fauces,</l>
+                <l
+                    n="635">artaque praecipitant properum confinia pontum.</l>
+                <l
+                    n="636">qua se parte dehinc celsae notus erigit aethrae,</l>
+                <l
+                    n="637">vis late Libyci furit aequoris. una ibi Syrtis;</l>
+                <l
+                    n="638">ast aliam ulterius freta prolabentia tendunt,</l>
+                <l
+                    n="639">parvaque caeruleo circumsonat aequore Meninx.</l>
+                <l
+                    n="640">rursus in Hadriacam lembum cogentibus undam,</l>
+                <l
+                    n="641">et laevum curva pelagus sulcantibus alno,</l>
+                <l
+                    n="642">insula se Grai Diomedis gurgite promit,</l>
+                <l
+                    n="643">Italiam spectans et Iapygis arva coloni.</l>
+                <l
+                    n="644">huc illum motae quondam tulit ira Diones,</l>
+                <l
+                    n="645">postquam per celeres extorrem traxit Hiberos:</l>
+                <l
+                    n="646">coniugis huc dirae misit furor Aegialiae.</l>
+                <l
+                    n="647">Ionii siquis rate rursum caerula currat</l>
+                <l
+                    n="648">aequora, et eoos cumbam producat in ortus,</l>
+                <l
+                    n="649">Absyrti cautes et crebras protinus arces</l>
+                <l
+                    n="650">inveniet. Colchos huc quondam cura fidesque</l>
+                <l
+                    n="651">extulit, insanam sectantes Aeetinen.</l>
+                <l
+                    n="652">nec procul Ionii per terga Libyrnides astant:</l>
+                <l
+                    n="653">inque notum post dira Ceraunia carbasa siquis</l>
+                <l
+                    n="654">torqueat, et tepidos lembum declinet in axes,</l>
+                <l
+                    n="655">Ambraciotarum succedent protinus arces,</l>
+                <l
+                    n="656">Alcinoique domus pandetur Cercyra rursum,</l>
+                <l
+                    n="657">Cercyra compta solum, locupleti Cercyra sulco.</l>
+                <l
+                    n="658">hanc super est tellus, Ithaci vetus aula tyranni,</l>
+                <l
+                    n="659">exulis et toto raptati saepe profundo.</l>
+                <l
+                    n="660">plurima praeterea consurgunt gurgite saxa,</l>
+                <l
+                    n="661">quae protentus aquas Achelous pulcher oberrat;</l>
+                <l
+                    n="662">Amnisusque dehinc alias circumfluit unda,</l>
+                <l
+                    n="663">quae tamen in borean vergunt magis; Aegila parva</l>
+                <l
+                    n="664">et procera caput turgescunt pulchra Cythera;</l>
+                <l
+                    n="665">eminet hic etiam saxosa Calauria iuxta;</l>
+                <l
+                    n="666">Carpathus hic rupes attollitur: haec tamen axem</l>
+                <l
+                    n="667">respicit occiduum. nutrix hic Creta tonantis,</l>
+                <l
+                    n="668">multa latus, glebamque ferax et opima virentum</l>
+                <l
+                    n="669">erigitur pelago. Cretam super astitit Ida,</l>
+                <l
+                    n="670">Ida procellosis agitans aquilonibus ornos.</l>
+                <l
+                    n="671">nec procul Aegyptum Rhodus adiacet, adiacet oram</l>
+                <l
+                    n="672">Suniados, qua se protendit caespes Abantum,</l>
+                <l
+                    n="673">fertilis Aeginae tellus, et opima Salamis.</l>
+                <l
+                    n="674">lucis ab exortu, Pamphylia qua cavat aestum</l>
+                <l
+                    n="675">prolabentis aquae, Cyprus alta cingitur unda,</l>
+                <l
+                    n="676">adque Dionaei pulsatur litoris acta.</l>
+                <l
+                    n="677">inde Chelidoniae tris sese gurgite tollunt,</l>
+                <l
+                    n="678">qua frons tenta salo Patareidis eminet arcis.</l>
+                <l
+                    n="679">laeta dehinc Aradus Phoenicum praeiacet oram,</l>
+                <l
+                    n="680">multus ubi exesae sinus est telluris ab alto,</l>
+                <l
+                    n="681">ac latus omne soli procul in dispendia cedit</l>
+                <l
+                    n="682">litoris, et curvo praelambitur ora fluento.</l>
+                <l
+                    n="683">mirus at ille dehinc Aegaei gurges habetur,</l>
+                <l
+                    n="684">qui gemina de parte sali velut ordine fisso</l>
+                <l
+                    n="685">saxa mari profert circumflua, tenuia sese</l>
+                <l
+                    n="686">areta praecipitant Athamantidis inclyta leto:</l>
+                <l
+                    n="687">Sextus ubi atque Abydus parvo sale discernuntur,</l>
+                <l
+                    n="688">et vicina sibi lambit confinia pontus.</l>
+                <l
+                    n="689">pars procul Europae laevum latus, altera porro</l>
+                <l
+                    n="690">ditem Asiam spectat: cunctae tamen ordine facto</l>
+                <l
+                    n="691">insulae in arctoi procedunt plaustra Bootis.</l>
+                <l
+                    n="692">Europam incumbit prolixus limes Abantum.</l>
+                <l
+                    n="693">Scyrus ibi late dorsum tumet, ac Peparethum</l>
+                <l
+                    n="694">protollit pelagus. iuxta Vulcania Lemnos</l>
+                <l
+                    n="695">erigitur, Cererique Thasus dilecta profundo</l>
+                <l
+                    n="696">proserit albenti se vertice: prominet Imbrus,</l>
+                <l
+                    n="697">Thressaque consurgit propter Samus: indeque rursum</l>
+                <l
+                    n="698">Cyclades accedunt Asiam, Delumque coronant.</l>
+                <l
+                    n="699">omnes fatidico curant sollemnia Phoebo.</l>
+                <l
+                    n="700">nam cum vere novo tellus se dura relaxat,</l>
+                <l
+                    n="701">culminibusque cavis blandum strepit ales hirundo,</l>
+                <l
+                    n="702">gens devota choros agitat, gratique sacrato</l>
+                <l
+                    n="703">ludunt festa die, visit sacra numen alumnum.</l>
+                <l
+                    n="704">Hinc Sporades crebro producunt caespite sese</l>
+                <l
+                    n="705">densa serenato ceu splendent sidera caelo.</l>
+                <l
+                    n="706">nec minus attolluntur Ionides insulae ab alto.</l>
+                <l
+                    n="707">hic iuxta Caunus, Samus hic Saturnia iuxta,</l>
+                <l
+                    n="708">tumque Chius patulae prospectans arva Pelinae.</l>
+                <l
+                    n="709">Lesbus item et Tenedus per aperti marmora ponti</l>
+                <l
+                    n="710">expediunt arces, et culmina nubibus indunt.</l>
+                <l
+                    n="711">hinc se piscosi pandit sinus Hellesponti.</l>
+                <l
+                    n="712">hic salis arctoi spumas vomit impiger aestus,</l>
+                <l
+                    n="713">hic protenta quatit late freta glauca Propontis.</l>
+                <l
+                    n="714">siquis laeva dehinc Euxini marmora sulcet,</l>
+                <l
+                    n="715">ora Borysthenii qua fluminis in mare vergunt,</l>
+                <l
+                    n="716">e regione procul spectabit culmina Leuces.</l>
+                <l
+                    n="717">Leuce cana iugum, Leuce sedes animarum:</l>
+                <l
+                    n="718">nam post fata virum semper versarier illic</l>
+                <l
+                    n="719">insontes aiunt animas; ubi concava vasto</l>
+                <l
+                    n="720">cedit in antra sinu rupes, ubi saxa dehiscunt</l>
+                <l
+                    n="721">molibus exesis, et curvo fornice pendent.</l>
+                <l
+                    n="722">haec sunt dona piis: sic illos Iuppiter imis</l>
+                <l
+                    n="723">exemit tenebris, Erebi sic inscia virtus.</l>
+                <l
+                    n="724">Rursum Cimmerius qua Bosphorus ora patescit,</l>
+                <l
+                    n="725">dexterior ponto subit insula, vastaque late</l>
+                <l
+                    n="726">excedit moles pelagus: sedet eminus ingens</l>
+                <l
+                    n="727">Phaenagore, et muros attollitur Hermonassa.</l>
+                <l
+                    n="728">haec maris infusi consurgunt insulae ab alto.</l>
+                <l
+                    n="729">exterior quis unda dehinc, circumfluus et quis</l>
+                <l
+                    n="730">aestuet Oceanus, quibus illae flatibus omnes</l>
+                <l
+                    n="731">culmina pulsentur, memores date carmine musae.</l>
+                <l
+                    n="732">Propter Atlantei tergum salis Aethiopum gens</l>
+                <l
+                    n="733">Hesperides habitant; dorsum tumet hic Erythiae,</l>
+                <l
+                    n="734">hicque Sacri, sic terga vocat gens ardua, montis:</l>
+                <l
+                    n="735">nam protenta iugum tellus trahit: hoc caput amplae</l>
+                <l
+                    n="736">proditur Europae: genetrix haec ora metalli,</l>
+                <l
+                    n="737">liventis stagni venas vomit: acer Hiberus</l>
+                <l
+                    n="738">hic freta veloci percurrit saepe phaselo.</l>
+                <l
+                    n="739">eminus hic aliae gelidi prope flabra aquilonis</l>
+                <l
+                    n="740">exsuperant undas et vasta cacumina tollunt.</l>
+                <l
+                    n="741">hae numero geminae, pingues sola, caespitis amplae,</l>
+                <l
+                    n="742">conditur occidui qua Rhenus gurgitis unda,</l>
+                <l
+                    n="743">dira Britannorum sustentant agmina terris.</l>
+                <l
+                    n="744">hic spumosus item ponti liquor explicat aestum,</l>
+                <l
+                    n="745">et brevis e pelago vertex subit: hic chorus ingens</l>
+                <l
+                    n="746">producit noctem ludus sacer: aera pulsant</l>
+                <l
+                    n="747">vocibus, et crebris late sola calcibus urgent.</l>
+                <l
+                    n="748">non sic Absynthi prope flumina Thracis almae</l>
+                <l
+                    n="749">Bistonides; non, qua celeri ruit agmine Ganges,</l>
+                <l
+                    n="750">Indorum populi stata curant festa Lyaeo.</l>
+                <l
+                    n="751">longa dehinc celeri siquis rate marmora currat,</l>
+                <l
+                    n="752">inque Lycaonias cumbam procul urgeat arctos,</l>
+                <l
+                    n="753">inveniet vasto surgentem vertice Thulen.</l>
+                <l
+                    n="754">hic cum plaustra poli tangit Phoebeius ignis,</l>
+                <l
+                    n="755">nocte sub illustri rota solis fomite flagrat</l>
+                <l
+                    n="756">continuo, clarumque diem nox aemula ducit.</l>
+                <l
+                    n="757">nam sol obliquo torquetur cardine mundi,</l>
+                <l
+                    n="758">directosque super radios vicinior axi</l>
+                <l
+                    n="759">occiduo inclinat, donec iuga rursus anhela</l>
+                <l
+                    n="760">devexo accipiat caelo notus. inde fluenta</l>
+                <l
+                    n="761">tenduntur Scythici longe maris in facis ortum</l>
+                <l
+                    n="762">Eoae: tum coeaneis erepit ab undis</l>
+                <l
+                    n="763">insula, quae prisci signatur nominis usu</l>
+                <l
+                    n="764">aurea, quod fulvo sol hic magis orbe rubescat.</l>
+                <l
+                    n="765">Contemplator item, ceu se mare flectat in austrum,</l>
+                <l
+                    n="766">inque notum Oceanus freta ponti caerula curvet:</l>
+                <l
+                    n="767">altaque Coliadis mos hic tibi dorsa patescent</l>
+                <l
+                    n="768">rupis, et intenti spectabis caespitis arces.</l>
+                <l
+                    n="769">pro quibus ingenti consistens mole per undas</l>
+                <l
+                    n="770">insula Taprobane gignit taetros elephantos,</l>
+                <l
+                    n="771">et super aestiferi torretur sidere cancri.</l>
+                <l
+                    n="772">haec immensa patet, vastisque extenditur oris</l>
+                <l
+                    n="773">undique per pelagus: latus autem protinus olli</l>
+                <l
+                    n="774">agmina cetosi pecoris, vaga monstra profundi,</l>
+                <l
+                    n="775">alludunt: fervent Erythraei marmora ponti</l>
+                <l
+                    n="776">tota feris: haec, ut rigidi iuga maxima montis,</l>
+                <l
+                    n="777">nubibus attollunt latus omne, et terga tumescunt:</l>
+                <l
+                    n="778">instar in his rupis spinae tenor arduus astat,</l>
+                <l
+                    n="779">molibus in celsis scrupus quoque creber inhorret.</l>
+                <l
+                    n="780">a! nequis rapidi subvectus gurgitis unda</l>
+                <l
+                    n="781">haec in terga sali lembum contorqueat umquam:</l>
+                <l
+                    n="782">a! ne monstrigenis, hostem licet, inferat aestus</l>
+                <l
+                    n="783">fluctibus: immodici late patet oris hiatus</l>
+                <l
+                    n="784">quippe feris, antro panduntur guttura vasto;</l>
+                <l
+                    n="785">protinus haec ipsas absorbent fauce carinas,</l>
+                <l
+                    n="786">involvuntque simul mox monstra voracia nautas.</l>
+                <l
+                    n="787">Ogyris inde salo promit caput, aspera rupes,</l>
+                <l
+                    n="788">Carmanis qua se pelagi procul invehit undas;</l>
+                <l
+                    n="789">regis Erythraei tellus haec nota sepulchro</l>
+                <l
+                    n="790">tenditur, et nudis iuga tantum cautibus horrent.</l>
+                <l
+                    n="791">Persicus hinc aestus fauces hiat: insula rursum,</l>
+                <l
+                    n="792">si tamen in borean flectantur carbasa cumbae,</l>
+                <l
+                    n="793">Icarus aerio consurgit vertice in auras,</l>
+                <l
+                    n="794">Icarus ignicomo Soli sacra; namque Sabaei</l>
+                <l
+                    n="795">turis ibi semper vaga fumum nubila volvunt.</l>
+                <l
+                    n="796">Insulae in Oceani procursibus hae tibi tantum</l>
+                <l
+                    n="797">carmine sunt dignae: multas vehit undique pontus</l>
+                <l
+                    n="798">praeterea, parvas specie, famaque carentia</l>
+                <l
+                    n="799">pars Asiam, Libyam pars adiacet altera ponto,</l>
+                <l
+                    n="800">pars videt Europam: non has tamen aut modus orae,</l>
+                <l
+                    n="801">aut interna cavi commendat vena metalli.</l>
+                <l
+                    n="802">harum aliae duris reserant vis litora nautis,</l>
+                <l
+                    n="803">et scaber in multis scrupus riget; undique iniquus</l>
+                <l
+                    n="804">surrigitur vertex, et inhospita caespitis orast.</l>
+                <l
+                    n="805">harum quis valeat numerosa ut nomina fari?</l>
+                <l
+                    n="806">si velit hoc ullus, velit idem scire quot alto</l>
+                <l
+                    n="807">curventur fluctus pelago, quot sidera caeli</l>
+                <l
+                    n="808">educant flammas, quot robora proferat Ida,</l>
+                <l
+                    n="809">quantus harenarum numerus versetur ab euro.</l>
+                <l
+                    n="810">Carmine nunc Asiam formet stilus: incute doctam,</l>
+                <l
+                    n="811">Phoebe, chelyn! totis Helicon aspiret ab antris.</l>
+                <l
+                    n="812">maxima pars orbis narrabitur; inclyta tellus</l>
+                <l
+                    n="813">prometur musis. terrarum summa duarum</l>
+                <l
+                    n="814">unius est limes, quae caespite protegit ambas.</l>
+                <l
+                    n="815">vastius ast Asiae diti caput, indeque sensim</l>
+                <l
+                    n="816">in matutinos oram conducitur axes.</l>
+                <l
+                    n="817">hic astare procul Bacchi fert fama columnas,</l>
+                <l
+                    n="818">ultimus Oceani qua terras alluit aestus,</l>
+                <l
+                    n="819">Indica qua rupes tumet extima, quo vaga Ganges,</l>
+                <l
+                    n="820">caespite dorsa trahens in Nysaeum Platamona</l>
+                <l
+                    n="821">porrigitur. similis nequaquam est forma duabus,</l>
+                <l
+                    n="822">nec modus est compar: secat unus denique pontus</l>
+                <l
+                    n="823">Oceanus, trinoque sinu vagus influit aestus</l>
+                <l
+                    n="824">unam Asiae molem: sinus istam Persicus intrat,</l>
+                <l
+                    n="825">maximus hanc Arabum scindit sinus, et sinus aequor</l>
+                <l
+                    n="826">inserit Hyrcanus: duo nigri partibus austri</l>
+                <l
+                    n="827">curvantur, rigidam suspectat tertius arcton:</l>
+                <l
+                    n="828">hic et in Euxini prorepit marmoris undam,</l>
+                <l
+                    n="829">et zephyrum tergo spectat procul: adiacet ambos</l>
+                <l
+                    n="830">tellus multa dehinc, et longis tenditur arvis.</l>
+                <l
+                    n="831">ast Asiam incumbit vasto mons aggere Taurus,</l>
+                <l
+                    n="832">interstatque iugo mediam, Pamphylia campo</l>
+                <l
+                    n="833">qua iacet, incipiens, ac verticis ardua ducit</l>
+                <l
+                    n="834">Indorum in pelagus: nunc autem surrigit idem</l>
+                <l
+                    n="835">obliquas arces et flexilis aera pulsat;</l>
+                <l
+                    n="836">nunc directa solo tentus vestigia figit.</l>
+                <l
+                    n="837">mille dehinc amnes unus vomit, exerit unus</l>
+                <l
+                    n="838">flumina per terras, vel qua riget ora Bootis,</l>
+                <l
+                    n="839">vel qua lene notus spirat, qua perstrepit eurus,</l>
+                <l
+                    n="840">et qua deiecto zephyrus sustollitur axe.</l>
+                <l
+                    n="841">nec tamen hic uno signatur nomine ubique,</l>
+                <l
+                    n="842">sed dum flectit iter, novus emicat; utque tumenti</l>
+                <l
+                    n="843">gens vicina subest, peregrina vocabula mutat.</l>
+                <l
+                    n="844">Accipe, qui populi circumdent denique Taurum.</l>
+                <l
+                    n="845">Maeotae primi salsam cinxere paludem.</l>
+                <l
+                    n="846">obversatur item trux Sarmata, bellica quondam</l>
+                <l
+                    n="847">gentis Amazonidum suboles: nam cum prius illae</l>
+                <l
+                    n="848">egissent vasti prope flumina Thermodontis</l>
+                <l
+                    n="849">Threicio de Marte satae, iunxere profectae</l>
+                <l
+                    n="850">concubitus: longas exercet Sarmata silvas:</l>
+                <l
+                    n="851">ex quibus elapsus Tanais procul arva pererrat</l>
+                <l
+                    n="852">barbara, et in salsam protendit terga paludem.</l>
+                <l
+                    n="853">hic Asiam Europa disterminat. arduus istum</l>
+                <l
+                    n="854">Caucasus eructat: Scythicos hic fusus in agros</l>
+                <l
+                    n="855">impacatorum nutrit pubem populorum.</l>
+                <l
+                    n="856">huius utrumque latus quatit amplis bruma procellis,</l>
+                <l
+                    n="857">constrictumque tenent hunc frigora. proxima rursus</l>
+                <l
+                    n="858">Cimmerii Sindique colunt: Cercetia gens est</l>
+                <l
+                    n="859">adque Toretarum propter genus: indeque Achaei,</l>
+                <l
+                    n="860">ab Xanthi ripis atque Idaeo Simoente,</l>
+                <l
+                    n="861">inter chauricrepas et scruposas convallis,</l>
+                <l
+                    n="862">transvexere larem. iuxta gens aspera degit</l>
+                <l
+                    n="863">Eniochi, Zygique dehinc, qui regna Pelasgum</l>
+                <l
+                    n="864">linquentes, quondam tenuerunt proxima ponti.</l>
+                <l
+                    n="865">impiger hos propter Colchus colit: iste feraci</l>
+                <l
+                    n="866">exul ab Aegypto celsae serit aspera rupis:</l>
+                <l
+                    n="867">Caucasus Hyrcanae nimium conterminus undae</l>
+                <l
+                    n="868">huius valle procul Phasis gemit, istius antro</l>
+                <l
+                    n="869">agmina provolvit, Circaeaque lapsus in arva</l>
+                <l
+                    n="870">incidit, Euxinum. borealis cardine caeli</l>
+                <l
+                    n="871">rursus in eoae lucis confinia tellus</l>
+                <l
+                    n="872">inclinata iacet, gemino vicina profundo.</l>
+                <l
+                    n="873">Caspia nam late terram super alluit unda,</l>
+                <l
+                    n="874">Euxinique subest tergum salis: asper Hiberus</l>
+                <l
+                    n="875">hic agit: hic olim Pyrenide pulsus ab ora</l>
+                <l
+                    n="876">caespitis eoi tenuit sola, ceu vaga saepe</l>
+                <l
+                    n="877">fors rapit exactos patria: tenet aequora campi</l>
+                <l
+                    n="878">gens Camaritarum, qui post certamina Bacchum,</l>
+                <l
+                    n="879">Indica Bassaridum cum duceret agmina victor,</l>
+                <l
+                    n="880">accepere casis, mensasque dedere Lyaeo:</l>
+                <l
+                    n="881">orgia ludentes et nebride pectora cincti</l>
+                <l
+                    n="882">deduxere choros, Nysaei ludicra ritus.</l>
+                <l
+                    n="883">hos super in fluctus adsurgit Caspia Tethys.</l>
+                <l
+                    n="884">Haec dicenda mihi; nec diri gurgitis umquam</l>
+                <l
+                    n="885">lustravi pinu freta barbara, nec vagus orbem</l>
+                <l
+                    n="886">undique reptavi: sed vasti flumina Gangis,</l>
+                <l
+                    n="887">Caucaseas arces et dumicolas Arienos</l>
+                <l
+                    n="888">incentore canam Phoebo, musisque magistris</l>
+                <l
+                    n="889">omnia veridico decurrens carmine pandam.</l>
+                <l
+                    n="890">Caspia per teretes Tethys distenditur oras,</l>
+                <l
+                    n="891">et sinuant curvis hanc totam litora terris.</l>
+                <l
+                    n="892">tantum sed fuso pontus iacet iste profundo,</l>
+                <l
+                    n="893">ut ter luna prius reparet facis incrementa,</l>
+                <l
+                    n="894">quam quis caeruleum celeri rate transeat aequor.</l>
+                <l
+                    n="895">gurgitis Oceanus pater est: namque iste nivalis</l>
+                <l
+                    n="896">axe Helices infert rapidi freta concita ponti,</l>
+                <l
+                    n="897">et sinus inde sibi pelagus trahit: hic vada propter</l>
+                <l
+                    n="898">Caspia versatur Scytha belliger; hicque feroces</l>
+                <l
+                    n="899">degunt Albani: trux illic arva Cadusus</l>
+                <l
+                    n="900">dura tenet, Mardi celeres, Hyrcani, Apyrique.</l>
+                <l
+                    n="901">caespite vicino Mardus fluit, et procul ipsos</l>
+                <l
+                    n="902">accedit Bactros; attingens denique atroces</l>
+                <l
+                    n="903">agmine Dercebios, medius disterminat ambos,</l>
+                <l
+                    n="904">Hyrcanique salis tumido convolvitur aestu.</l>
+                <l
+                    n="905">sed Bactrena solo vasto procul arva recedunt,</l>
+                <l
+                    n="906">Parnassique iugi tegitur gens rupibus illa:</l>
+                <l
+                    n="907">Dercebios aliud cohibet latus et vada tangit</l>
+                <l
+                    n="908">Caspia: tum clari pharetris agilique sagitta</l>
+                <l
+                    n="909">Massagetae rauci succedunt flumen Araxis:</l>
+                <l
+                    n="910">durum ab stirpe genus, placidae mens nescia vitae,</l>
+                <l
+                    n="911">ignorant flavae Cereris commercia, Bacchi</l>
+                <l
+                    n="912">semper inexpertes animam traxere ferinam.</l>
+                <l
+                    n="913">his cibus et potus simul est: nam sanguen equinum</l>
+                <l
+                    n="914">et lac concretum per barbara guttura sorbent.</l>
+                <l
+                    n="915">nec procul ad borean diri posuere Chorasmi</l>
+                <l
+                    n="916">hospitia, et iuxta protendit Sugdias agros,</l>
+                <l
+                    n="917">Sugdias, ingenti quam flumine dissicit Oxus.</l>
+                <l
+                    n="918">hic procul Hemodii late ruit aggere montis,</l>
+                <l
+                    n="919">et per prolixos evectus protinus agros</l>
+                <l
+                    n="920">Caspia propellit fluctu freta: qua patet huius</l>
+                <l
+                    n="921">fluminis os, diri ripas habitant Iaxartae.</l>
+                <l
+                    n="922">tendere non horum quisquam certaverit arcus:</l>
+                <l
+                    n="923">ambitus hos etenim multus trahit, et grave curvis</l>
+                <l
+                    n="924">pondus inest taxis, longo sunt spicula ferro,</l>
+                <l
+                    n="925">et rigor in nervis veluti bovis. inde cruenti</l>
+                <l
+                    n="926">sunt Tocari, Phrurique truces, et inhospita Seres</l>
+                <l
+                    n="927">arva habitant, gregibus permixti oviumque boumque</l>
+                <l
+                    n="928">vellera per silvas Seres nemoralia carpunt.</l>
+                <l
+                    n="929">ultima Epetrimos tellus habet: et procul ista</l>
+                <l
+                    n="930">cassa virum est, nullis pecorum balatibus agri</l>
+                <l
+                    n="931">persultant; herbae viduus iacet undique caespes,</l>
+                <l
+                    n="932">fronde caret; nusquam terras intersecat amnis.</l>
+                <l
+                    n="933">Caspia tot late circumdant aequora gentes.</l>
+                <l
+                    n="934">Nunc rursum ab Colchis et glauci Phasidis undis</l>
+                <l
+                    n="935">occiduum ad solem populos memorate, camenae,</l>
+                <l
+                    n="936">usque in Threicii fauces maris! aspera primum</l>
+                <l
+                    n="937">Byzeron est gens: diri sunt inde Bechires,</l>
+                <l
+                    n="938">Macrones, Phyliresque et pernix Durateum gens.</l>
+                <l
+                    n="939">inde Tibareni, Chalybes super, arva ubi ferri</l>
+                <l
+                    n="940">ditia vulnifici crepitant incudibus altis.</l>
+                <l
+                    n="941">post hos Assyriae tenduntur iugera terrae,</l>
+                <l
+                    n="942">Armenioque iugo late surgens Thermodon</l>
+                <l
+                    n="943">erigitur celsa in fastigia prisca Sinope.</l>
+                <l
+                    n="944">hanc urbem quondam, magni Iovis ardor, Asopis</l>
+                <l
+                    n="945">virgo, locans saevae propter confinia terrae,</l>
+                <l
+                    n="946">aulam habuit, plebemque suo de nomine dixit.</l>
+                <l
+                    n="947">nec procul hinc purus laticem provolvitur Iris;</l>
+                <l
+                    n="948">et citus Armeniae cursum convallibus arcis,</l>
+                <l
+                    n="949">qua vastum in pelagus vergit saxosa Carambis,</l>
+                <l
+                    n="950">urget Halys: tum Paphlagonum sata longa patescunt,</l>
+                <l
+                    n="951">et Mariandinon gens incolit, unde triformis</l>
+                <l
+                    n="952">ora canis superas quondam produxit in auras</l>
+                <l
+                    n="953">Alcides Erebo: propter Bithynia glebam</l>
+                <l
+                    n="954">exerit: hic late Rhebas extenditur amnis,</l>
+                <l
+                    n="955">Rhebas, coeanei qui dissicit aequora ponti,</l>
+                <l
+                    n="956">Rhebas, argento similem qui porrigit undam.</l>
+                <l
+                    n="957">hi pontum cingunt populi. nunc illa canatur</l>
+                <l
+                    n="958">ora Asiae, glaucus pelagi quam subluit aestus,</l>
+                <l
+                    n="959">axe noti in fauces rapidi procul Hellesponti,</l>
+                <l
+                    n="960">et freta qua spumant Aegyptia partibus austri,</l>
+                <l
+                    n="961">usque Arabas et longa Syrae confinia terrae.</l>
+                <l
+                    n="962">dictum etenim, quantus rigidas Scytha degat ad arctoS.</l>
+                <l
+                    n="963">Calchedon tumulus fluctu circumdatus alto</l>
+                <l
+                    n="964">eminus Europam proceraque moenia Byzae</l>
+                <l
+                    n="965">aspicit: ab tergo tendit Bebrycia glebam,</l>
+                <l
+                    n="966">celsaque nubiferae sustollit culmina rupis</l>
+                <l
+                    n="967">Mysus ager: Mysos tacitum diffusus in aequor</l>
+                <l
+                    n="968">tergaque flavescens sulcat Cius: huius ad undam</l>
+                <l
+                    n="969">pulcher Hylas nymphis quondam fuit anxia cura.</l>
+                <l
+                    n="970">Hinc in caeruleum cedit sinus Hellespontum,</l>
+                <l
+                    n="971">explicat et Phrygiam tellus incurva Minorem;</l>
+                <l
+                    n="972">maior Sangario late praestringitur amni.</l>
+                <l
+                    n="973">haec procul eoos procedit plurima in axes,</l>
+                <l
+                    n="974">fertilis herbarum: qua caelum rursus in umbras</l>
+                <l
+                    n="975">inclinat vertex, panduntur terga Minori,</l>
+                <l
+                    n="976">quae iacet immensae late sub rupibus Idae,</l>
+                <l
+                    n="977">infortunatam pertingens caespite Troiam.</l>
+                <l
+                    n="978">Aeolis inde patet vastum super Hellespontum</l>
+                <l
+                    n="979">Aegaei per terga sali. prolixus Ionum</l>
+                <l
+                    n="980">rursus ager glebam protenditur: hunc secat ingens</l>
+                <l
+                    n="981">Maeander, salsique ruens vada gurgitis intrat.</l>
+                <l
+                    n="982">comminus hic gelidi qua spirant flabra aquilonis,</l>
+                <l
+                    n="983">urbs Ephesus tetricae sustollit fana Dianae,</l>
+                <l
+                    n="984">munus Amazonidum memorabile; nec minus inde</l>
+                <l
+                    n="985">Lydia procedens longum latus explicat euro:</l>
+                <l
+                    n="986">in qua vitiferae Molus iuga proserit arcis,</l>
+                <l
+                    n="987">Et Pactolus aquas agit auriger, arva canoris</l>
+                <l
+                    n="988">persultant cygnis, curva sedet undique ripa</l>
+                <l
+                    n="989">creber olos, laetis adsurgunt gramina campis,</l>
+                <l
+                    n="990">herbaque luxurians sola semper pinguia vestit.</l>
+                <l
+                    n="991">sed locuplete magis Maeandria gleba recumbit</l>
+                <l
+                    n="992">ubere, nam blandi terram rigat unda Caystri.</l>
+                <l
+                    n="993">Maeonis hic etiam deducit turba choreas:</l>
+                <l
+                    n="994">aurea subnectunt haec vincula, ritus Iaccho</l>
+                <l
+                    n="995">luditur, atque sacris feriunt ululatibus aethram;</l>
+                <l
+                    n="996">virgineusque chorus late strepit, exilit omnis</l>
+                <l
+                    n="997">coetus, ut instabiles vaga pendent corpora dammae:</l>
+                <l
+                    n="998">Chaurorum quoque flabra deo famulantia ludunt</l>
+                <l
+                    n="999">ritibus in vulgi; subeunt haec serica saepe</l>
+                <l
+                    n="1000">pallia, et impulsi zephyris agitantur amictus.</l>
+                <l
+                    n="1001">haec linquenda tamen laeto reor omnia Lydo.</l>
+                <l
+                    n="1002">Qua se Xanthus agit, Lyciorum tenditur ora</l>
+                <l
+                    n="1003">inclinata mari, surgunt ibi culmina Tauri</l>
+                <l
+                    n="1004">Pamphyliae in fines: hic idem Cragus habetur</l>
+                <l
+                    n="1005">nomine sub gentis: prope celsam surgit in arcem</l>
+                <l
+                    n="1006">prisca Side: fomes calidis adoletur in aris</l>
+                <l
+                    n="1007">saepe Dionaeae veneri: stat Corycus alta,</l>
+                <l
+                    n="1008">stat Perge propter, micat ardua tecta Phaselis</l>
+                <l
+                    n="1009">eminus, et Phoebi radiis tremit aemulus ardor.</l>
+                <l
+                    n="1010">inde Lycaoniae tractus iacet: impiger agros</l>
+                <l
+                    n="1011">incola decurrit, sitit atrum dira cruorem</l>
+                <l
+                    n="1012">gens hominum, et saevo pascuntur pectora bello.</l>
+                <l
+                    n="1013">tum Pisida ferox exercet pinguia culta,</l>
+                <l
+                    n="1014">Telmissusque dehinc urbs eminet, eminet arcem</l>
+                <l
+                    n="1015">inclyta per nubes attollens moenia Lyrbe,</l>
+                <l
+                    n="1016">et Lacedaemoniae surgunt fastigia Selges.</l>
+                <l
+                    n="1017">Plurimus hinc terras intrat sinus, undaque longe</l>
+                <l
+                    n="1018">vicina Euxino rupti sola caespitis urget.</l>
+                <l
+                    n="1019">hic diros Cilicas trames tenet, inque diei</l>
+                <l
+                    n="1020">tenditur exortum: sulcant duo flumina terram,</l>
+                <l
+                    n="1021">Pyramus hic undas, hic volvit Pinarus aequor.</l>
+                <l
+                    n="1022">Cydnus item mediae discernit moenia Tarsi.</l>
+                <l
+                    n="1023">Pegasus hoc olim suspendit caespite sese,</l>
+                <l
+                    n="1024">impressique solo liquit vestigia calcis;</l>
+                <l
+                    n="1025">esset ut insigni revoluta in saecula semper</l>
+                <l
+                    n="1026">nomen humo, clari post ultima Bellerophontis.</l>
+                <l
+                    n="1027">sic caespes late producit Aleius arva,</l>
+                <l
+                    n="1028">horrescitque comis nemorum, per inhospita cuius</l>
+                <l
+                    n="1029">aequora secreto vitam protraxerat agro.</l>
+                <l
+                    n="1030">Lyrnessusque dehinc, hic Malus et Anchialia,</l>
+                <l
+                    n="1031">illustresque Soloe post carmina vatis alumni.</l>
+                <l
+                    n="1032">Commagenorum propter diffunditur ora:</l>
+                <l
+                    n="1033">et procul Hesperium curvatur limes in axem,</l>
+                <l
+                    n="1034">donec piniferas Casii prorepat ad arces.</l>
+                <l
+                    n="1035">Hinc solers Asiam facili cape carmine totam.</l>
+                <l
+                    n="1036">forma sit huius enim talis tibi: quattuor illam</l>
+                <l
+                    n="1037">in latera effusam cordi dato; longior autem</l>
+                <l
+                    n="1038">sit modus his, rutili quae spectant sideris ortum:</l>
+                <l
+                    n="1039">tumque tene, primo quod carmine musa locuta,</l>
+                <l
+                    n="1040">totam Asiam celsi praecingi vertice Tauri</l>
+                <l
+                    n="1041">extima in Indorum: montis tamen accipe molem</l>
+                <l
+                    n="1042">per latus id duci, quo dat Cynosura pruinas:</l>
+                <l
+                    n="1043">solis ab occasu vastum decurrere Nilum:</l>
+                <l
+                    n="1044">Indicum ab eois mare fervere, rursus ab austro</l>
+                <l
+                    n="1045">fluctibus immodicis Rubri salis aequora volvi.</l>
+                <l
+                    n="1046">ora Syrum curvi procumbens litoris acta</l>
+                <l
+                    n="1047">in notum et eoi confinia tenditur euri.</l>
+                <l
+                    n="1048">haec Coele est Graio sub nomine: namque duobus</l>
+                <l
+                    n="1049">ut conclusa iugis, vallis vice, multa cavatur.</l>
+                <l
+                    n="1050">ab zephyro Casius mons imminet: axe diei</l>
+                <l
+                    n="1051">consurgentis item Libanus premit arduus arva.</l>
+                <l
+                    n="1052">pars procul a pelago terras colit, inque recessu</l>
+                <l
+                    n="1053">gens agitat: salso quidquid pulsatur ab aestu,</l>
+                <l
+                    n="1054">Phoenicum regio est: hi Rubro a gurgite quondam</l>
+                <l
+                    n="1055">mutavere domus, primique per aequora vecti</l>
+                <l
+                    n="1056">lustravere salum; primi docuere carinis</l>
+                <l
+                    n="1057">ferre cavis orbis commercia; sidera primi</l>
+                <l
+                    n="1058">servavere polo; populis Phoenicibus ergo</l>
+                <l
+                    n="1059">urbs Iope, sterilisque dehinc habitatur Elais,</l>
+                <l
+                    n="1060">Gazaque proceris adsurgens undique muris.</l>
+                <l
+                    n="1061">hic Tyrus est opulens, et Berytus optima, Byblos,</l>
+                <l
+                    n="1062">Sidoniique lares; ubi labens agmine amoeno</l>
+                <l
+                    n="1063">caespitis irrigui Bostrenus iugera findit.</l>
+                <l
+                    n="1064">Nec minus hic Tripolis pingui sola porrigit agro;</l>
+                <l
+                    n="1065">Orthosisque dehinc attollitur: hic Marathus stat.</l>
+                <l
+                    n="1066">litoris extremo caput altis turribus effert</l>
+                <l
+                    n="1067">Laodice, et glauci praelambitur aequoris unda.</l>
+                <l
+                    n="1068">hic nemorosa virent Daphnae loca, celsa cupressus</l>
+                <l
+                    n="1069">erigitur, ramos innectit laurus odora,</l>
+                <l
+                    n="1070">crine Dionaeo myrtus diffunditur, altae</l>
+                <l
+                    n="1071">consurgunt pinus, et caelum sibila pulsant</l>
+                <l
+                    n="1072">robora, mollicomis tellus insternitur herbis.</l>
+                <l
+                    n="1073">urbs mediis Apamea dehinc consistit in arvis,</l>
+                <l
+                    n="1074">et qua Phoebeam procul incunabula lucem</l>
+                <l
+                    n="1075">prima fovent, Emesus fastigia celsa renidet.</l>
+                <l
+                    n="1076">nam diffusa solo latus explicat, ac subit auras</l>
+                <l
+                    n="1077">turribus in caelum nitentibus: incola claris</l>
+                <l
+                    n="1078">cor studiis acuit, vitam pius imbuit ordo:</l>
+                <l
+                    n="1079">denique flammicomo devoti pectora Soli</l>
+                <l
+                    n="1080">vitam agitant: Libanus frondosa cacumina turget,</l>
+                <l
+                    n="1081">et tamen his celsi certant fastigia templi.</l>
+                <l
+                    n="1082">hic scindit iuxta tellurem glaucus Orontes,</l>
+                <l
+                    n="1083">nec procul Antiochi vagus interlabitur urbem,</l>
+                <l
+                    n="1084">praestringens undis Apamenae iugera glebae.</l>
+                <l
+                    n="1085">fertilis hic caespes protenditur, arvaque amica</l>
+                <l
+                    n="1086">sunt pecori, in septu facilis Pomona resurgit,</l>
+                <l
+                    n="1087">et fecunda Ceres campo flavescit aperto.</l>
+                <l
+                    n="1088">Si rursus tepidum via deflectatur in austrum,</l>
+                <l
+                    n="1089">curva sinus Arabi succedent aequora propter.</l>
+                <l
+                    n="1090">namque Arabas Syriaeque solum sinus iste fluento</l>
+                <l
+                    n="1091">dividit, et tentis procul interfunditur undis:</l>
+                <l
+                    n="1092">et tamen eoos paulum inclinatur in axes</l>
+                <l
+                    n="1093">usque in belligeri confinia flexus Elani.</l>
+                <l
+                    n="1094">hinc tellus Arabum producit caespite campos,</l>
+                <l
+                    n="1095">et latera ab gemino sale cingitur; alluit aestus</l>
+                <l
+                    n="1096">Persicus hanc, Arabumque sinus rigat aequore terram.</l>
+                <l
+                    n="1097">his sua flabra polo spirant: nam Persicus euro</l>
+                <l
+                    n="1098">turgescit vento, zephyro sinus aestuat alter.</l>
+                <l
+                    n="1099">pars autem in primos quae semet porrigit ortus,</l>
+                <l
+                    n="1100">et notus insurgit qua nubifer, aequore Rubri</l>
+                <l
+                    n="1101">tangitur Oceani; felici terra recumbit</l>
+                <l
+                    n="1102">tota solo: tellus hic semper fragrat odoro</l>
+                <l
+                    n="1103">caespite: prorumpit lacrimoso stipite myrrha,</l>
+                <l
+                    n="1104">Myrrha furor quondam Cinyreius; hic ladani vim</l>
+                <l
+                    n="1105">vellera desudant, calami coma pullulat almi,</l>
+                <l
+                    n="1106">gignit humus casiam, concrescunt tura per agros,</l>
+                <l
+                    n="1107">longaque fecundis pinguescit odoribus ora.</l>
+                <l
+                    n="1108">vera fides, illic femoris sub imagine partus</l>
+                <l
+                    n="1109">disrupisse Iovem penetralia; proderet ortus</l>
+                <l
+                    n="1110">ut sacer aetheria fulgentem fronte Lyaeum.</l>
+                <l
+                    n="1111">nascenti Baccho risit pater, undique fulsit</l>
+                <l
+                    n="1112">caelicolum sedes, convexaque pura tetendit</l>
+                <l
+                    n="1113">festa dies: tellus effudit dives odores;</l>
+                <l
+                    n="1114">villorum subitis tumuit pecus incrementis:</l>
+                <l
+                    n="1115">ver habuere suum nova gramina, flore frequenti</l>
+                <l
+                    n="1116">pinsit terra sinus, ac nymphis unda cucurrit</l>
+                <l
+                    n="1117">largior: internis etiam procul undique ab oris</l>
+                <l
+                    n="1118">ales amica deo largum congessit amomum.</l>
+                <l
+                    n="1119">extemplo Liber subnectit nebride pectus,</l>
+                <l
+                    n="1120">effusasque comas hedera ligat, inde virentis</l>
+                <l
+                    n="1121">attollit thyrsos, et blandi luminis igne</l>
+                <l
+                    n="1122">os hilarat, totaque celer diffunditur aethra.</l>
+                <l
+                    n="1123">Sed propter Libanum terram sulcant Nabataei,</l>
+                <l
+                    n="1124">Chaulasiique dehinc, Agraei rursus et inde</l>
+                <l
+                    n="1125">Hatramis est tellus: Macae vicina fluento</l>
+                <l
+                    n="1126">Persidis accedunt: Rutili contermina ponti</l>
+                <l
+                    n="1127">Minaei Sabataeque tenent; super impiger ampla</l>
+                <l
+                    n="1128">aequora desulcat glebae ditis Cletavenus.</l>
+                <l
+                    n="1129">Plurima praeterea gens circumplectitur illic</l>
+                <l
+                    n="1130">oram Arabum, muta sed degunt agmina fama,</l>
+                <l
+                    n="1131">et numerus cunctis inglorius: inde favoni</l>
+                <l
+                    n="1132">qua plaga fecundis alit almos flatibus agros,</l>
+                <l
+                    n="1133">barbara montivagos tellus extendit Erembas.</l>
+                <l
+                    n="1134">hi vitam duris agitant in cautibus omnem,</l>
+                <l
+                    n="1135">intectique artus erepunt ardua semper</l>
+                <l
+                    n="1136">culmina saxorum: non ollis pabula in usum</l>
+                <l
+                    n="1137">terra parit: glebas abrodunt more ferarum</l>
+                <l
+                    n="1138">ieiunas herbae, nec amicas frugibus ullis.</l>
+                <l
+                    n="1139">Hinc ultra Libani rursum fastigia celsi,</l>
+                <l
+                    n="1140">lux Hyperionio qua se sustollit ab ortu,</l>
+                <l
+                    n="1141">alterius Syriae limes iacet usque Sinopen</l>
+                <l
+                    n="1142">gurgitis attiguam; mediis hic impigra in arvis</l>
+                <l
+                    n="1143">Cappadocum gens est: propter freta turgida rursus</l>
+                <l
+                    n="1144">Assyrii iuxta sunt ostia Thermodontis,</l>
+                <l
+                    n="1145">et festina citis evolvitur unda fluentis.</l>
+                <l
+                    n="1146">Nec procul, attollit qua se facis ardor eoae,</l>
+                <l
+                    n="1147">plurimus Euphratae manat liquor: iste feroci</l>
+                <l
+                    n="1148">fusus ab Armenia vastum caput exerit antro,</l>
+                <l
+                    n="1149">inque notum primae protenditur agmine molis;</l>
+                <l
+                    n="1150">at matutinos iterum conversus in axes,</l>
+                <l
+                    n="1151">dividit inserto mediam Babylona fluento.</l>
+                <l
+                    n="1152">inde Teredoniae iuga propter maxima rupis</l>
+                <l
+                    n="1153">Persidis in pontum sparso cadit effluus amni.</l>
+                <l
+                    n="1154">Hunc super, in septem quantum via carpitur ortus</l>
+                <l
+                    n="1155">caespitis extenti spatiis, citus aequora Tigris</l>
+                <l
+                    n="1156">prona rotans, et saxa iugis avulsa supernis,</l>
+                <l
+                    n="1157">et totas late celeri trahit agmine silvas.</l>
+                <l
+                    n="1158">quin et vasta palus medio distenditur agro;</l>
+                <l
+                    n="1159">maximus hanc fluctu Tigris secat: intrat aperti</l>
+                <l
+                    n="1160">terga lacus, stupet unda silens, tacitaeque recumbunt</l>
+                <l
+                    n="1161">aequora Thospitis; solidarum denique more</l>
+                <l
+                    n="1162">riparum stagni facies incisa quiescit,</l>
+                <l
+                    n="1163">invectumque sibi cohibens altrinsecus amnem</l>
+                <l
+                    n="1164">stat disclusa palus. sic Elidis incola pontum</l>
+                <l
+                    n="1165">dissicit Alpheus: pelago sic inserit undas</l>
+                <l
+                    n="1166">illaesum optatae flumen ducens Arethusae.</l>
+                <l
+                    n="1167">ergo per et stagnum vehitur celer amnis apertum,</l>
+                <l
+                    n="1168">hoc elapsus item vim proni gurgitis urget.</l>
+                <l
+                    n="1169">non alium tantus rapit impetus; haud ita quisquam</l>
+                <l
+                    n="1170">spumescit fluctus, neque tantos ulla fragores</l>
+                <l
+                    n="1171">unda ciet. medio quae tellus funditur agro,</l>
+                <l
+                    n="1172">hoc Interamnis nomen tenet; ut situs illam</l>
+                <l
+                    n="1173">flumine praecinctam gemino per aperta locavit.</l>
+                <l
+                    n="1174">non qui lanatum longo pecus educat agro,</l>
+                <l
+                    n="1175">aut qui cornigeri ductor gregis arva pererrat,</l>
+                <l
+                    n="1176">gramina qui pastor simis petit apta capellis,</l>
+                <l
+                    n="1177">quique cavo solers committit semina sulco,</l>
+                <l
+                    n="1178">quem Pomona iuvat, quem ramis aesculus altis</l>
+                <l
+                    n="1179">illicit, et pingui dependens subere glando;</l>
+                <l
+                    n="1180">bracchia Nysaei qui palmitis ordine iusto</l>
+                <l
+                    n="1181">digerit, aut tectis siquis dolat impiger ornos,</l>
+                <l
+                    n="1182">vel salis in fluctus qui cumbam navita texit,</l>
+                <l
+                    n="1183">spreverit hos saltus: nihil indiga subtrahit ora:</l>
+                <l
+                    n="1184">dives humo tellus, dives iacet arbore caespes.</l>
+                <l
+                    n="1185">istius in borean quidquid protenditur agri,</l>
+                <l
+                    n="1186">Armenii et vita duri sulcant Matieni.</l>
+                <l
+                    n="1187">Qua sunt flabra noti, Babylon subducitur arce</l>
+                <l
+                    n="1188">procera in nubes: hanc prisca Semiramis urbem</l>
+                <l
+                    n="1189">vallavit muris, quos non absumere flammae,</l>
+                <l
+                    n="1190">non aries penetrare queat: stat maxima Beli</l>
+                <l
+                    n="1191">aula quoque argento, domus Indo dente nitescit,</l>
+                <l
+                    n="1192">aurum tecta operit, sola late contegit aurum.</l>
+                <l
+                    n="1193">ipsa dehinc tellus, quae circumplectitur urbem,</l>
+                <l
+                    n="1194">et procerarum fluctu vernat palmarum,</l>
+                <l
+                    n="1195">et splendente procul beryllo ferta renidet.</l>
+                <l
+                    n="1196">hic tamen internis Ophietidis arcis in arvis</l>
+                <l
+                    n="1197">inter gemmiferas excrescit creber harenas.</l>
+                <l
+                    n="1198">hinc Babylona super, geminae pro finibus ursae,</l>
+                <l
+                    n="1199">Cissi Massabataeque et Chalonita vagantur.</l>
+                <l
+                    n="1200">At rursum Armeniae siquis pede pergat ab arce</l>
+                <l
+                    n="1201">rupis, et eoas gressum producat in oras,</l>
+                <l
+                    n="1202">Medica prolixos spectabit regna per agros.</l>
+                <l
+                    n="1203">horum qui gelidi succedunt plaustra Bootis,</l>
+                <l
+                    n="1204">pinguia rura tenent: sunt illic Atropateni,</l>
+                <l
+                    n="1205">sunt Geri et Mardi. tepidum qui rursus ad austrum</l>
+                <l
+                    n="1206">oram habitant, Scythicae deducunt semina gentis.</l>
+                <l
+                    n="1207">nam Medea ferox fuit ollis sanguinis auctor.</l>
+                <l
+                    n="1208">haec cum Pandionis letum componeret aulae,</l>
+                <l
+                    n="1209">Attica qua pulchro tellus pinguescit Ilisso,</l>
+                <l
+                    n="1210">proditur, inque fugam propere convertitur exul.</l>
+                <l
+                    n="1211">has post in terras pinu subit Aeetine,</l>
+                <l
+                    n="1212">inseditque locos: veteres accedere Colchos</l>
+                <l
+                    n="1213">nulla inerat menti fiducia; denique ab illa</l>
+                <l
+                    n="1214">Medorum suboli magicae furor artis inhaeret.</l>
+                <l
+                    n="1215">pars gentis, rutilos Phoebi quae spectat in ortus,</l>
+                <l
+                    n="1216">saxa habitat, saxis excudit narcissiten:</l>
+                <l
+                    n="1217">qui propter dumos nemorosaque rura vagantur,</l>
+                <l
+                    n="1218">in pecus intenti, crebro grege pascua tondent.</l>
+                <l
+                    n="1219">Medica se tantos effundit gleba per agros,</l>
+                <l
+                    n="1220">Caspia ut extento contingat caespite claustra.</l>
+                <l
+                    n="1221">haec Asiae digere fores, hiet ore quod illo</l>
+                <l
+                    n="1222">porta quasi, et longas bivium discedat in oras.</l>
+                <l
+                    n="1223">panditur Hyrcanis hinc ianua; ianua Persis</l>
+                <l
+                    n="1224">hinc patet, imbriferum qua vergit mundus in austrum.</l>
+                <l
+                    n="1225">Ecce sub immenso portarum vertice Parthi</l>
+                <l
+                    n="1226">rura tenent, curvi nequicquam vomeris usu</l>
+                <l
+                    n="1227">sollicitanda sibi; non ollis cura laborque,</l>
+                <l
+                    n="1228">aequora terrarum gravibus componere rastris:</l>
+                <l
+                    n="1229">exercent saevi se semper Martis in arma.</l>
+                <l
+                    n="1230">sica comes lateri est, manus autem hastilia vibrat,</l>
+                <l
+                    n="1231">demittunt pharetras umeris et letifer arcus</l>
+                <l
+                    n="1232">semper inest laesae: neque per compendia diras</l>
+                <l
+                    n="1233">producunt animas; non puppibus aequora sulcant:</l>
+                <l
+                    n="1234">non proni gregibus pecoris fera vita iuvatur.</l>
+                <l
+                    n="1235">sed quatit alipedum sola semper cursus equorum,</l>
+                <l
+                    n="1236">pulsaque terra gemit: discurrunt crebra per auras</l>
+                <l
+                    n="1237">spicula, missilibus late subtegitur aer.</l>
+                <l
+                    n="1238">Quin etiam post hos amor est si discere Persas</l>
+                <l
+                    n="1239">consimilis, solersque trahit te cura per orbem;</l>
+                <l
+                    n="1240">has quoque musa tibi formabit carmine terras,</l>
+                <l
+                    n="1241">quae liquidos amnis via devehat, utque iugorum</l>
+                <l
+                    n="1242">consurgat vertex, quibus oris arva recumbant</l>
+                <l
+                    n="1243">barbara, famosum qui Persam roboret usus.</l>
+                <l
+                    n="1244">quippe Asianarum primi degunt regionum.</l>
+                <l
+                    n="1245">vita opulens genti, gazas quoque terra ministrat</l>
+                <l
+                    n="1246">omnibus, et largum populis producitur aevum.</l>
+                <l
+                    n="1247">dives in his mos est iam longi tempore saecli,</l>
+                <l
+                    n="1248">ex quo Maeoniam bello trivere cruento.</l>
+                <l
+                    n="1249">illudunt auro vestes, et cuncta teguntur</l>
+                <l
+                    n="1250">auro membra viris, auro vestigia condunt:</l>
+                <l
+                    n="1251">tantus Persarum dissolvit pectora luxus.</l>
+                <l
+                    n="1252">ipsa autem tellus inclusa est montibus altis,</l>
+                <l
+                    n="1253">undique in australem latus inclinatior axem,</l>
+                <l
+                    n="1254">ac borean longe, longe quoque Caspia claustra</l>
+                <l
+                    n="1255">deserit, atque noti placida perfunditur aura.</l>
+                <l
+                    n="1256">istius at spatiis finem dat Persicus aestus,</l>
+                <l
+                    n="1257">incoliturque solum populis tribus. una sub arcto</l>
+                <l
+                    n="1258">pars agit, armigeris nimium contermina Medis:</l>
+                <l
+                    n="1259">altera per mediae telluris terga vagatur:</l>
+                <l
+                    n="1260">porro ad flabra noti, pelagus prope, tertia degit.</l>
+                <l
+                    n="1261">Persidis, et rigidas curvant labentia ripas.</l>
+                <l
+                    n="1262">arva secat Cyrus, perrumpit rura Coaspes,</l>
+                <l
+                    n="1263">Indica provolvens procul aequora: cuius ad undam</l>
+                <l
+                    n="1264">incola flaventem studio sectatur achatem.</l>
+                <l
+                    n="1265">nam cum brumali ceciderunt sidere nimbi,</l>
+                <l
+                    n="1266">imbribus et caelo fusis furit auctior amnis,</l>
+                <l
+                    n="1267">eos lapides late flumen trahit: undique tellus</l>
+                <l
+                    n="1268">circumiecta dehinc laeti viret ubere campi.</l>
+                <l
+                    n="1269">Sed qua caeruleam sinus infert Persicus undam,</l>
+                <l
+                    n="1270">gens Carmanorum late colit: hanc facis ortus</l>
+                <l
+                    n="1271">urit Phoebeae; tanto quoque funditur agro,</l>
+                <l
+                    n="1272">ut simul et glauci contingat gurgitis aestum,</l>
+                <l
+                    n="1273">et procul internae perreptet iugera terrae.</l>
+                <l
+                    n="1274">Hos super et tellus tendit Gedrosia glebam</l>
+                <l
+                    n="1275">Oceani vicina fretis; at flumen ad Indum</l>
+                <l
+                    n="1276">Auroraeque latus Scytha miti proximus austro</l>
+                <l
+                    n="1277">accolit: australis certe Scytha dicitur iste:</l>
+                <l
+                    n="1278">namque alii dura pulsantur desuper arcto.</l>
+                <l
+                    n="1279">Indus Caucasiae prorumpens rupis ab antro</l>
+                <l
+                    n="1280">adversum pelago Rubri procul aequoris amnem</l>
+                <l
+                    n="1281">porrigit, inque notum recto fluit agmine aquarum.</l>
+                <l
+                    n="1282">ora dehinc Indo duo sunt, mediumque per agrum</l>
+                <l
+                    n="1283">insula se vasto fundit tergo Patalene.</l>
+                <l
+                    n="1284">innumeras idem dispescit flumine gentes,</l>
+                <l
+                    n="1285">Oritas Aribasque et veloces Arachotas,</l>
+                <l
+                    n="1286">et Satram infidum, vel qui per inhospita late</l>
+                <l
+                    n="1287">discreti populis, discreti finibus agri</l>
+                <l
+                    n="1288">arva agitant, uno sed nomine sunt Arieni.</l>
+                <l
+                    n="1289">hi quamquam steriles decurrant semper harenas,</l>
+                <l
+                    n="1290">munera nec carpant cerealia, nec nova prelo</l>
+                <l
+                    n="1291">musta premant, fulvo tamen invenere corallo</l>
+                <l
+                    n="1292">pandere vivendi commercia, quaerere pulchrae</l>
+                <l
+                    n="1293">Sapphiri latebras et praeduros adamantas.</l>
+                <l
+                    n="1294">Calliope, Indorum populos et regna canamus.</l>
+                <l
+                    n="1295">ultima terrarum tellus aspergitur Indi</l>
+                <l
+                    n="1296">fluctibus Oceani; primam coquit hanc radiis sol,</l>
+                <l
+                    n="1297">sol Hyperionius, sol magni gratia mundi,</l>
+                <l
+                    n="1298">astrorum genitor, lucis sator et vigor aethrae.</l>
+                <l
+                    n="1299">sed genti Indorum taeter color: efflua semper</l>
+                <l
+                    n="1300">his coma liventes imitatur crine hyacinthos.</l>
+                <l
+                    n="1301">terrarum in latebris excludant caute metalla:</l>
+                <l
+                    n="1302">pars telas statuunt, et vestimenta laborant</l>
+                <l
+                    n="1303">lintea: pars Indi procurat segmina dentis,</l>
+                <l
+                    n="1304">atque ebur invigilat: multi, qua flumina nimbis</l>
+                <l
+                    n="1305">Auget hiems, vastum ut late trahat agmen aquarum</l>
+                <l
+                    n="1306">alveus, et celsas evincant aequora ripas,</l>
+                <l
+                    n="1307">palantes obeunt beryllum, prona fluenta</l>
+                <l
+                    n="1308">quem procul internis a finibus, aut adamanta</l>
+                <l
+                    n="1309">detulerint: his glauca dehinc tornatur iaspis.</l>
+                <l
+                    n="1310">nec minus et bacas alii prope marmora curvis</l>
+                <l
+                    n="1311">excudunt conchis: pars rursum divite cura</l>
+                <l
+                    n="1312">herbosi lapidis venas fodit: hique rubore</l>
+                <l
+                    n="1313">suffusas blando quaerunt campis amethystos.</l>
+                <l
+                    n="1314">horum dives enim tellus est Indica semper,</l>
+                <l
+                    n="1315">et tali scrupo caespes tumet: amnibus autem</l>
+                <l
+                    n="1316">fertilis irriguis crebro praelambitur ora:</l>
+                <l
+                    n="1317">extendunt celsi vaga late brachia luci,</l>
+                <l
+                    n="1318">et vernat nemorum semper coma. nunc tibi formam</l>
+                <l
+                    n="1319">terrarum expediam, nunc carmine flumina fabor,</l>
+                <l
+                    n="1320">nunc rigidos montes, nunc multae denique gentis</l>
+                <l
+                    n="1321">absolvam populos. latera agris undique in Indis</l>
+                <l
+                    n="1322">quattuor esse tene: coeant tot et anguli ab omni</l>
+                <l
+                    n="1323">parte sibi, oblique claudentes extima terrae,</l>
+                <l
+                    n="1324">ceu species rhombo est. zephyri de partibus, Indus</l>
+                <l
+                    n="1325">gurgitis occursu fit certae terminus orae:</l>
+                <l
+                    n="1326">axe noti, Rubri late salis obiacet unda:</l>
+                <l
+                    n="1327">flumen item Ganges fit limes caespiti eoo;</l>
+                <l
+                    n="1328">adque Lycaonia consurgit Caucasus arcto.</l>
+                <l
+                    n="1329">aequore qua fuso laticem provolvitur Indus,</l>
+                <l
+                    n="1330">Dardanidum gens est, ubi magnus sorbet Hydaspes</l>
+                <l
+                    n="1331">delapsum summa saxorum mole Acesinen.</l>
+                <l
+                    n="1332">tertius amnis item secat agri proxima Cofes;</l>
+                <l
+                    n="1333">in medioque Sabae sunt caespite: gens quoque Sodri</l>
+                <l
+                    n="1334">propter agit; populique dehinc velut ordine facto</l>
+                <l
+                    n="1335">Peucaleum longas exercent vomere terras.</l>
+                <l
+                    n="1336">Gargaridae rursum: gens haec obnoxia Baccho,</l>
+                <l
+                    n="1337">et glebam sulcant, et ritibus orgia ludunt.</l>
+                <l
+                    n="1338">Hic Hypanis lateque trahens vaga terga Cymander,</l>
+                <l
+                    n="1339">rupe procul fulvum provolvunt fluctibus aurum:</l>
+                <l
+                    n="1340">nec minus hi campos intrant Gangetidis orae,</l>
+                <l
+                    n="1341">quae per flabra noti fuso distenditur agro,</l>
+                <l
+                    n="1342">usque in celsa iacens confinia Colidis arcis.</l>
+                <l
+                    n="1343">Colis et ipsa dehinc cetosi vergit in aequor</l>
+                <l
+                    n="1344">Oceani, tantoque iugo subit aetheris auras,</l>
+                <l
+                    n="1345">arceat alituum subducta ut rupe volatum.</l>
+                <l
+                    n="1346">sed circum Gangen regio est devota Lyaeo,</l>
+                <l
+                    n="1347">perpetuique sacri talis narratur origo.</l>
+                <l
+                    n="1348">Indorum in populos fatalia Liber agebat</l>
+                <l
+                    n="1349">proelia: vipereo late Bellona flagello</l>
+                <l
+                    n="1350">increpat, et magno tremuerunt regna pavore,</l>
+                <l
+                    n="1351">insistente deo. venit ergo ad flumina Gangis,</l>
+                <l
+                    n="1352">discursuque sacro praeludit proelia Liber.</l>
+                <l
+                    n="1353">Maenades extemplo maculosae nebridis usum</l>
+                <l
+                    n="1354">permutant clipeis, viridique hastilia thyrso</l>
+                <l
+                    n="1355">succedunt; solvunt properantes lintea Bacchae</l>
+                <l
+                    n="1356">vincula, viroso pectus vinxere dracone;</l>
+                <l
+                    n="1357">pro molli vitta prorepunt crine chelydri;</l>
+                <l
+                    n="1358">excitoque ferox persultat in agmine Mavors:</l>
+                <l
+                    n="1359">dux aquilas in bella rapit, tremit Indica tellus</l>
+                <l
+                    n="1360">pressa pede, et toto tonuerunt classica caelo.</l>
+                <l
+                    n="1361">ergo et Nysaeos discit gens rite recessus,</l>
+                <l
+                    n="1362">et stata sollicito deducunt orgia ritu.</l>
+                <l
+                    n="1363">ipse dehinc diros ut Liber perculit Indos,</l>
+                <l
+                    n="1364">Hemodi victor conscendit verticis arces,</l>
+                <l
+                    n="1365">effusamque solo gentem procul aspicit omnem:</l>
+                <l
+                    n="1366">ima iugi extantis vestigia gurgite canent.</l>
+                <l
+                    n="1367">Oceani eoi praetento denique Bacchus</l>
+                <l
+                    n="1368">litore, et extrema terrarum victor in ora,</l>
+                <l
+                    n="1369">ducit laurigeros post Indica bella triumphos,</l>
+                <l
+                    n="1370">erigit et geminas telluris fine columnas,</l>
+                <l
+                    n="1371">invisitque dehinc Ismeni fluminis undam.</l>
+                <l
+                    n="1372">Has tantum gentes commendat fama per orbem.</l>
+                <l
+                    n="1373">vile aliae vulgus, pecorum vice, terga pererrant</l>
+                <l
+                    n="1374">caespitis abiecti: non his aut gloria forti</l>
+                <l
+                    n="1375">parta manu est, aut clara decus peperere metalla</l>
+                <l
+                    n="1376">terrarum venis: habitant ignota locorum</l>
+                <l
+                    n="1377">semper inexpertes famae, per inhospita degunt</l>
+                <l
+                    n="1378">arva procul, nullis sunt dignae denique musis.</l>
+                <l
+                    n="1379">at tu, Phoebe pater, vos clari turba, camenae,</l>
+                <l
+                    n="1380">nominis, Aonio famam inspirate labori.</l>
+           
+        </body>
+    </text>
+</TEI>
