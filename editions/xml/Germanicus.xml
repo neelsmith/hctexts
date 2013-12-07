@@ -1,0 +1,1479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/teilite.rng" type="xml"?>
+<TEI
+    xmlns="http://www.tei-c.org/ns/1.0"
+    xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Aratea</title>
+                <author>Claudius Germanicus Caesar</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>New XML edition</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>XML text based on web page 
+                    
+                submitted to the Latin Library
+                web site by Juan José Marcos (Plasencia, Spain) 
+                from the edition of A. Breysig (1899).
+                </p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <l
+                n="1">Ab Iove principium magno deduxit Aratus,</l>
+            <l
+                n="2">carminis at nobis, genitor, tu maximus auctor,</l>
+            <l
+                n="3">te veneror, tibi sacra fero doctique laboris</l>
+            <l
+                n="4">primitias. probat ipse deum rectorque satorque.</l>
+            <l
+                n="5">quantum etenim possent anni certissima signa,</l>
+            <l
+                n="6">qua sol ardentem cancrum rapidissimus ambit</l>
+            <l
+                n="7">diversasque secat metas gelidi capricorni</l>
+            <l
+                n="8">quave aries et libra aequant divortia lucis,</l>
+            <l
+                n="9">si non tanta quies, te praeside, puppibus aequor</l>
+            <l
+                n="10">cultorique daret terras, procul arma silerent?</l>
+            <l
+                n="11">nunc vacat audacis in caelum tollere vultus</l>
+            <l
+                n="12">sideraque et mundi varios cognoscere motus,</l>
+            <l
+                n="13">navita quid caveat, quid scitus vitet arator,</l>
+            <l
+                n="14">quando ratem ventis aut credat semina terris.</l>
+            <l
+                n="15">haec ego dum Latiis conor praedicere Musis,</l>
+            <l
+                n="16">pax tua tuque adsis nato numenque secundes!</l>
+            <l
+                n="17">Cetera, quae toto fulgent vaga sidera mundo,</l>
+            <l
+                n="18">indefessa trahit proprio cum pondere caelum.</l>
+            <l
+                n="19">axis at immotus semper vestigia servat</l>
+            <l
+                n="20">libratasque tenet terras et cardine firmo</l>
+            <l
+                n="21">orbem agit. extremum geminus determinat axem,</l>
+            <l
+                n="22">quem Grai dixere polon; pars mersa sub undas</l>
+            <l
+                n="23">oceani, pars celsa sub horrifero aquilone.</l>
+            <l
+                n="24">Axem Cretaeae dextra laevaque tuentur</l>
+            <l
+                n="25">sive arctoe seu Romani cognominis ursae</l>
+            <l
+                n="26">plaustrave, quae facies stellarum proxima vero:</l>
+            <l
+                n="27">tres temone rotisque micant sublime quaternae.</l>
+            <l
+                n="28">si melius dixisse feras, obversa refulgent</l>
+            <l
+                n="29">ora feris; caput alterius super horrida terga</l>
+            <l
+                n="30">alterius lucet; pronas rapit orbis in ipsos</l>
+            <l
+                n="31">declivis umeros. veteri si gratia famae,</l>
+            <l
+                n="32">Cresia vos tellus aluit, moderator Olympi</l>
+            <l
+                n="33">donavit caelo; meritum custodia fecit,</l>
+            <l
+                n="34">quod fidae comites prima incunabula magni</l>
+            <l
+                n="35">foverunt Iovis, attonitae cum furta parentis</l>
+            <l
+                n="36">aerea pulsantes mendaci cymbala dextra,</l>
+            <l
+                n="37">vagitus pueri patrias ne tangeret auris,</l>
+            <l
+                n="38">Dictaei texere adytis famuli Corybantes.</l>
+            <l
+                n="39">hinc Iovis altrices Helice Cynosuraque fulgent.</l>
+            <l
+                n="40">dat Grais Helice cursus maioribus astris,</l>
+            <l
+                n="41">Phoenicas Cynosura regit. sed candida tota</l>
+            <l
+                n="42">et liquido splendore Helice nitet; haut prius ulla,</l>
+            <l
+                n="43">cum sol oceano fulgentia condidit ora,</l>
+            <l
+                n="44">stella micat caelo, septem quam Cresia flammis.</l>
+            <l
+                n="45">certior est Cynosura tamen sulcantibus aequor,</l>
+            <l
+                n="46">quippe brevis totam fido se cardine vertit</l>
+            <l
+                n="47">Sidoniamque ratem numquam spectata fefellit.</l>
+            <l
+                n="48">Has inter medias abrupti fluminis instar</l>
+            <l
+                n="49">immanis serpens sinuosa volumina torquet</l>
+            <l
+                n="50">hinc atque hinc superaque illas mirabile monstrum.</l>
+            <l
+                n="51">cauda Helicen supra tendit, redit ad Cynosuran</l>
+            <l
+                n="52">squamigero lapsu; qua desinit ultima cauda,</l>
+            <l
+                n="53">hac caput est Helices; flexu comprenditur alto</l>
+            <l
+                n="54">serpentis Cynosura; ille explicat amplius orbes</l>
+            <l
+                n="55">sublatusque retro maiorem respicit arcton.</l>
+            <l
+                n="56">ardent ingentes oculi, cava tempora claris</l>
+            <l
+                n="57">ornantur flammis, mento sedet unicus ignis.</l>
+            <l
+                n="58">tempus dexterius qua signat stella draconis</l>
+            <l
+                n="59">quaque sedet mentum, lucetque novissima cauda</l>
+            <l
+                n="60">extremumque Helices sidus micat. hac radiatur</l>
+            <l
+                n="61">serpentis declive caput, qua proxima signa</l>
+            <l
+                n="62">occasus ortusque uno tanguntur ab orbe,</l>
+            <l
+                n="63">oceani tumidis ignotae fluctibus arctoe,</l>
+            <l
+                n="64">semper inocciduis servantes ignibus axem.</l>
+            <l
+                n="65">Haud procul effigies inde est defecta labore.</l>
+            <l
+                n="66">non illi nomen, non magni causa laboris,</l>
+            <l
+                n="67">dextro namque genu nixus diversaque tendens</l>
+            <l
+                n="68">bracchia, suppliciter passis ad numina palmis.</l>
+            <l
+                n="69">serpentis capiti figit vestigia laeva.</l>
+            <l
+                n="70">Tum fessi subter costas atque ardua terga</l>
+            <l
+                n="71">clara Ariadnaeo sacratast igne corona,</l>
+            <l
+                n="72">hunc illi Bacchus thalami memor addit honorem.</l>
+            <l
+                n="73">terga nitent stellis, at qua se vertice tollit</l>
+            <l
+                n="74">succiduis genibus lassum et miserabile sidus,</l>
+            <l
+                n="75">hac ophiuchus erit longe caput ante notabis</l>
+            <l
+                n="76">et vastos umeros, tum cetera membra sequuntur.</l>
+            <l
+                n="77">illis languet honos, umeris manet integer ardor,</l>
+            <l
+                n="78">luna etiam mensem cum pleno dividit orbe.</l>
+            <l
+                n="79">lux tenuis manibus, per quas elabitur anguis,</l>
+            <l
+                n="80">pressus utraque manu, medium cingens ophiuchum.</l>
+            <l
+                n="81">scorpios ima pedum tangit, sed planta sinistra</l>
+            <l
+                n="82">in tergo residet, vestigia dextera pendent.</l>
+            <l
+                n="83">impar est manibus pondus, nam dextera parvam</l>
+            <l
+                n="84">partem anguis retinet, per laevam attollitur omnis,</l>
+            <l
+                n="85">quantumque ab laeva distantia serta notantur,</l>
+            <l
+                n="86">erigitur tantum serpens atque ultima mento</l>
+            <l
+                n="87">ste]la sub aetheria lucet crinita corona.</l>
+            <l
+                n="88">at qua se dorso sinuabit lubricus anguis</l>
+            <l
+                n="89">insigni caelum perfundent lumine chelae.</l>
+            <l
+                n="90">Ipsam Helicen sequitur senior baculoque minatur,</l>
+            <l
+                n="91">sive ille arctophylax seu Bacchi ob munera caesus</l>
+            <l
+                n="92">Icarus ereptam pensavit sidere vitam.</l>
+            <l
+                n="93">non illi obscurum caput est, non tristia membra,</l>
+            <l
+                n="94">sed proprio tamen una micat sub nomine flamma,</l>
+            <l
+                n="95">arcturum dixere, sinus qua vincula nodant.</l>
+            <l
+                n="96">Virginis inde subest facies, cui plena sinistra</l>
+            <l
+                n="97">fulget spica manu maturisque ardet aristis.</l>
+            <l
+                n="98">quam te, diva, vocem? tangunt mortalia si te</l>
+            <l
+                n="99">carmina nec surdam praebes venerantibus aurem,</l>
+            <l
+                n="100">exosa heu mortale genus, medio mihi cursu</l>
+            <l
+                n="101">stabunt quadrupedes et flexis laetus habenis</l>
+            <l
+                n="102">teque tuumque canam terris venerabile numen.</l>
+            <l
+                n="103">Aurea pacati regeres cum saecula mundi,</l>
+            <l
+                n="104">Iustitia inviolata malis, placidissima virgo,</l>
+            <l
+                n="105">sive illa Astraei genus es, quem fama parentem</l>
+            <l
+                n="106">tradidit astrorum, seu vera intercidit aevo</l>
+            <l
+                n="107">ortus fama tui, mediis te laeta ferebas</l>
+            <l
+                n="108">sublimis populis nec dedignata subire</l>
+            <l
+                n="109">tecta hominum et puros sine crimine, diva, penatis</l>
+            <l
+                n="110">iura dabas cultuque novo rude vulgus in omnem</l>
+            <l
+                n="111">formabas vitae sinceris artibus usum.</l>
+            <l
+                n="112">nondum vesanos rabies nudaverat ensis</l>
+            <l
+                n="113">nec consanguineis fuerat discordia nota,</l>
+            <l
+                n="114">ignotique maris cursus privataque tellus</l>
+            <l
+                n="115">grata satis, neque per dubios avidissima ventos</l>
+            <l
+                n="116">spes procul amotas fabricata nave petebat</l>
+            <l
+                n="117">divitias, fructusque dabat placata colono</l>
+            <l
+                n="118">sponte sua tellus nec parvi terminus agri</l>
+            <l
+                n="119">praestabat dominis, sine eo tutissima, rura.</l>
+            <l
+                n="120">At postquam argenti crevit deformior aetas</l>
+            <l
+                n="121">rarius invisit maculatas fraudibus urbis</l>
+            <l
+                n="122">seraque ab excelsis descendens montibus ore</l>
+            <l
+                n="123">velato tristique genas abscondita rica,</l>
+            <l
+                n="124">nulliusque larem, nullos adit illa penatis.</l>
+            <l
+                n="125">tantum cum trepidum vulgus coetusque notavit</l>
+            <l
+                n="126">increpat "o patrum suboles oblita priorum,</l>
+            <l
+                n="127">degeneres semper semperque habitura minores,</l>
+            <l
+                n="128">quid me, cuius abit usus, per vota vocatis?</l>
+            <l
+                n="129">quaerenda est sedes nobis nova, saecula vestra</l>
+            <l
+                n="130">artibus indomitis tradam scelerique cruento";</l>
+            <l
+                n="131">haec effata super montis abit alite cursu,</l>
+            <l
+                n="132">attonitos linquens populos graviora paventis.</l>
+            <l
+                n="133">Aerea sed postquam proles terris data nec iam</l>
+            <l
+                n="134">semina virtutis vitiis demersa resistunt</l>
+            <l
+                n="135">ferrique invento mens est laetata metallo</l>
+            <l
+                n="136">polluit et taurus mensas assuetus aratro,</l>
+            <l
+                n="137">deservit propere terras iustissima virgo</l>
+            <l
+                n="138">et caelist sortita locum, qua proximus illi</l>
+            <l
+                n="139">tardus in occasum sequitur sua plaustra Bootes.</l>
+            <l
+                n="140">Virginis at placidae praestanti lumine signat</l>
+            <l
+                n="141">stella umeros. Helicen ignis non clarior ambit,</l>
+            <l
+                n="142">quique micat cauda quique armum fulget ad ipsum</l>
+            <l
+                n="143">quique priora tenet vestigia quique secunda</l>
+            <l
+                n="144">clunibus hirsutis et qui sua sidera reddit,</l>
+            <l
+                n="145">namque alii, quibus expletur cervixque caputque,</l>
+            <l
+                n="146">vatibus ignoti priscis sine honore feruntur.</l>
+            <l
+                n="147">Qua media est Helice, subiectum respice cancrum;</l>
+            <l
+                n="148">at capiti suberunt gemini. qua posterior pes,</l>
+            <l
+                n="149">horrentisque iubas et fulvum cerne leonem.</l>
+            <l
+                n="150">hunc ubi contigerit Phoebi violentior axis,</l>
+            <l
+                n="151">accensa in cancro iam tum geminabitur aestas.</l>
+            <l
+                n="152">tunc lymphae tenues, tunc est tristissima tellus</l>
+            <l
+                n="153">et densas laetus segetes bene condit arator.</l>
+            <l
+                n="154">ne mihi tunc remis pulset vada caerula puppis;</l>
+            <l
+                n="155">dem potius ventis excusso vela rudente</l>
+            <l
+                n="156">excipiamque sinu zephyris spirantibus auras.</l>
+            <l
+                n="157">Est etiam aurigae facies, sine Atthide terra</l>
+            <l
+                n="158">natus Erichthonius, qui primus sub iuga duxit</l>
+            <l
+                n="159">quadrupedes, seu Myrtoas demersus in undas</l>
+            <l
+                n="160">Myrtilos. hunc potius species in sidere reddit,</l>
+            <l
+                n="161">sic nulli currus, sic ruptis maestus habenis</l>
+            <l
+                n="162">perfidia Pelopis raptam gemit Hippodamiam.</l>
+            <l
+                n="163">ipse ingens transversus abit laeva geminorum</l>
+            <l
+                n="164">maiorisque ursae contra delabitur ora.</l>
+            <l
+                n="165">numina praeterea secum trahit, una putatur</l>
+            <l
+                n="166">nutrix esse Iovis, si vere Iuppiter infans</l>
+            <l
+                n="167">ubera Cretaeae mulsit fidissima caprae,</l>
+            <l
+                n="168">sidere quae claro gratum testatur alumnum.</l>
+            <l
+                n="169">hanc Auriga umero totam gerit, at manus haedos</l>
+            <l
+                n="170">ostendit, nautis inimicum sidus, ubi illos</l>
+            <l
+                n="171">orbis ab oceano celsos rapit; haut semel haedi</l>
+            <l
+                n="172">iactatam videre ratem nautasque paventis</l>
+            <l
+                n="173">sparsaque per saevos morientum corpora fluctus.</l>
+            <l
+                n="174">Aurigae pedibus trux adiacet ignea taurus,</l>
+            <l
+                n="175">cornua fronte gerens et lucidus ore minaci.</l>
+            <l
+                n="176">quamlibet ignarum caeli sua forma docebit,</l>
+            <l
+                n="177">et caput et patulae naris et cornua tauri.</l>
+            <l
+                n="178">fronte micant hyades. qua cornus flamma sinistri</l>
+            <l
+                n="179">summa tenet, subit haec eadem vestigia dextra</l>
+            <l
+                n="180">aurigae mediaque ligat compagine divos.</l>
+            <l
+                n="181">Myrtilos exoritur summo cum fluctibus ore,</l>
+            <l
+                n="182">totus cum tauro lucet; ruit oceano bos</l>
+            <l
+                n="183">ante, super terras cum fulget Myrtilos ore.</l>
+            <l
+                n="184">Iasides etiam caelum cum coniuge Cepheus</l>
+            <l
+                n="185">ascendit totaque domo, quia Iuppiter auctor</l>
+            <l
+                n="186">est generis: prodest maiestas saepe parentis.</l>
+            <l
+                n="187">ipse brevem patulis manibus stat post Cynosuram</l>
+            <l
+                n="188">diducto passu. quantum latus a pede dextro</l>
+            <l
+                n="189">Cepheos extremam tangit Cynosurida caudam,</l>
+            <l
+                n="190">tantundem ab laevo distat; minor utraque iungit</l>
+            <l
+                n="191">regula Cepheos vestigia. balteus ambit</l>
+            <l
+                n="192">qua latus, ad flexum sinuosi respicit anguis.</l>
+            <l
+                n="193">Cassiepia virum residet sublimis ad ipsum,</l>
+            <l
+                n="194">clara, etiam pernox caelo cum luna refulsit,</l>
+            <l
+                n="195">sed brevis et paucis decorata in sidere flammis.</l>
+            <l
+                n="196">qualis ferratos subicit clavicula dentes,</l>
+            <l
+                n="197">succutit et foribus praeducti vincula claustri,</l>
+            <l
+                n="198">talis disposita est stellis. ipsa horrida vultu</l>
+            <l
+                n="199">sic tendit palmas, ceu sit planctura relictam</l>
+            <l
+                n="200">Andromedam, meritae non iusta piacula matris.</l>
+            <l
+                n="201">Nec procul Andromede, totam quam cernere posse</l>
+            <l
+                n="202">obscura sub nocte licet, sic emicat ore,</l>
+            <l
+                n="203">sic magnis umeris candet nitor. hanc media abit</l>
+            <l
+                n="204">ignea substricta lucet qua zonula palla.</l>
+            <l
+                n="205">sed poenae facies remanet districtaque pandit</l>
+            <l
+                n="206">bracchia, ceu duri teneantur robore saxi.</l>
+            <l
+                n="207">Andromedae capiti sonipes supereminet ales,</l>
+            <l
+                n="208">vertice et Andromedae radiat quae stella, sub ipsa</l>
+            <l
+                n="209">alvo fulget equi, tres armos et latera aequis</l>
+            <l
+                n="210">distinguunt spatiis, capiti tristissima forma</l>
+            <l
+                n="211">et cervix sine honore obscuro lumine sordet.</l>
+            <l
+                n="212">spumanti mandit sed qua ferus ore lupata,</l>
+            <l
+                n="213">et capite et longa cervice insignior exit</l>
+            <l
+                n="214">stella nitens armis laterique simillima magno.</l>
+            <l
+                n="215">nec totam ille tamen formam per singula reddit.</l>
+            <l
+                n="216">primo praestat equum, medio rupta ordine membra</l>
+            <l
+                n="217">destituunt visus, rudis inde adsurgit imago.</l>
+            <l
+                n="218">Gorgonis hic proles. in Pierio Helicone,</l>
+            <l
+                n="219">vertice cum summo nondum decurreret unda,</l>
+            <l
+                n="220">Museos fontis dextri pedis ictibus hausit.</l>
+            <l
+                n="221">inde liquor genitus nomen tenet Hippocrenes;</l>
+            <l
+                n="222">fontes nomen habent. sed Pegasus aethere summo</l>
+            <l
+                n="223">velocis agitat pennas et sidere gaudet.</l>
+            <l
+                n="224">Inde subest aries, qui longe maxima currens</l>
+            <l
+                n="225">orbe suo spatia ad finem non tardius ursa</l>
+            <l
+                n="226">pervenit et quanto graviore Lycaonis arctos</l>
+            <l
+                n="227">axem actu torquet, tanto pernicior ille</l>
+            <l
+                n="228">distantis cornu properat contingere metas.</l>
+            <l
+                n="229">clara nec est illi facies nec sidera possunt,</l>
+            <l
+                n="230">officiat si luna, sua virtute nitere.</l>
+            <l
+                n="231">sed quaerendus erit zonae e regione micantis</l>
+            <l
+                n="232">Andromedae; terit hic medii divortia mundi,</l>
+            <l
+                n="233">ut chelae, candens ut balteus Orionis.</l>
+            <l
+                n="234">Est etiam propiore deum cognoscere signo,</l>
+            <l
+                n="235">deltoton si quis donum hoc spectabile Nili</l>
+            <l
+                n="236">divitibus generatum undis in sede notabit.</l>
+            <l
+                n="237">tris illi laterum ductus, aequata duorum</l>
+            <l
+                n="238">sunt spatia, unius brevior, sed clarior igne.</l>
+            <l
+                n="239">hunc aries iuxta. medium deltoton habebit</l>
+            <l
+                n="240">inter lanigeri tergum et Cepheida maestam.</l>
+            <l
+                n="241">Huc ultra gemini pisces, quorum alter in austrum</l>
+            <l
+                n="242">tendit, Threicium boream petit alter et audit</l>
+            <l
+                n="243">stridentis auras, niveus quas procreat Haemus.</l>
+            <l
+                n="244">non illis liber cursus, sed vincula cauda</l>
+            <l
+                n="245">singula utrumque tenent uno coeuntia nodo.</l>
+            <l
+                n="246">nodum stella premit. piscis, qui respicit auras</l>
+            <l
+                n="247">Threicias, dextram Andromedae cernetur ad ulnam.</l>
+            <l
+                n="248">Subter utrumque pedem devotae virginis ales</l>
+            <l
+                n="249">Perseos effigies, servatae grata puellae.</l>
+            <l
+                n="250">moles ipsa Çiri satis est testata parentem,</l>
+            <l
+                n="251">tantus ubique micat, tantum occupat ab Iove caeli.</l>
+            <l
+                n="252">dextra sublata solium prope Cassiepiae</l>
+            <l
+                n="253">sublimis fulget pedibus properare videtur</l>
+            <l
+                n="254">et velle aligeris purum aethera findere plantis.</l>
+            <l
+                n="255">Poplite sub laevo, tauri certissima signa,</l>
+            <l
+                n="256">Pleiades suberunt brevis et locus occupat omnes,</l>
+            <l
+                n="257">nec faciles cerni, nisi quod coeuntia plura</l>
+            <l
+                n="258">sidera communem ostendunt ex omnibus ignem.</l>
+            <l
+                n="259">septem traduntur numero, sed carpitur una,</l>
+            <l
+                n="260">deficiente oculo distinguere corpora parva.</l>
+            <l
+                n="261">nomina sed cunctis servavit fida vetustas:</l>
+            <l
+                n="262">Electra Alcyoneque Celaenoque Meropeque</l>
+            <l
+                n="263">Asteropeque et Taygete et Maia parente</l>
+            <l
+                n="264">caelifero genitae, si vere sustinet Atlas</l>
+            <l
+                n="265">regna Iovis superosque atque ipso pondere gaudet.</l>
+            <l
+                n="266">lumine non multis Plias certaverit astris,</l>
+            <l
+                n="267">praecipuo sed honore ostendit tempora bina,</l>
+            <l
+                n="268">cum primum agricolam ventus *super immovet atri</l>
+            <l
+                n="269">et cum surgit hiems, portu fugienda peritis.</l>
+            <l
+                n="270">Quin etiam lyra Mercurio dilecta, deorum</l>
+            <l
+                n="271">*plurimulum accepte prohs caelo nitet ante labore</l>
+            <l
+                n="272">devictam effigiem planta erecta *quoque dextra</l>
+            <l
+                n="273">tempora laeva premit torti subiecta draconis.</l>
+            <l
+                n="274">summa genu subvorsa tenet, qua se lyra volvit.</l>
+            <l
+                n="275">Contra spectat avem vel Phoebi quae fuit olim</l>
+            <l
+                n="276">cygnus vel Ledae thalamis qui illapsus adulter</l>
+            <l
+                n="277">furta Iovis falsa volucer sub imagine texit.</l>
+            <l
+                n="278">inter defectum sidus cygnumque nitentem</l>
+            <l
+                n="279">Mercurialis habet sedem Lyra. multa videbis</l>
+            <l
+                n="280">stellarum vacua in cygno, multa ignea rursus</l>
+            <l
+                n="281">aut medii fulgoris erunt. penna utraque laeta,</l>
+            <l
+                n="282">dexterior iuxta regalem Cepheos ulnam,</l>
+            <l
+                n="283">at laeva fugit instantem sibi Pegason ala.</l>
+            <l
+                n="284">piscibus interlucet equi latus, ad caput eius,</l>
+            <l
+                n="285">dextra manus latices qua fundit, aquarius exit.</l>
+            <l
+                n="286">quo prior aegoceros semper properare videtur</l>
+            <l
+                n="287">oceano mersus sopitas condere flammas.</l>
+            <l
+                n="288">tum brevis occasus ortusque intercipit hora,</l>
+            <l
+                n="289">cum sol ambierit metas gelidi capricorni.</l>
+            <l
+                n="290">nam neque perficiet cursus et vota brevis lux,</l>
+            <l
+                n="291">et cum terrores auget nox atra marinos,</l>
+            <l
+                n="292">multum clamatos frustra exspectaveris ortus.</l>
+            <l
+                n="293">tunc rigor aut rapidus ponto tunc incubat auster;</l>
+            <l
+                n="294">pigra ministeria, et nautis tremor alligat artus.</l>
+            <l
+                n="295">sed rationem animi temeraria pectora solvunt,</l>
+            <l
+                n="296">nulla dies oritur, quae iam vacua aequora cernat</l>
+            <l
+                n="297">puppibus, et semper tumidis ratis innatat undis.</l>
+            <l
+                n="298">in terra temptare undas iuvat, aspera sed cum</l>
+            <l
+                n="299">adsultat lateri deprensae spuma carinae,</l>
+            <l
+                n="300">tunc alii curvos prospectant litore portus</l>
+            <l
+                n="301">inventasque alii terras pro munere narrant,</l>
+            <l
+                n="302">interea exanimat pavidos instantis aquae mons.</l>
+            <l
+                n="303">ast alii procul a terra iactantur in altum,</l>
+            <l
+                n="304">munit eos breve lignum et fata instantia pellit,</l>
+            <l
+                n="305">nam tantum a leto, quantum rate fluctibus, absunt.</l>
+            <l
+                n="306">Belligeri Titan magnum cum contigit arcum</l>
+            <l
+                n="307">ducentemque ferum sinuato spicula nervo,</l>
+            <l
+                n="308">iam clausum ratione mare est, iam navita portu</l>
+            <l
+                n="309">infestam noctem fugitat longasque tenebras.</l>
+            <l
+                n="310">signum erit exoriens nobis tum nocte suprema</l>
+            <l
+                n="311">scorpios, ille micat super freta caerula cauda.</l>
+            <l
+                n="312">insequitur gravis arcus et in lucem magis exit.</l>
+            <l
+                n="313">tunc alto Cynosura redit, tunc totus in undas</l>
+            <l
+                n="314">mergitur Orion, umeris et vertice Cepheus.</l>
+            <l
+                n="315">Est etiam, incertum quo cornu missa sagitta,</l>
+            <l
+                n="316">quam servat Iovis ales. habet miracula nulla,</l>
+            <l
+                n="317">si caelum ascendit Iovis armiger. hic tamen arvo</l>
+            <l
+                n="318">unguibus innocuis Phrygio rapuit Ganymeden</l>
+            <l
+                n="319">et telo appositus custos, cum Iuppiter arsit</l>
+            <l
+                n="320">in puero, luit excidio quem Troia furorem.</l>
+            <l
+                n="321">Delphin inde brevis lucet iuxta capricornum</l>
+            <l
+                n="322">paucis sideribus, tulit hic Atlantida Nymphen</l>
+            <l
+                n="323">in thalamos, Neptune, tuos, miseratus amantem.</l>
+            <l
+                n="324">Sidera, quae mundi pars celsior aethere volvit</l>
+            <l
+                n="325">quaeque vident boream ventis adsueta serenis,</l>
+            <l
+                n="326">diximus. hinc alius declivis ducitur ordo,</l>
+            <l
+                n="327">sentit et insanos obscuris flatibus austros.</l>
+            <l
+                n="328">Primus in obliquum rapitur sub pectore tauri</l>
+            <l
+                n="329">Orion. non ulla magis vicina notabit</l>
+            <l
+                n="330">stella virum, sparsae quam toto corpore flammae;</l>
+            <l
+                n="331">tale caput, magnisque umeris sic balteus ardet,</l>
+            <l
+                n="332">sic vagina ensis, pernici sic pede lucet.</l>
+            <l
+                n="333">talis ei custos aderit canis ore timendo.</l>
+            <l
+                n="334">ore vomit flammam, membris contemptior ignis.</l>
+            <l
+                n="335">Sirion hunc Grai proprio sub nomine dicunt.</l>
+            <l
+                n="336">cum tetigit solis radios, accenditur aestas,</l>
+            <l
+                n="337">discernitque ortu longe sata, vivida firmat,</l>
+            <l
+                n="338">at quibus adfectae frondes aut languida radix,</l>
+            <l
+                n="339">exanimat. nullo gaudet maiusve minusve</l>
+            <l
+                n="340">agricola et sidus primo speculatur ab ortu.</l>
+            <l
+                n="341">Auritum leporem sequitur canis et fugit ille,</l>
+            <l
+                n="342">sic utrumque oritur, sic occidit in freta sidus.</l>
+            <l
+                n="343">tu parvum leporem rimare sub Orione.</l>
+            <l
+                n="344">At qua cauda canis languenti desinit astro,</l>
+            <l
+                n="345">fulgent Argoae stellis aplustria puppis,</l>
+            <l
+                n="346">puppe etenim trahitur, non recto libera cursu,</l>
+            <l
+                n="347">ut cum decurrens inhibet iam navita remos</l>
+            <l
+                n="348">aversamque ratem votis damnatus ad oram</l>
+            <l
+                n="349">perligat, optatam cupiens contingere terram.</l>
+            <l
+                n="350">sed quia pars violata fuit, coeuntia saxa</l>
+            <l
+                n="351">numine Iunonis tutus cum fugit Iason,</l>
+            <l
+                n="352">haec micat in caelo, lateri non amplior auctus,</l>
+            <l
+                n="353">quam surgit malus; qua debet reddere proram,</l>
+            <l
+                n="354">intercepta perit nulla sub imagine forma;</l>
+            <l
+                n="355">puppis demisso tantum stat lucida clavo.</l>
+            <l
+                n="356">Haud procul expositam sequitur Nereia pristis</l>
+            <l
+                n="357">Andromedam. media est Solis via, cum tamen illa</l>
+            <l
+                n="358">terretur monstro pelagi gaudetque sub axe</l>
+            <l
+                n="359">diverso posita et boreae vicina legenti.</l>
+            <l
+                n="360">auster pristin agit. duo sidera perlegit unum,</l>
+            <l
+                n="361">namque aries supra pristin piscesque feruntur.</l>
+            <l
+                n="362">belua sed ponti non multum praeterit amnem,</l>
+            <l
+                n="363">amnem, qui Phaethonta suas deflevit ad undas,</l>
+            <l
+                n="364">postquam patris equos non aequo pondere rexit,</l>
+            <l
+                n="365">vulnere reddentem flammas Iovis; hunc, nova silva,</l>
+            <l
+                n="366">planxere ignotis maestae Phaethontides ulnis.</l>
+            <l
+                n="367">Eridanus medius liquidis interiacet astris.</l>
+            <l
+                n="368">huius pars undae laevum ferit Orionis</l>
+            <l
+                n="369">lapsa pedem. procul ambobus qui piscibus unus</l>
+            <l
+                n="370">vincula conectit, nodus cristam super ipsam</l>
+            <l
+                n="371">aequoreae pristis radiat. sunt libera caelo</l>
+            <l
+                n="372">sidera non ullam specie reddentia formam</l>
+            <l
+                n="373">sub leporis latus aversam post denique puppim</l>
+            <l
+                n="374">inter et Eridani flexus clavumque carinae.</l>
+            <l
+                n="375">atque haec ipsa notast nullam praebere figuram,</l>
+            <l
+                n="376">sunt etenim toto sparsi sine nomine mundo</l>
+            <l
+                n="377">inter signa ignes, quibus etsi propria desit</l>
+            <l
+                n="378">forma, per appositi noscuntur lumina signi.</l>
+            <l
+                n="379">Est etiam a geminis diversus piscibus unus,</l>
+            <l
+                n="380">qui borean fugitat, totus directus in austros,</l>
+            <l
+                n="381">ventre sub aegoceri, pristin conversus ad imam.</l>
+            <l
+                n="382">infimus hydrochoos sed qua vestigia figit,</l>
+            <l
+                n="383">sunt aliae stellae; qua caudam belua flectit</l>
+            <l
+                n="384">quaque caput piscis, media regione locatae</l>
+            <l
+                n="385">nullum nomen habent nec causast nominis ulla,</l>
+            <l
+                n="386">sic tenuis cunctis iam paene evanuit ardor.</l>
+            <l
+                n="387">nec procul hinc dextra defundit aquarius undas</l>
+            <l
+                n="388">atque imitata cadunt errantis signa liquoris.</l>
+            <l
+                n="389">e quibus una magis sub cauda flamma relucet</l>
+            <l
+                n="390">squamigerae pristis, pedibus subit altera signi</l>
+            <l
+                n="391">fundentis latices. est et sine honore corona</l>
+            <l
+                n="392">ante sagittiferi paullum pernicia crura.</l>
+            <l
+                n="393">Scorpios erecta torquet qua spicula cauda,</l>
+            <l
+                n="394">turibulum vicinum austris sacro igne videbis</l>
+            <l
+                n="395">arcturum contra; sed quanto tardius ille</l>
+            <l
+                n="396">oceanum occasu tangit, tanto magis artae</l>
+            <l
+                n="397">turibuli metae. vix caelum suspicit et iam</l>
+            <l
+                n="398">praecipiti tractu vastis dimittitur undis.</l>
+            <l
+                n="399">multa dedit natura homini rata signa salutis</l>
+            <l
+                n="400">venturamque notis cladem depellere suasit.</l>
+            <l
+                n="401">inter certa licet numeres sub nocte cavenda</l>
+            <l
+                n="402">turibulum, nam si sordebunt cetera caeli</l>
+            <l
+                n="403">nubibus obductis, illo splendente, timeto,</l>
+            <l
+                n="404">ne pacem pelagi solvat violentior auster.</l>
+            <l
+                n="405">tunc mihi *siccentur substricto cornua velo</l>
+            <l
+                n="406">et rigidi emittant flatus per inane rudentes.</l>
+            <l
+                n="407">quod si deprensae turbavit lintea puppis</l>
+            <l
+                n="408">incubuitque sinu laxo, vel mergitur undis</l>
+            <l
+                n="409">prona ratis sorbetque inimicum Nerea prora,</l>
+            <l
+                n="410">vel si respexit servator Iuppiter, aegre</l>
+            <l
+                n="411">ultima persolvunt iactati vota salutis;</l>
+            <l
+                n="412">nec metus ante fugit, quam pars effulserit orbis,</l>
+            <l
+                n="413">quae boream caelum spectantibus indicet ortum.</l>
+            <l
+                n="414">Sunt etiam flammis conmissa immania membra</l>
+            <l
+                n="415">Centauri, capite atque hirsuto pectore et alvo</l>
+            <l
+                n="416">subter candentis hominem reddentia chelas,</l>
+            <l
+                n="417">inde per ingentis costas, per crura, per armos,</l>
+            <l
+                n="418">nascitur intacta sonipes sub virgine. dextra</l>
+            <l
+                n="419">seu praedam e silvis portat seu dona propinquae</l>
+            <l
+                n="420">placatura deos, cultor Iovis, admovet arae,</l>
+            <l
+                n="421">hic erit ille pius Chiron, iustissimus omnis</l>
+            <l
+                n="422">inter nubigenas et magni doctor Achillis.</l>
+            <l
+                n="423">hic umero medium scindens iter aetheris alti,</l>
+            <l
+                n="424">si tenuem traxit nubem stellasque recondit,</l>
+            <l
+                n="425">toto clarus equo venientis nuntiat euros.</l>
+            <l
+                n="426">Nec procul hinc hydros trahitur, cui cauda superne</l>
+            <l
+                n="427">Centaurum lucet, tractu subit ille leonem,</l>
+            <l
+                n="428">pervenit ad cancrum capite et tria sidera tangit.</l>
+            <l
+                n="429">huic primos tortus crater premit, ulterioris</l>
+            <l
+                n="430">vocali rostro corvus forat. omnia lucent,</l>
+            <l
+                n="431">et corvus pennis et parvo pondere crater</l>
+            <l
+                n="432">et spatio triplicis formatus sideris hydros.</l>
+            <l
+                n="433">Sub geminis procyon fulgenti lumine surgit.</l>
+            <l
+                n="434">Hic caelo ornatus trahitur noctemque diemque;</l>
+            <l
+                n="435">sors sua cuique data est; semel adsignata tuentur</l>
+            <l
+                n="436">immoti loca nec longo mutantur in aevo.</l>
+            <l
+                n="437">quinque aliae stellae diversa lege feruntur</l>
+            <l
+                n="438">et proprio motu mundo contraria volvunt</l>
+            <l
+                n="439">curricula exceduntque loco et vestigia mutant.</l>
+            <l
+                n="440">haud equidem possis alio contingere signo,</l>
+            <l
+                n="441">quae divis sedes. hinc atque hinc saepe videntur</l>
+            <l
+                n="442">occasus ortusque. neque anfractus brevis illis,</l>
+            <l
+                n="443">annosasque vias tardus vix perficit orbis.</l>
+            <l
+                n="444">hoc opus arcanis si credam postmodo Musis,</l>
+            <l
+                n="445">tempus et ipse labor, patiantur fata, docebit.</l>
+            <l
+                n="446">Signorum partis, quorum est praedicta figura,</l>
+            <l
+                n="447">annum expleturi praecidunt quattuor orbis.</l>
+            <l
+                n="448">intervalla trium transversus colligat unus.</l>
+            <l
+                n="449">nec par est illis spatium: duo namque feruntur</l>
+            <l
+                n="450">inter se aequales; duo, quorum est maxima forma;</l>
+            <l
+                n="451">et totidem rursum praedictis ante minores.</l>
+            <l
+                n="452">hi semper distant, illos communia signa</l>
+            <l
+                n="453">committunt. qua se tangunt, pars aequa rotarum</l>
+            <l
+                n="454">dividitur, binos ut si qui desecet arcus.</l>
+            <l
+                n="455">Dissimilis quintus liquida sub nocte videtur,</l>
+            <l
+                n="456">sidera cum reddunt sinceros eminus ignis.</l>
+            <l
+                n="457">lactis ei color, et mediis via lucet in umbris.</l>
+            <l
+                n="458">Lacteus hic orbis nullo minor orbe rotatur.</l>
+            <l
+                n="459">Celsior ad boream qui vergit circulus altos</l>
+            <l
+                n="460">et peragit tractus vicinis haud procul ursis,</l>
+            <l
+                n="461">per geminos currit medios, vestigia tangit</l>
+            <l
+                n="462">aurigae plantamque terit Perseida laevam,</l>
+            <l
+                n="463">transversae Andromedae latera utraque persecat actus</l>
+            <l
+                n="464">et totam abs umero dextram; summa ungula pulsu</l>
+            <l
+                n="465">acris equi ferit orbis iter. tunc candidus ora</l>
+            <l
+                n="466">cygnus habet iuxta, cubito lucet super ipsum</l>
+            <l
+                n="467">nixa genu facies et primis ignibus anguis.</l>
+            <l
+                n="468">effugit at virgo; totus leo, totus in ipso</l>
+            <l
+                n="469">cancer. ab adversis omnem secat ille leonem</l>
+            <l
+                n="470">clunibus hirsutique iubam per pectoris exit,</l>
+            <l
+                n="471">cancro fulgentes oculi, ceu regula currat</l>
+            <l
+                n="472">per medios, sic divisi latera utraque tangunt.</l>
+            <l
+                n="473">hunc octo in partis si quis diviserit orbem,</l>
+            <l
+                n="474">quinque super terras semper fulgere notabit,</l>
+            <l
+                n="475">abdi tres undis brevibusque latere sub umbris.</l>
+            <l
+                n="476">hoc cancrum tetigit cum Titan orbe, timeto</l>
+            <l
+                n="477">aestatem rapidam et solventis corpora morbos.</l>
+            <l
+                n="478">tunc habet aeterni cursus fastigia summa</l>
+            <l
+                n="479">erectoque polo brevius non adplicat umquam</l>
+            <l
+                n="480">candentis currus. adverso nititur orbe,</l>
+            <l
+                n="481">dum tangat metas; pronus devolvitur inde.</l>
+            <l
+                n="482">Hic boreae propior, contrarius excipit austros;</l>
+            <l
+                n="483">aegoceros metas hiemis glacialibus austris</l>
+            <l
+                n="484">aestatisque tenet flagrantia sidera cancer.</l>
+            <l
+                n="485">hoc medium sidus findit devexior orbis,</l>
+            <l
+                n="486">fundentis latices genua implicat; illigat illum</l>
+            <l
+                n="487">intorta pristis cauda; velocia crura</l>
+            <l
+                n="488">contingit leporis, canis alvum desecat imam.</l>
+            <l
+                n="489">desecat et sacrae speciosa aplustria puppis</l>
+            <l
+                n="490">Centaurique umeros et scorpion ultima cauda</l>
+            <l
+                n="491">spicula torquentem; magnus micat arcus in illo.</l>
+            <l
+                n="492">inde austro propior sol est aquilone relicto</l>
+            <l
+                n="493">et gelidas hiemes hebetato lumine portat.</l>
+            <l
+                n="494">huius tres caelo partes adsurgere cernes,</l>
+            <l
+                n="495">quinque latent undis et longa nocte feruntur.</l>
+            <l
+                n="496">Hos inter medius nullo minor orbis agetur,</l>
+            <l
+                n="497">in quo cum Phoebus radiatos extulit ignes,</l>
+            <l
+                n="498">dividit aequali spatio noctemque diemque.</l>
+            <l
+                n="499">bis redit haec facies, librato sidere, mundo,</l>
+            <l
+                n="500">cum ver fecundum surgit, cum deficit aestas.</l>
+            <l
+                n="501">signa aries taurusque aequo tanguntur ab orbe,</l>
+            <l
+                n="502">sed princeps aries totus fulgebit in illo,</l>
+            <l
+                n="503">tauri armum subit et flexi duo sidera cruris.</l>
+            <l
+                n="504">at medium Oriona secat spiramque priorem</l>
+            <l
+                n="505">hydri et crateram levem corvique forantis</l>
+            <l
+                n="506">ultima, deficiunt nigra qua sidera cauda.</l>
+            <l
+                n="507">illic et chelas transverso lumine quaeres</l>
+            <l
+                n="508">et celsi partem anguis et a medio ophiuchum</l>
+            <l
+                n="509">nec procul inde aquilam, toto capite incubat ardens</l>
+            <l
+                n="510">Pegasus et longae spatio cervicis inhaeret.</l>
+            <l
+                n="511">hos orbis, quorum tractus et signa notamus,</l>
+            <l
+                n="512">rectus per medios percurrens traicit axis.</l>
+            <l
+                n="513">tres intervallis paribus sine fine rotantur</l>
+            <l
+                n="514">nec mutare vias possunt nec iungere sulcos.</l>
+            <l
+                n="515">quartus in obliquum tris unus colligat orbis,</l>
+            <l
+                n="516">partibus extremis diversos implicat; unum</l>
+            <l
+                n="517">inter utrumque secat medium desectus ab illo.</l>
+            <l
+                n="518">non si Palladia doctus formaret ab arte,</l>
+            <l
+                n="519">distantis orbis melius religasset ab uno.</l>
+            <l
+                n="520">sed tribus idem ortus omni nascuntur ab aevo</l>
+            <l
+                n="521">atque eadem occasus remanent certissima signa.</l>
+            <l
+                n="522">Quartus ab oceano tantum vestigia mutat,</l>
+            <l
+                n="523">obliquo currens spatio, quantum capricornus</l>
+            <l
+                n="524">aestifero distat cancro, quam latus ad auras</l>
+            <l
+                n="525">aetherias surgit, tam sacris mergitur undis.</l>
+            <l
+                n="526">in sex signiferum si quis diviserit orbem</l>
+            <l
+                n="527">aequalis partes, succumbet regula binis</l>
+            <l
+                n="528">inferior signis spatii tantumque tenebit</l>
+            <l
+                n="529">una, sui lateris quantum a tellure recedit;</l>
+            <l
+                n="530">nec tamen humanos visus fugit ultimus orbis.</l>
+            <l
+                n="531">haec via solis erit bis senis lucida signis.</l>
+            <l
+                n="532">nobilis hic aries aurato vellere, quondam</l>
+            <l
+                n="533">qui tulit in Tauros Phrixum, qui prodidit Hellen,</l>
+            <l
+                n="534">quem propter fabricata ratis, quem perfida Colchis</l>
+            <l
+                n="535">sopito vigile incesto donavit amori.</l>
+            <l
+                n="536">corniger hic taurus, cuius decepta figura</l>
+            <l
+                n="537">Europe, thalamis et virginitate relicta,</l>
+            <l
+                n="538">per freta sublimis tergo mendacia sensit</l>
+            <l
+                n="539">litora, Cretaeo partus enixa marito.</l>
+            <l
+                n="540">sunt gemini, quos nulla dies sub Tartara misit;</l>
+            <l
+                n="541">sed caelo semper, nautis laetissima signa,</l>
+            <l
+                n="542">Ledaeos statuit iuvenis pater ipse deorum.</l>
+            <l
+                n="543">te quoque, fecundam meteret cum comminus hydram</l>
+            <l
+                n="544">Alcides ausum morsu contingere *bello</l>
+            <l
+                n="545">sidere donavit, cancer, Saturnia Iuno,</l>
+            <l
+                n="546">numquam oblita sui, numquam secura noverca.</l>
+            <l
+                n="547">hinc Nemeaeus erit iuxta leo; tunc pia virgo;</l>
+            <l
+                n="548">scorpios hinc duplo quam cetera possidet orbe</l>
+            <l
+                n="549">sidera, per chelas geminato lumine fulgens,</l>
+            <l
+                n="550">quem mihi diva cavet dicto prius Orione.</l>
+            <l
+                n="551">inde sagittifero tentus curvabitur arcus,</l>
+            <l
+                n="552">qui solitus Musas venerari supplice plausu</l>
+            <l
+                n="553">acceptus caelo Phoebeis ardet in armis.</l>
+            <l
+                n="554">cochlidis inventor, cuius Titania flatu</l>
+            <l
+                n="555">proelia commisit divorum laetior aetas</l>
+            <l
+                n="556">bellantem comitata Iovem, pietatis honorem,</l>
+            <l
+                n="557">ut fuerat geminus forma, sic sidere, cepit.</l>
+            <l
+                n="558">hic, Auguste, tuum genitali corpore numen</l>
+            <l
+                n="559">attonitas inter gentis patriamque paventem</l>
+            <l
+                n="560">in caelum tulit et maternis reddidit astris.</l>
+            <l
+                n="561">proximus infestas, olim quas fugerat, undas</l>
+            <l
+                n="562">Deucalion parvam defundens indicat urnam.</l>
+            <l
+                n="563">annua concludunt Syriae duo numina piscis</l>
+            <l
+                n="564">tempora; tunc iterum praedictus nascitur ordo</l>
+            <l
+                n="565">lanigeri et tauri, geminorum, postea cancri,</l>
+            <l
+                n="566">tunc leo, tunc virgo, tunc scorpios, arcitenensque</l>
+            <l
+                n="567">et gelidus capricornus et imbrifer et duo pisces.</l>
+            <l
+                n="568">huius quantum altas demergitur orbis in undas</l>
+            <l
+                n="569">oceani, tantum liquidum super aera lucet.</l>
+            <l
+                n="570">nullaque nox bis terna minus caelo trahit astra,</l>
+            <l
+                n="571">nullaque maior erit, quam quanto tempore in auras</l>
+            <l
+                n="572">orbis perfecti divisus tollitur arcus.</l>
+            <l
+                n="573">Saepe velis quantum superet cognoscere noctis,</l>
+            <l
+                n="574">et spe venturae solari pectora lucis.</l>
+            <l
+                n="575">prima tibi nota solis erit, quo sidere currat,</l>
+            <l
+                n="576">semper enim signo Phoebus radiabit in uno.</l>
+            <l
+                n="577">cetera tunc propriis ardentia suspice flammis,</l>
+            <l
+                n="578">quod cadat aut surgat summove feratur in orbe,</l>
+            <l
+                n="579">quantoque exiliant spatio, cum caerula linquunt;</l>
+            <l
+                n="580">namque aliis pernix saltus, maiore trahuntur</l>
+            <l
+                n="581">mole alia, oceanum tardo linquentia passu.</l>
+            <l
+                n="582">quod si nube cava solis via forte latebit,</l>
+            <l
+                n="583">occulet aut signum conscendens vertice caelum</l>
+            <l
+                n="584">altus Athos vel Cyllene vel candidus Haemus,</l>
+            <l
+                n="585">Gargaron aut Ide superisve agitatus Olympus,</l>
+            <l
+                n="586">tunc dextra laevaque simul redeuntia signis</l>
+            <l
+                n="587">sidera si noris, numquam te tempora noctis</l>
+            <l
+                n="588">effugient, numquam veniens Tithonius ortus.</l>
+            <l
+                n="589">Cum primum cancrum Tethys emittit in auras,</l>
+            <l
+                n="590">excipit oceanus Minoae serta coronae</l>
+            <l
+                n="591">occidit et dorso piscis caudaque priore,</l>
+            <l
+                n="592">mergitur in totos umeros ophiuchus et anguis</l>
+            <l
+                n="593">ultima cauda micat, tortus habet illa timendos.</l>
+            <l
+                n="594">nec multo arctophylax hunc longe subiacet astro,</l>
+            <l
+                n="595">lumine qui primo cum scorpius occidit undis</l>
+            <l
+                n="596">occulitur pedibus; durat tamen arduus ore,</l>
+            <l
+                n="597">dum rigidum aegoceri signum freta lucida terret.</l>
+            <l
+                n="598">siderea vix tum satiatus luce bootes</l>
+            <l
+                n="599">in terras abit et noctis plus parte relinquit.</l>
+            <l
+                n="600">at contra nullo defectus lumine totus</l>
+            <l
+                n="601">Orion umeris splendebit magnaque divi</l>
+            <l
+                n="602">vagina et claro caelatus balteus igni.</l>
+            <l
+                n="603">cornua et Eridanus liquido feret utraque caelo.</l>
+            <l
+                n="604">At cum prima iuba radiarit flamma leonis,</l>
+            <l
+                n="605">quicquid parte micat caelo, hoc nascente sub undas</l>
+            <l
+                n="606">omne abit atque feri venientis defugit ora.</l>
+            <l
+                n="607">tota Iovis mersa est pennis stellantibus ales,</l>
+            <l
+                n="608">quique genu posito defessus conditur undis</l>
+            <l
+                n="609">crure tenus; redit in caelum vasti caput hydri</l>
+            <l
+                n="610">et pernix lepus et procyon et Sirius ipse</l>
+            <l
+                n="611">totiusque canis rabidi vestigia prima.</l>
+            <l
+                n="612">Accipe quae vitent exorsae virginis ora:</l>
+            <l
+                n="613">delphinus notis iam tum deflexerit undis</l>
+            <l
+                n="614">et lyra dulce sonans et flammis cincta sagitta</l>
+            <l
+                n="615">et niveus cygnus properarit tangere fluctus,</l>
+            <l
+                n="616">utraque penna volans caudam vix lucet ad ipsam,</l>
+            <l
+                n="617">nigrescitque Padus, terrae qui proximus amnis.</l>
+            <l
+                n="618">tum caput abscondet sonipes, tum tota latebit</l>
+            <l
+                n="619">cervix, at contra sublimior hydra feretur</l>
+            <l
+                n="620">cratera tenus et surgent aplustria puppis</l>
+            <l
+                n="621">Argoae totusque canis; sed cum pia virgo</l>
+            <l
+                n="622">nascitur, illa ratis media plus arbore lucet.</l>
+            <l
+                n="623">Surgentis etiam chelas sua signa notabunt:</l>
+            <l
+                n="624">exilit oceano nunc toto crine bootes,</l>
+            <l
+                n="625">quem claro veniens arcturus nuntiat ore,</l>
+            <l
+                n="626">celsaque puppis habet, cauda minus attamen hydra,</l>
+            <l
+                n="627">nixa genu species flexo rediit ardua crure,</l>
+            <l
+                n="628">partibus haud aliis; nocte eluctata suprema</l>
+            <l
+                n="629">bis solet illa una caelo se ostendere nocte,</l>
+            <l
+                n="630">nam si Phoebeos currus, dum longa venit nox,</l>
+            <l
+                n="631">occasu sequitur, rursus fugit oceanum ortu</l>
+            <l
+                n="632">crure simul chelis fulgens. cum scorpius exit,</l>
+            <l
+                n="633">iam totis radiat membris miserabile sidus;</l>
+            <l
+                n="634">at cum tantum abiit, quantum lyra surgit ab undis,</l>
+            <l
+                n="635">arcus ipsa suo caelo referetur imago.</l>
+            <l
+                n="636">imperfecta redit caelo tum tota corona</l>
+            <l
+                n="637">et Chiron pius ad caudam cognoscitur imam.</l>
+            <l
+                n="638">Pegasus abscondit toto tunc pectore pennas</l>
+            <l
+                n="639">nec lucet cauda praemersus pectore cygnus.</l>
+            <l
+                n="640">abdit et Andromede vultus et maxima pristis</l>
+            <l
+                n="641">occasu insequitur metuentis virginis ora,</l>
+            <l
+                n="642">crista super caelo fulget. caput abditur ipse</l>
+            <l
+                n="643">regalis Cepheus alias intactus ab undis.</l>
+            <l
+                n="644">Scorpios exoriens, cum clarus fugerit amnis,</l>
+            <l
+                n="645">scorpios Oriona fugat, pavet ille sequentem.</l>
+            <l
+                n="646">sis vati placata, precor, Latonia virgo;</l>
+            <l
+                n="647">non ego, non primus, veteres cecinere poetae,</l>
+            <l
+                n="648">virginis intactas quondam contingere vestes</l>
+            <l
+                n="649">ausum hominem divae sacrum temerasse pudorem.</l>
+            <l
+                n="650">devotus poenae tunc impius ille futurae</l>
+            <l
+                n="651">nudabatque feris angusto stipite silvas</l>
+            <l
+                n="652">pacatamque Chion dono dabat Oenopioni.</l>
+            <l
+                n="653">haud patiens sed enim Phoebi germana repente</l>
+            <l
+                n="654">numinis ultorem media tellure revulsa</l>
+            <l
+                n="655">scorpion ingenti maiorem contulit hostem.</l>
+            <l
+                n="656">parcite, mortales, numquam levis ira deorum.</l>
+            <l
+                n="657">horret vulnus adhuc et spicula tincta veneno</l>
+            <l
+                n="658">flebilis Orion et quamquam parte relicta</l>
+            <l
+                n="659">caeli *paene fugit, tamen altis mergitur undis,</l>
+            <l
+                n="660">scorpios ardenti cum pectore contigit ortus.</l>
+            <l
+                n="661">nil super Andromedae, nil pristis luce fruetur.</l>
+            <l
+                n="662">in caput atque umeros rapit orbis Cassiepiam,</l>
+            <l
+                n="663">declivemque trahunt aeterni pondera mundi</l>
+            <l
+                n="664">corruptaque cadit forma, certaverat olim</l>
+            <l
+                n="665">qua senis aequorei natis, cum litore Canchli</l>
+            <l
+                n="666">Doridos et Panopes spectasset stulta choreas.</l>
+            <l
+                n="667">illa abit oceano, totius serta coronae</l>
+            <l
+                n="668">in caelum redeunt, totum se liberat hydrus.</l>
+            <l
+                n="669">cruribus exspectat Chiron, obscurior arcu,</l>
+            <l
+                n="670">corpore iam toto vasto sub vertice clarus.</l>
+            <l
+                n="671">tum fera, quam dextra portat Centaurus, in auras</l>
+            <l
+                n="672">exilit et claris aperitur flexibus anguis;</l>
+            <l
+                n="673">innixumque genu laeva minus aequora linquunt.</l>
+            <l
+                n="674">At cum prima subit facies remeabilis arcus,</l>
+            <l
+                n="675">iam sicca oceano Chiron pernicia crura</l>
+            <l
+                n="676">expulit et celsis ophiuchus fulget in astris.</l>
+            <l
+                n="677">nil trahit obscurum serpens et trunca recepta</l>
+            <l
+                n="678">desinit esse manu membris deformis imago.</l>
+            <l
+                n="679">iam lyra cum superis et cygni dextera penna,</l>
+            <l
+                n="680">radit tellurem rediens cum sidere Cepheus.</l>
+            <l
+                n="681">tum canis abscondit totius corporis ignis</l>
+            <l
+                n="682">et latet Orion et semper tutus in undis</l>
+            <l
+                n="683">est lepus Argoaeque ratis, qua flexile signum</l>
+            <l
+                n="684">in puppim formatur, adhuc aplustria lucent.</l>
+            <l
+                n="685">mergitur et Perseus et caprae nobile lumen.</l>
+            <l
+                n="686">Aurigam totum abscondit veniens capricornus</l>
+            <l
+                n="687">atque omnem ornatum venerandae numine puppis.</l>
+            <l
+                n="688">tum procyon obscurus abit; redit armiger uncis</l>
+            <l
+                n="689">unguibus, ante omnis gratus tibi, Iuppiter, ales.</l>
+            <l
+                n="690">omnibus et stellis cygnus redit et leve telum</l>
+            <l
+                n="691">et parvus delphinus et apta altaria sacris.</l>
+            <l
+                n="692">Geminus exsurgit Minoia nota corona.</l>
+            <l
+                n="693">Hydrochoos caelum scandens simul evocat ore</l>
+            <l
+                n="694">et cervice tenus fidentem Pegason alis.</l>
+            <l
+                n="695">aversum Chirona trahit nox atra sub undas,</l>
+            <l
+                n="696">oceanus caudam tinguit, nondum capit ora,</l>
+            <l
+                n="697">non vastos umeros, non pectora tristia setis.</l>
+            <l
+                n="698">hydram plus mediam condit, pars tertia lucet.</l>
+            <l
+                n="699">Hanc pisces abdunt orti totumque biformem.</l>
+            <l
+                n="700">cum geminos pisces aquilonis provocat aura,</l>
+            <l
+                n="701">ille etiam surgit, qui tristis respicit austros;</l>
+            <l
+                n="702">piscibus ille simul surgit, sed liberat ortus,</l>
+            <l
+                n="703">cum pernix aries in caelum cornua tollit.</l>
+            <l
+                n="704">pisces educunt Cepheida; laetior illa</l>
+            <l
+                n="705">Nereidas pontumque fugit caeloque refertur.</l>
+            <l
+                n="706">Ortus lanigeri properabunt condere sacrum</l>
+            <l
+                n="707">turibulum; patrio fulgebit in aethere Perseus.</l>
+            <l
+                n="708">Persea cum pennae reddunt, iam Plias ab undis</l>
+            <l
+                n="709">effugit et dextro tauri cognoscitur armo.</l>
+            <l
+                n="710">fixus ut in curru trahitur sine curribus ullis</l>
+            <l
+                n="711">Myrtilos. haut totum cernes, non integer ipse</l>
+            <l
+                n="712">in caelum redit, at pars dextera mergitur undis;</l>
+            <l
+                n="713">vertice lucebit, teneros manus efferet haedos.</l>
+            <l
+                n="714">laeva Iovis nutrix umero radiabit in ipso,</l>
+            <l
+                n="715">proxima telluri nascetur planta sinistra.</l>
+            <l
+                n="716">cetera cum geminis perfecto sidere surgent.</l>
+            <l
+                n="717">Tauro pistricis pariter cristaeque refulgent</l>
+            <l
+                n="718">caudaque; vicinum terris iam cerne booten.</l>
+            <l
+                n="719">et cum se genibus demisit pars ophiuchi,</l>
+            <l
+                n="720">signum erit, oceano geminos remeare relicto.</l>
+            <l
+                n="721">totaque iam pristis lucebunt squamea terga;</l>
+            <l
+                n="722">Eridani et primos deprendat navita fontes,</l>
+            <l
+                n="723">caelum conspiciens, dum claro se movet ortu</l>
+            <l
+                n="724">Orion; habet ille notas, quae tempora noctis</l>
+            <l
+                n="725">significent, ventosve truces fidamve quietem.</l>
+        </body>
+    </text>
+</TEI>
