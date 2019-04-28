@@ -56,6 +56,8 @@ val parses = cmd !!
 new PrintWriter(parseOutput) {write(parses); close;}
 msg("Done.")
 
-msg("Reading SFST output into object model..")
-val parsedObjs = FstFileReader.formsFromFile(parseOutput)
-msg("Done.")
+
+val fstLines = parses.split("\n").toVector
+val failures = fstLines.filter(_.startsWith("no result for ").replaceFirst("no result for ", ""))
+println("Failed on " + failures.size + " forms out of " + forms.size + " total.")
+new PrintWriter("germanicus-failed.txt"){write(failures.mkString("\n")); close;}

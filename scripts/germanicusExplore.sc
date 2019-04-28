@@ -1,3 +1,27 @@
+import edu.holycross.shot.tabulae._
+import edu.holycross.shot.cite._
+import edu.holycross.shot.ohco2._
+import scala.io.Source
+import edu.holycross.shot.mid.validator._
+import java.io.PrintWriter
+import sys.process._
+import scala.language.postfixOps
+import edu.holycross.shot.latin._
+
+
+
+val parseOutput = "germanicus-fst.txt"
+
+def msg(txt: String): Unit  = {
+  println("\n\n")
+  println(txt)
+  println("\n")
+}
+
+
+msg("Reading SFST output into object model..")
+val parsedObjs = FstFileReader.formsFromFile(parseOutput)
+msg("Done.")
 
 // REPLACE THIS:  THIS WAS A short cut for coins
 // because previously verified that all forms parse to only one lemma,
@@ -29,6 +53,8 @@ def labelLexItem(id: String) : String = {
 */
 
 /** Retrieve full passage node for a token.*/
+
+/*
 def psgForTokenId(u: CtsUrn) : Option[CitableNode] = {
   val psgCorpus = corpus ~~ u.collapsePassageBy(1).dropVersion
   psgCorpus.size match {
@@ -48,25 +74,28 @@ def entityForForm(str: String) : String = {
     case _ =>{println("Multiple matches for " + str + ":  " + matches.mkString(", ")); ""}
   }
 }
-
+*/
 
 /** Given an id, find attested surface forms.
 * Note that id should be in the abbreviated URN
 * format COLLECTION.ID (e.g., "ls.4509").
-*/
+
 def formsForEntity(id: String)  = {
   formLemmaIndex.filter(_._1 == id).map(_._2)
 }
+*/
 
-/** Given a surface form, find URNs for occurrences.*/
+/** Given a surface form, find URNs for occurrences.
 def urnsForForm(str: String) : Vector[CtsUrn]= {
   lexTokens.filter(_.string == str).map(_.urn)
 }
-
+*/
 /** Given a an ID for a lexical entity, find URNs for occurrences.
 * Note that id should be in the abbreviated URN
 * format COLLECTION.ID (e.g., "ls.4509").
 */
+
+/*
 def urnsForEntity(id: String) : Vector[CtsUrn]= {
   val forms = formsForEntity(id)
   val urns = for (form <- forms) yield {
