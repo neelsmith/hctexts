@@ -30,5 +30,28 @@ def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
   }
+}
+
+def parseWordsFile(wordsFile: String) : String= {
+  val fstinfl = "/usr/local/bin/fst-infl"
+  val parser = "parsers/germanicus.a"
+  val cmd = s"${fstinfl} ${parser} ${wordsFile}"
+  cmd !!
+}
+
+def compileAndParse(wordsFile: String) : String= {
+  compile()
+  val fstinfl = "/usr/local/bin/fst-infl"
+  val parser = "parsers/germanicus.a"
+  val cmd = s"${fstinfl} ${parser} ${wordsFile}"
+  cmd !!
+}
+
+def info: Unit = {
+  println("\n\nThings you can do:\n")
+  println("Rebuild parser:\n")
+  println("\tcompile()\n\n")
+  println("Parse a word list:\n")
+  println("\tparseWordsFile(FILENAME)")
 
 }
