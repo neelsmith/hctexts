@@ -17,12 +17,12 @@ val make = "/usr/bin/make"
 def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
   val tabulae = File(repo)
   val datasets = "morphology"
-  val c = "germanicus"
+  val c = "lat25"
   val conf =  Configuration(compiler,fstinfl,make,datasets)
 
   try {
     FstCompiler.compile(File(datasets), File(repo), c, conf, true)
-    val tabulaeParser = repo/"parsers/germanicus/latin.a"
+    val tabulaeParser = repo/"parsers/lat25/latin.a"
     val localParser = File("parsers/germanicus.a")
     cp(tabulaeParser, localParser)
     println("\nCompilation completed.  Parser germanicus.a is " +
