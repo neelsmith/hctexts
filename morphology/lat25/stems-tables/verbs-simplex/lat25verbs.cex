@@ -1,8 +1,31 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 
-lat25morph.verb2980a#ls.n2980#aper#c4pres
-lat25morph.verb1575#ls.n1575#agit#conj1
-lat25morph.verb1320#ls.n1320#aequ#conj1
-lat25morph.verb12057#ls.n12057#curv#conj1
-lat25morph.verb14474a#ls.n14474#distingu#c3pres
+lat25morph.verbn2980a#ls.n2980#aper#c4pres
+lat25morph.verbn1575#ls.n1575#agit#conj1
+lat25morph.verbn1320#ls.n1320#aequ#conj1
+lat25morph.verbn12057#ls.n12057#curv#conj1
+lat25morph.verbn14474a#ls.n14474#distingu#c3pres
+lat25morph.verbn51363a#ls.n51363#volv#c3pres
+lat25morph.verbn51299#ls.n51299#vol#conj1
+lat25morph.verbn3492a#ls.n3492#ard#c2pres
+lat25morph.verbn51266#ls.n51266#voc#conj1
+lat25morph.verbn12387#ls.n12387#deb#conj2
+lat25morph.verbn12057#ls.n12057#curv#conj1
+lat25morph.verbn2280#ls.n2280#am#conj1
+lat25morph.verbn3873a#ls.n3873#ascend#c3pres
+lat25morph.verbn3873b#ls.verbn3873#ascend#pftact
+lat25morph.verbn3873c#ls.verbn3873#ascens#pftpass
+lat25morph.verbn4580#ls.n4580#aur#conj1
+lat25morph.verbn5980a#ls.n5980#cad#c3pres
+lat25morph.verbn6467#ls.n6467#cand#conj2
+lat25morph.verbn6870a#ls.n6870#carp#c3pres
+lat25morph.verbn7590#ls.n7590#cert#conj1
+lat25morph.verbn8057a#ls.n8057#cing#c3pres
+lat25morph.verbn8057c#ls.n8057#cinct#pftpass
+lat25morph.verbn51027#ls.n51027#viol#conj1
+lat25morph.verbn51191#ls.n51191#vit#conj1
+lat25morph.verbn11954#ls.n11954#cup#c3iopres
+lat25morph.verbn51379a#ls.n51379#vom#c3pres
+lat25morph.n5140c5#ls.n51405#vot#pftpass
+lat25morph.verbn50546a#ls.n50546#verg#c3pres
