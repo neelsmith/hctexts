@@ -1,6 +1,15 @@
 StemUrn#LexicalEntity#Stem#InflClass
-lat24morph.indecl1#ls.n5#abs#indeclprep
-lat24morph.indecl2#ls.n4220#at#indeclconj
+lat24morph.indecln5#ls.n5#abs#indeclprep
+lat24morph.indecln4220#ls.n4220#at#indeclconj
+
+lat24morph.indecln46609#ls.n46609#super#indeclprep
+
+lat24morph.indecln46124#ls.n46124#subter#indeclprep
+lat24morph.indecln47008#ls.n47008#supra#indeclprep
+
+lat24morph.indecln49667#ls.n49667#ultra#indeclprep
+
+
 
 
 

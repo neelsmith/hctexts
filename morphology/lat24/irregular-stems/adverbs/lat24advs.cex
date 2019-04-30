@@ -1,6 +1,13 @@
 StemUrn#LexicalEntity#String#Degree
 
-lat25morph.adv790#ls.n790#adhuc#pos
+lat25morph.advn790#ls.n790#adhuc#pos
+lat25morph.advn49725#ls.n49725#umquam#pos
+lat25morph.advn51240#ls.n51240#vix#pos
+lat25morph.advn44111#ls.n44111#sic#pos
+lat25morph.advn43412#ls.n43412#semel#pos
+lat25morph.advn47432#ls.n47432#tam#pos
+
+
 
 livymorph.irradv1#ls.n20640#hic#pos
 livymorph.irradv2#ls.n754#adeo#pos
