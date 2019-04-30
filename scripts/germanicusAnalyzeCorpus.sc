@@ -48,17 +48,24 @@ val forms = lexTokens.map(_.string.toLowerCase).distinct.sorted
 new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
 
 
-val cmd = s"${fstinfl} ${parser} ${wordsFile}"
-msg("Beginning to parse word list in " + wordsFile)
-println("Please be patient: there will be a pause after")
-println("the messages 'reading transducer...' and 'finished' while the parsing takes place.")
-val parses = cmd !!
-new PrintWriter(parseOutput) {write(parses); close;}
-msg("Done.")
+
+def execOutput(cmd: String) : String = {
+  cmd !!
+}
+def printParses(wordsFile: String = "germanicus-words.txt")  : Unit = {
+
+  val cmd = s"${fstinfl} ${parser} ${wordsFile}"
+  msg("Beginning to parse word list in " + wordsFile)
+  println("Please be patient: there will be a pause after")
+  println("the messages 'reading transducer...' and 'finished' while the parsing takes place.")
+  val fst = execOutput(cmd)
+  new PrintWriter(parseOutput) {write(fst); close;}
+  msg("Done.")
 
 
-val fstLines = parses.split("\n").toVector
-val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
+  val fstLines = fst.split("\n").toVector
+  val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
 
-println("Failed on " + failures.size + " forms out of " + forms.size + " total.")
-new PrintWriter("germanicus-failed.txt"){write(failures.mkString("\n")); close;}
+  println("Failed on " + failures.size + " forms out of " + forms.size + " total.")
+  new PrintWriter("germanicus-failed.txt"){write(failures.mkString("\n")); close;}
+}

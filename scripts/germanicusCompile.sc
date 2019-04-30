@@ -17,12 +17,12 @@ val make = "/usr/bin/make"
 def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
   val tabulae = File(repo)
   val datasets = "morphology"
-  val c = "lat25"
+  val c = "lat24"
   val conf =  Configuration(compiler,fstinfl,make,datasets)
 
   try {
     FstCompiler.compile(File(datasets), File(repo), c, conf, true)
-    val tabulaeParser = repo/"parsers/lat25/latin.a"
+    val tabulaeParser = repo/s"parsers/${c}/latin.a"
     val localParser = File("parsers/germanicus.a")
     cp(tabulaeParser, localParser)
     println("\nCompilation completed.  Parser germanicus.a is " +
@@ -32,14 +32,14 @@ def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
   }
 }
 
-def parseWordsFile(wordsFile: String) : String= {
+def parseWordsFile(wordsFile: String) : String = {
   val fstinfl = "/usr/local/bin/fst-infl"
   val parser = "parsers/germanicus.a"
   val cmd = s"${fstinfl} ${parser} ${wordsFile}"
   cmd !!
 }
 
-def compileAndParse(wordsFile: String) : String= {
+def compileAndParse(wordsFile: String) : String = {
   compile()
   val fstinfl = "/usr/local/bin/fst-infl"
   val parser = "parsers/germanicus.a"
