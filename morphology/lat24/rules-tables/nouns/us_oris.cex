@@ -12,3 +12,17 @@ livymorph.us_oris9#us_oris#ora#neut#acc#pl
 livymorph.us_oris10#us_oris#oribus#neut#abl#pl
 livymorph.us_oris11#us_oris#us#neut#voc#sg
 livymorph.us_oris12#us_oris#ora#neut#voc#pl
+
+
+livymorph.us_oris1#us_oris#us#masc#nom#sg
+livymorph.us_oris2#us_oris#oris#masc#gen#sg
+livymorph.us_oris3#us_oris#ori#masc#dat#sg
+livymorph.us_oris4#us_oris#orem#masc#acc#sg
+livymorph.us_oris5#us_oris#ore#masc#abl#sg
+livymorph.us_oris6#us_oris#ores#masc#nom#pl
+livymorph.us_oris7#us_oris#orum#masc#gen#pl
+livymorph.us_oris8#us_oris#oribus#masc#dat#pl
+livymorph.us_oris9#us_oris#ores#masc#acc#pl
+livymorph.us_oris10#us_oris#oribus#masc#abl#pl
+livymorph.us_oris11#us_oris#us#masc#voc#sg
+livymorph.us_oris12#us_oris#ores#masc#voc#pl
