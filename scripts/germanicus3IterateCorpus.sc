@@ -6,12 +6,20 @@ import better.files.Dsl._
 
 import sys.process._
 import scala.language.postfixOps
-
+import scala.io.Source
 
 val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
 
+
+/** Get string output of executing system process.
+*
+* @param cmd String of command to execute.
+*/
+def execOutput(cmd: String) : String = {
+  cmd !!
+}
 
 
 def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
@@ -32,11 +40,28 @@ def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
   }
 }
 
+
+
+def summarizeFst(fst: String, total: Int) : Unit = {
+  val fstLines = fst.split("\n").toVector
+  val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
+
+  println("Failed on " + failures.size + " forms out of " + total + " total.")
+}
+
+// no.lines in a file
+def lineCount(f: String): Int = {
+  Source.fromFile(f).getLines.size
+
+}
+// Get FST output of parsing list of words in a file.
 def parseWordsFile(wordsFile: String) : String = {
   val fstinfl = "/usr/local/bin/fst-infl"
   val parser = "parsers/germanicus.a"
   val cmd = s"${fstinfl} ${parser} ${wordsFile}"
-  cmd !!
+  val fst = execOutput(cmd)
+  summarizeFst(fst, lineCount(wordsFile))
+  fst
 }
 
 def compileAndParse(wordsFile: String) : String = {
@@ -44,7 +69,9 @@ def compileAndParse(wordsFile: String) : String = {
   val fstinfl = "/usr/local/bin/fst-infl"
   val parser = "parsers/germanicus.a"
   val cmd = s"${fstinfl} ${parser} ${wordsFile}"
-  cmd !!
+  val fst =  execOutput(cmd)
+  summarizeFst(fst, lineCount(wordsFile))
+  fst
 }
 
 def info: Unit = {

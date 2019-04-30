@@ -23,6 +23,13 @@ val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
 
 
+/** Get string output of executing system process.
+*
+* @param cmd String of command to execute.
+*/
+def execOutput(cmd: String) : String = {
+  cmd !!
+}
 
 def msg(txt: String): Unit  = {
   println("\n\n")
@@ -49,9 +56,7 @@ new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
 
 
 
-def execOutput(cmd: String) : String = {
-  cmd !!
-}
+
 def printParses(wordsFile: String = "germanicus-words.txt")  : Unit = {
 
   val cmd = s"${fstinfl} ${parser} ${wordsFile}"

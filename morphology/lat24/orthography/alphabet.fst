@@ -1,5 +1,5 @@
-% Characters for Latin character set with distinct i/j, u/v
-#consonant# = bcdfghjklmnpqrstvxz
+% Characters for Latin character set with distinct u/v
+#consonant# = bcdfghklmnpqrstvxz
 
 #vowel# = aeiouy
 
