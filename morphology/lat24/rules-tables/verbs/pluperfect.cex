@@ -1,4 +1,4 @@
-RuleUrn#InflectionClasses#Ending#Person#Number#Tense#Mood#uoice
+RuleUrn#InflectionClasses#Ending#Person#Number#Tense#Mood#Voice
 livymorph.are_plupft1#conj1#averam#1st#sg#plupft#indic#act
 livymorph.are_plupft2#conj1#averas#2nd#sg#plupft#indic#act
 livymorph.are_plupft3#conj1#averat#3rd#sg#plupft#indic#act
@@ -12,6 +12,16 @@ livymorph.are_plupft9#conj1#avisset#3rd#sg#plupft#subj#act
 livymorph.are_plupft10#conj1#avissemus#1st#pl#plupft#subj#act
 livymorph.are_plupft11#conj1#avissetis#2nd#pl#plupft#subj#act
 livymorph.are_plupft12#conj1#avissent#3rd#pl#plupft#subj#act
+
+
+
+livymorph.are_plupft7a#conj1#assem#1st#sg#plupft#subj#act
+livymorph.are_plupft8a#conj1#asses#2nd#sg#plupft#subj#act
+livymorph.are_plupft9a#conj1#asset#3rd#sg#plupft#subj#act
+livymorph.are_plupft10a#conj1#assemus#1st#pl#plupft#subj#act
+livymorph.are_plupft11a#conj1#assetis#2nd#pl#plupft#subj#act
+livymorph.are_plupft12a#conj1#assent#3rd#pl#plupft#subj#act
+
 
 livymorph.ere_plupft1#conj2#ueram#1st#sg#plupft#indic#act
 livymorph.ere_plupft2#conj2#ueras#2nd#sg#plupft#indic#act
