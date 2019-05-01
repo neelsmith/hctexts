@@ -1,9 +1,9 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 lat24morph.verbn45324#ls.n45324#stell#conj1
-
-
-
+lat24morph.verbn20284#ls.n20284#haus#pftact
+lat24morph.verbn27045#ls.n27045#luc#c2pres
+lat24morph.verbn26594#ls.n26594#lig#conj1
 lat24morph.verbn2980a#ls.n2980#aper#c4pres
 lat24morph.verbn1575#ls.n1575#agit#conj1
 lat24morph.verbn1320#ls.n1320#aequ#conj1
@@ -40,12 +40,20 @@ lat24morph.verbn39065#ls.n39065#prospect#conj1
 lat24morph.verbn39535#ls.n39535#puls#conj1
 lat24morph.verbn39703#ls.n39703#put#conj1
 lat24morph.verbn39941#ls.n39941#quaer#c3pres
-
 lat24morph.verbn40348#ls.n40348#radi#conj1
 lat24morph.verbn40980#ls.n40980#relig#conj1
-
-
 lat24morph.verbn40994#ls.n40994#reluc#c2pres
-
 lat24morph.verbn41891#ls.n41891#rot#conj1
 lat24morph.verbn3492#ls.n3492#ars#pftact
+lat24morph.verbn43947#ls.n43947#serv#conj1
+lat24morph.verbn42700#ls.n42700#sati#conj1
+lat24morph.verbn44249#ls.n44249#sil#c2pres
+
+
+
+lat24morph.verbn26524#ls.n26524#libr#conj1
+lat24morph.verbn26479#ls.n26479#liber#conj1
+
+lat24morph.verbn26186#ls.n26186#leg#c3pres
+
+lat24morph.verbn25957#ls.n25957#lat#c2pres
