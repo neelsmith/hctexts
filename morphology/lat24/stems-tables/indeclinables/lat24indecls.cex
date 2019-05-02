@@ -1,6 +1,6 @@
 StemUrn#LexicalEntity#Stem#InflClass
 
-lat24morph.livyindecl41#livylex.n1#priusquam#indeclconj
+lat24morph.indeclx1#xlex.x1#priusquam#indeclconj
 lat24morph.indecln4#ls.n4#a#indeclprep
 lat24morph.indecln5#ls.n5#abs#indeclprep
 lat24morph.indecln5#ls.n5#ab#indeclprep
@@ -30,8 +30,10 @@ lat24morph.indecln30583#ls.n30583#ne#indeclconj
 lat24morph.indecln30776#ls.n30776#neque#indeclconj
 lat24morph.indecln30883#ls.n30883#ni#indeclconj
 lat24morph.indecln31008#ls.n31008#nisi#indeclconj
+lat24morph.indecln31564#ls.n31564#ob#indeclprep
 lat24morph.indecln34595#ls.n34595#per#indeclprep
 lat24morph.indecln37194#ls.n37194#post#indeclprep
+lat24morph.indecln37241#ls.n37241#postquam#indeclconj
 lat24morph.indecln38383#ls.n38383#pro#indeclprep
 lat24morph.indecln38866#ls.n38866#prope#indeclprep
 lat24morph.indecln39984#ls.n39984#quamquam#indeclconj
