@@ -3,7 +3,7 @@ StemUrn#LexicalEntity#String#Degree
 lat24morph.advn754#ls.n754#adeo#pos
 lat24morph.advn790#ls.n790#adhuc#pos
 lat24morph.advn1862#ls.n1862#aliquamdiu#pos
-lat24morph.advn4319#ls.n4319#attamen#pos
+lat24morph.advn4319#ls.n4319#attamen#urn:cite2:hmt:ls.markdown:n31165
 lat24morph.advn7648#ls.n7648#ceu#pos
 lat24morph.advn9382#ls.n9382#comminus#pos
 lat24morph.advn10764#ls.n10764#contemptim#pos
@@ -15,6 +15,7 @@ lat24morph.advn18623#ls.n18623#forte#pos
 lat24morph.advn20282#ls.n20282#haud#pos
 lat24morph.advn20640#ls.n20640#hic#pos
 lat24morph.advn20697#ls.n20697#hinc#pos
+lat24morph.advn21031#ls.n21031#huc#pos
 lat24morph.advn21296#ls.n21296#ibi#pos
 lat24morph.advn21296#ls.n21296#ibique#pos
 lat24morph.advn21521#ls.n21521#illic#pos
@@ -26,6 +27,7 @@ lat24morph.advn25115#ls.n25115#iterum#pos
 lat24morph.advn25184#ls.n25184#iam#pos
 lat24morph.advn27649#ls.n27649#magis#comp
 lat24morph.advn28813#ls.n28813#merito#pos
+lat24morph.n29185#ls.n29185#minus#comp
 lat24morph.advn29388#ls.n29388#modo#pos
 lat24morph.advn29782#ls.n29782#mox#pos
 lat24morph.advn29945#ls.n29945#plus#comp
@@ -34,6 +36,8 @@ lat24morph.advn30868#ls.n30868#neve#pos
 lat24morph.advn30978#ls.n30978#nimio#pos
 lat24morph.advn30981#ls.n30981#nimis#pos
 lat24morph.advn31151#ls.n31151#non#pos
+lat24morph.advn31165#ls.n31165#nondum#pos
+lat24morph.advn31439#ls.n31439#numquam#pos
 lat24morph.advn31444#ls.n31444#nunc#pos
 lat24morph.advn32486#ls.n32486#olim#pos
 lat24morph.advn33358#ls.n33358#paene#pos
