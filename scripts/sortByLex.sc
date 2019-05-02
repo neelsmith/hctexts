@@ -4,16 +4,29 @@ import java.io.PrintWriter
 
 val f = "morphology/lat24/stems-tables/nouns/lat24nouns.cex"
 
+val prefixList = Vector("ls.verbn", "ls.n")
 
-def sortFile(fName: String =  f) : Unit = {
+def stripPrefix(s: String, prefixes: Vector[String]): String = {
+  if (prefixes.isEmpty) {
+    s
+  } else {
+    stripPrefix(s.replaceFirst(prefixes.head, ""), prefixes.tail)
+  }
+}
+
+def sortFile(fName: String =  f, prefixes: Vector[String] = prefixList) : Unit = {
   val lines = Source.fromFile(fName).getLines.toVector
   val label = lines.head
-  val mapped = for (entry <- lines.tail) yield {
+  val mapped = for (entry <- lines.tail.filter(_.nonEmpty)) yield {
     val cols = entry.split("#")
-    val lexNum = cols(1).replaceFirst("ls.n", "").toInt
+
+
+    val lexNum = stripPrefix(cols(1),prefixes).toInt
     (lexNum, entry)
   }
-  for (l <- mapped.sortBy(_._1).distinct) {
-    println(l._2)
+  val sorted = for (l <- mapped.sortBy(_._1).distinct) yield {
+    l._2
   }
+
+  new PrintWriter(fName){ write (label + "\n\n" + sorted.mkString("\n")); close;}
 }
