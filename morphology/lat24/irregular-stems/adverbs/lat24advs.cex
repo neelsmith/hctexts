@@ -1,13 +1,9 @@
 StemUrn#LexicalEntity#String#Degree
 
-lat24morph.advn4319#ls.n4319#attamen#pos
-
-
-
-
 lat24morph.advn754#ls.n754#adeo#pos
 lat24morph.advn790#ls.n790#adhuc#pos
 lat24morph.advn1862#ls.n1862#aliquamdiu#pos
+lat24morph.advn4319#ls.n4319#attamen#pos
 lat24morph.advn7648#ls.n7648#ceu#pos
 lat24morph.advn9382#ls.n9382#comminus#pos
 lat24morph.advn10764#ls.n10764#contemptim#pos
@@ -47,9 +43,12 @@ lat24morph.advn37243#ls.n37243#postremo#pos
 lat24morph.advn38365#ls.n38365#prius#comp
 lat24morph.advn39156#ls.n39156#protinus#pos
 lat24morph.advn39826#ls.n39826#quacumque#pos
+lat24morph.advn39979#ls.n39979#quamlibet#pos
 lat24morph.advn40225#ls.n40225#quippe#pos
 lat24morph.advn40264#ls.n40264#quodam#pos
+lat24morph.advn40278#ls.n40278#quondam#pos
 lat24morph.advn41168#ls.n41168#repentino#pos
+lat24morph.advn41527#ls.n41527#retro#pos
 lat24morph.advn42211#ls.n42211#saepe#pos
 lat24morph.advn43412#ls.n43412#semel#pos
 lat24morph.advn43600#ls.n43600#semper#pos
