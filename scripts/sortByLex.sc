@@ -6,7 +6,7 @@ val f = "morphology/lat24/stems-tables/nouns/lat24nouns.cex"
 
 // This is for Lewis-Short.  You can add others if you have
 // your own URN strings with numeric terminal value.
-val prefixList = Vector("ls.n")
+val prefixList = Vector("ls.n", "livylex.n")
 
 def stripPrefix(s: String, prefixes: Vector[String]): String = {
   if (prefixes.isEmpty) {
