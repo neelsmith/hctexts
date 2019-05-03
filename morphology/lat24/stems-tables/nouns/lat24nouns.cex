@@ -1,5 +1,20 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
+
+lat24morph.noun14774a#ls.n14774a#drac#masc#o_onis
+
+lat24morph.noun14736#ls.n14736#don#neut#us_i
+
+lat24morph.noun14617#ls.n14617#doctor#masc#0_is
+
+lat24morph.noun14196#ls.n14196#discordi#fem#a_ae
+
+
+
+lat24morph.noun14586#ls.n14586#diviti#fem#a_ae
+
+lat24morph.noun14591#ls.n14591#divorti#neut#us_i
+
 lat24morph.noun636#ls.n636#act#masc#us_us
 lat24morph.noun1029#ls.n1029#adulter#masc#0_i
 lat24morph.noun1113#ls.n1113#adyt#neut#us_i
@@ -45,6 +60,11 @@ lat24morph.noun11350#ls.n11350#corv#masc#us_i
 lat24morph.noun11600#ls.n11600#crim#neut#en_inis
 lat24morph.noun9n11616510#ls.n11616#crin#masc#is_is
 lat24morph.noun11735#ls.n11735#cru#neut#s_ris
+lat24morph.noun11863#ls.n11863#cultor#masc#0_is
+lat24morph.noun12028#ls.n12028#curricul#neut#us_i
+lat24morph.noun12032#ls.n12032#curr#masc#us_us
+lat24morph.noun12045#ls.n12045#curs#masc#us_us
+lat24morph.noun12136#ls.n12136#cymbal#neut#us_i
 lat24morph.noun18202#ls.n18202#fin#masc#is_is
 lat24morph.noun18307#ls.n18307#flamm#fem#a_ae
 lat24morph.noun18524#ls.n18524#fon#masc#s_tis
