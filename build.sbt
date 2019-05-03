@@ -12,6 +12,6 @@ libraryDependencies ++= Seq(
 
   "edu.holycross.shot" %% "midvalidator" % "5.4.0",
 
-  "edu.holycross.shot" %% "tabulae" % "2.1.2",
+  "edu.holycross.shot" %% "tabulae" % "2.2.0",
   "com.github.pathikrit" %% "better-files" % "3.5.0"
 )
