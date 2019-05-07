@@ -1,3 +1,5 @@
+// useful scripts for iteratively developing a parser
+// for a given corpus
 
 import edu.holycross.shot.tabulae.builder._
 import better.files._
@@ -12,6 +14,7 @@ val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
 
+val parser = "parsers/lat24.a"
 
 /** Get string output of executing system process.
 *
@@ -31,9 +34,9 @@ def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
   try {
     FstCompiler.compile(File(datasets), File(repo), c, conf, true)
     val tabulaeParser = repo/s"parsers/${c}/latin.a"
-    val localParser = File("parsers/germanicus.a")
+    val localParser = File(parser)
     cp(tabulaeParser, localParser)
-    println("\nCompilation completed.  Parser germanicus.a is " +
+    println("\nCompilation completed.  Parser lat24.a is " +
     "available in directory \"parser\"\n\n")
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
@@ -55,20 +58,18 @@ def lineCount(f: String): Int = {
 
 }
 // Get FST output of parsing list of words in a file.
-def parseWordsFile(wordsFile: String) : String = {
+def parseWordsFile(wordsFile: String, fstParser: String = parser) : String = {
   val fstinfl = "/usr/local/bin/fst-infl"
-  val parser = "parsers/germanicus.a"
-  val cmd = s"${fstinfl} ${parser} ${wordsFile}"
+  val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst = execOutput(cmd)
   summarizeFst(fst, lineCount(wordsFile))
   fst
 }
 
-def compileAndParse(wordsFile: String) : String = {
+def compileAndParse(wordsFile: String, fstParser: String = parser) : String = {
   compile()
   val fstinfl = "/usr/local/bin/fst-infl"
-  val parser = "parsers/germanicus.a"
-  val cmd = s"${fstinfl} ${parser} ${wordsFile}"
+  val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst =  execOutput(cmd)
   summarizeFst(fst, lineCount(wordsFile))
   fst

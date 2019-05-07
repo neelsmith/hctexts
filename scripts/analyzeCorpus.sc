@@ -1,4 +1,5 @@
-
+// scripts to analyze a corpus, and print FST output and
+// list of tokens with failed analyzes to files.
 import edu.holycross.shot.tabulae._
 import edu.holycross.shot.cite._
 import edu.holycross.shot.ohco2._
@@ -13,8 +14,9 @@ import edu.holycross.shot.latin._
 
 // CEX file for corpus of texts: relative reference since we
 // expect this script to be loaded from root directory of repo
-val cex = "cex/germanicus.cex"
-val parser = "parsers/germanicus.a"
+val corpusLabel = "germanicus"
+
+val parser = "parsers/lat24.a"
 
 // Explicit paths to SFTS binaries and make.  Adjust SFST paths
 // to /usr/bin if using default install on Linux.
@@ -37,31 +39,30 @@ def msg(txt: String): Unit  = {
   println("\n")
 }
 
-//////// PROCESS NUMISMATIC CORPUS  //////////////////////////
-// Intermediate files used in parsing:
-val wordsFile = "germanicus-words.txt"
-val parseOutput = "germanicus-fst.txt"
-//val lewisShort = "ls-data.cex"
+def printWordList(label: String = corpusLabel) = {
+  val wordsFile = s"${label}-words.txt"
+  val parseOutput = s"${label}-fst.txt"
+  val cex = s"cex/${label}.cex"
 
+  val corpus = CorpusSource.fromFile(cex)
+  msg("Tokenizing texts..")
+  val allTokens = Latin24Alphabet.tokenizeCorpus(corpus)
+  msg("Done.")
 
-val corpus = CorpusSource.fromFile("cex/germanicus.cex")
-
-msg("Tokenizing texts..")
-val allTokens = Latin24Alphabet.tokenizeCorpus(corpus)
-msg("Done.")
-
-val lexTokens = allTokens.filter(_.tokenCategory == Some(LexicalToken))
-val forms = lexTokens.map(_.string.toLowerCase).distinct.sorted
-new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
-
+  val lexTokens = allTokens.filter(_.tokenCategory == Some(LexicalToken))
+  val forms = lexTokens.map(_.string.toLowerCase).distinct.sorted
+  new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
+}//val lewisShort = "ls-data.cex"
 
 
 
-def printParses(wordsFile: String = "germanicus-words.txt")  : Unit = {
-
-  val cmd = s"${fstinfl} ${parser} ${wordsFile}"
-  msg("Beginning to parse word list in " + wordsFile)
-  println("Please be patient: there will be a pause after")
+// write output to two files:
+// 1.  Complete FST output
+// 2.  List of failed tokens
+def printParses(label: String = corpusLabel)  : Unit = {
+  val cmd = s"${fstinfl} ${parser} ${label}-words.txt"
+  msg("Beginning to parse word list in " + label + "-words.txt")
+""  println("Please be patient: there will be a pause after")
   println("the messages 'reading transducer...' and 'finished' while the parsing takes place.")
   val fst = execOutput(cmd)
   new PrintWriter(parseOutput) {write(fst); close;}
@@ -72,5 +73,5 @@ def printParses(wordsFile: String = "germanicus-words.txt")  : Unit = {
   val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
 
   println("Failed on " + failures.size + " forms out of " + forms.size + " total.")
-  new PrintWriter("germanicus-failed.txt"){write(failures.mkString("\n")); close;}
+  new PrintWriter(s"germa${label}-failed.txt"){write(failures.mkString("\n")); close;}
 }

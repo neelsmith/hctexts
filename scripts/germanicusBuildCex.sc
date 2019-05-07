@@ -1,3 +1,6 @@
+// Read XML text repository, and use MidVerseLReader to generate a
+// univocal CEX version of Germanicus, Aratea.
+
 
 import edu.holycross.shot.ohco2._
 import edu.holycross.shot.cite._
