@@ -39,39 +39,55 @@ def msg(txt: String): Unit  = {
   println("\n")
 }
 
-def printWordList(label: String = corpusLabel) = {
-  val wordsFile = s"${label}-words.txt"
-  val parseOutput = s"${label}-fst.txt"
-  val cex = s"cex/${label}.cex"
 
+// Find lexical tokens for a corpus.
+def corpusLex(label: String = corpusLabel) = {
+  val cex = s"cex/${label}.cex"
   val corpus = CorpusSource.fromFile(cex)
   msg("Tokenizing texts..")
   val allTokens = Latin24Alphabet.tokenizeCorpus(corpus)
   msg("Done.")
+  allTokens.filter(_.tokenCategory == Some(LexicalToken))
+}
 
-  val lexTokens = allTokens.filter(_.tokenCategory == Some(LexicalToken))
-  val forms = lexTokens.map(_.string.toLowerCase).distinct.sorted
+
+// Find distinct forms for a corpus
+def corpusForms(label: String = corpusLabel) = {
+  val lex = corpusLex(label)
+  lex.map(_.string.toLowerCase).distinct.sorted
+}
+
+def printWordList(label: String = corpusLabel) = {
+  val forms = corpusForms(label)
+  val wordsFile = s"${label}-words.txt"
   new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
-}//val lewisShort = "ls-data.cex"
+}
+
+//val lewisShort = "ls-data.cex"
 
 
+// FST output of parsing a corpus
+def parseCorpus(label: String = corpusLabel) : String = {
+  val cmd = s"${fstinfl} ${parser} ${label}-words.txt"
+  msg("Beginning to parse word list in " + label + "-words.txt")
+  println("Please be patient: there will be a pause after")
+  println("the messages 'reading transducer...' and 'finished' while the parsing takes place.")
+  val fst = execOutput(cmd)
+  fst
+}
 
 // write output to two files:
 // 1.  Complete FST output
 // 2.  List of failed tokens
 def printParses(label: String = corpusLabel)  : Unit = {
-  val cmd = s"${fstinfl} ${parser} ${label}-words.txt"
-  msg("Beginning to parse word list in " + label + "-words.txt")
-""  println("Please be patient: there will be a pause after")
-  println("the messages 'reading transducer...' and 'finished' while the parsing takes place.")
-  val fst = execOutput(cmd)
-  new PrintWriter(parseOutput) {write(fst); close;}
+  val fst = parseCorpus(label)
+  new PrintWriter(s"${label}-fst.txt") {write(fst); close;}
   msg("Done.")
-
 
   val fstLines = fst.split("\n").toVector
   val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
 
+  val forms = corpusForms(label)
   println("Failed on " + failures.size + " forms out of " + forms.size + " total.")
-  new PrintWriter(s"germa${label}-failed.txt"){write(failures.mkString("\n")); close;}
+  new PrintWriter(s"${label}-failed.txt"){write(failures.mkString("\n")); close;}
 }
