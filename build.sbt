@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "edu.holycross.shot.cite" %% "xcite" % "4.0.2",
   "edu.holycross.shot" %% "ohco2" % "10.12.5",
 
-  "edu.holycross.shot" %% "latphone" % "2.4.0",
+  "edu.holycross.shot" %% "latphone" % "2.5.0",
 
   "edu.holycross.shot" %% "midvalidator" % "6.1.1",
 

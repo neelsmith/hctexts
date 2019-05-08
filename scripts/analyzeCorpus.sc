@@ -27,18 +27,18 @@ import better.files.Dsl._
 
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
-  "nepos" -> "lat25",
+  "nepos" -> "lat24",
   "germanicus" -> "lat24"
 )
 
 //////// CONFIGURE LOCAL SET UP  /////////////////////////////
-
+//
 // Explicit paths to SFTS binaries and make.  Adjust SFST paths
 // to /usr/bin if using default install on Linux.
 val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
-
+// Explicit path to directory with tabulae repo:
 val tabulaeDir = "/Users/nsmith/repos/arch-data/coins/tabulae"
 
 // Count successes/failures in an SFST string
@@ -185,10 +185,19 @@ def compileAndParse(wordsFile: String, ortho: String) : String = {
 
 def info: Unit = {
   println("\n\nThings you can do:\n")
-  println("Rebuild parser:\n")
-  println("\tcompile()\n\n")
-  println("Parse a word list:\n")
-  println("\tparseWordsFile(FILENAME)")
+
+  println("""
+  compile: (ortho: String, tabulaeRepo: String) Unit
+  o2corpus: (corpusLabel: String)Corpus
+  corpusTokens: (label: String)Vector[MidToken]
+  corpusLex: (label: String)Vector[MidToken]
+  corpusForms: (label: String)Vector[String]
+  printWordList: (label: String)PrintWriter
+  parseCorpus: (label: String)String
+  printParses: (label: String)Unit
+  parseWordsFile: (wordsFile: String, ortho: String)String
+  compileAndParse: (wordsFile: String, ortho: String)String
+""")
 /*
 orthoMap: scala.collection.immutable.Map[String,String] = Map(nepos -> lat25, germanicus -> lat24)
 compiler: String = /usr/local/bin/fst-compiler-utf8
