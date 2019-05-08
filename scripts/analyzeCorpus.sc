@@ -16,7 +16,9 @@ import edu.holycross.shot.latin._
 // expect this script to be loaded from root directory of repo
 val corpusLabel = "germanicus"
 
-val parser = "parsers/lat24.a"
+//val parser = "parsers/lat24.a"
+
+val orth = "lat25"
 
 // Explicit paths to SFTS binaries and make.  Adjust SFST paths
 // to /usr/bin if using default install on Linux.
@@ -67,8 +69,8 @@ def printWordList(label: String = corpusLabel) = {
 
 
 // FST output of parsing a corpus
-def parseCorpus(label: String = corpusLabel) : String = {
-  val cmd = s"${fstinfl} ${parser} ${label}-words.txt"
+def parseCorpus(label: String = corpusLabel, ortho: String =  orth) : String = {
+  val cmd = s"${fstinfl} parsers/${ortho}.a ${label}-words.txt"
   msg("Beginning to parse word list in " + label + "-words.txt")
   println("Please be patient: there will be a pause after")
   println("the messages 'reading transducer...' and 'finished' while the parsing takes place.")
