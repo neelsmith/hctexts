@@ -17,12 +17,14 @@ val xmlDir = "editions/xml"
 val corpus = TextRepositorySource.fromFiles(catalog, citation, xmlDir).corpus
 val neposUrn = CtsUrn("urn:cts:latinLit:stoa0588.stoa001.fleckeisen:")
 val neposXml = corpus ~~ neposUrn
-//val cexXml = corpus.cex("#")
 
 
 
-val reader = MidProseABReader(MidDiplomaticEdition)
-//val univocal = Corpus(corpus.nodes.map(reader.editedNode(_)))
+val reader = MidTeiReader(MidDiplomaticEdition)
+val univocal = Corpus(neposXml.nodes.map(reader.editedNode(_)))
 
-//import java.io.PrintWriter
-//new PrintWriter("cex/germanicus.cex"){write(univocal.cex("#")); close;}
+
+val cex = univocal.cex("#")
+
+import java.io.PrintWriter
+new PrintWriter("cex/nepos.cex"){write(cex); close;}
