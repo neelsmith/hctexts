@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
 
   "edu.holycross.shot" %% "latphone" % "2.4.0",
 
-  "edu.holycross.shot" %% "midvalidator" % "6.1.0",
+  "edu.holycross.shot" %% "midvalidator" % "6.1.1",
 
   "edu.holycross.shot" %% "tabulae" % "2.3.0",
   "com.github.pathikrit" %% "better-files" % "3.5.0"
