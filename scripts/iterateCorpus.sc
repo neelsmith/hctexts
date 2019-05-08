@@ -14,7 +14,8 @@ val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
 
-val parser = "parsers/lat24.a"
+val ortho = "lat25"
+
 
 /** Get string output of executing system process.
 *
@@ -25,18 +26,20 @@ def execOutput(cmd: String) : String = {
 }
 
 
-def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae") = {
+def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae", orth : String  = "lat25") = {
   val tabulae = File(repo)
   val datasets = "morphology"
-  val c = "lat24"
+
   val conf =  Configuration(compiler,fstinfl,make,datasets)
 
   try {
-    FstCompiler.compile(File(datasets), File(repo), c, conf, true)
-    val tabulaeParser = repo/s"parsers/${c}/latin.a"
-    val localParser = File(parser)
+    FstCompiler.compile(File(datasets), File(repo), orth, conf, true)
+    val tabulaeParser = repo/s"parsers/${orth}/latin.a"
+
+
+    val localParser = File(s"parsers/${orth}.a")
     cp(tabulaeParser, localParser)
-    println("\nCompilation completed.  Parser lat24.a is " +
+    println(s"\nCompilation completed.  Parser ${orth}.a is " +
     "available in directory \"parser\"\n\n")
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
@@ -58,7 +61,7 @@ def lineCount(f: String): Int = {
 
 }
 // Get FST output of parsing list of words in a file.
-def parseWordsFile(wordsFile: String, fstParser: String = parser) : String = {
+def parseWordsFile(wordsFile: String, fstParser: String ) : String = {
   val fstinfl = "/usr/local/bin/fst-infl"
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst = execOutput(cmd)
@@ -66,7 +69,7 @@ def parseWordsFile(wordsFile: String, fstParser: String = parser) : String = {
   fst
 }
 
-def compileAndParse(wordsFile: String, fstParser: String = parser) : String = {
+def compileAndParse(wordsFile: String, fstParser: String) : String = {
   compile()
   val fstinfl = "/usr/local/bin/fst-infl"
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
