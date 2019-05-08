@@ -1,5 +1,14 @@
-// scripts to analyze a corpus, and print FST output and
-// list of tokens with failed analyzes to files.
+// scripts for working with a corpus.
+//
+// These functions depend on conventions for finding
+// files and other data for a given corpus
+// keyed to a "corpus label" as follows:
+//
+// - cex/LABEL.cex = CEX file for the corpus.  Load an OHCO2 corpus from this
+// file with o2corpus(LABEL)
+// - orthoMap(LABEL) = id for orthography system used in this corpus.
+// -
+
 
 import edu.holycross.shot.tabulae.builder._
 import edu.holycross.shot.tabulae._
@@ -15,15 +24,14 @@ import better.files._
 import java.io.{File => JFile}
 import better.files.Dsl._
 
+
+// Map of corpus labels to IDs for orthography systems
+val orthoMap = Map(
+  "nepos" -> "lat25",
+  "germanicus" -> "lat24"
+)
+
 //////// CONFIGURE LOCAL SET UP  /////////////////////////////
-
-// CEX file for corpus of texts: relative reference since we
-// expect this script to be loaded from root directory of repo
-val corpusLabel = "germanicus"
-
-//val parser = "parsers/lat24.a"
-
-val orth = "lat25"
 
 // Explicit paths to SFTS binaries and make.  Adjust SFST paths
 // to /usr/bin if using default install on Linux.
@@ -31,7 +39,9 @@ val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
 
+val tabulaeDir = "/Users/nsmith/repos/arch-data/coins/tabulae"
 
+// Count successes/failures in an SFST string
 def summarizeFst(fst: String, total: Int) : Unit = {
   val fstLines = fst.split("\n").toVector
   val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
@@ -46,20 +56,20 @@ def lineCount(f: String): Int = {
 }
 
 
-def compile(repo: String =  "/Users/nsmith/repos/arch-data/coins/tabulae", orth : String  = "lat25") = {
-  val tabulae = File(repo)
+// Compile a binary SFST parser using tabulae
+def compile(ortho : String, tabulaeRepo: String =  tabulaeDir) = {
+  val tabulae = File(tabulaeRepo)
   val datasets = "morphology"
 
   val conf =  Configuration(compiler,fstinfl,make,datasets)
+  val tabulaeParser = tabulaeRepo/s"parsers/${ortho}/latin.a"
+  val localParser = File(s"parsers/${ortho}.a")
 
   try {
-    FstCompiler.compile(File(datasets), File(repo), orth, conf, true)
-    val tabulaeParser = repo/s"parsers/${orth}/latin.a"
+    FstCompiler.compile(File(datasets), File(tabulaeRepo), ortho, conf, true)
 
-
-    val localParser = File(s"parsers/${orth}.a")
     cp(tabulaeParser, localParser)
-    println(s"\nCompilation completed.  Parser ${orth}.a is " +
+    println(s"\nCompilation completed.  Parser ${ortho}.a is " +
     "available in directory \"parser\"\n\n")
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
@@ -74,6 +84,7 @@ def execOutput(cmd: String) : String = {
   cmd !!
 }
 
+// pretty print user messages
 def msg(txt: String): Unit  = {
   println("\n\n")
   println(txt)
@@ -81,28 +92,41 @@ def msg(txt: String): Unit  = {
 }
 
 
+// load OHCO2 corpus for label
 def o2corpus(corpusLabel : String) : Corpus = {
   val cex = s"cex/${corpusLabel}.cex"
   CorpusSource.fromFile(cex)
 }
 
+// Tokenize corpus
+def corpusTokens(label: String) = {
+  orthoMap(label) match {
+    case "lat24" => Latin24Alphabet.tokenizeCorpus(o2corpus(label))
+    case "lat25" => Latin25Alphabet.tokenizeCorpus(o2corpus(label))
+    case s: String => {
+      val msg = s"Orthographic system ${orthoMap(label)} for label ${label} not recognized or not implemented."
+      println(msg)
+      throw new Exception(msg)
+    }
+  }
+}
 
 // Find lexical tokens for a corpus.
-def corpusLex(label: String = corpusLabel) = {
+def corpusLex(label: String) = {
   msg("Tokenizing texts..")
-  val allTokens = Latin24Alphabet.tokenizeCorpus(o2corpus(label))
+  val allTokens = corpusTokens(label)
   msg("Done.")
   allTokens.filter(_.tokenCategory == Some(LexicalToken))
 }
 
 
 // Find distinct forms for a corpus
-def corpusForms(label: String = corpusLabel) = {
+def corpusForms(label: String) = {
   val lex = corpusLex(label)
   lex.map(_.string.toLowerCase).distinct.sorted
 }
 
-def printWordList(label: String = corpusLabel) = {
+def printWordList(label: String) = {
   val forms = corpusForms(label)
   val wordsFile = s"${label}-words.txt"
   new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
@@ -112,7 +136,8 @@ def printWordList(label: String = corpusLabel) = {
 
 
 // FST output of parsing a corpus
-def parseCorpus(label: String = corpusLabel, ortho: String =  orth) : String = {
+def parseCorpus(label: String) : String = {
+  val ortho = orthoMap(label)
   val cmd = s"${fstinfl} parsers/${ortho}.a ${label}-words.txt"
   msg("Beginning to parse word list in " + label + "-words.txt")
   println("Please be patient: there will be a pause after")
@@ -124,7 +149,7 @@ def parseCorpus(label: String = corpusLabel, ortho: String =  orth) : String = {
 // write output to two files:
 // 1.  Complete FST output
 // 2.  List of failed tokens
-def printParses(label: String = corpusLabel)  : Unit = {
+def printParses(label: String)  : Unit = {
   val fst = parseCorpus(label)
   new PrintWriter(s"${label}-fst.txt") {write(fst); close;}
   msg("Done.")
@@ -139,7 +164,8 @@ def printParses(label: String = corpusLabel)  : Unit = {
 
 
 // Get FST output of parsing list of words in a file.
-def parseWordsFile(wordsFile: String, fstParser: String ) : String = {
+def parseWordsFile(wordsFile: String, ortho: String ) : String = {
+  val fstParser = s"parsers/${ortho}.a"
   val fstinfl = "/usr/local/bin/fst-infl"
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst = execOutput(cmd)
@@ -147,8 +173,9 @@ def parseWordsFile(wordsFile: String, fstParser: String ) : String = {
   fst
 }
 
-def compileAndParse(wordsFile: String, fstParser: String) : String = {
-  compile()
+def compileAndParse(wordsFile: String, ortho: String) : String = {
+  val fstParser = s"parsers/${ortho}.a"
+  compile(ortho)
   val fstinfl = "/usr/local/bin/fst-infl"
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst =  execOutput(cmd)
@@ -162,5 +189,27 @@ def info: Unit = {
   println("\tcompile()\n\n")
   println("Parse a word list:\n")
   println("\tparseWordsFile(FILENAME)")
+/*
+orthoMap: scala.collection.immutable.Map[String,String] = Map(nepos -> lat25, germanicus -> lat24)
+compiler: String = /usr/local/bin/fst-compiler-utf8
+fstinfl: String = /usr/local/bin/fst-infl
+make: String = /usr/bin/make
+tabulaeDir: String = /Users/nsmith/repos/arch-data/coins/tabulae
+summarizeFst: (fst: String, total: Int)Unit
+lineCount: (f: String)Int
+compile: (ortho: String, tabulaeRepo: String)Unit
+execOutput: (cmd: String)String
+msg: (txt: String)Unit
+o2corpus: (corpusLabel: String)edu.holycross.shot.ohco2.Corpus
+corpusTokens: (label: String)Vector[edu.holycross.shot.mid.validator.MidToken]
+corpusLex: (label: String)scala.collection.immutable.Vector[edu.holycross.shot.mid.validator.MidToken]
+corpusForms: (label: String)scala.collection.immutable.Vector[String]
+printWordList: (label: String)java.io.PrintWriter
+parseCorpus: (label: String)String
+printParses: (label: String)Unit
+parseWordsFile: (wordsFile: String, ortho: String)String
+compileAndParse: (wordsFile: String, ortho: String)String
+info: Unit
 
+*/
 }
