@@ -42,12 +42,16 @@ def msg(txt: String): Unit  = {
 }
 
 
+def o2corpus(corpusLabel : String) : Corpus = {
+  val cex = s"cex/${corpusLabel}.cex"
+  CorpusSource.fromFile(cex)
+}
+
+
 // Find lexical tokens for a corpus.
 def corpusLex(label: String = corpusLabel) = {
-  val cex = s"cex/${label}.cex"
-  val corpus = CorpusSource.fromFile(cex)
   msg("Tokenizing texts..")
-  val allTokens = Latin24Alphabet.tokenizeCorpus(corpus)
+  val allTokens = Latin24Alphabet.tokenizeCorpus(o2corpus(label))
   msg("Done.")
   allTokens.filter(_.tokenCategory == Some(LexicalToken))
 }
