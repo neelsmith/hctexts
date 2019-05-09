@@ -14,12 +14,20 @@ import edu.holycross.shot.tabulae.builder._
 import edu.holycross.shot.tabulae._
 import edu.holycross.shot.cite._
 import edu.holycross.shot.ohco2._
-import scala.io.Source
+
+
+import edu.holycross.shot.latin._
+import edu.holycross.shot.greek._
+
 import edu.holycross.shot.mid.validator._
+
+import scala.io.Source
+
 import java.io.PrintWriter
 import sys.process._
 import scala.language.postfixOps
-import edu.holycross.shot.latin._
+
+
 import better.files._
 import java.io.{File => JFile}
 import better.files.Dsl._
@@ -28,7 +36,8 @@ import better.files.Dsl._
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
   "nepos" -> "lat24",
-  "germanicus" -> "lat24"
+  "germanicus" -> "lat24",
+  "oeconomicus" -> "litgreek"
 )
 
 //////// CONFIGURE LOCAL SET UP  /////////////////////////////
@@ -103,6 +112,7 @@ def corpusTokens(label: String) = {
   orthoMap(label) match {
     case "lat24" => Latin24Alphabet.tokenizeCorpus(o2corpus(label))
     case "lat25" => Latin25Alphabet.tokenizeCorpus(o2corpus(label))
+    case "litgreek" => LiteraryGreekString.tokenizeCorpus(o2corpus(label))
     case s: String => {
       val msg = s"Orthographic system ${orthoMap(label)} for label ${label} not recognized or not implemented."
       println(msg)
