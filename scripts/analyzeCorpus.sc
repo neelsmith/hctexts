@@ -57,8 +57,8 @@ def lineCount(f: String): Int = {
 
 
 // Compile a binary SFST parser using tabulae
-def compile(ortho : String, tabulaeRepo: String =  tabulaeDir) = {
-  val tabulae = File(tabulaeRepo)
+def tabulae(ortho : String, tabulaeRepo: String =  tabulaeDir) = {
+  //val tabulae = File(tabulaeRepo)
   val datasets = "morphology"
 
   val conf =  Configuration(compiler,fstinfl,make,datasets)
@@ -173,9 +173,9 @@ def parseWordsFile(wordsFile: String, ortho: String ) : String = {
   fst
 }
 
-def compileAndParse(wordsFile: String, ortho: String) : String = {
+def tabulaeAndParse(wordsFile: String, ortho: String) : String = {
   val fstParser = s"parsers/${ortho}.a"
-  compile(ortho)
+  tabulae(ortho)
   val fstinfl = "/usr/local/bin/fst-infl"
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst =  execOutput(cmd)
@@ -187,7 +187,7 @@ def info: Unit = {
   println("\n\nThings you can do:\n")
 
   println("""
-  compile: (ortho: String, tabulaeRepo: String) Unit
+  tabulae: (ortho: String, tabulaeRepo: String) Unit
   o2corpus: (corpusLabel: String)Corpus
   corpusTokens: (label: String)Vector[MidToken]
   corpusLex: (label: String)Vector[MidToken]
@@ -196,7 +196,7 @@ def info: Unit = {
   parseCorpus: (label: String)String
   printParses: (label: String)Unit
   parseWordsFile: (wordsFile: String, ortho: String)String
-  compileAndParse: (wordsFile: String, ortho: String)String
+  tabulaeAndParse: (wordsFile: String, ortho: String)String
 """)
 /*
 orthoMap: scala.collection.immutable.Map[String,String] = Map(nepos -> lat25, germanicus -> lat24)
@@ -206,7 +206,7 @@ make: String = /usr/bin/make
 tabulaeDir: String = /Users/nsmith/repos/arch-data/coins/tabulae
 summarizeFst: (fst: String, total: Int)Unit
 lineCount: (f: String)Int
-compile: (ortho: String, tabulaeRepo: String)Unit
+tabulae: (ortho: String, tabulaeRepo: String)Unit
 execOutput: (cmd: String)String
 msg: (txt: String)Unit
 o2corpus: (corpusLabel: String)edu.holycross.shot.ohco2.Corpus
@@ -217,7 +217,7 @@ printWordList: (label: String)java.io.PrintWriter
 parseCorpus: (label: String)String
 printParses: (label: String)Unit
 parseWordsFile: (wordsFile: String, ortho: String)String
-compileAndParse: (wordsFile: String, ortho: String)String
+tabulaeAndParse: (wordsFile: String, ortho: String)String
 info: Unit
 
 */
