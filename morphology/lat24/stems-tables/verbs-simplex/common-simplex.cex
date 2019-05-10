@@ -3,7 +3,11 @@ StemUrn#LexicalEntity#StemString#MorphologicalClass
 latcmorph.verbn1605a#ls.n1605#ag#c3pres
 latcmorph.verbn1605b#ls.n1605#eg#pftact
 latcmorph.verbn1605c#ls.n1605#act#pftpass
-
+latcmorph.verbn14599a#ls.n14599#cap#c3iopres
+latcmorph.verbn14599a2#ls.n14599#cip#c3iopres
+latcmorph.verbn14599b#ls.n14599#cep#pftact
+latcmorph.verbn14599c#ls.n14599#capt#pftpass
+latcmorph.verbn14599c2#ls.n14599#cept#pftpass
 latcmorph.verbn14847a#ls.n14847#duc#c3pres
 latcmorph.verbn14847b#ls.n14847#dux#pftact
 latcmorph.verbn14847c#ls.n14847#duct#pftpass
