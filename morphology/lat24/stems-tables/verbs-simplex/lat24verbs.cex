@@ -1,5 +1,18 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
+latcmorph.verbn48519a#ls.n48519#ton#c1pres
+latcmorph.verbn48519b#ls.n48519#tonu#pftact
+latcmorph.verbn48519c#ls.n48519#tonit#pftpass
+
+
+latcmorph.verbn27522#ls.n27522#macul#conj1
+lat24morph.verbnn18889a#ls.n18889#fru#c3pres
+lat24morph.verbn18889c#ls.n18889#fruct#pftpass
+
+lat24morph.verbn28984a#ls.n28984#metu#c3pres
+lat24morph.verbn28984b#ls.n28984#metu#pftact
+lat24morph.verbn28984c#ls.n28984#metut#pftpass
+
 lat24morph.verbn1320#ls.n1320#aequ#conj1
 lat24morph.verbn4450#ls.n4450#aud#c2pres
 lat24morph.verbn4450#ls.n4450#aus#pftpass
