@@ -22,4 +22,4 @@ def subVal(sub: String, txt: String, subList: Vector[String]) :  String = {
 
 val modified = subVal(subList.head, txt, subList.tail)
 
-new PrintWriter(f){write(txt);close;}
+new PrintWriter(f){write(modified);close;}

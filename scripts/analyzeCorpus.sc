@@ -127,7 +127,7 @@ def corpusLex(label: String) = {
   msg("Tokenizing texts..")
   val allTokens = corpusTokens(label)
   msg("Done.")
-  allTokens.filter(_.tokenCategory == Some(LexicalToken))
+  allTokens.filter(_.tokenCategory.toString == "Some(LexicalToken)")
 }
 
 
