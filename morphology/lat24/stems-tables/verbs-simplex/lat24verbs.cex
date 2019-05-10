@@ -1,18 +1,5 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
-latcmorph.verbn48519a#ls.n48519#ton#c1pres
-latcmorph.verbn48519b#ls.n48519#tonu#pftact
-latcmorph.verbn48519c#ls.n48519#tonit#pftpass
-
-
-latcmorph.verbn27522#ls.n27522#macul#conj1
-lat24morph.verbnn18889a#ls.n18889#fru#c3pres
-lat24morph.verbn18889c#ls.n18889#fruct#pftpass
-
-lat24morph.verbn28984a#ls.n28984#metu#c3pres
-lat24morph.verbn28984b#ls.n28984#metu#pftact
-lat24morph.verbn28984c#ls.n28984#metut#pftpass
-
 lat24morph.verbn1320#ls.n1320#aequ#conj1
 lat24morph.verbn4450#ls.n4450#aud#c2pres
 lat24morph.verbn4450#ls.n4450#aus#pftpass
@@ -57,6 +44,8 @@ lat24morph.verbn17953#ls.n17953#fer#conj4
 lat24morph.verbn17964#ls.n17964#tul#pftact
 lat24morph.verbn17964#ls.n17964#lat#pftpass
 lat24morph.verbn18726#ls.n18726#fraud#conj1
+lat24morph.verbnn18889a#ls.n18889#fru#c3pres
+lat24morph.verbn18889c#ls.n18889#fruct#pftpass
 lat24morph.verbn18943#ls.n18943#fug#conj3io
 lat24morph.verbn18949#ls.n18949#fug#conj1
 lat24morph.verbn19048#ls.n19048#fund#c3pres
@@ -75,6 +64,10 @@ lat24morph.verbn26721#ls.n26721#liqu#pftact
 lat24morph.verbn26988#ls.n26988#loqu#c3pres
 lat24morph.verbn26988#ls.n26988#locut#pftpass
 lat24morph.verbn27045#ls.n27045#luc#c2pres
+latcmorph.verbn27522#ls.n27522#macul#conj1
+lat24morph.verbn28984a#ls.n28984#metu#c3pres
+lat24morph.verbn28984b#ls.n28984#metu#pftact
+lat24morph.verbn28984c#ls.n28984#metut#pftpass
 lat24morph.verbn29242#ls.n29242#misc#c2pres
 lat24morph.verbn29242#ls.n29242#mixt#pftpass
 lat24morph.verbn29242#ls.n29242#miscu#pftact
@@ -140,6 +133,9 @@ lat24morph.verbn47126#ls.n47126#suspic#conj3io
 lat24morph.verbn47770#ls.n47770#ten#c2pres
 lat24morph.verbn47770#ls.n47770#tenu#pftact
 lat24morph.verbn47770#ls.n47770#tens#pftpass
+latcmorph.verbn48519a#ls.n48519#ton#c1pres
+latcmorph.verbn48519b#ls.n48519#tonu#pftact
+latcmorph.verbn48519c#ls.n48519#tonit#pftpass
 lat24morph.verbn48771#ls.n48771#iv#pftact
 lat24morph.verbn50065#ls.n50065#vac#conj1
 lat24morph.verb124#ls.n50077#vad#c3pres
