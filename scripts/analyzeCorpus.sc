@@ -36,6 +36,7 @@ import better.files.Dsl._
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
   "nepos" -> "lat24",
+  "eutropius" -> "lat24",
   "germanicus" -> "lat24",
   "oeconomicus" -> "litgreek"
 )
