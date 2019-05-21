@@ -45,6 +45,18 @@ val orthoMap = Map(
   "iliad-allen" -> "litgreek"
 )
 
+def lang(label: String) : String  = {
+  orthoMap(label) match {
+    case "lat24" => "lat"
+    case "litgreek" => "grc"
+    case _ => {
+      val err = s"Label ${label} not mapped to an ISO lang code."
+      println(err)
+      throw new Exception(err)
+    }
+  }
+}
+
 //////// CONFIGURE LOCAL SET UP  /////////////////////////////
 //
 // Explicit paths to SFTS binaries and make.  Adjust SFST paths
@@ -137,7 +149,23 @@ def corpusLex(label: String) = {
 // Find distinct forms for a corpus
 def corpusForms(label: String) = {
   val lex = corpusLex(label)
-  lex.map(_.string.toLowerCase).distinct.sorted
+  lang(label) match {
+    case "lat" =>   lex.map(_.string.toLowerCase).distinct.sorted
+    case "grc" =>  {
+      msg("Beginning to sort Greek text for " + label + "...")
+      val strs = lex.map(_.string.toLowerCase).distinct
+      val lgs = strs.map(LiteraryGreekString(_))
+      val flipped = lgs.map(_.flipGrave).distinct
+      val aciiSort = flipped.distinct.sortWith(_ < _)
+
+      
+      val sortedForms =
+
+        //lex.distinct.map(tkn => LiteraryGreekString(tkn.string.toLowerCase).flipGrave).distinct.sortWith(_ < _).map(_.ucode)
+      msg("Done sorting.")
+      sortedForms
+    }
+  }
 }
 
 def printWordList(label: String) = {
