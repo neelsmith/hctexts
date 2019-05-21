@@ -35,9 +35,12 @@ import better.files.Dsl._
 
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
-  "nepos" -> "lat24",
+
   "eutropius" -> "lat24",
   "germanicus" -> "lat24",
+  "nepos" -> "lat24",
+  
+  "antoninus" -> "litgreek",
   "oeconomicus" -> "litgreek"
 )
 
@@ -62,7 +65,6 @@ def summarizeFst(fst: String, total: Int) : Unit = {
 // no.lines in a file
 def lineCount(f: String): Int = {
   Source.fromFile(f).getLines.size
-
 }
 
 
