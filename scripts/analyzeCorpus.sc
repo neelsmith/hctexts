@@ -41,7 +41,8 @@ val orthoMap = Map(
   "nepos" -> "lat24",
 
   "antoninus" -> "litgreek",
-  "oeconomicus" -> "litgreek"
+  "oeconomicus" -> "litgreek",
+  "iliad-allen" -> "litgreek"
 )
 
 //////// CONFIGURE LOCAL SET UP  /////////////////////////////
