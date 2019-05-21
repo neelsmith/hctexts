@@ -39,7 +39,7 @@ val orthoMap = Map(
   "eutropius" -> "lat24",
   "germanicus" -> "lat24",
   "nepos" -> "lat24",
-  
+
   "antoninus" -> "litgreek",
   "oeconomicus" -> "litgreek"
 )
@@ -71,7 +71,7 @@ def lineCount(f: String): Int = {
 // Compile a binary SFST parser using tabulae
 def tabulae(ortho : String, tabulaeRepo: String =  tabulaeDir) = {
   //val tabulae = File(tabulaeRepo)
-  val datasets = "morphology"
+  val datasets = "morphology-latin"
 
   val conf =  Configuration(compiler,fstinfl,make,datasets)
   val tabulaeParser = tabulaeRepo/s"parsers/${ortho}/latin.a"
