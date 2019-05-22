@@ -154,15 +154,17 @@ def corpusForms(label: String) = {
     case "grc" =>  {
       msg("Beginning to sort Greek text for " + label + "...")
       val strs = lex.map(_.string.toLowerCase).distinct
+      msg(s"${strs.size} distinct strings, converting to LGS...")
       val lgs = strs.map(LiteraryGreekString(_))
+      msg(s"${lgs.size} distinct Greek strings, flipping grave accents...")
       val flipped = lgs.map(_.flipGrave).distinct
-      val aciiSort = flipped.distinct.sortWith(_ < _)
+      msg(s"${flipped.size} distinct Greek strings remain, sorting...")
+      val aciiSort = flipped.sortWith(_ < _)
+      msg("Done sorting, mapping to Unicode...")
+      val sortedForms =asciiSort.map(_.ucode)
+      msg("Done sorting!")
 
-      
-      val sortedForms =
 
-        //lex.distinct.map(tkn => LiteraryGreekString(tkn.string.toLowerCase).flipGrave).distinct.sortWith(_ < _).map(_.ucode)
-      msg("Done sorting.")
       sortedForms
     }
   }
