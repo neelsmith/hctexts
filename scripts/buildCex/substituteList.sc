@@ -2,13 +2,15 @@
 import scala.io.Source
 import java.io.PrintWriter
 
-val subs = "eutropius-que.txt"
-val f = "cex/eutropius.cex"
-val txt  = Source.fromFile(f).getLines.mkString("\n")
+val substitutionList = "scripts/buildCex/eutropius-que.txt"
+val cexText = "cex/eutropius.cex"
 
-val subList = Source.fromFile(subs).getLines.toVector
 
-def subVal(sub: String, txt: String, subList: Vector[String]) :  String = {
+
+// Recusively process list of strings with enclitic -que.
+// Replace any enclitics showing up in the substitution list with
+// explicitly demarcated form.
+def substituteQue(sub: String, txt: String, subList: Vector[String]) :  String = {
   if (subList.isEmpty) {
     val hyphenate = sub.replaceFirst("que$", "-que")
     //println(sub + "->" + hyphenate)
@@ -16,10 +18,20 @@ def subVal(sub: String, txt: String, subList: Vector[String]) :  String = {
   } else {
     val hyphenate = sub.replaceFirst("que$", "-que")
     val newText = txt.replaceAll(sub, hyphenate)
-    subVal(subList.head, newText, subList.tail)
+    substituteQue(subList.head, newText, subList.tail)
   }
 }
 
-val modified = subVal(subList.head, txt, subList.tail)
 
-new PrintWriter(f){write(modified);close;}
+def modifyText(srcFile: String = cexText, subListFile: String = substitutionList) : String = {
+  val txt  = Source.fromFile(srcFile).getLines.mkString("\n")
+  val subList = Source.fromFile(subListFile).getLines.toVector
+  val modified = substituteQue(subList.head, txt, subList.tail)
+  modified
+}
+
+//
+// new PrintWriter(f){write(modified);close;}
+
+
+println("\n\nUsage:")
