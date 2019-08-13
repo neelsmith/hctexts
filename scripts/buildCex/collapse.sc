@@ -3,7 +3,17 @@ import edu.holycross.shot.cite._
 import edu.holycross.shot.ohco2._
 
 def addText(accum: String, toAdd: String) : String = {
-  accum + toAdd
+  val hyphenated = "-$".r
+  hyphenated.findFirstIn(toAdd) match {
+    case None => {
+      // word break, add space:
+      accum + toAdd + " "
+    }
+    case _ => {
+      // Drop hyphen:
+      accum + toAdd.dropRight(1)
+    }
+  }
 }
 
 def collapse(src: Vector[String],
@@ -22,23 +32,21 @@ def collapse(src: Vector[String],
 
       // First node;
       if (currRef.isEmpty) {
-        collapse(src.tail, cite,  addText(currText, txt), output)
+        collapse(src.tail, cite,  addText(currText, txt.trim), output)
 
       } else if (cite == currRef) {
-      // Other:  strip hyphens!  Carefully!
-
-        collapse(src.tail, currRef,  addText(currText, txt), output)
+        // Continuing content of same node:
+        collapse(src.tail, currRef,  addText(currText, txt.trim), output)
 
       } else {
-        //Write  prev passage:
+        // Write  prev passage, start new node:
         val textNode = s"${currRef}#${currText}"
-
-        collapse(src.tail,cite, txt , output :+ textNode)
+        collapse(src.tail,cite, addText("",txt.trim), output :+ textNode.trim)
       }
 
     } else {
       println("FAILED ON '" + src.head + "'")
-      //  Ignore bad input?
+      // From Hyginus source, OK to ignore bad input.
       collapse(src.tail, currRef, currText, output)
     }
 
