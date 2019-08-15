@@ -15,6 +15,21 @@ latcommon.pftact_pft10#pftact#erimus#1st#pl#pft#subj#act
 latcommon.pftact_pft11#pftact#eristis#2nd#pl#pft#subj#act
 latcommon.pftact_pft12#pftact#erint#3rd#pl#pft#subj#act
 
+latcommon.ere_pft1#conj2#ui#1st#sg#pft#indic#act
+latcommon.ere_pft2#conj2#uisti#2nd#sg#pft#indic#act
+latcommon.ere_pft3#conj2#uit#3rd#sg#pft#indic#act
+latcommon.ere_pft4#conj2#uimus#1st#pl#pft#indic#act
+latcommon.ere_pft5#conj2#uistis#2nd#pl#pft#indic#act
+latcommon.ere_pft6#conj2#uerunt#3rd#pl#pft#indic#act
+latcommon.ere_pft6b#conj2#uere#3rd#pl#pft#indic#act
+
+latcommon.ere_pft7#conj2#uerim#1st#sg#pft#subj#act
+latcommon.ere_pft8#conj2#ueris#2nd#sg#pft#subj#act
+latcommon.ere_pft8b#conj2#uere#2nd#sg#pft#subj#act
+latcommon.ere_pft9#conj2#uerit#3rd#sg#pft#subj#act
+latcommon.ere_pft10#conj2#uerimus#1st#pl#pft#subj#act
+latcommon.ere_pft11#conj2#ueritis#2nd#pl#pft#subj#act
+latcommon.ere_pft12#conj2#uerint#3rd#pl#pft#subj#act
 
 latcommon.ereio_pft1#conj3io#i#1st#sg#pft#indic#act
 latcommon.ereio_pft2#conj3io#isti#2nd#sg#pft#indic#act
