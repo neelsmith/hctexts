@@ -1,13 +1,15 @@
 // scripts for working with a corpus.
 //
-// These functions depend on conventions for finding
-// files and other data for a given corpus
-// keyed to a "corpus label" as follows:
+// The one bit of magic in these functions is a
+// convention for finding files and other data for a given corpus
+// keyed to a "corpus label."
 //
-// - cex/LABEL.cex = CEX file for the corpus.  Load an OHCO2 corpus from this
-// file with o2corpus(LABEL)
-// - orthoMap(LABEL) = id for orthography system used in this corpus.
-// -
+//  Corpus labels map between two key things:
+//
+// 1. a file named cex/LABEL.cex. This is the CEX file for the corpus.  Load an OHCO2 corpus from this. Example: o2corpus(LABEL) create an ohco2 Corpus.
+// 2. a key in this scripts `orthoMap`.  E.g.,  orthoMap(LABEL) produces
+// the id for the   orthography system used in this corpus.
+
 
 
 import edu.holycross.shot.tabulae.builder._
@@ -38,7 +40,8 @@ val orthoMap = Map(
 
   "eutropius" -> "lat24",
   "germanicus" -> "lat24",
-  "nepos" -> "lat24",
+  "hyginus" -> "lat24",
+   "nepos" -> "lat24",
 
   "antoninus" -> "litgreek",
   "oeconomicus" -> "litgreek",
@@ -65,7 +68,7 @@ val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
 // Explicit path to directory with tabulae repo:
-val tabulaeDir = "/Users/nsmith/repos/arch-data/coins/tabulae"
+val tabulaeDir = "/Users/nsmith/Desktop/tabulae"
 
 // Count successes/failures in an SFST string
 def summarizeFst(fst: String, total: Int) : Unit = {
@@ -146,11 +149,13 @@ def corpusLex(label: String) = {
 }
 
 
-// Find distinct forms for a corpus
+// Find distinct forms for a Greek corpus
 def corpusForms(label: String) = {
   val lex = corpusLex(label)
   lang(label) match {
     case "lat" =>   lex.map(_.string.toLowerCase).distinct.sorted
+    case _ =>  lex.map(_.string.toLowerCase).distinct.sorted
+    /*
     case "grc" =>  {
       msg("Beginning to sort Greek text for " + label + "...")
       val strs = lex.map(_.string.toLowerCase).distinct
@@ -167,9 +172,11 @@ def corpusForms(label: String) = {
 
       sortedForms
     }
+    */
   }
 }
 
+// Compile list of forms for a corpus and write to a text file.
 def printWordList(label: String) = {
   val forms = corpusForms(label)
   val wordsFile = s"${label}-words.txt"
@@ -217,6 +224,7 @@ def parseWordsFile(wordsFile: String, ortho: String ) : String = {
   fst
 }
 
+// Recompile parse and parse words file.
 def tabulaeAndParse(wordsFile: String, ortho: String) : String = {
   val fstParser = s"parsers/${ortho}.a"
   tabulae(ortho)
@@ -231,16 +239,16 @@ def info: Unit = {
   println("\n\nThings you can do:\n")
 
   println("""
-  tabulae: (ortho: String, tabulaeRepo: String) Unit
-  o2corpus: (corpusLabel: String)Corpus
-  corpusTokens: (label: String)Vector[MidToken]
-  corpusLex: (label: String)Vector[MidToken]
-  corpusForms: (label: String)Vector[String]
-  printWordList: (label: String)PrintWriter
-  parseCorpus: (label: String)String
+  tabulae: (ortho: String, tabulaeRepo: String) Unit.  Compile a binary SFST parser for a given orthography.
+  o2corpus: (corpusLabel: String)Corpus. Load OHCO2 corpus for label.
+  corpusTokens: (label: String)Vector[MidToken]. Tokenize a corpus identified by label.
+  corpusLex: (label: String)Vector[MidToken].  Find lexical tokens for a corpus.
+  corpusForms: (label: String)Vector[String].  Find distinct forms for a corpus.
+  printWordList: (label: String)PrintWriter. Compile list of forms for a corpus and write to a text file.
+  parseCorpus: (label: String)String.  Use FST parse to parse a corpus
   printParses: (label: String)Unit
-  parseWordsFile: (wordsFile: String, ortho: String)String
-  tabulaeAndParse: (wordsFile: String, ortho: String)String
+  parseWordsFile: (wordsFile: String, ortho: String).  Parse words in a file.
+  tabulaeAndParse: (wordsFile: String, ortho: String).  Recompile parser and parse words file.
 """)
 /*
 orthoMap: scala.collection.immutable.Map[String,String] = Map(nepos -> lat25, germanicus -> lat24)

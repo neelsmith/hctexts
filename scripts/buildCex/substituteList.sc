@@ -33,5 +33,8 @@ def modifyText(srcFile: String = cexText, subListFile: String = substitutionList
 //
 // new PrintWriter(f){write(modified);close;}
 
-
-println("\n\nUsage:")
+def info : Unit = {
+  println("\n\nUsage:\n")
+  println("\tmodifyText(CEX_TEXT, SUBSTIION_LIST_FILE, ENCLITIC)\n")
+  println("E.g.,\n\tmodifyText(\"cex/hyginus.cex\", \"scripts/buildCex/hyginus-que.txt\", \"que\")\n\n")
+}
