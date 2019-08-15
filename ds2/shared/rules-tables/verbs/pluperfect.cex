@@ -10,6 +10,21 @@ latcommon.are_plupft12a#conj1#assent#3rd#pl#plupft#subj#act
 
 
 
+latcommon.ere_plupft1#conj2#ueram#1st#sg#plupft#indic#act
+latcommon.ere_plupft2#conj2#ueras#2nd#sg#plupft#indic#act
+latcommon.ere_plupft3#conj2#uerat#3rd#sg#plupft#indic#act
+latcommon.ere_plupft4#conj2#ueramus#1st#pl#plupft#indic#act
+latcommon.ere_plupft5#conj2#ueratis#2nd#pl#plupft#indic#act
+latcommon.ere_plupft6#conj2#uerant#3rd#pl#plupft#indic#act
+
+latcommon.ere_plupft7#conj2#uissem#1st#sg#plupft#subj#act
+latcommon.ere_plupft8#conj2#uisses#2nd#sg#plupft#subj#act
+latcommon.ere_plupft9#conj2#uisset#3rd#sg#plupft#subj#act
+latcommon.ere_plupft10#conj2#uissemus#1st#pl#plupft#subj#act
+latcommon.ere_plupft11#conj2#uissetis#2nd#pl#plupft#subj#act
+latcommon.ere_plupft12#conj2#uissent#3rd#pl#plupft#subj#act
+
+
 latcommon.ereio_plupft1#conj3io#eram#1st#sg#plupft#indic#act
 latcommon.ereio_plupft2#conj3io#eras#2nd#sg#plupft#indic#act
 latcommon.ereio_plupft3#conj3io#erat#3rd#sg#plupft#indic#act
