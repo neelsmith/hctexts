@@ -134,7 +134,9 @@ def corpusForms(label: String) : Vector[String] = {
   }
 }
 
-case class Frequency(string: String, count: Int)
+case class Frequency(string: String, count: Int) {
+  def cex = {string + "#" + count}
+}
 // Find histogram of forms
 def corpusFormsHisto(label: String) : Vector[Frequency]= {
   val lex = corpusLex(label).map(_.string.toLowerCase)
@@ -143,14 +145,34 @@ def corpusFormsHisto(label: String) : Vector[Frequency]= {
   sorted.map( freq => Frequency(freq._1, freq._2))
 }
 
+
+
+// Write a histogram to a file
+def printHisto(freqs: Vector[Frequency], fName: String): Unit = {
+  new PrintWriter(fName) { write(freqs.map(_.cex).mkString("\n")); close;}
+}
+
+// Write the form histogram for a given corpus to a file
+def printFormHisto(label: String) : Unit = {
+  val histo = corpusFormsHisto(label)
+  printHisto(histo, s"${label}-forms-histogram.cex")
+}
+
 // Compile list of forms for a corpus and write to a text file.
 def printWordListAlpha(label: String) : Unit = {
   val forms = corpusForms(label)
-  val wordsFile = s"${label}-words.txt"
+  val wordsFile = s"${label}-forms.txt"
   new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
 }
 
-def printWordListByFreq(label : String) : Unit = {}
+// Compile list of forms for a corpus and write to a text file
+// sorted by frequency
+def printWordListByFreq(label : String) : Unit = {
+  val histo = corpusFormsHisto(label)
+  new PrintWriter(label + "-words-by-freq.txt") { write(histo.map(_.string).mkString("\n"));close;}
+}
+
+
 // Compile a parser with tabulae
 def compile (
   corpusList: Vector[String] = Vector("shared", "lat23"),
