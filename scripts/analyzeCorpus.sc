@@ -35,6 +35,40 @@ val make = "/usr/bin/make"
 val repo = "."
 
 
+
+// Map of corpus labels to IDs for orthography systems
+val orthoMap = Map(
+
+  "hyginus" -> "lat23",
+  "germanicus" -> "lat24",
+  "metamorphoses" -> "lat24",
+
+  "eutropius" -> "lat24",
+  "nepos" -> "lat24",
+
+  "antoninus" -> "litgreek",
+  "oeconomicus" -> "litgreek",
+  "iliad-allen" -> "litgreek"
+)
+
+// Given a corpus label, figure out the ISO code
+// for its language from its orthography system:
+def lang(label: String) : String  = {
+  orthoMap(label) match {
+    case "lat23" => "lat"
+    case "lat24" => "lat"
+    case "lat25" => "lat"
+    case "litgreek" => "grc"
+    case _ => {
+      val err = s"Label ${label} not mapped to an ISO lang code."
+      println(err)
+      throw new Exception(err)
+    }
+  }
+}
+
+
+// Compile a parser with tabulae
 def compile (
   corpusList: Vector[String] = Vector("shared", "lat23"),
   datasets: File = repo / "morphology-latin" ) = {
