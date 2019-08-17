@@ -1,12 +1,13 @@
 import scala.io.Source
 import java.io.PrintWriter
 
-
-val f = "morphology/lat24/stems-tables/nouns/lat24nouns.cex"
+// Sort a CEX of verb stems by their sequence in Lewis-Short.
+// Here's an example file:
+val verbFile = "morphology-latin/shared/stems-tables/verbs-simplex/verbs.cex"
 
 // This is for Lewis-Short.  You can add others if you have
 // your own URN strings with numeric terminal value.
-val prefixList = Vector("ls.n", "xlex.indeclx", "xlex.adjx", "xlex.nounx")
+val prefixList = Vector("ls.n")
 
 def stripPrefix(s: String, prefixes: Vector[String]): String = {
   if (prefixes.isEmpty) {
@@ -16,19 +17,27 @@ def stripPrefix(s: String, prefixes: Vector[String]): String = {
   }
 }
 
-def sortFile(fName: String =  f, prefixes: Vector[String] = prefixList) : Unit = {
+/**
+*/
+def sortFile(fName: String =  verbFile, prefixes: Vector[String] = prefixList) : Unit = {
   val lines = Source.fromFile(fName).getLines.toVector
   val label = lines.head
-  val mapped = for (entry <- lines.tail.filter(_.nonEmpty)) yield {
+  // pair up entries with numeric number of LS id:
+  val paired = for (entry <- lines.tail.filter(_.nonEmpty)) yield {
     val cols = entry.split("#")
-
-
+    // cols(1) is the Lewis-Short identifier:  strip off
+    // its prefix and make it an Int for numeric sorting:
     val lexNum = stripPrefix(cols(1),prefixes).toInt
     (lexNum, entry)
   }
-  val sorted = for (l <- mapped.sortBy(_._1).distinct) yield {
+  // sort by number (part 1), produce entry only (part 2)
+  val sorted = for (l <- paired.sortBy(_._1).distinct) yield {
     l._2
   }
 
+  // rewrite file:
   new PrintWriter(fName){ write (label + "\n\n" + sorted.mkString("\n")); close;}
 }
+
+println("\n\nSort tabular file by Lewis-Short ID:\n")
+println("\tsortFile([FILE], [PREFIXLIST])\n")
