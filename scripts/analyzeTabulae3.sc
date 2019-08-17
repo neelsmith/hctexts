@@ -38,10 +38,12 @@ import better.files.Dsl._
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
 
+  "hyginus" -> "lat23",
   "eutropius" -> "lat24",
   "germanicus" -> "lat24",
-  "hyginus" -> "lat24",
-   "nepos" -> "lat24",
+  "nepos" -> "lat24",
+
+  "metamorphoses" -> "lat24",
 
   "antoninus" -> "litgreek",
   "oeconomicus" -> "litgreek",
@@ -67,9 +69,7 @@ def lang(label: String) : String  = {
 val compiler = "/usr/local/bin/fst-compiler-utf8"
 val fstinfl = "/usr/local/bin/fst-infl"
 val make = "/usr/bin/make"
-// Explicit path to directory with tabulae repo:
-val tabulaeDir = "/Users/nsmith/Desktop/tabulae"
-
+val repo = "."
 // Count successes/failures in an SFST string
 def summarizeFst(fst: String, total: Int) : Unit = {
   val fstLines = fst.split("\n").toVector
@@ -85,8 +85,8 @@ def lineCount(f: String): Int = {
 
 
 // Compile a binary SFST parser using tabulae
-def tabulae(ortho : String, tabulaeRepo: String =  tabulaeDir) = {
-  //val tabulae = File(tabulaeRepo)
+def tabulae(ortho : String, tabulaeRepo: String  = {// =  tabulaeDir) = {
+  /*
   val datasets = "morphology-latin"
 
   val conf =  Configuration(compiler,fstinfl,make,datasets)
@@ -101,8 +101,29 @@ def tabulae(ortho : String, tabulaeRepo: String =  tabulaeDir) = {
     "available in directory \"parser\"\n\n")
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
-  }
+  }*/
 }
+
+
+
+
+def compile (
+  corpusList: Vector[String] = Vector("shared", "lat23"),
+  datasets: File = repo / "morphology-latin" ) = {
+
+  val conf =  Configuration(compiler, fstinfl, make, datasets.toString)
+  val parserDir = repo / "parsers"
+  val fst = repo / "fst"
+  try {
+    FstCompiler.compile(datasets, corpusList, parserDir, fst, conf)
+
+    println("\nCompilation completed.\nParser is available in " +  parserDir + "/" + corpusList.mkString("-") + "/latin.a")
+  } catch {
+    case t: Throwable => println("Error trying to compile:\n" + t.toString)
+  }
+
+}
+
 
 /** Get string output of executing system process.
 *
