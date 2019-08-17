@@ -3,10 +3,23 @@
 
 A selection of Greek and Latin texts used in teaching at Holy Cross.
 
-Contents:
+## How to
 
-- `editions`:  cataloged XML editions of various texts.  This is source material for generating more straightforward, equivalent CEX editions.
--  `cex`: CEX editions of texts.
-- `morphology`: each subdirectory has a the source for building an orthography-specific morphological parser with `tabulae` (for Latin) or `kanónes` (for Greek)
--  `parsers`: directory where binary SFST parsers are compiled to and run from.
+
+
+
+## Organization of files
+
+-  `cex`: citable editions of texts in CEX format.
+- `morphology-latin`: each subdirectory has tabular data in delimited-text files for building an orthography-specific morphological parser with `tabulae`:
+    - `lat23` "23-character" orthography lacking consonantal "j" or "v".
+    - `lat24` "24-character" orthography with consonantal "v" but not "j".
+    - `lat25` "25-character" orthography with consonantal "v" and "j".
+    - `shared` Data that can be merged with any of `lat23`, `lat24` or `lat25` data sets.
 -  `scripts`: Scala scripts for building morphological parsers and analyzing corpora morphologically
+-  `parsers`: directory where binary SFST parsers are compiled.
+
+
+Other:
+
+- `xml-editions`:  cataloged XML editions of various texts.  This source material can be used to generate more straightforward, equivalent CEX editions.
