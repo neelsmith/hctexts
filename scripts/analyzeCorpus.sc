@@ -193,6 +193,15 @@ def lineCount(f: String): Int = {
   File(f).lines.size
 }
 
+
+def parseWordList(words: Vector[String], ortho: String) : String = {
+  val fstParser = s"parsers/shared-${ortho}/latin.a"
+
+  val cmd = s"echo ${words} ${fstinfl} ${fstParser}"
+  val fst = execOutput(cmd)
+  summarizeFst(fst, words.size)
+  fst
+}
 // Get FST output of parsing list of words in a file.
 def parseWordsFile(wordsFile: String, ortho: String ) : String = {
   val fstParser = s"parsers/shared-${ortho}/latin.a"
@@ -225,18 +234,40 @@ def compile (
   }
 }
 
+
+def parseCorpus(label: String) = {
+  //val forms  = corpusFormsHisto(label).map(_.string)
+  printWordListByFreq(label)
+  val f = label + "-words-by-freq.txt"
+  parseWordsFile(f, orthoMap(label))
+}
+
+
+
 // Recompile parsre for given ortho, and parse a words file.
 def reparse(wordsFile: String, ortho: String) = {
   try {
     msg("Recompiling parser for " + ortho)
     compile(Vector("shared", ortho), File("morphology-latin"))
-    msg("Applying new parser to " + wordsFile)
-    parseWordsFile(wordsFile, ortho)
+    val parser = repo / s"parsers/shared-${ortho}/latin.a"
+    if (parser.exists) {
+      msg("Applying new parser to " + wordsFile)
+      parseWordsFile(wordsFile, ortho)
+    } else {
+      msg("Failed to compile parser " + parser)
+    }
+
 
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
   }
 
+}
+
+def reparseCorpus(label: String) = {
+  printWordListByFreq(label)
+  val f = label + "-words-by-freq.txt"
+  reparse(f,orthoMap(label))
 }
 
 val summary = """
