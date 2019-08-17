@@ -204,6 +204,10 @@ def parseWordsFile(wordsFile: String, ortho: String ) : String = {
 }
 
 
+def failedList(fstOutput: String) : Vector[String] = {
+  fstOutput.split("\n").toVector.filter(_.contains("no result")).map(_.replaceFirst("no result for ",""))
+}
+
 // Compile a parser with tabulae
 def compile (
   corpusList: Vector[String] = Vector("shared", "lat23"),
