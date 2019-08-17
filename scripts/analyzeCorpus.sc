@@ -73,6 +73,14 @@ def o2corpus(corpusLabel : String) : Corpus = {
   CorpusSource.fromFile(cex)
 }
 
+/** Get string output of executing a system process.
+*
+* @param cmd String of command to execute.
+*/
+def execOutput(cmd: String) : String = {
+  cmd !!
+}
+
 // pretty print user messages for reading in terminal
 def msg(txt: String): Unit  = {
   println("\n\n")
@@ -173,6 +181,29 @@ def printWordListByFreq(label : String) : Unit = {
 }
 
 
+def summarizeFst(fst: String, total: Int) : Unit = {
+  val fstLines = fst.split("\n").toVector
+  val failures = fstLines.filter(_.startsWith("no result for ")).map(_.replaceFirst("no result for ", ""))
+
+  println("Failed on " + failures.size + " forms out of " + total + " total.")
+}
+
+// no.lines in a file
+def lineCount(f: String): Int = {
+  File(f).lines.size
+}
+
+// Get FST output of parsing list of words in a file.
+def parseWordsFile(wordsFile: String, ortho: String ) : String = {
+  val fstParser = s"parsers/shared-${ortho}/latin.a"
+  //val fstinfl = "/usr/local/bin/fst-infl"
+  val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
+  val fst = execOutput(cmd)
+  summarizeFst(fst, lineCount(wordsFile))
+  fst
+}
+
+
 // Compile a parser with tabulae
 def compile (
   corpusList: Vector[String] = Vector("shared", "lat23"),
@@ -190,11 +221,29 @@ def compile (
   }
 }
 
+// Recompile parsre for given ortho, and parse a words file.
+def reparse(wordsFile: String, ortho: String) = {
+  try {
+    msg("Recompiling parser for " + ortho)
+    compile(Vector("shared", ortho), File("morphology-latin"))
+    msg("Applying new parser to " + wordsFile)
+    parseWordsFile(wordsFile, ortho)
 
-/** Get string output of executing a system process.
-*
-* @param cmd String of command to execute.
-*/
-def execOutput(cmd: String) : String = {
-  cmd !!
+  } catch {
+    case t: Throwable => println("Error trying to compile:\n" + t.toString)
+  }
+
+}
+
+val summary = """
+load a corpus
+get word list for a corpus
+get histogram for a corpus
+get parse results for a corpus
+
+compile a parser
+"""
+def info :  Unit = {
+  msg("Things you can do:")
+  println(summary)
 }
