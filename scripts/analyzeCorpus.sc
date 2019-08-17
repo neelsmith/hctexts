@@ -67,7 +67,90 @@ def lang(label: String) : String  = {
   }
 }
 
+// load an OHCO2 corpus for label
+def o2corpus(corpusLabel : String) : Corpus = {
+  val cex = s"cex/${corpusLabel}.cex"
+  CorpusSource.fromFile(cex)
+}
 
+// pretty print user messages for reading in terminal
+def msg(txt: String): Unit  = {
+  println("\n\n")
+  println(txt)
+  println("\n")
+}
+
+// Tokenize a corpus
+def corpusTokens(label: String) : Vector[MidToken] = {
+  orthoMap(label) match {
+    case "lat23" => Latin23Alphabet.tokenizeCorpus(o2corpus(label))
+    case "lat24" => Latin24Alphabet.tokenizeCorpus(o2corpus(label))
+    case "lat25" => Latin25Alphabet.tokenizeCorpus(o2corpus(label))
+    case "litgreek" => LiteraryGreekString.tokenizeCorpus(o2corpus(label))
+    case s: String => {
+      val msg = s"Orthographic system ${orthoMap(label)} for label ${label} not recognized or not implemented."
+      println(msg)
+      throw new Exception(msg)
+    }
+  }
+}
+
+// Find lexical tokens for a corpus.
+def corpusLex(label: String) : Vector[MidToken] = {
+  println("\nTokenizing texts..")
+  val allTokens = corpusTokens(label)
+  println("Done.\n")
+  allTokens.filter(_.tokenCategory.toString == "Some(LexicalToken)")
+}
+
+
+// Find distinct forms for a corpus.
+// For Latin, the resulting list is an alphabetized
+// list of unique forms in all lower case.
+def corpusForms(label: String) : Vector[String] = {
+  val lex = corpusLex(label)
+  lang(label) match {
+    case "lat" =>   lex.map(_.string.toLowerCase).distinct.sorted
+    case _ =>  lex.map(_.string.toLowerCase).distinct.sorted
+    // Not working with greek yet..
+    /*
+    case "grc" =>  {
+      msg("Beginning to sort Greek text for " + label + "...")
+      val strs = lex.map(_.string.toLowerCase).distinct
+      msg(s"${strs.size} distinct strings, converting to LGS...")
+      val lgs = strs.map(LiteraryGreekString(_))
+      msg(s"${lgs.size} distinct Greek strings, flipping grave accents...")
+      val flipped = lgs.map(_.flipGrave).distinct
+      msg(s"${flipped.size} distinct Greek strings remain, sorting...")
+      val aciiSort = flipped.sortWith(_ < _)
+      msg("Done sorting, mapping to Unicode...")
+      val sortedForms =asciiSort.map(_.ucode)
+      msg("Done sorting!")
+
+
+      sortedForms
+    }
+    */
+  }
+}
+
+case class Frequency(string: String, count: Int)
+// Find histogram of forms
+def corpusFormsHisto(label: String) : Vector[Frequency]= {
+  val lex = corpusLex(label).map(_.string.toLowerCase)
+  val counts = lex.groupBy(w => w).map{ case (k,v) => (k, v.size)  }
+  val sorted = counts.toVector.sortBy(_._2).reverse
+  sorted.map( freq => Frequency(freq._1, freq._2))
+}
+
+// Compile list of forms for a corpus and write to a text file.
+def printWordListAlpha(label: String) : Unit = {
+  val forms = corpusForms(label)
+  val wordsFile = s"${label}-words.txt"
+  new PrintWriter(wordsFile){ write(forms.mkString("\n") + "\n"); close; }
+}
+
+def printWordListByFreq(label : String) : Unit = {}
 // Compile a parser with tabulae
 def compile (
   corpusList: Vector[String] = Vector("shared", "lat23"),
@@ -83,5 +166,13 @@ def compile (
   } catch {
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
   }
+}
 
+
+/** Get string output of executing a system process.
+*
+* @param cmd String of command to execute.
+*/
+def execOutput(cmd: String) : String = {
+  cmd !!
 }
