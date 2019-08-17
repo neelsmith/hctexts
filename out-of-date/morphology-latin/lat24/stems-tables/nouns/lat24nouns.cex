@@ -2,6 +2,7 @@ StemUrn#LexicalEntity#Stem#Gender#InflClass
 
 
 
+
 lat24morph.noun517#ls.n517#aci#fem#es_ei
 lat24morph.noun636#ls.n636#act#masc#us_us
 lat24morph.noun1029#ls.n1029#adulter#masc#0_i
@@ -43,6 +44,7 @@ lat24morph.noun4442#ls.n4442#audaci#fem#a_ae
 lat24morph.noun4532#ls.n4532#aur#fem#a_ae
 lat24morph.noun4560#ls.n4560#aurig#masc#a_ae
 lat24morph.noun4576#ls.n4576#aur#fem#is_is
+lat24morph.noun4615#ls.n4615#aust#masc#er_ri
 lat24morph.noun4660#ls.n4660#auxili#neut#us_i
 lat24morph.noun4714#ls.n4714#av#fem#is_is
 lat24morph.noun4742#ls.n4742#ax#masc#is_is

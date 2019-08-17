@@ -2,3 +2,7 @@ StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 latcommon.verb13804a#ls.n13804#dic#conj3
 latcommon.verb13804b#ls.n13804#dix#pftact
+
+livymorph.verbn24257a#ls.n24257#interfic#c3iopres
+livymorph.verbn24257b#ls.n24257#interfec#pftact
+livymorph.verbn24257c#ls.n24257#interfact#pftpass
