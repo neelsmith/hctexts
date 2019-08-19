@@ -3,9 +3,9 @@
 
 A selection of Greek and Latin texts used in teaching at Holy Cross.
 
-## How to
+## How to...
 
-
+Quick tutorials TBA, but this repository includes scripts to analyze a citable corpus of texts morphologically.
 
 
 ## Organization of files
