@@ -15,6 +15,8 @@ libraryDependencies ++= Seq(
   "edu.holycross.shot" %% "latphone" % "2.5.2",
   "edu.holycross.shot" %% "tabulae" % "5.3.0",
 
+  "edu.holycross.shot" %% "histoutils" % "1.0.0",
+
   "com.github.pathikrit" %% "better-files" % "3.5.0"
 )
 tutTargetDirectory := file("docs")
