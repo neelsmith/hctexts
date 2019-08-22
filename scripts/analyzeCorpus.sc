@@ -86,3 +86,23 @@ def compile (
     case t: Throwable => println("Error trying to compile:\n" + t.toString)
   }
 }
+
+def info = {
+  println("\n\nCompile a parser for default datasets (\"shared\" and \"lat23\"):")
+  println("\n\tcompile()\n")
+
+  println("\nCompile a parser for specific datasets:")
+  println("\n\tcompile([Vector(CORPUSDATASETS)]\n")
+  println("For example, to compile both \"shared\" and \"lat24\" datasets:")
+  println("\n\tcompile(Vector(\"shared\", \"lat24\")\n")
+
+  println("See this information again:")
+  println("\n\tinfo")
+}
+
+def ohco2Corpus(label: String) = {
+  
+}
+
+println("\n\nThings you can do with this script:")
+info
