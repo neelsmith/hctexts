@@ -5,8 +5,10 @@ A selection of Greek and Latin texts used in teaching at Holy Cross.
 
 ## How to...
 
-Quick tutorials TBA, but this repository includes scripts to analyze a citable corpus of texts morphologically.
 
+This repository includes scripts to analyze a citable corpus of texts morphologically, and work with the output of the analyses.
+
+We're beginning to add some tutorial material on [this project web site](https://neelsmith.github.io/hctexts/).
 
 ## Organization of files
 
