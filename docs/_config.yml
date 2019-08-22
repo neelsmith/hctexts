@@ -1,0 +1,22 @@
+
+
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            HC texts repository
+tagline:          'Texts used in introductory language courses'
+description:      'Citable, morphologically analyzed corpora, together with scripts to use them.'
+
+baseurl: '/hctexts/'
+
+
+author:
+  name:           'Neel Smith'
+
+
+links:
+  - title:  Github repository
+    url:  https://github.com/neelsmith/hctexts
+    external: true
