@@ -21,20 +21,24 @@ import scala.language.postfixOps
 
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
-
   "hyginus" -> "lat23",
   "livy-mt" -> "lat24",
-  "germanicus" -> "lat24",
-  "metamorphoses" -> "lat24",
+  "germanicus" ->  "lat24",
+  "metamorphoses" ->  "lat24",
 
-  "eutropius" -> "lat24",
-  "nepos" -> "lat24"
+  "eutropius" ->  "lat24",
+  "nepos" ->  "lat24"
 
   /*
   "antoninus" -> "litgreek",
   "oeconomicus" -> "litgreek",
   "iliad-allen" -> "litgreek"
   */
+)
+
+val orthoClassMap = Map(
+  "lat23" -> Latin23Alphabet,
+  "lat24" -> Latin24Alphabet
 )
 
 val macInstall = File("/usr/local/bin/")
@@ -87,22 +91,80 @@ def compile (
   }
 }
 
+def ohco2Corpus(label: String) = {
+  CorpusSource.fromFile(s"cex/${label}.cex", cexHeader = true)
+}
+
+def wordList(label: String) = {
+  val orthoString = orthoMap(label)
+  val tc = TokenizableCorpus(ohco2Corpus(label), orthoClassMap(orthoString))
+  tc.wordList
+}
+def printWordList(label: String) = {
+  new PrintWriter(s"${label}-words.txt"){write(wordList(label).mkString("\n")); close;}
+}
+
+
+def parseWordsFile(wordsFile: String, ortho: String ) : String = {
+  val fstParser = s"parsers/shared-${ortho}/latin.a"
+  val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
+  val fst = execOutput(cmd)
+  fst
+}
+
+def parse(label: String) = {
+  val wordList = s"${label}-words.txt"
+  println("Please be patient: this is slow.")
+  println("When the entire process is over, you'll see a")
+  println("message reading \"Parsing complete.\"\n\n")
+  val parses = parseWordsFile(wordList, orthoMap(label) )
+  println("\nParsing complete.\n")
+  parses
+}
+
+/* Wait for latincorpus library to be published!
+def latinCorpus(label: String) = {
+  val fstOutput = File(s"${label}-parsed.txt")
+  if (! fstOutput.exists) {
+    println("Please compile parsed output before running this.")
+    //println(s"E.g., run\n\tparse(\"" + label + "\")")
+  } else {
+    val ortho = orthoMap(label)
+    val lc = LatinCorpus(
+      ohco2Corpus(label),
+      orthoClassMap(ortho),
+      fstOutput.lines.mkString("\n")
+    )
+  }
+}
+*/
+
+def printParses(label: String) = {
+  val fstOutput = parse(label)
+  new PrintWriter(s"${label}-parsed.txt"){write(fstOutput); close;}
+}
+
+
+
 def info = {
   println("\n\nCompile a parser for default datasets (\"shared\" and \"lat23\"):")
-  println("\n\tcompile()\n")
+  println("\n\tcompile()")
 
   println("\nCompile a parser for specific datasets:")
-  println("\n\tcompile([Vector(CORPUSDATASETS)]\n")
-  println("For example, to compile both \"shared\" and \"lat24\" datasets:")
-  println("\n\tcompile(Vector(\"shared\", \"lat24\")\n")
+  println("\n\tcompile([Vector(CORPUSDATASETS)]")
+  println("  e.g.,")
+  println("\tcompile(Vector(\"shared\", \"lat24\")\n")
 
-  println("See this information again:")
+  println("\nLoad a citable corpus by label:")
+  println("\n\tval corpus = ohco2Corpus(LABEL)")
+  println("  e.g.,")
+  println("\tval corpus = ohco2Corpus(\"hyginus\")")
+
+  println("\nSee this information again:")
   println("\n\tinfo")
 }
 
-def ohco2Corpus(label: String) = {
-  
-}
+
 
 println("\n\nThings you can do with this script:")
 info
