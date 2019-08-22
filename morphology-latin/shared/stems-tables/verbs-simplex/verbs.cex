@@ -54,6 +54,7 @@ latcommon.verbn11607#ls.n11607#crimin#conj1
 latcommon.verbn12030a#ls.n12030#curr#c3pres
 latcommon.verbn12030b#ls.n12030#cuccur#pftact
 latcommon.verbn12030c#ls.n12030#curs#pftpass
+latcommon.verbn12387#ls.n12387#deb#conj2
 latcommon.verbn12766a#ls.n12766#defung#c3pres
 latcommon.verbn12766c#ls.n12766#defunct#pftpass
 latcommon.verbn12919a#ls.n12919#delig#c3pres
@@ -164,6 +165,7 @@ latcommon.verbn31972c#ls.n31972#obtent#pftact
 latcommon.verbn32256a#ls.n32256#nect#conj3pres
 latcommon.verbn32256b#ls.n32256#nexu#pftact
 latcommon.verbn32256c#ls.n32256#nex#pftpass
+latcommon.verbn32747#ls.n32747#opin#conj1
 latcommon.verbn32829#ls.n32829#oppugn#conj1
 latcommon.verbn33000a#ls.n33000#or#c4pres
 latcommon.verbn33000c#ls.n33000#ort#pftpass

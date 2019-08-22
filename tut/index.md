@@ -4,4 +4,6 @@ layout: page
 ---
 
 
-Info tba
+- Overview of the [contents of this repository](contents/)
+- Building a morphological parser
+- Analyzing a corpus morphologically
