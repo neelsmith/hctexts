@@ -211,6 +211,9 @@ def dumbOverlap(pct: Int = 50) = {
   println("\tintersection: " + proseyDiff.intersect(poeticDiff).size)
   println("\tunion: " + proseyJoin.union(poeticJoin).size)
 
+
+  println(s"\n\nHere are words appearing in top ${pct} pct of all 4 texts:")
+  println("\n" +  proseyDiff.intersect(poeticDiff).toVector.sorted.mkString("\n"))
 }
 
 // Let's go ahead and lazy val some corpora:
