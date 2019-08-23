@@ -1,9 +1,20 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
+latcommon.nounn13813#ls.n13813#dictator#masc#0_is
+
+
+latcommon.nounn44227#ls.n44227#sign#neut#us_i
+
+
+latcommon.nounn40912#ls.n40912#regn#neut#us_i
+
+latcommon.nounn19461#ls.n19461#gen#fem#s_tis
+
+
 latcommon.nounn517#ls.n517#aci#fem#es_ei
 latcommon.nounn1139#ls.n1139#aedifici#neut#us_i
 latcommon.nounn1534#ls.n1534#ag#masc#er_ri
-latcommon.nounn1675#ls.n1675#alacri#fem#tas_tatis
+latcommon.nounn1675#ls.n1675#alacri#fem#s_tis
 latcommon.nounn1846#ls.n1846#aliment#neut#us_i
 latcommon.nounn2356#ls.n2356#ingeni#neut#us_i
 latcommon.nounn2636#ls.n2636#anim#masc#us_i
@@ -17,7 +28,7 @@ latcommon.nounn4420#ls.n4420#auctor#masc#0_is
 latcommon.nounn4442#ls.n4442#audaci#fem#a_ae
 latcommon.nounn4660#ls.n4660#auxili#neut#us_i
 latcommon.nounn5147#ls.n5147#bell#neut#us_i
-latcommon.nounn6010#ls.n6010#caed#fem#i_es_is
+latcommon.nounn6010#ls.n6010#caed#fem#es_is
 latcommon.nounn6636#ls.n6636#capitoli#neut#us_i
 latcommon.nounn6724#ls.n6724#cap#neut#ut_itis
 latcommon.nounn6836#ls.n6836#carnif#masc#ex_icis
@@ -31,7 +42,7 @@ latcommon.nounn7441#ls.n7441#centuri#fem#a_ae
 latcommon.nounn7957#ls.n7957#cib#masc#us_i
 latcommon.nounn8469#ls.n8469#clad#fem#i_es_is
 latcommon.nounn8479#ls.n8479#clamor#masc#0_is
-latcommon.nounn8598#ls.n8598#clien#fem#i_s_tis
+latcommon.nounn8598#ls.n8598#clien#fem#s_tis
 latcommon.nounn8819#ls.n8819#cocl#masc#es_itis
 latcommon.nounn8930#ls.n8930#cognom#neut#en_inis
 latcommon.nounn8977#ls.n8977#coiti#fem#o_onis
@@ -110,7 +121,7 @@ latcommon.nounn26169#ls.n26169#legat#masc#us_i
 latcommon.nounn26173#ls.n26173#legi#fem#o_onis
 latcommon.nounn26431#ls.n26431#le#fem#x_gis
 latcommon.nounn26431#ls.n26431#pleb#fem#s_is
-latcommon.nounn26481#ls.n26481#liber#fem#tas_tatis
+latcommon.nounn26481#ls.n26481#liber#fem#s_tis
 latcommon.nounn26556#ls.n26556#licini#masc#us_i
 latcommon.nounn26903#ls.n26903#loc#masc#us_i
 latcommon.nounn26970#ls.n26970#longul#fem#a_ae
@@ -162,7 +173,7 @@ latcommon.nounn37011#ls.n37011#pon#masc#i_s_tis
 latcommon.nounn37077#ls.n37077#popul#masc#us_i
 latcommon.nounn37124#ls.n37124#port#fem#a_ae
 latcommon.nounn37265#ls.n37265#postum#masc#us_i
-latcommon.nounn37292#ls.n37292#potes#fem#tas_tatis
+latcommon.nounn37292#ls.n37292#potes#fem#s_tis
 latcommon.nounn37438#ls.n37438#praec#masc#o_onis
 latcommon.nounn37972#ls.n37972#praesidi#neut#us_i
 latcommon.nounn38341#ls.n38341#princ#masc#eps_ipis
