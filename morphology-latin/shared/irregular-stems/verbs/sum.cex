@@ -57,6 +57,15 @@ latcommon.sum46#lexent.n46529#essemus#1st#pl#impft#subj#act
 latcommon.sum47#lexent.n46529#essetis#2nd#pl#impft#subj#act
 latcommon.sum48#lexent.n46529#essent#3rd#pl#impft#subj#act
 
+
+latcommon.sum43a#lexent.n46529#forem#1st#sg#impft#subj#act
+latcommon.sum44a#lexent.n46529#fores#2nd#sg#impft#subj#act
+latcommon.sum45a#lexent.n46529#foret#3rd#sg#impft#subj#act
+latcommon.sum46a#lexent.n46529#foremus#1st#pl#impft#subj#act
+latcommon.sum47a#lexent.n46529#foretis#2nd#pl#impft#subj#act
+latcommon.sum48a#lexent.n46529#forent#3rd#pl#impft#subj#act
+
+
 latcommon.sum49#lexent.n46529#fuerim#1st#sg#pft#subj#act
 latcommon.sum50#lexent.n46529#fueris#2nd#sg#pft#subj#act
 latcommon.sum51#lexent.n46529#fuerit#3rd#sg#pft#subj#act

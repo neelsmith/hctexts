@@ -26,6 +26,7 @@ val orthoMap = Map(
   "livy-mt" -> "lat24",
   "livy" -> "lat24",
   "germanicus" ->  "lat24",
+  "germanicus-breysig" ->  "lat24",
   "metamorphoses" ->  "lat24",
 
   "eutropius" ->  "lat24",
@@ -182,15 +183,34 @@ def dumbOverlap(pct: Int = 50) = {
    val nepwords =  percentWordList("nepos", pct)
    val mtwords = percentWordList("livy-mt", pct)
    val hwords = percentWordList("hyginus", pct)
-   println(s"Top ${pct}% of nepos: " + nepwords.size)
-   println(s"Top ${pct}% of MT-selections of Livy: " + mtwords.size)
-   println(s"Top ${pct}% of Hyginus: " + hwords.size)
+   val gbwords = percentWordList("germanicus-breysig", pct)
+   println("\n\n")
+   println(s"Top ${pct}% of Nepos: " + nepwords.size + " words.")
+   println(s"Top ${pct}% of MT-selections of Livy: " + mtwords.size +  " words.")
 
-   val nPlusL = nepwords.toSet.intersect(mtwords.toSet)
-   println("Intersection of Nepos and Livy: " + nPlusL.size)
-   val nPlusLplusH = nPlusL.intersect(hwords.toSet)
-   println("Intersection of Nepos, Livy and Hyginus: " + nPlusLplusH.size)
-   nPlusLplusH.toVector.sorted
+   val proseyDiff = nepwords.toSet.intersect(mtwords.toSet)
+   val proseyJoin = nepwords.toSet.union(mtwords.toSet)
+   println("\nCompare Nepos and Livy:")
+   println("\tintersection: " + proseyDiff.size)
+   println("\tunion: " + proseyJoin.size)
+
+
+   println("\n")
+   println(s"Top ${pct}% of Hyginus: " + hwords.size + " words.")
+   println(s"Top ${pct}% of Germanicus: " + gbwords.size + " words.")
+
+   val poeticDiff = hwords.toSet.intersect(gbwords.toSet)
+   val poeticJoin = hwords.toSet.union(gbwords.toSet)
+
+  println("\nCompare Germanicus and Hyginus:")
+  println("\tintersection: " + poeticDiff.size)
+  println("\tunion: " + poeticJoin.size)
+
+  println("\n\n")
+  println("All four texts:")
+  println("\tintersection: " + proseyDiff.intersect(poeticDiff).size)
+  println("\tunion: " + proseyJoin.union(poeticJoin).size)
+
 }
 
 // Let's go ahead and lazy val some corpora:
