@@ -4,6 +4,7 @@ import edu.holycross.shot.tabulae._
 import edu.holycross.shot.cite._
 import edu.holycross.shot.ohco2._
 
+import edu.holycross.shot.histoutils._
 
 import edu.holycross.shot.latin._
 import edu.holycross.shot.greek._
@@ -23,6 +24,7 @@ import scala.language.postfixOps
 val orthoMap = Map(
   "hyginus" -> "lat23",
   "livy-mt" -> "lat24",
+  "livy" -> "lat24",
   "germanicus" ->  "lat24",
   "metamorphoses" ->  "lat24",
 
@@ -95,10 +97,13 @@ def ohco2Corpus(label: String) = {
   CorpusSource.fromFile(s"cex/${label}.cex", cexHeader = true)
 }
 
-def wordList(label: String) = {
+def tokenizableCorpus(label: String) = {
   val orthoString = orthoMap(label)
-  val tc = TokenizableCorpus(ohco2Corpus(label), orthoClassMap(orthoString))
-  tc.wordList
+  TokenizableCorpus(ohco2Corpus(label), orthoClassMap(orthoString))
+}
+
+def wordList(label: String) = {
+  tokenizableCorpus(label).wordList
 }
 def printWordList(label: String) = {
   new PrintWriter(s"${label}-words.txt"){write(wordList(label).mkString("\n")); close;}
@@ -144,6 +149,56 @@ def printParses(label: String) = {
   new PrintWriter(s"${label}-parsed.txt"){write(fstOutput); close;}
 }
 
+def percentWordList(label: String, pct: Int = 50) = {
+  val tc = tokenizableCorpus(label)
+  println("Getting histogram for " + label)
+  val hist : Histogram[String] = tc.lexHistogram
+  println("Finding top " + pct + " pct.")
+  hist.takePercent(pct).map(_.item)
+}
+
+def percentParse(label: String, pct: Int = 50) = {
+  val words = percentWordList(label, pct)
+  val fName = s"${label}-${pct}pct.txt"
+  new PrintWriter(fName){write(words.mkString("\n"));close;}
+  println("Beginning to parse.. be patient.")
+  val fst = parseWordsFile(fName, orthoMap(label))
+  val parses = FstReader.parseFstLines(fst.split("\n").toVector)
+  println("Done parsing.")
+  val fails = parses.filter(_.analyses.isEmpty).map(_.token)
+  println("Failed on " + fails.size + " tokens.")
+  val failedFile = s"${label}-${pct}pct-failed.txt"
+  new PrintWriter(failedFile){write(fails.mkString("\n"));close;}
+  println("Wrote list to "+ failedFile)
+}
+
+
+def testCorpus = Vector("hyginus", "livy-mt", "nepos")
+def overlaps(labels: Vector[String] = testCorpus, pct: Int = 50) = {
+
+}
+
+def dumbOverlap(pct: Int = 50) = {
+   val nepwords =  percentWordList("nepos", pct)
+   val mtwords = percentWordList("livy-mt", pct)
+   val hwords = percentWordList("hyginus", pct)
+   println(s"Top ${pct}% of nepos: " + nepwords.size)
+   println(s"Top ${pct}% of MT-selections of Livy: " + mtwords.size)
+   println(s"Top ${pct}% of Hyginus: " + hwords.size)
+
+   val nPlusL = nepwords.toSet.intersect(mtwords.toSet)
+   println("Intersection of Nepos and Livy: " + nPlusL.size)
+   val nPlusLplusH = nPlusL.intersect(hwords.toSet)
+   println("Intersection of Nepos, Livy and Hyginus: " + nPlusLplusH.size)
+   nPlusLplusH.toVector.sorted
+}
+
+// Let's go ahead and lazy val some corpora:
+lazy val hyg = tokenizableCorpus("hyginus")
+lazy val met = tokenizableCorpus("metamorphoses")
+lazy val livy = tokenizableCorpus("livy")
+lazy val mt = tokenizableCorpus("livy-mt")
+lazy val nep = tokenizableCorpus("nepos")
 
 
 def info = {
@@ -160,11 +215,17 @@ def info = {
   println("  e.g.,")
   println("\tval corpus = ohco2Corpus(\"hyginus\")")
 
+  println("\nLoad a citable and tokenizable corpus by label:")
+  println("\n\tval corpus = tokenizableCorpus(LABEL)")
+  println("  e.g.,")
+  println("\tval corpus = tokenizableCorpus(\"hyginus\")")
+
   println("\nSee this information again:")
   println("\n\tinfo")
 }
 
 
 
-println("\n\nThings you can do with this script:")
-info
+println("\n\nSee things you can do with this script:")
+println("\n\tinfo")
+//info
