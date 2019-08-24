@@ -1,0 +1,15 @@
+StemUrn#LexicalEntity#String#Gender#Case#Number
+
+lat25morph.irregn51113a#lexent.n51113#vis#fem#nom#sg
+lat25morph.irregn51113b#lexent.n51113#vis#fem#gen#sg
+lat25morph.irregn51113c#lexent.n51113#vi#fem#dat#sg
+lat25morph.irregn51113d#lexent.n51113#vim#fem#acc#sg
+lat25morph.irregn51113e#lexent.n51113#vi#fem#abl#sg
+lat25morph.irregn51113f#lexent.n51113#vis#fem#voc#sg
+lat25morph.irregn51113g#lexent.n51113#vires#fem#nom#pl
+lat25morph.irregn51113h#lexent.n51113#virium#fem#gen#pl
+lat25morph.irregn51113i#lexent.n51113#viribus#fem#dat#pl
+lat25morph.irregn51113j#lexent.n51113#vires#fem#acc#pl
+lat25morph.irregn51113k#lexent.n51113#viris#fem#acc#pl
+lat25morph.irregn51113l#lexent.n51113#viribus#fem#abl#pl
+lat25morph.irregn51113m#lexent.n51113#vires#fem#voc#pl
