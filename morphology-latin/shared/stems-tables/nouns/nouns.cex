@@ -1,5 +1,15 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
+
+
+latcommon.nounn1406#ls.n1406#aeta#fem#s_tis
+
+
+latcommon.nounn18651#ls.n18651#for#neut#us_i
+
+latcommon.nounn41832#ls.n41832#rogati#fem#o_onis
+
+
 latcommon.nounn517#ls.n517#aci#fem#es_ei
 latcommon.nounn1139#ls.n1139#aedifici#neut#us_i
 latcommon.nounn1534#ls.n1534#ag#masc#er_ri
@@ -118,7 +128,11 @@ latcommon.nounn26083#ls.n26083#lau#fem#s_dis
 latcommon.nounn26169#ls.n26169#legat#masc#us_i
 latcommon.nounn26173#ls.n26173#legi#fem#o_onis
 latcommon.nounn26431#ls.n26431#le#fem#x_gis
-latcommon.nounn26431#ls.n26431#pleb#fem#s_is
+
+
+
+
+latcommon.nounn36635#ls.n36635#pleb#fem#s_is
 latcommon.nounn26481#ls.n26481#liber#fem#s_tis
 latcommon.nounn26556#ls.n26556#licini#masc#us_i
 latcommon.nounn26903a#ls.n26903#loc#masc#us_i
