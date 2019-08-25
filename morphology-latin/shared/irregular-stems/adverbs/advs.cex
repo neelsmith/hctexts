@@ -1,11 +1,5 @@
 StemUrn#LexicalEntity#String#Degree
 
-
-
-latcommon.irregadvnn16121#ls.n16121#ergo#pos
-
-latcommon.irregadvn37331#ls.n37331#prae#pos
-
 latcommon.irregadvn754#ls.n754#adeo#pos
 latcommon.irregadvn790#ls.n790#adhuc#pos
 latcommon.irregadvn1862#ls.n1862#aliquamdiu#pos
@@ -16,6 +10,7 @@ latcommon.irregadvn9382#ls.n9382#comminus#pos
 latcommon.irregadvn10764#ls.n10764#contemptim#pos
 latcommon.irregadvn12812#ls.n12812#deinde#pos
 latcommon.irregadvn14720#ls.n14720#domi#pos
+latcommon.irregadvnn16121#ls.n16121#ergo#pos
 latcommon.irregadvn17318#ls.n17318#extemplo#pos
 latcommon.irregadvn17400#ls.n17400#extrinsecus#pos
 latcommon.irregadvn17940a#ls.n17940#fere#pos
@@ -59,6 +54,7 @@ latcommon.irregadvn37196#ls.n37196#postea#pos
 latcommon.irregadvn37233#ls.n37233#postmodo#pos
 latcommon.irregadvn37243#ls.n37243#postremo#pos
 latcommon.irregadvn37310#ls.n37310#potius#comp
+latcommon.irregadvn37331#ls.n37331#prae#pos
 latcommon.irregadvn38069#ls.n38069#praeter#pos
 latcommon.irregadvn38365#ls.n38365#prius#comp
 latcommon.irregadvn38505#ls.n38505#procul#pos
@@ -81,6 +77,7 @@ latcommon.irregadvn44335#ls.n44335#simul#pos
 latcommon.irregadvn45904#ls.n45904#subito#pos
 latcommon.irregadvn47432#ls.n47432#tam#pos
 latcommon.irregadvn47439#ls.n47439#tamen#pos
+latcommon.irregadvnn47450#ls.n47450#tamquam#pos
 latcommon.irregadvn47456#ls.n47456#tandem#pos
 latcommon.irregadvn47689#ls.n47689#temere#pos
 latcommon.irregadvn48624#ls.n48624#totiens#pos
