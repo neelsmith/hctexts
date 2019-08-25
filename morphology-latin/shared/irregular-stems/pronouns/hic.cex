@@ -1,7 +1,7 @@
 StemUrn#LexicalEntity#String#Gender#Case#Number
 
 latcommon.irrpron20640a#ls.n20640#hic#masc#nom#sg
-latcommon.irrpron20640b#ls.n20640#huius#masc#gen#sg
+
 latcommon.irrpron20640c#ls.n20640#huic#masc#dat#sg
 latcommon.irrpron20640d#ls.n20640#hunc#masc#acc#sg
 latcommon.irrpron20640e#ls.n20640#hoc#masc#abl#sg
@@ -15,7 +15,6 @@ latcommon.irrpron20640k#ls.n20640#his#masc#abl#pl
 latcommon.irrpron20640l#ls.n20640#hiis#masc#abl#pl
 
 latcommon.irrpron20640m#ls.n20640#haec#fem#nom#sg
-latcommon.irrpron20640n#ls.n20640#huius#fem#gen#sg
 latcommon.irrpron20640o#ls.n20640#huic#fem#dat#sg
 latcommon.irrpron20640p#ls.n20640#hanc#fem#acc#sg
 latcommon.irrpron20640q#ls.n20640#hac#fem#abl#sg
@@ -29,7 +28,6 @@ latcommon.irrpron20640w#ls.n20640#his#fem#abl#pl
 latcommon.irrpron20640x#ls.n20640#hiis#fem#abl#pl
 
 latcommon.irrpron20640y#ls.n20640#hoc#neut#nom#sg
-latcommon.irrpron20640z#ls.n20640#huius#neut#gen#sg
 latcommon.irrpron20640aa#ls.n20640#huic#neut#dat#sg
 latcommon.irrpron20640ab#ls.n20640#hoc#neut#acc#sg
 latcommon.irrpron20640ac#ls.n20640#hoc#neut#abl#sg
@@ -40,4 +38,4 @@ latcommon.irrpron20640af#ls.n20640#his#neut#dat#pl
 latcommon.irrpron20640ag#ls.n20640#his#neut#dat#pl
 latcommon.irrpron20640ah#ls.n20640#haec#neut#acc#pl
 latcommon.irrpron20640ai#ls.n20640#his#neut#abl#pl
-latcommon.irrpron20640aj#ls.n20640#hiis#neut#abl#pl
+latcommon.irrpron20640aj#ls.n20640#his#neut#abl#pl
