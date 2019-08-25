@@ -1,14 +1,5 @@
 StemUrn#LexicalEntity#Stem#InflClass
 
-
-
-latcommon.indecln37241#ls.n37241#postquam#indeclconj
-
-
-latcommon.indecln16121#ls.n16121#ergo#indeclprep
-
-latcommon.indecln37331#ls.n37331#prae#indeclprep
-
 latcommon.indecln4#ls.n4#a#indeclprep
 latcommon.indecln5#ls.n5#ab#indeclprep
 latcommon.indecln283#ls.n283#ac#indeclconj
@@ -26,6 +17,7 @@ latcommon.indecln12361#ls.n12361#de#indeclprep
 latcommon.indecln14902#ls.n14902#dum#indeclconj
 latcommon.indecln15790#ls.n15790#enim#indeclconj
 latcommon.indecln16113#ls.n16113#erga#indeclprep
+latcommon.indecln16121#ls.n16121#ergo#indeclprep
 latcommon.indecln16278#ls.n16278#et#indeclconj
 latcommon.indecln16296#ls.n16296#etiam#indeclconj
 latcommon.indecln16519#ls.n16519#ex#indeclconj
@@ -44,7 +36,9 @@ latcommon.indecln31564#ls.n31564#ob#indeclprep
 latcommon.indecln34595#ls.n34595#per#indeclprep
 latcommon.indecln37194#ls.n37194#post#indeclprep
 latcommon.indecln37241#ls.n37241#postquam#indeclconj
+latcommon.indecln37331#ls.n37331#prae#indeclprep
 latcommon.indecln38069#ls.n38069#praeter#indeclprep
+latcommon.indecln38365#ls.n38365#priusquam#indeclconj
 latcommon.indecln38383#ls.n38383#pro#indeclprep
 latcommon.indecln38866#ls.n38866#prope#indeclprep
 latcommon.indecln39984#ls.n39984#quamquam#indeclconj
