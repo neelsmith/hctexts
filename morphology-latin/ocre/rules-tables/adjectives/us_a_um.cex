@@ -10,8 +10,8 @@ ocremorph.us_a_um7#us_a_um#orvm#masc#gen#pl#pos
 ocremorph.us_a_um8#us_a_um#is#masc#dat#pl#pos
 ocremorph.us_a_um9#us_a_um#os#masc#acc#pl#pos
 ocremorph.us_a_um10#us_a_um#is#masc#abl#pl#pos
-ocremorph.us_a_um11#us_a_um#e#masc#voc#sg#pos
-ocremorph.us_a_um12#us_a_um#i#masc#voc#pl#pos
+
+
 
 ocremorph.us_a_um13#us_a_um#ior#masc#nom#sg#comp
 ocremorph.us_a_um14#us_a_um#ioris#masc#gen#sg#comp
@@ -25,8 +25,8 @@ ocremorph.us_a_um20#us_a_um#ioribus#masc#dat#pl#comp
 ocremorph.us_a_um21#us_a_um#iores#masc#acc#pl#comp
 ocremorph.us_a_um21b#us_a_um#ioris#masc#acc#pl#comp
 ocremorph.us_a_um22#us_a_um#ioribus#masc#abl#pl#comp
-ocremorph.us_a_um23#us_a_um#ior#masc#voc#sg#comp
-ocremorph.us_a_um24#us_a_um#iores#masc#voc#pl#comp
+
+
 
 ocremorph.us_a_um25#us_a_um#issimuv#masc#nom#sg#superl
 ocremorph.us_a_um26#us_a_um#issimi#masc#gen#sg#superl
@@ -38,8 +38,8 @@ ocremorph.us_a_um31#us_a_um#issimorvm#masc#gen#pl#superl
 ocremorph.us_a_um32#us_a_um#issimis#masc#dat#pl#superl
 ocremorph.us_a_um33#us_a_um#issimos#masc#acc#pl#superl
 ocremorph.us_a_um34#us_a_um#issimis#masc#abl#pl#superl
-ocremorph.us_a_um35#us_a_um#issime#masc#voc#sg#superl
-ocremorph.us_a_um36#us_a_um#issimi#masc#voc#pl#superl
+
+
 
 ocremorph.us_a_um37#us_a_um#a#fem#nom#sg#pos
 ocremorph.us_a_um38#us_a_um#ae#fem#gen#sg#pos
@@ -51,8 +51,8 @@ ocremorph.us_a_um43#us_a_um#arvm#fem#gen#pl#pos
 ocremorph.us_a_um44#us_a_um#is#fem#dat#pl#pos
 ocremorph.us_a_um45#us_a_um#as#fem#acc#pl#pos
 ocremorph.us_a_um46#us_a_um#is#fem#abl#pl#pos
-ocremorph.us_a_um47#us_a_um#a#fem#voc#sg#pos
-ocremorph.us_a_um48#us_a_um#ae#fem#voc#pl#pos
+
+
 
 ocremorph.us_a_um49#us_a_um#ior#fem#nom#sg#comp
 ocremorph.us_a_um50#us_a_um#ioris#fem#gen#sg#comp
@@ -66,8 +66,8 @@ ocremorph.us_a_um56#us_a_um#ioribus#fem#dat#pl#comp
 ocremorph.us_a_um57#us_a_um#iores#fem#acc#pl#comp
 ocremorph.us_a_um58#us_a_um#ioris#fem#acc#pl#comp
 ocremorph.us_a_um59#us_a_um#ioribus#fem#abl#pl#comp
-ocremorph.us_a_um60#us_a_um#ior#fem#voc#sg#comp
-ocremorph.us_a_um62#us_a_um#iores#fem#voc#pl#comp
+
+
 
 ocremorph.us_a_um63#us_a_um#issima#fem#nom#sg#superl
 ocremorph.us_a_um64#us_a_um#issimae#fem#gen#sg#superl
@@ -79,8 +79,8 @@ ocremorph.us_a_um69#us_a_um#issimarvm#fem#gen#pl#superl
 ocremorph.us_a_um70#us_a_um#issimis#fem#dat#pl#superl
 ocremorph.us_a_um71#us_a_um#issimas#fem#acc#pl#superl
 ocremorph.us_a_um72#us_a_um#issimis#fem#abl#pl#superl
-ocremorph.us_a_um73#us_a_um#issima#fem#voc#sg#superl
-ocremorph.us_a_um74#us_a_um#issimae#fem#voc#pl#superl
+
+
 
 ocremorph.us_a_um75#us_a_um#uv#neut#nom#sg#pos
 ocremorph.us_a_um76#us_a_um#i#neut#gen#sg#pos
@@ -92,8 +92,8 @@ ocremorph.us_a_um81#us_a_um#orvm#neut#gen#pl#pos
 ocremorph.us_a_um82#us_a_um#is#neut#dat#pl#pos
 ocremorph.us_a_um83#us_a_um#a#neut#acc#pl#pos
 ocremorph.us_a_um84#us_a_um#is#neut#abl#pl#pos
-ocremorph.us_a_um85#us_a_um#vm#neut#voc#sg#pos
-ocremorph.us_a_um86#us_a_um#a#neut#voc#pl#pos
+
+
 
 ocremorph.us_a_um87#us_a_um#ivs#neut#nom#sg#comp
 ocremorph.us_a_um88#us_a_um#ioris#neut#gen#sg#comp
@@ -106,8 +106,8 @@ ocremorph.us_a_um93#us_a_um#iorvm#neut#gen#pl#comp
 ocremorph.us_a_um94#us_a_um#ioribvs#neut#dat#pl#comp
 ocremorph.us_a_um95#us_a_um#iora#neut#acc#pl#comp
 ocremorph.us_a_um96#us_a_um#ioribuv#neut#abl#pl#comp
-ocremorph.us_a_um97#us_a_um#ivs#neut#voc#sg#comp
-ocremorph.us_a_um98#us_a_um#iora#neut#voc#pl#comp
+
+
 
 ocremorph.us_a_um99#us_a_um#issimvm#neut#nom#sg#superl
 ocremorph.us_a_um100#us_a_um#issimi#neut#gen#sg#superl
@@ -119,5 +119,3 @@ ocremorph.us_a_um105#us_a_um#issimorvm#neut#gen#pl#superl
 ocremorph.us_a_um106#us_a_um#issimis#neut#dat#pl#superl
 ocremorph.us_a_um107#us_a_um#issima#neut#acc#pl#superl
 ocremorph.us_a_um108#us_a_um#issimis#neut#abl#pl#superl
-ocremorph.us_a_um109#us_a_um#issimvm#neut#voc#sg#superl
-ocremorph.us_a_um110#us_a_um#issima#neut#voc#pl#superl
