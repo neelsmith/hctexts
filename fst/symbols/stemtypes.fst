@@ -28,7 +28,7 @@
 
 #adj3# = <is_e><er_ris_re><or_oris_comp>
 
-#adj3single# = <ns_ntis><x_cis><us_eris><0_is><0_is_i><es_itis><s_dis><s_itis>
+#adj3single# = <is><ns_ntis><x_cis><us_eris><0_is><0_is_i><es_itis><s_dis><s_itis>
 
 
 

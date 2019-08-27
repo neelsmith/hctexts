@@ -1,6 +1,21 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
 
+latcommon.nounn51406#ls.n51406#vo#masc#x_cis
+
+
+
+latcommon.nounn32880#ls.n32880#orator#masc#0_is
+
+
+latcommon.nounn44559#ls.n44559#societa#fem#s_tis
+latcommon.nounn37292#ls.n37292#potesta#fem#s_tis
+
+latcommon.nounn50039#ls.n50039#uxor#fem#0_is
+
+
+latcommon.nounn28181#ls.n28181#mat#fem#er_ris
+
 latcommon.nounn18173#ls.n18173#fili#fem#a_ae
 latcommon.nounn18185#ls.n18185#fili#masc#us_i
 
