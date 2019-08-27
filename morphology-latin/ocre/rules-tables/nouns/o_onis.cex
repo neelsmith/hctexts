@@ -10,8 +10,8 @@ ocremorph.o_onis7#o_onis#onvm#fem#gen#pl
 ocremorph.o_onis8#o_onis#onibvs#fem#dat#pl
 ocremorph.o_onis9#o_onis#ones#fem#acc#pl
 ocremorph.o_onis10#o_onis#onibvs#fem#abl#pl
-ocremorph.o_onis11#o_onis#o#fem#voc#sg
-ocremorph.o_onis12#o_onis#ones#fem#voc#pl
+
+
 
 ocremorph.o_onis13#o_onis#o#masc#nom#sg
 ocremorph.o_onis14#o_onis#onis#masc#gen#sg
@@ -23,5 +23,3 @@ ocremorph.o_onis19#o_onis#onvm#masc#gen#pl
 ocremorph.o_onis20#o_onis#onibvs#masc#dat#pl
 ocremorph.o_onis21#o_onis#ones#masc#acc#pl
 ocremorph.o_onis22#o_onis#onibvs#masc#abl#pl
-ocremorph.o_onis23#o_onis#o#masc#voc#sg
-ocremorph.o_onis24#o_onis#ones#masc#voc#pl
