@@ -1,5 +1,5 @@
 ---
-title: "Demo a citable corpus"
+title: "A citable corpus in Scala"
 layout: page
 ---
 

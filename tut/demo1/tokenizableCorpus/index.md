@@ -1,5 +1,5 @@
 ---
-title: "Demo a tokenizable corpus"
+title: "A tokenizable corpus in Scala"
 layout: page
 ---
 

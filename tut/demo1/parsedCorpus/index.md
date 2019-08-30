@@ -1,5 +1,5 @@
 ---
-title: "Demo a parsed corpus"
+title: "A parsed Latin corpus in Scala"
 layout: page
 ---
 
@@ -43,3 +43,19 @@ val latinCorpus = LatinCorpus.fromFstLines(
     strict = false
   )
 ```
+
+Like the tokenizable corpus, the parsed corpus has a sequence of tokens.  How many?
+
+```tut
+latinCorpus.size
+```
+
+We can peek at them directly:
+
+```tut
+latinCorpus.tokens(8)
+```
+
+- overviews: histograms, concordances, measuring ambiguity
+- subset by categories of grammatical  analyses
+- [clustering and selection in canonically citable units by morphological features](clustered/)
