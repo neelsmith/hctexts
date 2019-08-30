@@ -44,6 +44,43 @@ val tcorpus = TokenizableCorpus(corpus, Latin23Alphabet)
 See [a few things you can do with a tokenizable corpus](tokenizableCorpus/)
 
 
-## A morphologically parsed corpus
+## A morphologically parsed Latin corpus
 
-Prerequisites: build a parser, and parse your corpus.
+A morphologically parsed Latin corpus applies morphological analysis to  the lexical tokens in a tokenizable corpus.
+
+Here's one approach to create a parsed corpus.
+
+### Preparatory work
+
+1. Compile a parser with `tabulae`
+2.  Find a word list from your tokenizable corpus (that's just `tokenizableCorpus.wordList`)
+3.  Parse the words in the wordlist, and save the results in a file.
+
+For this demo, we've done that and saved the parsing output in this file:
+
+```tut
+val parserOutput = "workfiles/hyginus-parsed.txt"
+```
+
+
+### Creating a parsed Latin corpus
+
+We'll read the parser output from the file into a Vector of Strings:
+
+```tut:silent
+import scala.io.Source
+val fst = Source.fromFile(parserOutput).getLines.toVector
+```
+
+and then create a morphologically parsed corpus:
+
+```tut:silent
+val latinCorpus = LatinCorpus.fromFstLines(
+    corpus,
+    Latin23Alphabet,
+    fst,
+    strict = false
+  )
+```
+
+See [a few things you can do with a morphologically parsed corpus](parsedCorpus/)
