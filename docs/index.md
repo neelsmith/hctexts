@@ -7,3 +7,8 @@ layout: page
 - Overview of the [contents of this repository](contents/)
 - Building and using a [morphological parser](parsing/)
 - Analyzing a corpus morphologically
+
+
+## Quick demo
+
+- [Try out a few things in a Scala REPL](demo1/)
