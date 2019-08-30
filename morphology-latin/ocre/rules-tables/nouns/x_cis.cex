@@ -10,8 +10,8 @@ ocremorph.x_cis7#x_cis#cvm#masc#gen#pl
 ocremorph.x_cis8#x_cis#cibvs#masc#dat#pl
 ocremorph.x_cis9#x_cis#ces#masc#acc#pl
 ocremorph.x_cis10#x_cis#cibvs#masc#abl#pl
-ocremorph.x_cis11#x_cis#x#masc#voc#sg
-ocremorph.x_cis12#x_cis#ces#masc#voc#pl
+
+
 
 ocremorph.x_cis1#x_cis#x#fem#nom#sg
 ocremorph.x_cis2#x_cis#cis#fem#gen#sg
@@ -23,5 +23,3 @@ ocremorph.x_cis7#x_cis#cum#fem#gen#pl
 ocremorph.x_cis8#x_cis#cibvs#fem#dat#pl
 ocremorph.x_cis9#x_cis#ces#fem#acc#pl
 ocremorph.x_cis10#x_cis#cibvs#fem#abl#pl
-ocremorph.x_cis11#x_cis#x#fem#voc#sg
-ocremorph.x_cis12#x_cis#ces#fem#voc#pl

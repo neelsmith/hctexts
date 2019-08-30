@@ -10,8 +10,8 @@ ocremorph.stis8#s_tis#tibvs#masc#dat#pl
 ocremorph.stis9#s_tis#tes#masc#acc#pl
 ocremorph.stis9b#s_tis#tis#masc#acc#pl
 ocremorph.stis10#s_tis#tibvs#masc#abl#pl
-ocremorph.stis11#s_tis#s#masc#voc#sg
-ocremorph.stis12#s_tis#tes#masc#voc#pl
+
+
 
 ocremorph.stis13#s_tis#s#fem#nom#sg
 ocremorph.stis14#s_tis#tis#fem#gen#sg
@@ -24,8 +24,8 @@ ocremorph.stis20#s_tis#tibvs#fem#dat#pl
 ocremorph.stis21#s_tis#tes#fem#acc#pl
 ocremorph.stis21b#s_tis#tis#fem#acc#pl
 ocremorph.stis22#s_tis#tibvs#fem#abl#pl
-ocremorph.stis23#s_tis#s#fem#voc#sg
-ocremorph.stis24#s_tis#tes#fem#voc#pl
+
+
 
 ocremorph.stis25#s_tis#s#neut#nom#sg
 ocremorph.stis26#s_tis#tis#neut#gen#sg
@@ -37,5 +37,3 @@ ocremorph.stis31#s_tis#tivm#neut#gen#pl
 ocremorph.stis32#s_tis#tibvs#neut#dat#pl
 ocremorph.stis33#s_tis#tia#neut#acc#pl
 ocremorph.stis34#s_tis#tibvs#neut#abl#pl
-ocremorph.stis35#s_tis#s#neut#voc#sg
-ocremorph.stis36#s_tis#tes#neut#voc#pl

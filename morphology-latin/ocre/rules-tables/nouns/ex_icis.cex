@@ -12,8 +12,8 @@ ocremorph.ex_icis8#ex_icis#icibvs#masc#dat#pl
 ocremorph.ex_icis9#ex_icis#ices#masc#acc#pl
 ocremorph.ex_icis9b#ex_icis#icis#masc#acc#pl
 ocremorph.ex_icis10#ex_icis#icibvs#masc#abl#pl
-ocremorph.ex_icis11#ex_icis#ex#masc#voc#sg
-ocremorph.ex_icis12#ex_icis#ices#masc#voc#pl
+
+
 
 ocremorph.ex_icis13#ex_icis#ex#fem#nom#sg
 ocremorph.ex_icis14#ex_icis#icis#fem#gen#sg
@@ -28,5 +28,3 @@ ocremorph.ex_icis20#ex_icis#icibvs#fem#dat#pl
 ocremorph.ex_icis21#ex_icis#ices#fem#acc#pl
 ocremorph.ex_icis21b#ex_icis#icis#fem#acc#pl
 ocremorph.ex_icis22#ex_icis#icibvs#fem#abl#pl
-ocremorph.ex_icis23#ex_icis#ex#fem#voc#sg
-ocremorph.ex_icis24#ex_icis#ices#fem#voc#pl

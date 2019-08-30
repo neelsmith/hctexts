@@ -10,8 +10,8 @@ ocremorph.us_eris7#us_eris#ervm#neut#gen#pl
 ocremorph.us_eris8#us_eris#eribvs#neut#dat#pl
 ocremorph.us_eris9#us_eris#era#neut#acc#pl
 ocremorph.us_eris10#us_eris#eribvs#neut#abl#pl
-ocremorph.us_eris11#us_eris#vs#neut#voc#sg
-ocremorph.us_eris12#us_eris#era#neut#voc#pl
+
+
 
 
 ocremorph.us_eris1#us_eris#vs#masc#nom#sg
@@ -24,8 +24,8 @@ ocremorph.us_eris7#us_eris#ervm#masc#gen#pl
 ocremorph.us_eris8#us_eris#eribvs#masc#dat#pl
 ocremorph.us_eris9#us_eris#era#masc#acc#pl
 ocremorph.us_eris10#us_eris#eribvs#masc#abl#pl
-ocremorph.us_eris11#us_eris#vs#masc#voc#sg
-ocremorph.us_eris12#us_eris#era#masc#voc#pl
+
+
 
 ocremorph.us_eris1#us_eris#vs#fem#nom#sg
 ocremorph.us_eris2#us_eris#eris#fem#gen#sg
@@ -37,5 +37,3 @@ ocremorph.us_eris7#us_eris#ervm#fem#gen#pl
 ocremorph.us_eris8#us_eris#eribvs#fem#dat#pl
 ocremorph.us_eris9#us_eris#era#fem#acc#pl
 ocremorph.us_eris10#us_eris#eribvs#fem#abl#pl
-ocremorph.us_eris11#us_eris#vs#fem#voc#sg
-ocremorph.us_eris12#us_eris#era#fem#voc#pl

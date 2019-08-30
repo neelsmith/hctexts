@@ -12,8 +12,8 @@ livymorph.es_ei7#es_ei#ervm#masc#gen#pl
 livymorph.es_ei8#es_ei#ebvs#masc#dat#pl
 livymorph.es_ei9#es_ei#es#masc#acc#pl
 livymorph.es_ei10#es_ei#ebvs#masc#abl#pl
-livymorph.es_ei11#es_ei#es#masc#voc#sg
-livymorph.es_ei12#es_ei#es#masc#voc#pl
+
+
 
 livymorph.es_ei1#es_ei#es#fem#nom#sg
 livymorph.es_ei2#es_ei#ei#fem#gen#sg
@@ -27,5 +27,3 @@ livymorph.es_ei7#es_ei#ervm#fem#gen#pl
 livymorph.es_ei8#es_ei#ebvs#fem#dat#pl
 livymorph.es_ei9#es_ei#es#fem#acc#pl
 livymorph.es_ei10#es_ei#ebvs#fem#abl#pl
-livymorph.es_ei11#es_ei#es#fem#voc#sg
-livymorph.es_ei12#es_ei#es#fem#voc#pl

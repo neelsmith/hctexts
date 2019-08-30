@@ -13,8 +13,8 @@ ocremorph.is_is20#or_oris_comp#oribvs#masc#dat#pl#comp
 ocremorph.is_is21#or_oris_comp#ores#masc#acc#pl#comp
 ocremorph.is_is21b#or_oris_comp#oris#masc#acc#pl#comp
 ocremorph.is_is22#or_oris_comp#oribvs#masc#abl#pl#comp
-ocremorph.is_is23#or_oris_comp#or#masc#voc#sg#comp
-ocremorph.is_is24#or_oris_comp#ores#masc#voc#pl#comp
+
+
 
 
 
@@ -30,8 +30,8 @@ ocremorph.is_is56#or_oris_comp#oribus#fem#dat#pl#comp
 ocremorph.is_is57#or_oris_comp#ores#fem#acc#pl#comp
 ocremorph.is_is58#or_oris_comp#oris#fem#acc#pl#comp
 ocremorph.is_is59#or_oris_comp#oribus#fem#abl#pl#comp
-ocremorph.is_is60#or_oris_comp#or#fem#voc#sg#comp
-ocremorph.is_is62#or_oris_comp#ores#fem#voc#pl#comp
+
+
 
 
 ocremorph.is_is87#or_oris_comp#vs#neut#nom#sg#comp
@@ -45,5 +45,3 @@ ocremorph.is_is93#or_oris_comp#orvm#neut#gen#pl#comp
 ocremorph.is_is94#or_oris_comp#oribvs#neut#dat#pl#comp
 ocremorph.is_is95#or_oris_comp#ora#neut#acc#pl#comp
 ocremorph.is_is96#or_oris_comp#oribvs#neut#abl#pl#comp
-ocremorph.is_is97#or_oris_comp#ivs#neut#voc#sg#comp
-ocremorph.is_is98#or_oris_comp#ora#neut#voc#pl#comp

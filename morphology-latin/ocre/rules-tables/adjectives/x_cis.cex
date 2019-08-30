@@ -12,8 +12,8 @@ livymorph.x_cis8#x_cis#cibvs#masc#dat#pl#pos
 livymorph.x_cis9#x_cis#ces#masc#acc#pl#pos
 livymorph.x_cis9b#x_cis#cis#masc#acc#pl#pos
 livymorph.x_cis10#x_cis#cibvs#masc#abl#pl#pos
-livymorph.x_cis11#x_cis#cis#masc#voc#sg#pos
-livymorph.x_cis12#x_cis#ces#masc#voc#pl#pos
+
+
 
 livymorph.x_cis13#x_cis#cior#masc#nom#sg#comp
 livymorph.x_cis14#x_cis#cioris#masc#gen#sg#comp
@@ -27,8 +27,8 @@ livymorph.x_cis20#x_cis#cioribvs#masc#dat#pl#comp
 livymorph.x_cis21#x_cis#ciores#masc#acc#pl#comp
 livymorph.x_cis21b#x_cis#cioris#masc#acc#pl#comp
 livymorph.x_cis22#x_cis#cioribvs#masc#abl#pl#comp
-livymorph.x_cis23#x_cis#cior#masc#voc#sg#comp
-livymorph.x_cis24#x_cis#ciores#masc#voc#pl#comp
+
+
 
 livymorph.x_cis25#x_cis#cissimvs#masc#nom#sg#superl
 livymorph.x_cis26#x_cis#cissimi#masc#gen#sg#superl
@@ -40,8 +40,8 @@ livymorph.x_cis31#x_cis#ssimorvm#masc#gen#pl#superl
 livymorph.x_cis32#x_cis#cissimis#masc#dat#pl#superl
 livymorph.x_cis33#x_cis#cissimos#masc#acc#pl#superl
 livymorph.x_cis34#x_cis#cissimis#masc#abl#pl#superl
-livymorph.x_cis35#x_cis#cissime#masc#voc#sg#superl
-livymorph.x_cis36#x_cis#cissimi#masc#voc#pl#superl
+
+
 
 livymorph.x_cis37#x_cis#x#fem#nom#sg#pos
 livymorph.x_cis38#x_cis#cis#fem#gen#sg#pos
@@ -55,8 +55,8 @@ livymorph.x_cis44#x_cis#cibvs#fem#dat#pl#pos
 livymorph.x_cis45#x_cis#ces#fem#acc#pl#pos
 livymorph.x_cis45b#x_cis#cis#fem#acc#pl#pos
 livymorph.x_cis46#x_cis#cibvs#fem#abl#pl#pos
-livymorph.x_cis47#x_cis#cis#fem#voc#sg#pos
-livymorph.x_cis48#x_cis#ces#fem#voc#pl#pos
+
+
 
 livymorph.x_cis49#x_cis#cior#fem#nom#sg#comp
 livymorph.x_cis50#x_cis#cioris#fem#gen#sg#comp
@@ -70,8 +70,8 @@ livymorph.x_cis56#x_cis#cioribvs#fem#dat#pl#comp
 livymorph.x_cis57#x_cis#ciores#fem#acc#pl#comp
 livymorph.x_cis57b#x_cis#cioris#fem#acc#pl#comp
 livymorph.x_cis58#x_cis#cioribvs#fem#abl#pl#comp
-livymorph.x_cis59#x_cis#cior#fem#voc#sg#comp
-livymorph.x_cis60#x_cis#ciores#fem#voc#pl#comp
+
+
 
 livymorph.x_cis61#x_cis#cissimvs#fem#nom#sg#superl
 livymorph.x_cis62#x_cis#cissimi#fem#gen#sg#superl
@@ -83,8 +83,8 @@ livymorph.x_cis67#x_cis#ssimorvm#fem#gen#pl#superl
 livymorph.x_cis68#x_cis#cissimis#fem#dat#pl#superl
 livymorph.x_cis69#x_cis#cissimos#fem#acc#pl#superl
 livymorph.x_cis70#x_cis#cissimis#fem#abl#pl#superl
-livymorph.x_cis71#x_cis#cissime#fem#voc#sg#superl
-livymorph.x_cis72#x_cis#cissimi#fem#voc#pl#superl
+
+
 
 livymorph.x_cis73#x_cis#x#neut#nom#sg#pos
 livymorph.x_cis74#x_cis#cis#neut#gen#sg#pos
@@ -96,8 +96,8 @@ livymorph.x_cis79#x_cis#civm#neut#gen#pl#pos
 livymorph.x_cis80#x_cis#cibvs#neut#dat#pl#pos
 livymorph.x_cis81#x_cis#cia#neut#acc#pl#pos
 livymorph.x_cis82#x_cis#cibvs#neut#abl#pl#pos
-livymorph.x_cis83#x_cis#x#neut#voc#sg#pos
-livymorph.x_cis84#x_cis#cia#neut#voc#pl#pos
+
+
 
 livymorph.x_cis85#x_cis#civs#neut#nom#sg#comp
 livymorph.x_cis86#x_cis#cioris#neut#gen#sg#comp
@@ -109,8 +109,8 @@ livymorph.x_cis91#x_cis#ciorvm#neut#gen#pl#comp
 livymorph.x_cis92#x_cis#cioribvs#neut#dat#pl#comp
 livymorph.x_cis93#x_cis#ciora#neut#acc#pl#comp
 livymorph.x_cis94#x_cis#cioribvs#neut#abl#pl#comp
-livymorph.x_cis95#x_cis#civs#neut#voc#sg#comp
-livymorph.x_cis96#x_cis#ciora#neut#voc#pl#comp
+
+
 
 livymorph.x_cis97#x_cis#cissimvm#neut#nom#sg#superl
 livymorph.x_cis98#x_cis#cissimi#neut#gen#sg#superl
@@ -122,5 +122,3 @@ livymorph.x_cis103#x_cis#ssimorvm#neut#gen#pl#superl
 livymorph.x_cis104#x_cis#cissimis#neut#dat#pl#superl
 livymorph.x_cis105#x_cis#cissima#neut#acc#pl#superl
 livymorph.x_cis106#x_cis#cissimis#neut#abl#pl#superl
-livymorph.x_cis107#x_cis#cissimvm#neut#voc#sg#superl
-livymorph.x_cis108#x_cis#cissima#neut#voc#pl#superl
