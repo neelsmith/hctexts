@@ -30,7 +30,7 @@ We can work with a hierarchy of three kinds of corpora.  Each corpus adds a succ
 The `Corpus` is just a sequence of citable nodes of text.  You can build this from a CEX file:
 
 ```tut:silent
-val corpus = CorpusSource.fromFile(s"cex/hyginus.cex", cexHeader = true)
+val corpus = CorpusSource.fromFile(s"cex/livy-mt.cex", cexHeader = true)
 ```
 
 See [a few things you can do with a citable corpus](citableCorpus/)
@@ -62,7 +62,7 @@ Here's one approach to create a parsed corpus.
 For this tutorial, we've done that and saved the parsing output in this file:
 
 ```tut:silent
-val parserOutput = "workfiles/hyginus-parsed.txt"
+val parserOutput = "workfiles/livy-mt-parsed.txt"
 ```
 
 

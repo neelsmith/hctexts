@@ -21,7 +21,7 @@ import edu.holycross.shot.mid.validator._
 Create a corpus from a CEX file:
 
 ```tut:silent
-val corpus = CorpusSource.fromFile(s"cex/hyginus.cex", cexHeader = true)
+val corpus = CorpusSource.fromFile(s"cex/livy-mt.cex", cexHeader = true)
 ```
 
 How many citable passages?
@@ -33,7 +33,7 @@ corpus.size
 The "twiddle" operator: create a new corpus containing only nodes with a matching URN:
 
 ```tut:silent
-val section1urn = CtsUrn("urn:cts:latinLit:stoa1263.stoa001.hc:1pr")
+val section1urn = CtsUrn("urn:cts:omar:stoa0179.stoa001:1.4")
 val section1corpus = corpus ~~ section1urn
 ```
 
