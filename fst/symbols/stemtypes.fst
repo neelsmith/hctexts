@@ -26,19 +26,23 @@
 % Adjective stem types
 #adj1and2# = <us_a_um><er_era_erum><er_ra_rum><us_a_um_pos><us_a_um_superl>
 
-#adj3# = <is_e><er_ris_re><or_oris_comp>
 
-#adj3single# = <is><ns_ntis><x_cis><us_eris><0_is><0_is_i><es_itis><s_dis><s_itis>
+% like acer/acris/acre
+#adj3# = <0_is_e>
+
+#adj3twoendings# = <is_e><er_ris_re><or_oris_comp>
+
+#adj3single# = <ns_ntis><x_cis><us_eris><0_is><0_is_i><es_itis><s_dis><s_itis>
 
 
 
-#adjectiveclass# = #adj1and2# #adj3# #adj3single#
+#adjectiveclass# = #adj1and2# #adj3# #adj3single# #adj3twoendings#
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Verb stem types
-#regular# = <conj1><conj2><conj3><conj3io><conj4><c1pres><c2pres><c3pres><c4pres><c3iopres><pftact><pftpass>
+#regular# = <conj1><conj2><conj3><conj3io><conj4><c1pres><c2pres><c3pres><c4pres><c3iopres><pftact><pftpass><conj1dep><conj2dep><conj3dep><conj3iodep><conj4dep><c1presdep><c2presdep><c3presdep><c4presdep><c3iopresdep>
 
 #verbclass#  = #regular#
 
