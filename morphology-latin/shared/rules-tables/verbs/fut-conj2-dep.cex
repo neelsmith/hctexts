@@ -15,14 +15,14 @@ latcommon.ere_conj2fut18#conj2dep#etor#3rd#sg#fut#imptv#pass
 latcommon.ere_conj2fut19#conj2dep#entor#3rd#pl#fut#imptv#pass
 
 
-latcommon.ere_c2presfut7#c2pres#ebor#1st#sg#fut#indic#pass
-latcommon.ere_c2presfut8#c2pres#eberis#2nd#sg#fut#indic#pass
-latcommon.ere_c2presfut8b#c2pres#ebere#2nd#sg#fut#indic#pass
-latcommon.ere_c2presfut9#c2pres#ebitur#3rd#sg#fut#indic#pass
-latcommon.ere_c2presfut10#c2pres#ebimur#1st#pl#fut#indic#pass
-latcommon.ere_c2presfut11#c2pres#ebimini#2nd#pl#fut#indic#pass
-latcommon.ere_c2presfut12#c2pres#ebuntur#3rd#pl#fut#indic#pass
+latcommon.ere_c2presfut7#c2presdep#ebor#1st#sg#fut#indic#pass
+latcommon.ere_c2presfut8#c2presdep#eberis#2nd#sg#fut#indic#pass
+latcommon.ere_c2presfut8b#c2presdep#ebere#2nd#sg#fut#indic#pass
+latcommon.ere_c2presfut9#c2presdep#ebitur#3rd#sg#fut#indic#pass
+latcommon.ere_c2presfut10#c2presdep#ebimur#1st#pl#fut#indic#pass
+latcommon.ere_c2presfut11#c2presdep#ebimini#2nd#pl#fut#indic#pass
+latcommon.ere_c2presfut12#c2presdep#ebuntur#3rd#pl#fut#indic#pass
 
-latcommon.ere_c2presfut17#c2pres#etor#2nd#sg#fut#imptv#pass
-latcommon.ere_c2presfut18#c2pres#etor#3rd#sg#fut#imptv#pass
-latcommon.ere_c2presfut19#c2pres#entor#3rd#pl#fut#imptv#pass
+latcommon.ere_c2presfut17#c2presdep#etor#2nd#sg#fut#imptv#pass
+latcommon.ere_c2presfut18#c2presdep#etor#3rd#sg#fut#imptv#pass
+latcommon.ere_c2presfut19#c2presdep#entor#3rd#pl#fut#imptv#pass
