@@ -9,14 +9,14 @@ libraryDependencies ++= Seq(
   "edu.holycross.shot.cite" %% "xcite" % "4.1.0",
   "edu.holycross.shot" %% "ohco2" % "10.14.0",
 
-  "edu.holycross.shot" %% "midvalidator" % "7.2.1",
+  "edu.holycross.shot" %% "midvalidator" % "9.1.0",
 
   "edu.holycross.shot" %% "greek" % "2.4.0",
   "edu.holycross.shot" %% "latphone" % "2.5.2",
-  "edu.holycross.shot" %% "latincorpus" % "1.3.0",
-  "edu.holycross.shot" %% "tabulae" % "5.4.0",
+  "edu.holycross.shot" %% "latincorpus" % "1.6.0",
+  "edu.holycross.shot" %% "tabulae" % "5.5.0",
 
-  "edu.holycross.shot" %% "histoutils" % "1.4.0",
+  "edu.holycross.shot" %% "histoutils" % "2.1.0",
 
   "com.github.pathikrit" %% "better-files" % "3.5.0"
 )
