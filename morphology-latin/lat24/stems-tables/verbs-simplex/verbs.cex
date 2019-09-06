@@ -1,6 +1,20 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 
+
+
+lat24morph.verbn31212a#ls.n31212#nosc#c3pres
+lat24morph.verbn31212b#ls.n31212#nov#pftact
+lat24morph.verbn31212c#ls.n31212#not#pftpass
+
+lat24morph.verbn50445#ls.n50445#ven#conj1dep
+
+
+lat24morph.verbn14559a#ls.n14559#divid#c3pres
+lat24morph.verbn14559b#ls.n14559#divis#pftact
+lat24morph.verbn14559c#ls.n14559#divis#pftpass
+
+
 lat24morph.verbn50990#ls.n50990#vindic#conj1
 lat24morph.verbn51418a#ls.n51418#vulg#conj1
 
