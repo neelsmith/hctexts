@@ -1,6 +1,41 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 
+
+latcommon.verbn46569a#ls.n46569#submit#c3pres
+latcommon.verbn46569a2#ls.n46569#summit#c3pres
+latcommon.verbn46569b#ls.n46569#submis#pftact
+latcommon.verbn46569b2#ls.n46569#summis#pftact
+latcommon.verbn46569c#ls.n46569#submitt#pftpass
+latcommon.verbn46569c2#ls.n46569#summitt#pftpass
+
+
+latcommon.verbn13456a#ls.n13456#destitu#c3pres
+latcommon.verbn13456b#ls.n13456#destitu#pftact
+latcommon.verbn13456c#ls.n13456#destitut#pftpass
+
+
+
+latcommon.verbn12664a#ls.n12664#adfer#c3pres
+latcommon.verbn12664a2#ls.n12664#affer#c3pres
+latcommon.verbn12664b#ls.n12664#attul#pftact
+latcommon.verbn12664b2#ls.n12664#adtul#pftact
+latcommon.verbn12664c#ls.n12664#adlat#pftpass
+latcommon.verbn12664c2#ls.n12664#allat#pftpass
+
+
+latcommon.verbn12664a#ls.n12664#defend#c3pres
+latcommon.verbn12664b#ls.n12664#defend#pftact
+latcommon.verbn12664c#ls.n12664#defens#pftpass
+
+latcommon.verbn23984a#ls.n23984#institu#c3pres
+latcommon.verbn23984b#ls.n23984#institu#pftact
+latcommon.verbn23984c#ls.n23984#institut#pftpass
+
+latcommon.verbn48671a#ls.n48671#trad#c3pres
+latcommon.verbn48671b#ls.n48671#tradid#pftact
+latcommon.verbn486717c#ls.n48671#tradit#pftpass
+
 latcommon.verbn39703#ls.n39703#put#conj1
 latcommon.verbn9532#ls.n9532#compar#conj1
 

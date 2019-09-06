@@ -1,6 +1,28 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 
+
+lat23morph.verbn50990#ls.n50990#uindic#conj1
+lat23morph.verbn51418a#ls.n51418#uulg#conj1
+
+lat23morph.verbn24717a#ls.n24717#inuen#c4pres
+lat23morph.verbn24717b#ls.n24717#inuen#pftact
+lat23morph.verbn24717c#ls.n24717#inuent#pftpass
+
+
+lat23morph.verbn950a#ls.n950#adolesc#c3pres
+lat23morph.verbn950b#ls.n950#adoleu#pftact
+lat23morph.verbn950c#ls.n950#adult#pftpass
+
+
+lat23morph.verbn862#ls.n862#adiuu#conj1
+
+
+lat23morph.verbn1603a#ls.n1603#agnosc#c3pres
+lat23morph.verbn1603b#ls.n1603#agnou#pftact
+lat23morph.verbn1603c#ls.n1603#agnot#pftpass
+
+
 lat23morph.verbn50434#ls.n50434#uener#conj1dep
 
 lat23morph.verbn42976a#ls.n42976#sc#c4pres

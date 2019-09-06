@@ -1,5 +1,30 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
+
+lat25morph.verbn50990#ls.n50990#vindic#conj1
+
+lat25morph.verbn51418#ls.n51418#vulg#conj1
+
+
+
+lat25morph.verbn24717a#ls.n24717#inven#c4pres
+lat25morph.verbn24717b#ls.n24717#inven#pftact
+lat25morph.verbn24717c#ls.n24717#invent#pftpass
+
+
+lat25morph.verbn950a#ls.n950#adolesc#c3pres
+lat25morph.verbn950b#ls.n950#adolev#pftact
+lat25morph.verbn950c#ls.n950#adult#pftpass
+
+
+
+lat25morph.verbn862#ls.n862#adjuv#conj1
+
+lat25morph.verbn1603a#ls.n1603#agnosc#c3pres
+lat25morph.verbn1603b#ls.n1603#agnov#pftact
+lat25morph.verbn1603c#ls.n1603#agnot#pftpass
+
+
 lat25morph.verbn50434#ls.n50434#vener#conj1dep
 
 
