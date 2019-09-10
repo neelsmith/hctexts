@@ -12,9 +12,9 @@ libraryDependencies ++= Seq(
   "edu.holycross.shot" %% "midvalidator" % "9.1.0",
 
   "edu.holycross.shot" %% "greek" % "2.4.0",
-  "edu.holycross.shot" %% "latphone" % "2.5.2",
-  "edu.holycross.shot" %% "latincorpus" % "1.6.0",
-  "edu.holycross.shot" %% "tabulae" % "5.5.0",
+  "edu.holycross.shot" %% "latphone" % "2.7.0",
+  "edu.holycross.shot" %% "latincorpus" % "2.0.0",
+  "edu.holycross.shot" %% "tabulae" % "6.0.0",
 
   "edu.holycross.shot" %% "histoutils" % "2.1.0",
 
