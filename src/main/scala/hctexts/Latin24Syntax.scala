@@ -28,7 +28,7 @@ object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
 
 
   /** Set of all valid Unicode code points.*/
-  val charSet:  Set[Int] = (for (ch <- Latin24Alphabet.alphabetString ++ Latin24Alphabet.punctuationString ++ Latin24Alphabet.metaCharacters) yield {ch.toInt}).toSet
+  val charSet:  Set[Int] = (for (ch <- alphabetString ++ punctuationString ++ metaCharacters ++ syntaxCharacters) yield {ch.toInt}).toSet
 
 
   /** True if cp is a valid code point. Required by
@@ -64,6 +64,28 @@ object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
     }
   }
 
+    def syntaxStrings (s: String, syntaxVector: Vector[String] = Vector.empty): Vector[String] = {
+      val trimmed = s.trim.replaceAll("\\|","\n")
+      if (syntaxCharacters.contains(trimmed.head)) {
+         //val schar = syntaxStrings(trimmed.tail, syntaxVector +: trimmed.head.toString)
+         //warn(schar)
+         warn("SYNTAX STRING tail " + trimmed.tail)
+         val hd : String = trimmed.head.toString
+         warn("HEAD " + hd)
+         val vect : Vector[String] = syntaxVector  :+ hd
+         warn("vect " + vect)
+        syntaxStrings(trimmed.tail, vect)
+
+       } else {
+
+         val simple = syntaxVector :+ trimmed
+         warn(simple)
+         simple
+       }
+
+      
+    }
+
     def lexicalCategory(s: String): Option[MidTokenCategory] = {
     if (numerics.contains(s(0).toUpper)) {
       if (numeric(s)) {
@@ -88,8 +110,14 @@ object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
 def nodeToTokens(n: CitableNode) : Vector[MidToken] = {
     val urn = n.urn
     // PRECEDE THIS WITH SYNTAX CHUNKING:  '|' and '>'
+
+    val strs : Vector[String] = syntaxStrings(n.text).filter(_.nonEmpty)
+
     // initial chunking on white space, enclitic delimiter, and elision marker
-    val units = n.text.split("[ \\+\\']").filter(_.nonEmpty)
+    val units = strs.map(_.split("[ \\+\\']").filter(_.nonEmpty)).flatten
+    warn("UNITS " + units)
+
+
     val classified = for (unit <- units.zipWithIndex) yield {
       debug("UNIT: " + unit)
       val newPassage = urn.passageComponent + "." + unit._2
@@ -122,8 +150,6 @@ def nodeToTokens(n: CitableNode) : Vector[MidToken] = {
     }
     warn("Classified " + classified.toVector)
     classified.toVector.flatten
-
-    //Vector.empty[MidToken]
   }
 
 
@@ -185,7 +211,11 @@ def nodeToTokens(n: CitableNode) : Vector[MidToken] = {
 
 
   def metaCharacters: String = {
-    "'+|>*"
+    "'+"
+  }
+
+  def syntaxCharacters: String = {
+    "|>*"
   }
 
   /** Set of all recognized diphthongs.*/

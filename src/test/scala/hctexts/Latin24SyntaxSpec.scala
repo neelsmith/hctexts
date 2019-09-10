@@ -42,7 +42,20 @@ class Latin24AlphabetMidTraitSpec extends FlatSpec {
     val u = CtsUrn("urn:cts:latinLit:phi0881.phi003.latinlib:126")
     val txt = "increpat \"o patrum suboles oblita priorum,"
     val cn = CitableNode(u,txt)
-    println(Latin24Syntax.nodeToTokens(cn))
+    //println(Latin24Syntax.nodeToTokens(cn))
+  }
+
+  it should "split syntactic markup" in {
+    val txt = ">increpat \"o patrum suboles oblita priorum,"
+    //println(Latin24Syntax.syntaxStrings(txt))
+  }
+  it should "handle > as a syntax token" in {
+    val u = CtsUrn("urn:cts:latinLit:phi0881.phi003.latinlib:126")
+    val txt = ">increpat \"o patrum suboles oblita priorum,"
+    val cn = CitableNode(u,txt)
+    println("CONVERTED" + Latin24Syntax.nodeToTokens(cn))
 
   }
+
+
 }
