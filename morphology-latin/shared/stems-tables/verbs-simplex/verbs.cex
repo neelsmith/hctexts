@@ -1,6 +1,11 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 
+
+latcommon.verbn45294a#ls.n45294#statu#c3pres
+latcommon.verbn45294b#ls.n45294#statu#pftact
+latcommon.verbn45294c#ls.n45294#stat#pftpass
+
 latcommon.verbn38635a#ls.n38635#proflu#c3pres
 latcommon.verbn38635b#ls.n38635#proflux#pftact
 latcommon.verbn38635c#ls.n38635#proflux#pftpass
