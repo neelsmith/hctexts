@@ -26,12 +26,12 @@ class HighlightPrinterSpec extends FlatSpec {
 
   "The Latin24SyntaxString object" should "print texts highlighting parts of speech" in {
 
-    Latin24SyntaxString.printPosHighlight(phr,"test-output-pos-hl.md")
+    Latin24SyntaxString.printPosHighlight(phr,"test-output-pos-hl.md", "Livy 1.4")
 
   }
 
   it should "print hoverable noun files" in {
-    Latin24SyntaxString.printPosHovers(phr,"test-output-hover")
+    Latin24SyntaxString.printPosHovers(phr,"test-output-hover", "Livy 1.4")
 
   }
 

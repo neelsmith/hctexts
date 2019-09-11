@@ -71,13 +71,8 @@ object Latin24SyntaxString extends  LogSupport {
   }
 
 
-  /** Write to a `LatinPhrase` to a file with parts of speech
-  * highlighted.
-  *
-  * @param phr The LatinPhrase to write.
-  * @param fName Name of the output file.
-  */
-  def printPosHighlight(phr: LatinPhrase, fName: String) : Unit = {
+
+  def posHighlight(phr: LatinPhrase) : String = {
 
 
     val verbHl = Highlighter(verbFilt, "<span style=\"color:" + colorMap("conjugated verb") + "\">", spanEnd)
@@ -95,8 +90,21 @@ object Latin24SyntaxString extends  LogSupport {
     val md = format(phr.highlightForms(hls))
 
     val legend = "**Legend**\n\n" + colorKey + "\n\n"
-    new PrintWriter(fName){write(legend + "**Text**\n\n" + md);close;}
+    legend + "**Text**\n\n" + md
   }
+
+  /** Write to a `LatinPhrase` to a file with parts of speech
+  * highlighted.
+  *
+  * @param phr The LatinPhrase to write.
+  * @param fName Name of the output file.
+  */
+  def printPosHighlight(phr: LatinPhrase, fName: String, title: String) : Unit = {
+    val hdr = s"---\nlayout: page\ntitle: ${title}\n\n---\n\n"
+    val md = posHighlight(phr)
+    new PrintWriter(fName){write(hdr + md);close;}
+  }
+
 
 
   /** Write a LatinPhrase to mutliple files with a different
@@ -106,14 +114,16 @@ object Latin24SyntaxString extends  LogSupport {
   * @param phr LatinPhrase to write.
   * @param fBase Base of file name to write.
   */
-  def printPosHovers(phr: LatinPhrase, fBase: String) : Unit = {
+  def printPosHovers(phr: LatinPhrase, fBase: String, title: String) : Unit = {
+    val nounHdr = "---\nlayout: page\ntitle: \"" + title + ": substantives highlighted\"\n\n---\n\n"
     val nounFile = fBase + "-nouns-pronouns.md"
     val nounMd = format(phr.hover(Vector(nounFilt, pronounFilt)))
-    new PrintWriter(nounFile){write(nounMd);close;}
+    new PrintWriter(nounFile){write(nounHdr + nounMd);close;}
 
+    val verbHdr = "---\nlayout: page\ntitle: \"" + title + ": verbs highlighted\"\n\n---\n\n"
 
     val verbFile = fBase + "-verbs.md"
     val verbMd = format(phr.hover(Vector(verbFilt, infinFilt, ptcplFilt )))
-    new PrintWriter(verbFile){write(verbMd);close;}
+    new PrintWriter(verbFile){write(verbHdr + verbMd);close;}
   }
 }
