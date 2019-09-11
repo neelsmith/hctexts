@@ -13,12 +13,15 @@ libraryDependencies ++= Seq(
 
   "edu.holycross.shot" %% "greek" % "2.4.0",
   "edu.holycross.shot" %% "latphone" % "2.7.0",
-  "edu.holycross.shot" %% "latincorpus" % "2.0.0",
+  "edu.holycross.shot" %% "latincorpus" % "2.1.0",
   "edu.holycross.shot" %% "tabulae" % "6.0.0",
 
   "edu.holycross.shot" %% "histoutils" % "2.1.0",
 
-  "com.github.pathikrit" %% "better-files" % "3.5.0"
+  "com.github.pathikrit" %% "better-files" % "3.5.0",
+
+  "org.wvlet.airframe" %% "airframe-log" % "19.8.10"
+
 )
 tutTargetDirectory := file("docs")
 tutSourceDirectory := file("tut")

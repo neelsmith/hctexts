@@ -17,7 +17,7 @@ import wvlet.log.LogFormatter.SourceCodeLogFormatter
 */
 //@JSExportAll
 object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
-  Logger.setDefaultLogLevel(LogLevel.WARN)
+  Logger.setDefaultLogLevel(LogLevel.DEBUG)
   /** Descriptive phrase required by MidOrthography trait.*/
   def orthography = "Latin alphabet with 24 alphabetic characters and additional markup for syntactic features"
 
@@ -64,58 +64,57 @@ object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
     }
   }
 
-    def syntaxStrings (s: String, syntaxVector: Vector[String] = Vector.empty): Vector[String] = {
-      val trimmed = s.trim.replaceAll("\\|","\n")
-      if (syntaxCharacters.contains(trimmed.head)) {
-         //val schar = syntaxStrings(trimmed.tail, syntaxVector +: trimmed.head.toString)
-         //warn(schar)
-         warn("SYNTAX STRING tail " + trimmed.tail)
-         val hd : String = trimmed.head.toString
-         warn("HEAD " + hd)
-         val vect : Vector[String] = syntaxVector  :+ hd
-         warn("vect " + vect)
-        syntaxStrings(trimmed.tail, vect)
 
-       } else {
+  /** Break up string based on "syntactic markup" characters.
+  */
+  def syntaxStrings (src: String,
+    current: String = "",
+    syntaxVector: Vector[String] = Vector.empty): Vector[String] = {
+    if  (src.isEmpty) {
+      syntaxVector :+ current
 
-         val simple = syntaxVector :+ trimmed
-         warn(simple)
-         simple
-       }
+    } else if (syntaxCharacters.contains(src.head)) {
+      val hd : String = src.head.toString
+      val vect : Vector[String] = syntaxVector :+ current :+ hd
+      syntaxStrings(src.tail, "", vect)
 
-      
-    }
+     } else {
+       val newString : String = current + src.head.toString
+       syntaxStrings(src.tail, newString, syntaxVector)
+     }
+  }
 
-    def lexicalCategory(s: String): Option[MidTokenCategory] = {
-    if (numerics.contains(s(0).toUpper)) {
-      if (numeric(s)) {
-        Some(edu.holycross.shot.latin.NumericToken)
-      } else {
-        None
-      }
-    } else if (alphabetString.contains(s(0).toLower)) {
-      if (alphabetic(s)) {
-        Some(edu.holycross.shot.latin.LexicalToken)
-      } else {
-        None
-      }
-
+  def lexicalCategory(s: String): Option[MidTokenCategory] = {
+  if (numerics.contains(s(0).toUpper)) {
+    if (numeric(s)) {
+      Some(edu.holycross.shot.latin.NumericToken)
     } else {
       None
     }
+  } else if (alphabetString.contains(s(0).toLower)) {
+    if (alphabetic(s)) {
+      Some(edu.holycross.shot.latin.LexicalToken)
+    } else {
+      None
+    }
+
+  } else if (syntaxCharacters.contains(s(0))) {
+    Some(edu.holycross.shot.latin.PunctuationToken)
+
+  } else {
+    None
   }
+}
 
 
 
 def nodeToTokens(n: CitableNode) : Vector[MidToken] = {
     val urn = n.urn
-    // PRECEDE THIS WITH SYNTAX CHUNKING:  '|' and '>'
-
     val strs : Vector[String] = syntaxStrings(n.text).filter(_.nonEmpty)
-
+    debug("SYNTAX STRS:  " + strs)
     // initial chunking on white space, enclitic delimiter, and elision marker
     val units = strs.map(_.split("[ \\+\\']").filter(_.nonEmpty)).flatten
-    warn("UNITS " + units)
+    debug("UNITS " + units)
 
 
     val classified = for (unit <- units.zipWithIndex) yield {
@@ -148,7 +147,7 @@ def nodeToTokens(n: CitableNode) : Vector[MidToken] = {
       }
       tokenClass
     }
-    warn("Classified " + classified.toVector)
+    debug("Classified " + classified.toVector)
     classified.toVector.flatten
   }
 
