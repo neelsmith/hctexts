@@ -48,6 +48,7 @@ object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
     Vector(edu.holycross.shot.latin.PraenomenToken, edu.holycross.shot.latin.PunctuationToken, edu.holycross.shot.latin.LexicalToken, edu.holycross.shot.latin.NumericToken, InvalidToken)
   }
 
+  /** Remove trailing punctuation chracters.*/
   def depunctuate (s: String, depunctVector: Vector[String] = Vector.empty): Vector[String] = {
     val trimmed = s.trim
     val trailChar = s"${trimmed.last}"
@@ -76,7 +77,7 @@ object Latin24Syntax extends LatinAlphabet with MidOrthography with LogSupport {
     } else if (syntaxCharacters.contains(src.head)) {
       val hd : String = src.head.toString
       val vect : Vector[String] = syntaxVector :+ current :+ hd
-      syntaxStrings(src.tail, "", vect)
+      syntaxStrings(src.tail, " ", vect)
 
      } else {
        val newString : String = current + src.head.toString
