@@ -13,7 +13,7 @@ import scala.io.Source
 import java.io.PrintWriter
 
 val reducedSyntax = CorpusSource.fromFile("cex/livy-reduced.cex", cexHeader=true)
-//val fullSyntax = CorpusSource.fromFile("cex/livy-syntax.cex", cexHeader=true)
+val fullSyntax = CorpusSource.fromFile("cex/livy-syntax.cex", cexHeader=true)
 val fstFile = "src/test/resources/wk1-parsed.txt"
 val fstLines = Source.fromFile(fstFile).getLines.toVector
 
@@ -27,6 +27,25 @@ def reducedPassage(psg: String, baseDir : String = "lat213") = {
   val phr = LatinPhrase(latinCorpus.tokens)
 
 
-  Latin24SyntaxString.printPosHighlight(phr,s"${baseDir}/livy-${psg}-pos.md")
-  Latin24SyntaxString.printPosHovers(phr,s"${baseDir}/livy-${psg}-hover")
+  Latin24SyntaxString.printPosHighlight(phr,s"${baseDir}/livy-reduced-${psg}-pos.md", s"Livy ${psg}")
+  Latin24SyntaxString.printPosHovers(phr,s"${baseDir}/livy-reduced-${psg}-hover", s"Livy ${psg}")
+}
+
+
+
+
+def syntaxPassage(psg: String, baseDir : String = "lat213") = {
+  val u = livy.addPassage(psg)
+  val psgCorpus = fullSyntax ~~ u
+  val latinCorpus = LatinCorpus.fromFstLines(psgCorpus,Latin24Syntax,fstLines,strict=false)
+  val phr = LatinPhrase(latinCorpus.tokens)
+
+
+  Latin24SyntaxString.printPosHighlight(phr,s"${baseDir}/livy-${psg}-pos.md", s"Livy ${psg}")
+  Latin24SyntaxString.printPosHovers(phr,s"${baseDir}/livy-${psg}-hover", s"Livy ${psg}")
+}
+
+def allPassages(psg: String, baseDir : String = "lat213") : Unit = {
+  reducedPassage(psg, baseDir)
+  syntaxPassage(psg, baseDir)
 }
