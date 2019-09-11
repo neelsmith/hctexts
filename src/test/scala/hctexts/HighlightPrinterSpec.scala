@@ -17,16 +17,21 @@ class HighlightPrinterSpec extends FlatSpec {
 
   val urn = CtsUrn("urn:cts:omar:stoa0179.stoa001.reduced:1.4")
   val cn = CitableNode(urn, sntx)
+  val c = Corpus(Vector(cn))
+
+  val fstFile = "src/test/resources/wk1-parsed.txt"
+  val fst = Source.fromFile(fstFile).getLines.toVector
+  val lc = LatinCorpus.fromFstLines(c,Latin24Syntax,fst,strict=false)
+  val phr = LatinPhrase(lc.tokens)
 
   "The Latin24SyntaxString object" should "print texts highlighting parts of speech" in {
-    val c = Corpus(Vector(cn))
 
-    val fstFile = "src/test/resources/wk1-parsed.txt"
-    val fst = Source.fromFile(fstFile).getLines.toVector
-    val lc = LatinCorpus.fromFstLines(c,Latin24Syntax,fst,strict=false)
-    val phr = LatinPhrase(lc.tokens)
+    Latin24SyntaxString.printPosHighlight(phr,"test-output-pos-hl.md")
 
-    Latin24SyntaxString.printPos(phr,"test-output-pos-hl.md")
+  }
+
+  it should "print hoverable noun files" in {
+    Latin24SyntaxString.printPosHovers(phr,"test-output-hover")
 
   }
 
