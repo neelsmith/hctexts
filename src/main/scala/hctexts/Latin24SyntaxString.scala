@@ -22,72 +22,61 @@ import wvlet.log.LogFormatter.SourceCodeLogFormatter
 //@JSExportAll
 object Latin24SyntaxString extends  LogSupport {
   //Logger.setDefaultLogLevel(LogLevel.WARN)
-    val colorMap = Map(
-      //#eff3ff
-      //#c6dbef
-      //#9ecae1
-      "conjunction" -> "#e7298a",
+  val colorMap = Map(
 
-      "preposition" -> "#e7298a",
+    "conjunction" -> "#e7298a",
+    "preposition" -> "#e7298a",
 
-      "participle" -> "3182bd",
-      "infinitive" -> "#08519c",
-      "conjugated verb" -> "#6baed6", //
+    "participle" -> "#3182bd",
+    "infinitive" -> "#08519c",
+    "conjugated verb" -> "#6baed6", //
 
 
-      "adjective" -> "74c476",
-      "pronoun" -> "31a354",
-      "noun" -> "#006d2c"
-    )
-/*
-#74c476
-#31a354
-#006d2c
-    */
-/*
-6baed6
-#3182bd
-#08519c
-*/
-/*
-#1b9e77
-#d95f02
-#7570b3
-#e7298a
-#66a61e
-#e6ab02
-*/
+    "adjective" -> "#74c476",
+    "pronoun" -> "#31a354",
+    "noun" -> "#006d2c"
+  )
+
 
   val verbFilt = MorphologyFilter(pos = Some("verb"))
   val infinFilt = MorphologyFilter(pos = Some("infinitive"))
   val ptcplFilt = MorphologyFilter(pos = Some("participle"))
+
   val adjFilt = MorphologyFilter(pos = Some("adjective"))
   val nounFilt = MorphologyFilter(pos = Some("noun"))
   val pronounFilt = MorphologyFilter(pos = Some("pronoun"))
+
   val conjFilt = MorphologyFilter(indeclinablePoS = Some(Conjunction))
-
-
   val prepFilt = MorphologyFilter(indeclinablePoS = Some(Preposition))
 
   val spanEnd = "</span>"
 
 
-  /** Format single-line syntax markdown for regular markdown.
+  /** Format single-line syntax markdown as regular markdown.
   *
   * @param s String to format.
   */
   def format(s: String) : String = {
-     val sub = s.replaceAll("\\|", "\n").replaceAll("^> ", ">").replaceAll("\\* ", "*").replaceAll("\\* ","*")
+     val sub = s.replaceAll("\\|", "\n").replaceAll("^> ", ">").replaceAll("\\* ", "*").replaceAll(" \\*","*")
      sub.split("\n").map(_.replaceAll("^[ ]+","")).mkString("\n")
   }
 
 
+  /** Format markdown color key for part of speech highlighting.*/
   def colorKey : String = {
-    val keys = for (pos <- Vector("conjugated verb", "infinitive", "participle", "noun", "pronoun", "adjective", "conjunction", "preposition")) yield {
+    val keys = for (pos <- Vector("conjugated verb", "participle",  "infinitive", "noun",  "pronoun", "adjective", "conjunction", "preposition")) yield {
       "<span style=\"color:" + colorMap(pos) + "\">" + pos + spanEnd
     }
     keys.mkString("\n\n")
   }
+
+
+  /** Write to a `LatinPhrase` to a file with parts of speech
+  * highlighted.
+  *
+  * @param phr The LatinPhrase to write.
+  * @param fName Name of the output file.
+  */
   def printPosHighlight(phr: LatinPhrase, fName: String) : Unit = {
 
 
@@ -109,9 +98,22 @@ object Latin24SyntaxString extends  LogSupport {
     new PrintWriter(fName){write(legend + "**Text**\n\n" + md);close;}
   }
 
+
+  /** Write a LatinPhrase to mutliple files with a different
+  * part of speech highlighted with morphological analysis tool
+  * tip in each file.
+  *
+  * @param phr LatinPhrase to write.
+  * @param fBase Base of file name to write.
+  */
   def printPosHovers(phr: LatinPhrase, fBase: String) : Unit = {
-    val nounFile = fBase + "-nouns.md"
-    val nounMd = format(phr.hover(Vector(nounFilt)))
+    val nounFile = fBase + "-nouns-pronouns.md"
+    val nounMd = format(phr.hover(Vector(nounFilt, pronounFilt)))
     new PrintWriter(nounFile){write(nounMd);close;}
+
+
+    val verbFile = fBase + "-verbs.md"
+    val verbMd = format(phr.hover(Vector(verbFilt, infinFilt, ptcplFilt )))
+    new PrintWriter(verbFile){write(verbMd);close;}
   }
 }
