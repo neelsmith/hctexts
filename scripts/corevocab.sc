@@ -1,7 +1,7 @@
 import scala.io.Source
 import java.io.PrintWriter
 
-val threshold = 10 // minimum number of occurrences in corpus of Livy
+
 val f = "mtVocabByLivyFreq.cex"
 val lns = Source.fromFile(f).getLines.toVector
 
@@ -14,7 +14,7 @@ for (ln <- lns) {
 
 val urlBase = "http://folio2.furman.edu/lewis-short/index.html?urn=urn:cite2:hmt:ls:"
 
-def formatLines(srcLines: Vector[String], currentPoS: String = "", outputLines: Vector[String] =  Vector.empty[String]) :  Vector[String] = {
+def formatLines(srcLines: Vector[String], threshold: Int = 100, currentPoS: String = "", outputLines: Vector[String] =  Vector.empty[String]) :  Vector[String] = {
 
   if (srcLines.isEmpty) {
     outputLines
@@ -30,20 +30,20 @@ def formatLines(srcLines: Vector[String], currentPoS: String = "", outputLines: 
       val lnk = s"${urlBase}${lemmaParts(0)}"
       val lemma = lemmaParts(1)
       //println(s"${pos} - [${lemma}](${lnk})")
-      val vocabItem = s"1. [${lemma}](${lnk})"
+      val vocabItem = s"1. [${lemma}](${lnk}) (${count})"
 
       if (pos != currentPoS) {
         val hdr = "\n\n## " + pos + "\n"
-        formatLines(srcLines.tail, pos,  outputLines :+ hdr :+ vocabItem)
+        formatLines(srcLines.tail, threshold, pos,  outputLines :+ hdr :+ vocabItem)
 
       } else {
-        formatLines(srcLines.tail, currentPoS, outputLines :+ vocabItem)
+        formatLines(srcLines.tail, threshold, currentPoS, outputLines :+ vocabItem)
       }
 
 
 
     } else {
-      formatLines(srcLines.tail, currentPoS, outputLines)
+      formatLines(srcLines.tail, threshold, currentPoS, outputLines)
     }
     entry
   }

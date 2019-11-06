@@ -27,7 +27,9 @@ def sortFile(fName: String =  verbFile, prefixes: Vector[String] = prefixList) :
     val cols = entry.split("#")
     // cols(1) is the Lewis-Short identifier:  strip off
     // its prefix and make it an Int for numeric sorting:
-    val lexNum = stripPrefix(cols(1),prefixes).toInt
+    val lexString = stripPrefix(cols(1),prefixes).replaceAll("[a-z]+$","")
+    val lexNum = lexString.toInt
+
     (lexNum, entry)
   }
   // sort by number (part 1), produce entry only (part 2)

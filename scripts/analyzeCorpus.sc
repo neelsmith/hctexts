@@ -7,6 +7,7 @@ import edu.holycross.shot.ohco2._
 import edu.holycross.shot.histoutils._
 
 import edu.holycross.shot.latin._
+import edu.holycross.shot.latincorpus._
 import edu.holycross.shot.greek._
 
 import edu.holycross.shot.mid.validator._
@@ -19,15 +20,19 @@ import java.io.PrintWriter
 import sys.process._
 import scala.language.postfixOps
 
+val workDir = File("workfiles")
 
 // Map of corpus labels to IDs for orthography systems
 val orthoMap = Map(
   "hyginus" -> "lat23",
   "livy-mt" -> "lat24",
   "livy" -> "lat24",
+  "periochae" -> "lat24",
   "germanicus" ->  "lat24",
   "germanicus-breysig" ->  "lat24",
   "metamorphoses" ->  "lat24",
+
+  "ocre43k" ->  "lat24",
 
   "eutropius" ->  "lat24",
   "nepos" ->  "lat24"
@@ -71,7 +76,7 @@ def execOutput(cmd: String) : String = {
 
 // Get FST output of parsing list of words in a file.
 def parseWordsFile(wordsFile: String, ortho: String ) : String = {
-  val fstParser = s"parsers/shared-${ortho}/latin.a"
+  val fstParser = s"parsers/shared-${ortho}-shared-xls/latin.a"
 
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   execOutput(cmd)
@@ -107,47 +112,65 @@ def wordList(label: String) = {
   tokenizableCorpus(label).wordList
 }
 def printWordList(label: String) = {
-  new PrintWriter(s"${label}-words.txt"){write(wordList(label).mkString("\n")); close;}
+
+  val words =  wordList(label).mkString("\n")
+  val outFile = workDir / s"${label}-words.txt"
+  new PrintWriter(outFile.toString){write(words); close;}
 }
+/*
+val idxFile = "scripts/ls_indexData.txt"
+val lines = File(idxFile).lines.toVector
 
 
-def parseWordsFile(wordsFile: String, ortho: String ) : String = {
-  val fstParser = s"parsers/shared-${ortho}/latin.a"
+
+val lsIdMap = for (ln <- lines) yield {
+  val parts = ln.split("#")
+  s"ls.${parts(0)}" -> parts(1)
+}*/
+
+
+
+def parseWordsFile(wordsFile: String, label: String) : String = {
+  val fstParser = s"parsers/shared-" + label + "-shared-xls/latin.a"
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   val fst = execOutput(cmd)
   fst
 }
 
 def parse(label: String) = {
-  val wordList = s"${label}-words.txt"
+  val wordList = workDir / s"${label}-words.txt"
   println("Please be patient: this is slow.")
   println("When the entire process is over, you'll see a")
   println("message reading \"Parsing complete.\"\n\n")
-  val parses = parseWordsFile(wordList, orthoMap(label) )
+  val parses = parseWordsFile(wordList.toString, orthoMap(label) )
   println("\nParsing complete.\n")
   parses
 }
 
-/* Wait for latincorpus library to be published!
-def latinCorpus(label: String) = {
-  val fstOutput = File(s"${label}-parsed.txt")
+
+def latinCorpus(label: String) : Option[LatinCorpus] = {
+  val fstOutput = workDir / s"${label}-parsed.txt"
   if (! fstOutput.exists) {
     println("Please compile parsed output before running this.")
+    None
     //println(s"E.g., run\n\tparse(\"" + label + "\")")
   } else {
     val ortho = orthoMap(label)
-    val lc = LatinCorpus(
+    val lc = LatinCorpus.fromFstLines(
       ohco2Corpus(label),
       orthoClassMap(ortho),
-      fstOutput.lines.mkString("\n")
+      fstOutput.lines.toVector,
+      strict = false
     )
+    Some(lc)
   }
 }
-*/
+
 
 def printParses(label: String) = {
   val fstOutput = parse(label)
-  new PrintWriter(s"${label}-parsed.txt"){write(fstOutput); close;}
+  val outFile = workDir /  s"${label}-parsed.txt"
+  new PrintWriter(outFile.toString){write(fstOutput); close;}
 }
 
 def percentWordList(label: String, pct: Int = 50) = {
@@ -160,16 +183,16 @@ def percentWordList(label: String, pct: Int = 50) = {
 
 def percentParse(label: String, pct: Int = 50) = {
   val words = percentWordList(label, pct)
-  val fName = s"${label}-${pct}pct.txt"
-  new PrintWriter(fName){write(words.mkString("\n"));close;}
+  val fName = workDir / s"${label}-${pct}pct.txt"
+  new PrintWriter(fName.toString){write(words.mkString("\n"));close;}
   println("Beginning to parse.. be patient.")
-  val fst = parseWordsFile(fName, orthoMap(label))
+  val fst = parseWordsFile(fName.toString, orthoMap(label))
   val parses = FstReader.parseFstLines(fst.split("\n").toVector)
   println("Done parsing.")
   val fails = parses.filter(_.analyses.isEmpty).map(_.token)
   println("Failed on " + fails.size + " tokens.")
-  val failedFile = s"${label}-${pct}pct-failed.txt"
-  new PrintWriter(failedFile){write(fails.mkString("\n"));close;}
+  val failedFile = workDir / s"${label}-${pct}pct-failed.txt"
+  new PrintWriter(failedFile.toString){write(fails.mkString("\n"));close;}
   println("Wrote list to "+ failedFile)
 }
 
