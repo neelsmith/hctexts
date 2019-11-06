@@ -1,25 +1,18 @@
 Rule#LexicalEntity#Prefix#Simplex#Notes
 
-
-latcommon.compoundn21980#ls.n21980#im#ls.n37010#impono
-
-latcommon.compoundn743#ls.n743#ad#ls.n14847#adduco
-
-latcommon.compoundn9647#ls.n9647#com#ls.n37010#compono
-
-latcommon.compoundn3177#ls.n3177#ap#ls.n37010#appono
-
-
 latcommon.compoundn87#ls.n87#ab#ls.n1605#abigo
 latcommon.compoundn147#ls.n147#abs#ls.n47901#absterreo
+latcommon.compoundn743#ls.n743#ad#ls.n14847#adduco
 latcommon.compoundn902#ls.n902#ad#ls.n29328#admitto
 latcommon.compoundn977#ls.n977#ad#ls.n33000#adorior
 latcommon.compoundn1901#ls.n1901#ad#ls.n25504#adlaboro
 latcommon.compoundn2260#ls.n2260#a#ls.n29328#amitto
+latcommon.compoundn3177#ls.n3177#ap#ls.n37010#appono
 latcommon.compound8130#ls.n8130#circum#ls.n3715#circumaro
 latcommon.compoundn8310#ls.n8310#circum#ls.n44934#circumspecto
 latcommon.compoundn9404#ls.n9404#com#ls.n29328#committo
 latcommon.compoundn9557#ls.n9557#con#ls.n34449#conpello
+latcommon.compoundn9647#ls.n9647#com#ls.n37010#compono
 latcommon.compoundn9766#ls.n9766#con#ls.n7275#concedo
 latcommon.compoundn10088#ls.n10088#con#ls.n17964#confero
 latcommon.compoundn10421#ls.n10421#con#ls.n42910#conscelero
@@ -36,6 +29,7 @@ latcommon.compoundn16644#ls.n16644#ex#ls.n7275#excedo
 latcommon.compoundn17092#ls.n17092#ex#ls.n37010#expono
 latcommon.compoundn17097#ls.n17097#ex#ls.n37168#exposco
 latcommon.compoundn21839#ls.n21839#in#ls.n34449#infero
+latcommon.compoundn21980#ls.n21980#im#ls.n37010#impono
 latcommon.compoundn23167#ls.n23167#in#ls.n17964#infero
 latcommon.compoundn24136#ls.n24136#in#ls.n47751#intendo
 latcommon.compoundn24446#ls.n24446#inter#ls.n42012#interrumpo
