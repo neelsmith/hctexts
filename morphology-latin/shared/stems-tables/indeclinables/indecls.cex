@@ -1,18 +1,5 @@
 StemUrn#LexicalEntity#Stem#InflClass
 
-
-
-latcommon.indecln12812a#ls.n12812#deinde#indeclconj
-latcommon.indecln12812b#ls.n12812#dein#indeclconj
-latcommon.indecln46609#ls.n46609#super#indeclprep
-latcommon.indecln38952#ls.n38952#propter#indeclprep
-
-latcommon.indecln4220#ls.n4220#at#indeclconj
-
-latcommon.indecln14731#ls.n14731#donec#indeclconj
-
-latcommon.indecln40134#ls.n40134#quin#indeclconj
-
 latcommon.indecln4#ls.n4#a#indeclprep
 latcommon.indecln5#ls.n5#ab#indeclprep
 latcommon.indecln283#ls.n283#ac#indeclconj
@@ -20,6 +7,7 @@ latcommon.indecln665#ls.n665#ad#indeclprep
 latcommon.indecln2407#ls.n2407#an#indeclconj
 latcommon.indecln2733#ls.n2733#ante#indeclprep
 latcommon.indecln3250#ls.n3250#apud#indeclprep
+latcommon.indecln4220#ls.n4220#at#indeclconj
 latcommon.indecln4275#ls.n4275#atque#indeclconj
 latcommon.indecln4632#ls.n4632#aut#indeclconj
 latcommon.indecln4633#ls.n4633#autem#indeclconj
@@ -27,6 +15,9 @@ latcommon.indecln8084#ls.n8084#circa#indeclprep
 latcommon.indecln8122#ls.n8122#circum#indeclprep
 latcommon.indecln11872#ls.n11872#cum#indeclprep
 latcommon.indecln12361#ls.n12361#de#indeclprep
+latcommon.indecln12812a#ls.n12812#deinde#indeclconj
+latcommon.indecln12812b#ls.n12812#dein#indeclconj
+latcommon.indecln14731#ls.n14731#donec#indeclconj
 latcommon.indecln14902#ls.n14902#dum#indeclconj
 latcommon.indecln15790#ls.n15790#enim#indeclconj
 latcommon.indecln16113#ls.n16113#erga#indeclprep
@@ -54,14 +45,18 @@ latcommon.indecln38069#ls.n38069#praeter#indeclprep
 latcommon.indecln38365#ls.n38365#priusquam#indeclconj
 latcommon.indecln38383#ls.n38383#pro#indeclprep
 latcommon.indecln38866#ls.n38866#prope#indeclprep
+latcommon.indecln38952#ls.n38952#propter#indeclprep
 latcommon.indecln39984#ls.n39984#quamquam#indeclconj
 latcommon.indecln40071#ls.n40071#que#indeclconj
 latcommon.indecln40105#ls.n40105#quia#indeclconj
+latcommon.indecln40134#ls.n40134#quin#indeclconj
+latcommon.indecln40279#ls.n40279#quoniam#indeclconj
 latcommon.indecln40282#ls.n40282#quoque#indeclprep
 latcommon.indecln43291#ls.n43291#sed#indeclconj
 latcommon.indecln44035#ls.n44035#seu#indeclconj
 latcommon.indecln44096#ls.n44096#si#indeclconj
 latcommon.indecln44372#ls.n44372#sine#indeclprep
 latcommon.indecln45746#ls.n45746#sub#indeclprep
+latcommon.indecln46609#ls.n46609#super#indeclprep
 latcommon.indecln49615#ls.n49615#ubi#indeclconj
 latcommon.indecln49975#ls.n49975#ut#indeclconj

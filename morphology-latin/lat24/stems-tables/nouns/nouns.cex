@@ -1,6 +1,11 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
-lat24morph.nounn10349#ls.n10349#conjugi#neut#us_i
+lat24morph.nounn10361a#ls.n10361#coniu#fem#x_gis
+lat24morph.nounn10361b#ls.n10361#coniu#masc#x_gis
+
+
+
+lat24morph.nounn10349#ls.n10349#coniugi#neut#us_i
 lat24morph.nounn25394#ls.n25394#iu#neut#s_ris
 lat24morph.nounn25409#ls.n25409#iuss#masc#us_us
 lat24morph.nounn25447#ls.n25447#iuvent#fem#us_us

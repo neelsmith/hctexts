@@ -1,6 +1,15 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
 
+
+latcommon.verbn40089a#ls.n40089#quer#c3presdep
+latcommon.verbn40089b#ls.n40089#quest#pftpass
+
+
+latcommon.verbn36862a#ls.n36862#pollic#c2presdep
+latcommon.verbn36862b#ls.n36862#pollicit#pftpass
+
+
 latcommon.verbn22781#ls.n22781#indic#conj1
 
 
@@ -73,9 +82,6 @@ latcommon.verbn9134a#ls.n9134#col#c3pres
 latcommon.verbn9134b#ls.n9134#colu#pftact
 latcommon.verbn9134c#ls.n9134#cult#pftpass
 latcommon.verbn9532#ls.n9532#compar#conj1
-latcommon.verbn9647a#ls.n9647#compon#c3pres
-latcommon.verbn9647b#ls.n9647#composu#pftact
-latcommon.verbn9647c#ls.n9647#composit#pftpass
 latcommon.verbn9689a#ls.n9689#comprim#c3pres
 latcommon.verbn9689b#ls.n9689#compress#pftact
 latcommon.verbn9689c#ls.n9689#compress#pftpass
