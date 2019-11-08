@@ -41,5 +41,22 @@ def sortFile(fName: String =  verbFile, prefixes: Vector[String] = prefixList) :
   new PrintWriter(fName){ write (label + "\n\n" + sorted.mkString("\n")); close;}
 }
 
-println("\n\nSort tabular file by Lewis-Short ID:\n")
+val cexInventory = Vector (
+  "morphology-latin/shared/stems-tables/adjectives/adjs.cex",
+  "morphology-latin/shared/stems-tables/adjectives/properadjs.cex",
+
+  "morphology-latin/shared/stems-tables/indeclinables/indecls.cex",
+  "morphology-latin/shared/stems-tables/indeclinables/numerals.cex"
+
+)
+def tidyAll : Unit = {
+  for (cexFile <- cexInventory) {
+    println("Sort " + cexFile + "...")
+    sortFile(cexFile)
+  }
+  println("Done sorting.")
+}
+println("\n\nSort a tabular file by Lewis-Short ID:\n")
 println("\tsortFile([FILE], [PREFIXLIST])\n")
+println("Sort predefined list of CEX files by Lewis-Short ID:\n")
+println("\ttidyAll\n")
