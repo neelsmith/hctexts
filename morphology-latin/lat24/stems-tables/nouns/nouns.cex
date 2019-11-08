@@ -1,20 +1,13 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
-
-lat24morph.nounn50393#ls.n50393#venati#fem#o_onis
-
 lat24morph.nounn4714#ls.n4714#av#fem#is_is
-lat24morph.nounn23517#ls.n23517#iniuri#fem#a_ae
-
 lat24morph.nounn4730#ls.n4730#av#masc#us_i
-lat24morph.nounn50735#ls.n50735#vest#fem#is_is
-
-
-lat24morph.nounn25280#ls.n25280#iud#masc#ex_icis
 lat24morph.nounn7598#ls.n7598#cerv#fem#a_ae
 lat24morph.nounn10349#ls.n10349#coniugi#neut#us_i
 lat24morph.nounn10361a#ls.n10361#coniu#fem#x_gis
 lat24morph.nounn10361b#ls.n10361#coniu#masc#x_gis
+lat24morph.nounn23517#ls.n23517#iniuri#fem#a_ae
+lat24morph.nounn25280#ls.n25280#iud#masc#ex_icis
 lat24morph.nounn25394#ls.n25394#iu#neut#s_ris
 lat24morph.nounn25409#ls.n25409#iuss#masc#us_us
 lat24morph.nounn25447#ls.n25447#iuvent#fem#us_us
@@ -24,7 +17,9 @@ lat24morph.nounn39208#ls.n39208#provinci#fem#a_ae
 lat24morph.nounn43945#ls.n43945#servitu#fem#s_tis
 lat24morph.nounn50101#ls.n50101#vagit#masc#us_us
 lat24morph.nounn50145#ls.n50145#vall#neut#us_i
+lat24morph.nounn50393#ls.n50393#venati#fem#o_onis
 lat24morph.nounn50523#ls.n50523#verb#neut#us_i
+lat24morph.nounn50735#ls.n50735#vest#fem#is_is
 lat24morph.nounn50793#ls.n50793#vi#fem#a_ae
 lat24morph.nounn50867#ls.n50867#victori#fem#a_ae
 lat24morph.nounn51034#ls.n51034#vir#masc#0_i

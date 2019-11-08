@@ -41,20 +41,67 @@ def sortFile(fName: String =  verbFile, prefixes: Vector[String] = prefixList) :
   new PrintWriter(fName){ write (label + "\n\n" + sorted.mkString("\n")); close;}
 }
 
-val cexInventory = Vector (
+val sharedCex = Vector (
   "morphology-latin/shared/stems-tables/adjectives/adjs.cex",
   "morphology-latin/shared/stems-tables/adjectives/properadjs.cex",
 
   "morphology-latin/shared/stems-tables/indeclinables/indecls.cex",
-  "morphology-latin/shared/stems-tables/indeclinables/numerals.cex"
+  "morphology-latin/shared/stems-tables/indeclinables/numerals.cex",
+
+
+  "morphology-latin/shared/stems-tables/nouns/cognomina-ls.cex",
+  "morphology-latin/shared/stems-tables/nouns/ethnics.cex",
+  "morphology-latin/shared/stems-tables/nouns/geo-ls.cex",
+  "morphology-latin/shared/stems-tables/nouns/gods.cex",
+  "morphology-latin/shared/stems-tables/nouns/nomina-ls.cex",
+  "morphology-latin/shared/stems-tables/nouns/nouns.cex",
+  "morphology-latin/shared/stems-tables/nouns/persons.cex",
+
+  "morphology-latin/shared/stems-tables/verbs-compound/compverbs.cex",
+  "morphology-latin/shared/stems-tables/verbs-simplex/verbs.cex"
 
 )
+
+val orthoLimitedCex = Vector(
+    "morphology-latin/lat23/stems-tables/adjectives/adjs.cex",
+    "morphology-latin/lat24/stems-tables/adjectives/adjs.cex",
+    "morphology-latin/lat25/stems-tables/adjectives/adjs.cex",
+
+    "morphology-latin/lat23/stems-tables/indeclinables/indecls.cex",
+    "morphology-latin/lat23/stems-tables/indeclinables/numerals.cex",
+    "morphology-latin/lat24/stems-tables/indeclinables/indecls.cex",
+    "morphology-latin/lat24/stems-tables/indeclinables/numerals.cex",
+    "morphology-latin/lat25/stems-tables/indeclinables/indecls.cex",
+    "morphology-latin/lat25/stems-tables/indeclinables/numerals.cex",
+
+    "morphology-latin/lat23/stems-tables/nouns/nouns.cex",
+    "morphology-latin/lat23/stems-tables/nouns/nomina-ls.cex",
+    "morphology-latin/lat24/stems-tables/nouns/nouns.cex",
+    "morphology-latin/lat24/stems-tables/nouns/nomina-ls.cex",
+    "morphology-latin/lat25/stems-tables/nouns/nouns.cex",
+    "morphology-latin/lat25/stems-tables/nouns/nomina-ls.cex",
+
+    "morphology-latin/lat23/stems-tables/verbs-compound/compverbs.cex",
+    "morphology-latin/lat23/stems-tables/verbs-simplex/verbs.cex",
+
+    "morphology-latin/lat24/stems-tables/verbs-compound/compverbs.cex",
+    "morphology-latin/lat24/stems-tables/verbs-simplex/verbs.cex"  ,
+
+    "morphology-latin/lat25/stems-tables/verbs-compound/compverbs.cex",
+    "morphology-latin/lat25/stems-tables/verbs-simplex/verbs.cex"
+)
+
 def tidyAll : Unit = {
-  for (cexFile <- cexInventory) {
+  for (cexFile <- sharedCex) {
     println("Sort " + cexFile + "...")
     sortFile(cexFile)
   }
-  println("Done sorting.")
+  for (cexFile <- orthoLimitedCex) {
+    println("Sort " + cexFile + "...")
+    sortFile(cexFile)
+  }
+  
+  println("\nDone tidying.")
 }
 println("\n\nSort a tabular file by Lewis-Short ID:\n")
 println("\tsortFile([FILE], [PREFIXLIST])\n")

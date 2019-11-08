@@ -1,19 +1,5 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
-
-
-latcommon.verbn37191a#ls.n37191#possid#c2pres
-latcommon.verbn37191b#ls.n37191#possed#pftact
-latcommon.verbnn37191c#ls.n37191#possess#pftpass
-
-
-latcommon.verbn42969a#ls.n42969#scind#c3pres
-latcommon.verbn42969b#ls.n42969#scid#pftact
-latcommon.verbn42969b2#ls.n42969#sc#pftact
-latcommon.verbn42969c#ls.n42969#sciss#pftpass
-
-
-
 latcommon.verbn363a#ls.n363#accip#c3iopres
 latcommon.verbn363b#ls.n363#accep#pftact
 latcommon.verbn363c#ls.n363#accept#pftpass
@@ -307,6 +293,9 @@ latcommon.verbn37010b#ls.n37010#posu#pftact
 latcommon.verbn37010c#ls.n37010#posit#pftpass
 latcommon.verbn37168a#ls.n37168#posc#c3pres
 latcommon.verbn37168b#ls.n37168#poposc#pftact
+latcommon.verbn37191a#ls.n37191#possid#c2pres
+latcommon.verbn37191b#ls.n37191#possed#pftact
+latcommon.verbnn37191c#ls.n37191#possess#pftpass
 latcommon.verbn37307#ls.n37307#pot#conj4
 latcommon.verbn37341a#ls.n37341#praeb#c2pres
 latcommon.verbn37341b#ls.n37341#praebu#pftact
@@ -349,6 +338,7 @@ latcommon.verbn42219b#ls.n42219#saeps#pftact
 latcommon.verbn42910#ls.n42910#consceler#conj1
 latcommon.verbn42969a#ls.n42969#scind#c3pres
 latcommon.verbn42969b#ls.n42969#scid#pftact
+latcommon.verbn42969b2#ls.n42969#sc#pftact
 latcommon.verbn42969c#ls.n42969#sciss#pftpass
 latcommon.verbn42998#ls.n42998#sciscit#conj1dep
 latcommon.verbn43251#ls.n43251#sect#conj1
