@@ -25,6 +25,7 @@ latcommon.adjn18045#ls.n18045#fest#us_a_um
 latcommon.adjn18052#ls.n18052#fetial#is_e
 latcommon.adjn18204#ls.n18204#finitim#us_a_um
 latcommon.adjnn18600#ls.n18600#formos#us_a_um
+latcommon.adjn19053#ls.n19053#funebr#is_e
 latcommon.adjn19387#ls.n19387#gemin#us_a_um
 latcommon.adjn19921#ls.n19921#grat#us_a_um
 latcommon.adjn20889#ls.n20889#honest#us_a_um
@@ -41,6 +42,7 @@ latcommon.adjn23109#ls.n23109#infa#ns_ntis
 latcommon.adjn23146#ls.n23146#infel#x_cis
 latcommon.adjn23146#ls.n23146#infeli#x_cis
 latcommon.adjn23151#ls.n23151#infens#us_a_um
+latcommon.adjn23173#ls.n23173#infer#us_a_um
 latcommon.adjn23184#ls.n23184#infest#us_a_um
 latcommon.adjn23358#ls.n23358#inge#ns_ntis
 latcommon.adjn23465#ls.n23465#inimic#us_a_um
@@ -52,6 +54,7 @@ latcommon.adjn25771#ls.n25771#languid#us_a_um
 latcommon.adjn26001#ls.n26001#latin#us_a_um
 latcommon.adjn26222#ls.n26222#len#is_e
 latcommon.adjn26465#ls.n26465#lib#er_era_erum
+latcommon.adjn26471#ls.n26471#liberal#is_e
 latcommon.adjn26977#ls.n26977#long#us_a_um
 latcommon.adjn27151#ls.n27151#ludic#er_ra_rum
 latcommon.adjn27649#ls.n27649#maxim#us_a_um_superl
@@ -61,6 +64,7 @@ latcommon.adjn28988#ls.n28988#me#us_a_um
 latcommon.adjn29115#ls.n29115#mina#x_cis
 latcommon.adjn29321#ls.n29321#mit#is_e
 latcommon.adjn29348#ls.n29348#mobil#is_e
+latcommon.adjn29733#ls.n29733#mortal#is_e
 latcommon.adjn29831#ls.n29831#muliebr#is_e
 latcommon.adjn30614#ls.n30614#necessari#us_a_um
 latcommon.adjn30930#ls.n30930#nig#er_ra_rum
@@ -73,6 +77,7 @@ latcommon.adjn32792#ls.n32792#oppidan#us_a_um
 latcommon.adjn33741#ls.n33741#par#i_0_is
 latcommon.adjn33741#ls.n33741#par#0_is
 latcommon.adjn34005#ls.n34005#parv#us_a_um
+latcommon.adjn34101#ls.n34101#patern#us_a_um
 latcommon.adjn34140#ls.n34140#patrici#us_a_um
 latcommon.adjn34182#ls.n34182#pauc#us_a_um
 latcommon.adjn34844#ls.n34844#peregrin#us_a_um
@@ -111,10 +116,12 @@ latcommon.adjn44648#ls.n44648#sollemn#is_e
 latcommon.adjn44920#ls.n44920#specios#us_a_um
 latcommon.adjn45950#ls.n45950#sublici#us_a_um
 latcommon.adjn46648#ls.n46648#superb#us_a_um
+latcommon.adjn46901#ls.n46901#super#us_a_um
 latcommon.adjn46901c#ls.n46901#summ#us_a_um_superl
 latcommon.adjn47174#ls.n47174#su#us_a_um
 latcommon.adjn47473#ls.n47473#tant#us_a_um
 latcommon.adjn47809#ls.n47809#tenu#is_e
+latcommon.adjn47944#ls.n47944#terti#us_a_um
 latcommon.adjn48966#ls.n48966#trepid#us_a_um
 latcommon.adjn49000#ls.n49000#tribunici#us_a_um
 latcommon.adjn49330#ls.n49330#tru#x_cis

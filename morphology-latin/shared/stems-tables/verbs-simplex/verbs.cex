@@ -277,6 +277,9 @@ latcommon.verbn34700c#ls.n34700#procept#pftpass
 latcommon.verbn34700a#ls.n34700#percip#c3iopres
 latcommon.verbn34700b#ls.n34700#percep#pftpass
 latcommon.verbn34700c#ls.n34700#percept#pftact
+latcommon.verbn34771a#ls.n34771#percut#c3iopres
+latcommon.verbn34771b#ls.n34771#percuss#pftact
+latcommon.verbn34771c#ls.n34771#percuss#pftpass
 latcommon.verbn34910a#ls.n34910#perfic#c3iopres
 latcommon.verbn34910b#ls.n34910#perfec#pftact
 latcommon.verbn34910c#ls.n34910#perfect#pftpass
