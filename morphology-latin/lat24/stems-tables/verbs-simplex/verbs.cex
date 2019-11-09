@@ -88,9 +88,11 @@ lat24morph.verbn50442a#ls.n50442#ven#c4pres
 lat24morph.verbn50442b#ls.n50442#ven#pftact
 lat24morph.verbn50442c#ls.n50442#vent#pftpass
 lat24morph.verbn50445#ls.n50445#ven#conj1dep
+lat24morph.verbn506543a#ls.n50654#vert#c3pres
+lat24morph.verbn50654b#ls.n50654#vert#pftact
+lat24morph.verbn50654c#ls.n50654#vers#pftpass
 lat24morph.verbn50654a#ls.n50654#vert#c3pres
 lat24morph.verbn50654b#ls.n50654#vers#pftact
-lat24morph.verbn50654c#ls.n50654#vers#pftpass
 lat24morph.verbn50883a#ls.n50883#vid#c2pres
 lat24morph.verbn50883b#ls.n50883#vid#pftact
 lat24morph.verbn50883c#ls.n50883#vis#pftpass

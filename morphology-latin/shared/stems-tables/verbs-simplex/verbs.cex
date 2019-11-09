@@ -6,7 +6,7 @@ latcommon.verbn363c#ls.n363#accept#pftpass
 latcommon.verbn428#ls.n428#accus#conj1
 latcommon.verbn440#ls.n440#acerb#conj1
 latcommon.verbn1392#ls.n1392#aestim#conj1
-latcommon.verbn1605a#ls.n1605#ag#conj3
+latcommon.verbn1605a#ls.n1605#ag#c3pres
 latcommon.verbn1605b#ls.n1605#eg#pftact
 latcommon.verbn1605c#ls.n1605#act#pftpass
 latcommon.verbn2280#ls.n2280#am#conj1
@@ -14,6 +14,7 @@ latcommon.verbn2980a#ls.n2980#aper#c4pres
 latcommon.verbn2980b#ls.n2980#aperu#pftact
 latcommon.verbn2980c#ls.n2980#apert#pftpass
 latcommon.verbn3134#ls.n3134#appell#conj1
+latcommon.verbn3134#ls.n3134#appella#pftactelided
 latcommon.verbn3492a#ls.n3492#ard#c2pres
 latcommon.verbn3492b#ls.n3492#ars#pftact
 latcommon.verbn3492c#ls.n3492#ars#pftpass
@@ -125,6 +126,9 @@ latcommon.verbn15157a#ls.n15157#ed#c3pres
 latcommon.verbn15157b#ls.n15157#edid#pftact
 latcommon.verbn15157c#ls.n15157#edit#pftpass
 latcommon.verbn15175#ls.n15175#educ#conj1
+latcommon.verbn15216a#ls.n15216#effer#c3pres
+latcommon.verbn15216b#ls.n15216#extul#pftact
+latcommon.verbn15216c#ls.n15216#elat#pftpass
 latcommon.verbn15293a#ls.n15293#effund#c3pres
 latcommon.verbn15293b#ls.n15293#effud#pftact
 latcommon.verbn15293c#ls.n15293#effus#pftpass
@@ -187,10 +191,13 @@ latcommon.verbn24257a#ls.n24257#interfic#c3iopres
 latcommon.verbn24257b#ls.n24257#interfec#pftact
 latcommon.verbn24257c#ls.n24257#interfect#pftpass
 latcommon.verbn24257c#ls.n24257#interfact#pftpass
+latcommon.verbn24885a#ls.n24885#irasc#conj1dep
+latcommon.verbn24885b#ls.n24885#irat#pftpass
 latcommon.verbn25264a#ls.n25264#iub#c2pres
 latcommon.verbn25264b#ls.n25264#ius#pftact
 latcommon.verbn25264c#ls.n25264#iust#pftpass
 latcommon.verbn25504#ls.n25504#labor#conj1
+latcommon.verbn26488#ls.n26488#lib#conj2
 latcommon.verbn26721a#ls.n26721#linqu#c3pres
 latcommon.verbn26721b#ls.n26721#liqu#pftact
 latcommon.verbn26721c#ls.n26721#lict#pftpass
@@ -225,6 +232,8 @@ latcommon.verbn30639a#ls.n30639#nect#c3pres
 latcommon.verbn30639b#ls.n30639#nexu#pftact
 latcommon.verbn30639c#ls.n30639#nect#pftpass
 latcommon.verbn30681#ls.n30681#neg#conj1
+latcommon.verbn31035a#ls.n31035#nit#c3presdep
+latcommon.verbn31035b#ls.n31035#nis#pftpass
 latcommon.verbn31073#ls.n31073#noc#conj2
 latcommon.verbn31452#ls.n31452#nuncup#conj1
 latcommon.verbn31472#ls.n31472#nunti#conj1
@@ -321,6 +330,9 @@ latcommon.verbn38635b#ls.n38635#proflux#pftact
 latcommon.verbn38635c#ls.n38635#proflux#pftpass
 latcommon.verbn38920#ls.n38920#propiti#conj1
 latcommon.verbn39703#ls.n39703#put#conj1
+latcommon.verbn39941a#ls.n39941#quaer#c3iopres
+latcommon.verbn39941b#ls.n39941#quaesi#pftact
+latcommon.verbn39941c#ls.n39941#quaesit#pftpass
 latcommon.verbn40089a#ls.n40089#quer#c3presdep
 latcommon.verbn40089b#ls.n40089#quest#pftpass
 latcommon.verbn40405a#ls.n40405#rap#c3iopres
@@ -328,6 +340,9 @@ latcommon.verbn40405b#ls.n40405#rapu#pftact
 latcommon.verbn40405c#ls.n40405#rapt#pftpass
 latcommon.verbn41137a#ls.n41137#r#c2presdep
 latcommon.verbn41137b#ls.n41137#rat#pftpass
+latcommon.verbn41305a#ls.n41305#rescisc#c3pres
+latcommon.verbn41305b#ls.n41305#resci#pftact
+latcommon.verbn41305c#ls.n41305#rescit#pftpass
 latcommon.verbn41387a#ls.n41387#respond#conj2pres
 latcommon.verbn41387b#ls.n41387#respond#pftact
 latcommon.verbn41387c#ls.n41387#respons#pftpass
@@ -345,6 +360,9 @@ latcommon.verbn42969b2#ls.n42969#sc#pftact
 latcommon.verbn42969c#ls.n42969#sciss#pftpass
 latcommon.verbn42998#ls.n42998#sciscit#conj1dep
 latcommon.verbn43251#ls.n43251#sect#conj1
+latcommon.verbn43305a#ls.n43305#sed#c2pres
+latcommon.verbn43305b#ls.n43305#sed#pftact
+latcommon.verbn43305c#ls.n43305#sess#pftpass
 latcommon.verbn43681a#ls.n43681#sent#c4pres
 latcommon.verbn43681b#ls.n43681#sens#pftact
 latcommon.verbn43681c#ls.n43681#sens#pftpass
@@ -354,6 +372,7 @@ latcommon.verbn44347#ls.n44347#simul#conj1
 latcommon.verbn44480a#ls.n44480#sist#c3pres
 latcommon.verbn44480b#ls.n44480#stit#pftact
 latcommon.verbn44480c#ls.n44480#stet#pftpass
+latcommon.verbn44608#ls.n44608#soleo#conj2
 latcommon.verbn44608#ls.n44608#sol#conj2
 latcommon.verbn44934#ls.n44934#spect#conj1
 latcommon.verbn45003a#ls.n45003#spic#c3iopres
