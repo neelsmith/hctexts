@@ -1,5 +1,23 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass
 
+
+
+latcommon.verbn45100a#ls.n45100#spond#c2pres
+latcommon.verbn45100b#ls.n45100#spopond#pftact
+latcommon.verbn45100c#ls.n45100#spons#pftpass
+
+
+latcommon.verbn41256#ls.n41256#repudi#conj1
+latcommon.verbn30680a#ls.n30680#negleg#c3pres
+latcommon.verbn30680b#ls.n30680#neglex#pftact
+latcommon.verbn30680c#ls.n30680#neglect#pftpass
+latcommon.verbn21966#ls.n21966#implor#conj1
+
+latcommon.verbn42192#ls.n42192#sacrific#conj1
+
+latcommon.verbn40575#ls.n40575#recuper#conj1
+latcommon.verbn31146#ls.n31146#nomin#conj1
+latcommon.verbn45502#ls.n45502#strament#conj1dep
 latcommon.verbn363a#ls.n363#accip#c3iopres
 latcommon.verbn363b#ls.n363#accep#pftact
 latcommon.verbn363c#ls.n363#accept#pftpass
