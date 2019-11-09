@@ -90,6 +90,7 @@ latcommon.nounn11999#ls.n11999#curi#fem#a_ae
 latcommon.nounn12032#ls.n12032#curr#masc#us_us
 latcommon.nounn12071#ls.n12071#custodi#fem#a_ae
 latcommon.nounn12114#ls.n12114#cygn#masc#us_i
+latcommon.nounn12362#ls.n12362#de#fem#a_ae
 latcommon.nounn12448#ls.n12448#decemvir#masc#0_i
 latcommon.nounn12595#ls.n12595#dec#neut#us_oris
 latcommon.nounn12615#ls.n12615#dedec#neut#us_oris
@@ -138,10 +139,12 @@ latcommon.nounn18651#ls.n18651#for#neut#us_i
 latcommon.nounn18693#ls.n18693#fragor#masc#0_is
 latcommon.nounn18705#ls.n18705#frat#masc#er_ris
 latcommon.nounn18884#ls.n18884#frument#neut#us_i
+latcommon.nounn18920#ls.n18920#fru#masc#x_gis
 latcommon.nounn18934#ls.n18934#fug#fem#a_ae
 latcommon.nounn18993#ls.n18993#fulm#neut#en_inis
 latcommon.nounn19035#ls.n19035#fundament#neut#us_i
 latcommon.nounn19075#ls.n19075#fun#neut#us_eris
+latcommon.nounn19099#ls.n19099#furi#fem#a_ae
 latcommon.nounn19336#ls.n19336#gaudi#neut#us_i
 latcommon.nounn19461#ls.n19461#gen#fem#s_tis
 latcommon.nounn19477#ls.n19477#gen#neut#us_eris
@@ -264,6 +267,7 @@ latcommon.nounn34096#ls.n34096#pat#masc#er_ris
 latcommon.nounn34115#ls.n34115#patienti#fem#a_ae
 latcommon.nounn34131#ls.n34131#patri#fem#a_ae
 latcommon.nounn34250#ls.n34250#pa#fem#x_cis
+latcommon.nounn34282#ls.n34282#pect#neut#us_oris
 latcommon.nounn34312#ls.n34312#pec#neut#us_oris
 latcommon.nounn34447#ls.n34447#pell#masc#i_is_is
 latcommon.nounn34507#ls.n34507#pen#masc#is_is
@@ -296,6 +300,7 @@ latcommon.nounn39465#ls.n39465#pugn#fem#a_ae
 latcommon.nounn39488#ls.n39488#pulchritud#fem#o_inis
 latcommon.nounn40763#ls.n40763#reductor#masc#0_is
 latcommon.nounn40897#ls.n40897#regim#neut#en_inis
+latcommon.nounn40899#ls.n40899#regin#fem#a_ae
 latcommon.nounn40912#ls.n40912#regn#neut#us_i
 latcommon.nounn41293#ls.n41293#r#fem#es_ei
 latcommon.nounn41625#ls.n41625#re#masc#x_gis
@@ -320,6 +325,7 @@ latcommon.nounn43619#ls.n43619#senator#masc#0_is
 latcommon.nounn43622#ls.n43622#senat#masc#us_us
 latcommon.nounn43666#ls.n43666#sententi#fem#a_ae
 latcommon.nounn43803#ls.n43803#sepultur#fem#a_ae
+latcommon.nounn43888#ls.n43888#serpen#masc#s_tis
 latcommon.nounn44077#ls.n44077#sextan#neut#s_tis
 latcommon.nounn44227#ls.n44227#sign#neut#us_i
 latcommon.nounn44337#ls.n44337#simulacr#neut#us_i
