@@ -2,6 +2,17 @@ StemUrn#LexicalEntity#StemString#MorphologicalClass#Simplex
 
 
 
+composites.ripa#composites.rip#rip#c3iopres#ls.n40405
+composites.ripb#composites.rip#ripu#pftact#ls.n40405
+composites.ripc#composites.rip#rept#pftpass#ls.n40405
+
+
+composites.doa#composites.do#d#c3pres#ls.n14599
+composites.dob#composites.do#did#pftact#ls.n14599
+composites.doc#composites.do#dit#pftpass#ls.n14599
+
+
+
 composites.stitua#composites.stitu#stitu#c3pres#ls.n45294
 composites.stitub#composites.stitu#stitu#pftact#ls.n45294
 composites.stituc#composites.stitu#stitu#pftpass#ls.n45294
