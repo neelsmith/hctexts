@@ -39,11 +39,13 @@ latcommon.nounn4660#ls.n4660#auxili#neut#us_i
 latcommon.nounn5147#ls.n5147#bell#neut#us_i
 latcommon.nounn5180#ls.n5180#benefici#neut#us_i
 latcommon.nounn5232#ls.n5232#besti#fem#a_ae
+latcommon.nounn5630#ls.n5630#bracchi#neut#us_i
 latcommon.nounn6010#ls.n6010#caed#fem#is_is
 latcommon.nounn6010#ls.n6010#caed#fem#es_is
 latcommon.nounn6042#ls.n6042#cael#neut#us_i
 latcommon.nounn6506#ls.n6506#can#masc#is_is
 latcommon.nounn6576#ls.n6576#cant#masc#us_us
+latcommon.nounn6613#ls.n6613#capill#masc#us_i
 latcommon.nounn6636#ls.n6636#capitoli#neut#us_i
 latcommon.nounn6658#ls.n6658#capr#fem#a_ae
 latcommon.nounn6724#ls.n6724#cap#neut#ut_itis
@@ -319,6 +321,7 @@ latcommon.nounn36428#ls.n36428#pisc#masc#us_i
 latcommon.nounn36635#ls.n36635#pleb#fem#s_is
 latcommon.nounn36788#ls.n36788#poen#fem#a_ae
 latcommon.nounn36808#ls.n36808#poet#masc#a_ae
+latcommon.nounn36895#ls.n36895#pol#masc#us_i
 latcommon.nounn36897#ls.n36897#polusc#fem#a_ae
 latcommon.nounn36961#ls.n36961#pomeri#neut#us_i
 latcommon.nounn37011#ls.n37011#pon#masc#i_s_tis

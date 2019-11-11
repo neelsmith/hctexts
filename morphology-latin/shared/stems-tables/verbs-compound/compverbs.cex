@@ -21,6 +21,7 @@ latcommon.compoundn9557#ls.n9557#con#ls.n34449#conpello
 latcommon.compoundn9647#ls.n9647#com#ls.n37010#compono
 latcommon.compoundn9766#ls.n9766#con#ls.n7275#concedo
 latcommon.compoundn9942#ls.n9942#con#composites.cumb#concumbo
+latcommon.compoundn10029#ls.n10029#con#composites.do#condo
 latcommon.compoundn10088#ls.n10088#con#ls.n17964#confero
 latcommon.compoundn10309#ls.n10309#con#ls.n21321#conicio
 latcommon.compoundn10421#ls.n10421#con#ls.n42910#conscelero
@@ -36,10 +37,12 @@ latcommon.compoundn12758#ls.n12758#de#ls.n18943#defugio
 latcommon.compoundn12804#ls.n12804#de#ls.n21321#deicio
 latcommon.compoundn13014#ls.n13014#de#ls.n29030#demigro
 latcommon.compoundn13047#ls.n13047#de#ls.n29616#demonstro
+latcommon.compoundn13201#ls.n13201#de#ls.n37010#depono
 latcommon.compoundn13329#ls.n13329#de#composites.scend#descendo
 latcommon.compoundn13551#ls.n13551#de#ls.n48709#detraho
 latcommon.compoundn13560#ls.n13560#de#ls.n49309#detrudo
 latcommon.compoundn13586#ls.n13586#de#ls.n50442#devenio
+latcommon.compoundn14485#ls.n14485#dis#ls.n48709#distraho
 latcommon.compoundn15216#ls.n15216#ex#ls.n17964#effero
 latcommon.compoundn15285#ls.n15285#ef#ls.n18943#effugio
 latcommon.compoundn15344#ls.n15344#e#ls.n21321#eicio
@@ -86,6 +89,7 @@ latcommon.compoundn40760#ls.n40760#re#ls.n14847#reduco
 latcommon.compoundn40791#ls.n40791#re#ls.n17964#refero
 latcommon.compoundn40982#ls.n40982#re#ls.n26721#relinquo
 latcommon.compoundn41050#ls.n41050#re#ls.n29328#remitto
+latcommon.compoundn41188#ls.n41188#re#ls.n35822#repeto
 latcommon.compoundn41231#ls.n41231#re#ls.n38248#reprehenso
 latcommon.compoundn41303#ls.n41303#re#ls.n42969#rescindo
 latcommon.compoundn41420#ls.n41420#re#composites.stitu#restituo
