@@ -31,6 +31,8 @@ latcommon.nounn4190#ls.n4190#astr#neut#us_i
 latcommon.nounn4420#ls.n4420#auctor#masc#0_is
 latcommon.nounn4422#ls.n4422#auctorita#fem#s_tis
 latcommon.nounn4442#ls.n4442#audaci#fem#a_ae
+latcommon.nounn4479#ls.n4479#augur#masc#0_is
+latcommon.nounn4490#ls.n4490#auguri#neut#us_i
 latcommon.nounn4588#ls.n4588#aur#neut#us_i
 latcommon.nounn4660#ls.n4660#auxili#neut#us_i
 latcommon.nounn5147#ls.n5147#bell#neut#us_i
@@ -306,6 +308,7 @@ latcommon.nounn35826#ls.n35826#petr#fem#a_ae
 latcommon.nounn36428#ls.n36428#pisc#masc#us_i
 latcommon.nounn36635#ls.n36635#pleb#fem#s_is
 latcommon.nounn36788#ls.n36788#poen#fem#a_ae
+latcommon.nounn36808#ls.n36808#poet#masc#a_ae
 latcommon.nounn36897#ls.n36897#polusc#fem#a_ae
 latcommon.nounn36961#ls.n36961#pomeri#neut#us_i
 latcommon.nounn37011#ls.n37011#pon#masc#i_s_tis
@@ -357,6 +360,7 @@ latcommon.nounn43666#ls.n43666#sententi#fem#a_ae
 latcommon.nounn43803#ls.n43803#sepultur#fem#a_ae
 latcommon.nounn43888#ls.n43888#serpen#masc#s_tis
 latcommon.nounn44077#ls.n44077#sextan#neut#s_tis
+latcommon.nounn44182#ls.n44182#sid#neut#us_eris
 latcommon.nounn44227#ls.n44227#sign#neut#us_i
 latcommon.nounn44337#ls.n44337#simulacr#neut#us_i
 latcommon.nounn44348#ls.n44348#simulta#fem#s_tis

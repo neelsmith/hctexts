@@ -9,6 +9,7 @@ latcommon.verbn1392#ls.n1392#aestim#conj1
 latcommon.verbn1605a#ls.n1605#ag#c3pres
 latcommon.verbn1605b#ls.n1605#eg#pftact
 latcommon.verbn1605c#ls.n1605#act#pftpass
+latcommon.verbn1947#ls.n1947#allig#conj1
 latcommon.verbn2280#ls.n2280#am#conj1
 latcommon.verbn2980a#ls.n2980#aper#c4pres
 latcommon.verbn2980b#ls.n2980#aperu#pftact
@@ -99,6 +100,7 @@ latcommon.verbn12766c#ls.n12766#defunct#pftpass
 latcommon.verbn12919a#ls.n12919#delig#c3pres
 latcommon.verbn12919b#ls.n12919#deleg#pftact
 latcommon.verbn12919c#ls.n12919#delect#pftpass
+latcommon.verbn13241#ls.n13241#deprec#conj1dep
 latcommon.verbn13352a#ls.n13352#deser#c3pres
 latcommon.verbn13352b#ls.n13352#deseru#pftact
 latcommon.verbn13352c#ls.n13352#desert#pftpass
