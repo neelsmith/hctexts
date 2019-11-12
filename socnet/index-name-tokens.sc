@@ -76,7 +76,6 @@ def pairings(tokens: Vector[MidToken], pairs: Vector[(String, String)] =  Vector
     println("\t" + tkn.string.toLowerCase)
     val pair = pairKey(tkn.string, tokens.tail)
 
-
     pairings(tokens.tail, pairs ++ pair)
   }
 }
@@ -84,4 +83,38 @@ def pairings(tokens: Vector[MidToken], pairs: Vector[(String, String)] =  Vector
 val graphMatches = for (idx <- urnIndex.toVector) yield {
   println("Pair " + idx._2.map(_.string.toLowerCase))
   pairings(idx._2, Vector.empty[(String, String)])
+}
+
+// Get an artibtrary ID for a String
+def itemId(s: String, freqs: Vector[Frequency[String]]) : Option[Int] = {
+  try {
+    val matches = freqs.filter(_.item == s)
+    val idx: Int = freqs.indexOf(matches(0))
+    Some(idx)
+  } catch {
+    case t: Throwable => None
+  }
+}
+
+def gml(hist: Histogram[String]) = {
+  val header = Vector("graph","comment \"Co-occurrence network in Hyginus, Fabule\"", "directed 0", "id hyginus1", "label \"Personal names in Hyginus, Fabule\"").mkString("\n\t") + "\n"
+
+/*
+  node [
+		id 151
+		label "Ixion"
+		freqs 1
+	]
+*/
+  val nodeDeff = for (fr <- hist.frequencies) yield {
+    val id = itemId(fr.item, hist.frequencies)
+    val gml = s"\tnode [\n\t\tid ${id.get}\n\t\tlabel " + "\"" + s"${fr.item}" + "\"" +  s"\n\t\tfreqs ${fr.count}\n\t]"
+    gml
+  }
+  // Get an unique INT id:
+  println
+
+
+
+
 }
