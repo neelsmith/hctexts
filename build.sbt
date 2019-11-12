@@ -7,7 +7,7 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.0.6",
 
   "edu.holycross.shot.cite" %% "xcite" % "4.1.0",
-  "edu.holycross.shot" %% "ohco2" % "10.14.0",
+  "edu.holycross.shot" %% "ohco2" % "10.16.0",
 
   "edu.holycross.shot" %% "midvalidator" % "9.1.0",
 
