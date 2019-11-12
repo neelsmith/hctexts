@@ -7,6 +7,7 @@ import edu.holycross.shot.mid.validator._
 import edu.holycross.shot.latin._
 import edu.holycross.shot.latincorpus._
 
+import edu.holycross.shot.histoutils._
 
 // invoke this script from root diretory of the repository.
 val f = "socnet/hyginus-persons-3+-alpha.csv"
@@ -40,9 +41,47 @@ val tokenOpts = for (tkn <- tcorpus.tokens) yield {
 
 val tokens = tokenOpts.flatten
 
-val indexLines = for (t <- tokens) yield {
-  s"${t.urn}#${t.string}"
+
+def writeTokenIndex(tokens: Vector[MidToken], fName : String  = "socnet/namesIndex.cex") = {
+  val indexLines = for (t <- tokens) yield {
+    s"${t.urn}#${t.string}"
+  }
+  import java.io.PrintWriter
+  new PrintWriter(fName){write(indexLines.mkString("\n")); close;}
 }
 
-import java.io.PrintWriter
-new PrintWriter("socnet/namesIndex.cex"){write(indexLines.mkString("\n")); close;}
+val urnIndex = tokens.groupBy(_.urn.collapsePassageTo(2))
+
+val tokenCounts = tokens.groupBy(_.string.toLowerCase).toVector.map{ case (k,v) => Frequency(k,v.size) }
+val tokenHist : Histogram[String] = Histogram(tokenCounts)
+
+
+// Pair a key value with every string token
+def pairKey (s: String, tokens: Vector[MidToken]) : Vector[(String,String)]= {
+  val stringPairs = for (t <- tokens) yield {
+    println("\tmatch " + s.toLowerCase + " and " + t.string.toLowerCase)
+    (s.toLowerCase, t.string.toLowerCase)
+  }
+  println("PairKey esult is " + stringPairs.toVector)
+  stringPairs.toVector
+}
+
+
+
+def pairings(tokens: Vector[MidToken], pairs: Vector[(String, String)] =  Vector.empty[(String, String)])  : Vector[(String, String)]  = {
+  if (tokens.isEmpty) {
+    pairs
+  } else {
+    val tkn = tokens.head
+    println("\t" + tkn.string.toLowerCase)
+    val pair = pairKey(tkn.string, tokens.tail)
+
+
+    pairings(tokens.tail, pairs ++ pair)
+  }
+}
+
+val graphMatches = for (idx <- urnIndex.toVector) yield {
+  println("Pair " + idx._2.map(_.string.toLowerCase))
+  pairings(idx._2, Vector.empty[(String, String)])
+}
