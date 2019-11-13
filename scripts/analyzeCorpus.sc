@@ -84,7 +84,7 @@ def parseWordsFile(wordsFile: String, ortho: String ) : String = {
 
 
 def compile (
-  corpusList: Vector[String] = Vector("shared", "lat23"),
+  corpusList: Vector[String] = Vector("shared", "lat23", "shared-xls"),
   datasets: File = repo / "morphology-latin" ) = {
 
   val conf =  Configuration(compiler.toString, fstinfl.toString, make, datasets.toString)
@@ -248,13 +248,13 @@ lazy val nep = tokenizableCorpus("nepos")
 
 
 def info = {
-  println("\n\nCompile a parser for default datasets (\"shared\" and \"lat23\"):")
+  println("\n\nCompile a parser for default datasets (\"shared\", \"lat23\" and \"shared-xls\"):")
   println("\n\tcompile()")
 
   println("\nCompile a parser for specific datasets:")
   println("\n\tcompile([Vector(CORPUSDATASETS)]")
   println("  e.g.,")
-  println("\tcompile(Vector(\"shared\", \"lat24\")\n")
+  println("\tcompile(Vector(\"shared\", \"lat24\", \"shared-xls\")\n")
 
   println("\nLoad a citable corpus by label:")
   println("\n\tval corpus = ohco2Corpus(LABEL)")

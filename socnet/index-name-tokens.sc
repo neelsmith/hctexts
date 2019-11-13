@@ -9,6 +9,9 @@ import edu.holycross.shot.latincorpus._
 
 import edu.holycross.shot.histoutils._
 
+import java.io.PrintWriter
+
+
 // invoke this script from root diretory of the repository.
 val f = "socnet/hyginus-persons-3+-alpha.csv"
 val catalogFile = "cex/catalog.cex"
@@ -42,11 +45,17 @@ val tokenOpts = for (tkn <- tcorpus.tokens) yield {
 val tokens = tokenOpts.flatten
 
 
+
+// Type-parameterize this!
+case class PairOStrings(s1: String, s2: String)
+
+
+
 def writeTokenIndex(tokens: Vector[MidToken], fName : String  = "socnet/namesIndex.cex") = {
   val indexLines = for (t <- tokens) yield {
     s"${t.urn}#${t.string}"
   }
-  import java.io.PrintWriter
+
   new PrintWriter(fName){write(indexLines.mkString("\n")); close;}
 }
 
@@ -57,18 +66,26 @@ val tokenHist : Histogram[String] = Histogram(tokenCounts)
 
 
 // Pair a key value with every string token
-def pairKey (s: String, tokens: Vector[MidToken]) : Vector[(String,String)]= {
+def pairKey (s: String, tokens: Vector[MidToken]) : Vector[PairOStrings]= {
   val stringPairs = for (t <- tokens) yield {
     println("\tmatch " + s.toLowerCase + " and " + t.string.toLowerCase)
-    (s.toLowerCase, t.string.toLowerCase)
+    val s1 = s.toLowerCase
+    val s2 = t.string.toLowerCase
+    if (s1 < s2) {
+      PairOStrings(s1, s2)
+    } else {
+      PairOStrings(s2,s1)
+    }
   }
-  println("PairKey esult is " + stringPairs.toVector)
+
+
+  //println("PairKey result is " + stringPairs.toVector)
   stringPairs.toVector
 }
 
 
 
-def pairings(tokens: Vector[MidToken], pairs: Vector[(String, String)] =  Vector.empty[(String, String)])  : Vector[(String, String)]  = {
+def pairings(tokens: Vector[MidToken], pairs: Vector[PairOStrings] =  Vector.empty[PairOStrings])  : Vector[PairOStrings]  = {
   if (tokens.isEmpty) {
     pairs
   } else {
@@ -82,7 +99,7 @@ def pairings(tokens: Vector[MidToken], pairs: Vector[(String, String)] =  Vector
 
 val graphMatches = for (idx <- urnIndex.toVector) yield {
   println("Pair " + idx._2.map(_.string.toLowerCase))
-  pairings(idx._2, Vector.empty[(String, String)])
+  pairings(idx._2, Vector.empty[PairOStrings])
 }
 
 // Get an artibtrary ID for a String
@@ -96,25 +113,42 @@ def itemId(s: String, freqs: Vector[Frequency[String]]) : Option[Int] = {
   }
 }
 
-def gml(hist: Histogram[String]) = {
-  val header = Vector("graph","comment \"Co-occurrence network in Hyginus, Fabule\"", "directed 0", "id hyginus1", "label \"Personal names in Hyginus, Fabule\"").mkString("\n\t") + "\n"
-
-/*
-  node [
-		id 151
-		label "Ixion"
-		freqs 1
-	]
-*/
+def gml(
+    hist: Histogram[String],
+    matchVector: Vector[Vector[PairOStrings]]
+  )  : String = {
+  val header = Vector(
+    "graph [",
+    "comment \"Co-occurrence network in Hyginus, Fabulae\"",
+    "directed 0",
+    "id hyginus1",
+    "label \"Personal names in Hyginus, Fabulae\""
+  ).mkString("\n\t")
+  val trailer = "]\n"
   val nodeDeff = for (fr <- hist.frequencies) yield {
     val id = itemId(fr.item, hist.frequencies)
     val gml = s"\tnode [\n\t\tid ${id.get}\n\t\tlabel " + "\"" + s"${fr.item}" + "\"" +  s"\n\t\tfreqs ${fr.count}\n\t]"
     gml
   }
-  // Get an unique INT id:
-  println
 
 
+/* Format edges on this model:
+	edge [
+		source 217
+		target 158
+		weight 2
+	]
+*/
+  val grouped = matchVector.flatten.groupBy(pr => pr)
+  val pairCounts = grouped.map{ case (k,v) => (k,v.size) }.toVector.map{ case (i,count) => Frequency(i,count) }
+  val pairHist = Histogram(pairCounts)
+  val edgeDeff = for (prCount <- pairCounts) yield {
+    //println(prCount.count + " for pair " + prCount.item)
 
+    val source = itemId(prCount.item.s1,hist.frequencies)
+    val target = itemId(prCount.item.s2,hist.frequencies)
+    "\tedge [\n\t\tsource " + source.get + "\n\t\ttarget " + target.get + "\n" + "\t\tweight " +prCount.count + "\n\t]"
+  }
 
+  header + nodeDeff.mkString("\n") + edgeDeff.mkString("\n") + "\n" + trailer
 }
