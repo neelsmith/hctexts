@@ -14,7 +14,7 @@ import java.io.PrintWriter
 
 // invoke this script from root diretory of the repository.
 val f = "socnet/hyginus-persons-3+-alpha.csv"
-val catalogFile = "cex/catalog.cex"
+val catalogFile = "cex/hyginus-catalog.cex"
 val hyginusFile = "cex/hyginus.cex"
 val ortho = Latin23Alphabet
 
