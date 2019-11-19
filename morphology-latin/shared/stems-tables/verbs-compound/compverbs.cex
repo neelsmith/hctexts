@@ -10,6 +10,7 @@ latcommon.compoundn902#ls.n902#ad#ls.n29328#admitto
 latcommon.compoundn977#ls.n977#ad#ls.n33000#adorior
 latcommon.compoundn1010#ls.n1010#de#ls.n46529#desum
 latcommon.compoundn1010#ls.n1010#ad#ls.n46529#adsum
+latcommon.compoundn1105#ls.n1105#ad#ls.n51266#advoco
 latcommon.compoundn1901#ls.n1901#ad#ls.n25504#adlaboro
 latcommon.compoundn2260#ls.n2260#a#ls.n29328#amitto
 latcommon.compoundn2791#ls.n2791#ante#ls.n37010#antepono
@@ -27,12 +28,14 @@ latcommon.compoundn9942#ls.n9942#con#composites.cumb#concumbo
 latcommon.compoundn10029#ls.n10029#con#composites.do#condo
 latcommon.compoundn10088#ls.n10088#con#ls.n17964#confero
 latcommon.compoundn10309#ls.n10309#con#ls.n21321#conicio
+latcommon.compoundn10364#ls.n10364#con#ls.n25390#coniuro
 latcommon.compoundn10421#ls.n10421#con#ls.n42910#conscelero
 latcommon.compoundn10586#ls.n10586#con#ls.n45003#conspicio
 latcommon.compoundn10640#ls.n10640#con#ls.n45457#consto
 latcommon.compoundn10701#ls.n10701#con#ls.n46587#consumo
 latcommon.compoundn11004#ls.n11004#con#ls.n50654#converto
 latcommon.compoundn11044#ls.n11044#con#ls.n51266#convoco
+latcommon.compoundn11310#ls.n11310#cor#ls.n42012#corrumpo
 latcommon.compoundn11707#ls.n11707#cruci#ls.n18150#crucifigo
 latcommon.compoundnn12484#ls.n12484#de#composites.cid#decido
 latcommon.compoundn12498#ls.n12498#de#composites.cip#decipio
@@ -55,6 +58,7 @@ latcommon.compoundn15216#ls.n15216#ex#ls.n17964#effero
 latcommon.compoundn15285#ls.n15285#ef#ls.n18943#effugio
 latcommon.compoundn15344#ls.n15344#e#ls.n21321#eicio
 latcommon.compoundn16146#ls.n16146#e#composites.rip#eripio
+latcommon.compoundn16205#ls.n16205#e#ls.n42012#erumpo
 latcommon.compoundn16459#ls.n16459#e#ls.n50442#evenio
 latcommon.compoundn16525#ls.n16525#ex#ls.n440#exacerbo
 latcommon.compoundn16644#ls.n16644#ex#ls.n7275#excedo
