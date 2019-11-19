@@ -1,14 +1,14 @@
 Rule#LexicalEntity#Prefix#Simplex#Notes
 
-latcommon.compoundn24241#ls.n24241#inter#ls.n15868#intereo
-latcommon.compoundn31792#ls.n31792#ob#ls.n42026#obruo
-
 latcommon.compoundn55#ls.n55#ab#ls.n14847#abduco
+latcommon.compoundn75#ls.n75#ab#ls.n20955#abhorreo
 latcommon.compoundn87#ls.n87#ab#ls.n1605#abigo
 latcommon.compoundn147#ls.n147#abs#ls.n47901#absterreo
+latcommon.compoundn182#ls.n182#ab#ls.n41838#abrogo
 latcommon.compoundn743#ls.n743#ad#ls.n14847#adduco
 latcommon.compoundn902#ls.n902#ad#ls.n29328#admitto
 latcommon.compoundn977#ls.n977#ad#ls.n33000#adorior
+latcommon.compoundn1010#ls.n1010#de#ls.n46529#desum
 latcommon.compoundn1010#ls.n1010#ad#ls.n46529#adsum
 latcommon.compoundn1901#ls.n1901#ad#ls.n25504#adlaboro
 latcommon.compoundn2260#ls.n2260#a#ls.n29328#amitto
@@ -38,12 +38,14 @@ latcommon.compoundnn12484#ls.n12484#de#composites.cid#decido
 latcommon.compoundn12498#ls.n12498#de#composites.cip#decipio
 latcommon.compoundn12587#ls.n12587#de#ls.n12030#decurro
 latcommon.compoundn12677#ls.n12677#de#ls.n17964#defero
+latcommon.compoundn12687#ls.n12687#de#composites.ficio#deficio
 latcommon.compoundn12758#ls.n12758#de#ls.n18943#defugio
 latcommon.compoundn12804#ls.n12804#de#ls.n21321#deicio
 latcommon.compoundn13014#ls.n13014#de#ls.n29030#demigro
 latcommon.compoundn13047#ls.n13047#de#ls.n29616#demonstro
 latcommon.compoundn13201#ls.n13201#de#ls.n37010#depono
 latcommon.compoundn13329#ls.n13329#de#composites.scend#descendo
+latcommon.compoundn13492#ls.n13492#de#ls.n14847#deduco
 latcommon.compoundn13551#ls.n13551#de#ls.n48709#detraho
 latcommon.compoundn13560#ls.n13560#de#ls.n49309#detrudo
 latcommon.compoundn13586#ls.n13586#de#ls.n50442#devenio
@@ -61,6 +63,8 @@ latcommon.compoundn17092#ls.n17092#ex#ls.n37010#expono
 latcommon.compoundn17097#ls.n17097#ex#ls.n37168#exposco
 latcommon.compoundn17132#ls.n17132#ex#ls.n39477#expugno
 latcommon.compoundn17205#ls.n17205#ex#ls.n43823#exsequor
+latcommon.compoundn17239#ls.n17239#ex#ls.n44934#exspecto
+latcommon.compoundn21731#ls.n21731#in#ls.n29328#inmitto
 latcommon.compoundn21839#ls.n21839#in#ls.n34449#infero
 latcommon.compoundn21980#ls.n21980#im#ls.n37010#impono
 latcommon.compoundn22337#ls.n22337#in#composites.cid#incido
@@ -75,12 +79,14 @@ latcommon.compoundn25020#ls.n25020#in#ls.n42012#inrumpo
 latcommon.compoundn31613#ls.n31613#ob#ls.n15868#obeo
 latcommon.compoundn31628#ls.n31628#ob#ls.n21321#obicio
 latcommon.compoundn31766#ls.n31766#ob#ls.n33000#oborior
+latcommon.compoundn31792#ls.n31792#ob#ls.n42026#obruo
 latcommon.compoundn31871#ls.n31871#ob#ls.n44480#obsisto
 latcommon.compoundn31965#ls.n31965#ob#ls.n47983#obtestor
 latcommon.compoundn32829#ls.n32829#op#ls.n39477#oppugno
 latcommon.compoundn34084#ls.n34084#pate#ls.n17516#patefacio
 latcommon.compoundn34619#ls.n34619#per#ls.n1605#perago
 latcommon.compoundn34815#ls.n34815#per#ls.n14847#perduco
+latcommon.compoundn34869#ls.n34869#per#ls.n15868#pereo
 latcommon.compoundn35491#ls.n35491#per#ls.n43823#persequor
 latcommon.compoundn35702#ls.n35702#per#ls.n50442#pervenio
 latcommon.compoundn37409#ls.n37409#prae#composites.cip#praecipio
@@ -102,4 +108,6 @@ latcommon.compoundn41303#ls.n41303#re#ls.n42969#rescindo
 latcommon.compoundn41420#ls.n41420#re#composites.stitu#restituo
 latcommon.compoundn41548#ls.n41548#re#ls.n49421#retundo
 latcommon.compoundn46406#ls.n46406#sub#ls.n17964#subfero
+latcommon.compoundn46843#ls.n46843#super#ls.n37010#superpono
+latcommon.compoundn46980#ls.n46980#sup#ls.n37010#suppono
 latcommon.compoundn48775#ls.n48775#trans#ls.n17964#transfero

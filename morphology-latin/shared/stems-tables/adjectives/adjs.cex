@@ -1,15 +1,15 @@
 StemUrn#LexicalEntity#Stem#InflClass
 
-latcommon.adjn41160#ls.n41160#repe#ns_ntis
-
 latcommon.adjn204#ls.n204#abse#ns_ntis
 latcommon.adjn1021#ls.n1021#adulesce#ns_ntis
+latcommon.adjn1413#ls.n1413#aetern#us_a_um
 latcommon.adjn1719#ls.n1719#albin#us_a_um
 latcommon.adjn1743#ls.n1743#alb#us_a_um
 latcommon.adjn1842#ls.n1842#alien#us_a_um
 latcommon.adjn2246#ls.n2246#amic#us_a_um
 latcommon.adjn2365#ls.n2365#ampl#us_a_um
 latcommon.adjn2701#ls.n2701#annu#us_a_um
+latcommon.adjn2898#ls.n2898#antiqu#us_a_um
 latcommon.adjn4306#ls.n4306#atro#x_cis
 latcommon.adjn4547#ls.n4547#aure#us_a_um
 latcommon.adjn5195#ls.n5195#benign#us_a_um
@@ -21,6 +21,7 @@ latcommon.adjn7640#ls.n7640#ceter#us_a_um
 latcommon.adjn8513#ls.n8513#clar#us_a_um
 latcommon.adjn9261#ls.n9261#comin#us_a_um
 latcommon.adjn11509#ls.n11509#creb#er_ra_rum
+latcommon.adjn11726#ls.n11726#cruent#us_a_um
 latcommon.adjn11914#ls.n11914#cunct#us_a_um
 latcommon.adjn12494#ls.n12494#decim#us_a_um
 latcommon.adjn14682#ls.n14682#domestic#us_a_um
@@ -99,6 +100,7 @@ latcommon.adjn34182#ls.n34182#pauc#us_a_um
 latcommon.adjn34844#ls.n34844#peregrin#us_a_um
 latcommon.adjn35313#ls.n35313#peropportun#us_a_um
 latcommon.adjn36629#ls.n36629#plebe#us_a_um
+latcommon.adjn36651#ls.n36651#plen#us_a_um
 latcommon.adjn37207#ls.n37207#poster#us_a_um
 latcommon.adjn37937#ls.n37937#praese#ns_ntis
 latcommon.adjn38334#ls.n38334#primor#is_e
@@ -112,6 +114,7 @@ latcommon.adjn40013#ls.n40013#quant#us_a_um
 latcommon.adjn40221#ls.n40221#quint#us_a_um
 latcommon.adjn40532#ls.n40532#rece#ns_ntis
 latcommon.adjn40905#ls.n40905#regi#us_a_um
+latcommon.adjn41160#ls.n41160#repe#ns_ntis
 latcommon.adjn41554#ls.n41554#re#us_a_um
 latcommon.adjn42157#ls.n42157#sac#er_ra_rum
 latcommon.adjn42202#ls.n42202#sacrosanct#us_a_um

@@ -1,6 +1,14 @@
 StemUrn#LexicalEntity#StemString#MorphologicalClass#Simplex
 
 
+composites.ficioa#composites.ficio#fic#c3iopres#
+composites.ficiob#composites.ficio#fec#pftact#
+composites.ficioc#composites.ficio#fect#pftpass#
+
+
+
+
+
 composites.scenda#composites.scend#scend#c3iopres#
 composites.scendb#composites.scend#scend#pftact#
 composites.rscendc#composites.scend#scens#pftpass#

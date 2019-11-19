@@ -1,8 +1,5 @@
 StemUrn#LexicalEntity#Stem#InflClass
 
-
-latcommon.indecln37197#ls.n37197#posteaquam#indeclconj
-
 latcommon.indecln4#ls.n4#a#indeclprep
 latcommon.indecln5#ls.n5#ab#indeclprep
 latcommon.indecln283#ls.n283#ac#indeclconj
@@ -43,6 +40,7 @@ latcommon.indecln31008#ls.n31008#nisi#indeclconj
 latcommon.indecln31564#ls.n31564#ob#indeclprep
 latcommon.indecln34595#ls.n34595#per#indeclprep
 latcommon.indecln37194#ls.n37194#post#indeclprep
+latcommon.indecln37197#ls.n37197#posteaquam#indeclconj
 latcommon.indecln37241#ls.n37241#postquam#indeclconj
 latcommon.indecln37331#ls.n37331#prae#indeclprep
 latcommon.indecln38069#ls.n38069#praeter#indeclprep
