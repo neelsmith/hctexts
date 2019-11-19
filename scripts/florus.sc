@@ -13,12 +13,13 @@ import java.io.PrintWriter
 
 
 val catalogFile = "cex/florus-catalog.cex"
-val hyginusFile = "cex/florus.cex"
+val textFile = "cex/florus.cex"
 val ortho = Latin24Alphabet
+val shorty = "shorty.cex"
 
 
 
 val catalogCex = Source.fromFile(catalogFile).getLines.mkString("\n")
-val textCex = Source.fromFile(hyginusFile).getLines.mkString("\n")
+val textCex = Source.fromFile(shorty).getLines.mkString("\n")
 val textRepo = TextRepositorySource.fromCexString(catalogCex + "\n" + textCex)
 val tcorpus = TokenizableCorpus(textRepo.corpus, ortho)
