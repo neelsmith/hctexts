@@ -44,6 +44,6 @@ Now you can use the `Latin24SyntaxString` object to write files:
 
 These three files:
 
-- syntactically formatted with [color coding of part of speech](output/livy-1.4-pos.md)
+- syntactically formatted with [color coding of part of speech](output/livy-1.4-pos)
 - syntactically formatted with [tooltips on substantives](output/livy-1.4-hover-nouns-pronouns) (nouns, pronouns, adjectives)
 - syntactically formatted with [tooltips on verbs](output/livy-1.4-hover-verbs) (conjugated forms, infinitives, participles)
