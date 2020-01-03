@@ -12,6 +12,8 @@ import edu.holycross.shot.greek._
 
 import edu.holycross.shot.mid.validator._
 
+import edu.holycross.shot.ocre._
+
 import better.files._
 import java.io.{File => JFile}
 import better.files.Dsl._
@@ -33,9 +35,12 @@ val orthoMap = Map(
   "metamorphoses" ->  "lat24",
 
   "ocre43k" ->  "lat24",
+  "ric-1-3" -> "ocre",
 
   "eutropius" ->  "lat24",
-  "nepos" ->  "lat24"
+  "nepos" ->  "lat24",
+
+  "ocrerev2" ->  "lat24",
 
   /*
   "antoninus" -> "litgreek",
@@ -46,7 +51,8 @@ val orthoMap = Map(
 
 val orthoClassMap = Map(
   "lat23" -> Latin23Alphabet,
-  "lat24" -> Latin24Alphabet
+  "lat24" -> Latin24Alphabet,
+  "ocre" -> NormalizedLegendOrthography
 )
 
 val macInstall = File("/usr/local/bin/")
