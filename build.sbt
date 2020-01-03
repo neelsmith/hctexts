@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
 
 
   "edu.holycross.shot" %% "nomisma" % "3.1.1",
-
+  "edu.holycross.shot" %% "ocre-texts" % "0.3.1",
   "com.github.pathikrit" %% "better-files" % "3.5.0",
 
   "org.wvlet.airframe" %% "airframe-log" % "19.8.10"
