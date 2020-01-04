@@ -1,5 +1,17 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
+
+
+
+ocremorph.n10267#ls.n10267#congiari#neut#us_i
+ocremorph.n8957#ls.n8957#cohor#masc#i_s_tis
+
+ocremorph.nounn7579#ls.n7579#certam#neut#en_inis
+
+ocremorph.n9149#ls.n9149#coloni#fem#a_ae
+ocremorph.n3310#ls.n3310#ar#fem#a_ae
+ocremorph.n1955#ls.n1955#adlocvti#fem#o_onis
+
 ocremorph.n1072#ls.n1072#advent#masc#us_us
 ocremorph.n1315#ls.n1315#aeqvita#fem#s_tis
 ocremorph.n1359#ls.n1359#ae#neut#s_ris
