@@ -1,0 +1,168 @@
+val myBT = coursierapi.MavenRepository.of("https://dl.bintray.com/neelsmith/maven")
+interp.repositories() ++= Seq(myBT)
+
+import $ivy.`edu.holycross.shot::ohco2:10.18.2`
+import $ivy.`edu.holycross.shot.cite::xcite:4.2.0`
+import $ivy.`edu.holycross.shot::midvalidator:10.0.0`
+import $ivy.`edu.holycross.shot::latincorpus:2.2.2`
+import $ivy.`edu.holycross.shot::latphone:2.7.2`
+// It would be nice to visualize, so let's use the
+// plotly library with ammonite sh:
+// Make plotly libraries available to this notebook:
+import $ivy.`org.plotly-scala::plotly-almond:0.7.1`
+
+// Import plotly libraries, and set display defaults suggested for use in Jupyter NBs:
+import plotly._, plotly.element._, plotly.layout._, plotly.Almond._
+repl.pprinter() = repl.pprinter().copy(defaultHeight = 3)
+
+
+import edu.holycross.shot.cite._
+import edu.holycross.shot.ohco2._
+import edu.holycross.shot.latin._
+import edu.holycross.shot.mid.validator._
+import edu.holycross.shot.latincorpus._
+
+import scala.io.Source
+
+
+// 1. Load a citable corpus from a URL
+val hyginusUrl = "https://raw.githubusercontent.com/neelsmith/hctexts/master/cex/hyginus.cex"
+val corpus = CorpusSource.fromUrl(hyginusUrl, cexHeader = true)
+
+// 2. Add orthography to create a tokenizable corpus.
+// Be patient: it can take a moment to tokenize your complete corpus.
+val tcorpus = TokenizableCorpus(corpus, Latin23Alphabet )
+val wordList =  tcorpus.wordList
+
+// 3. Add morphological parsing to create a `LatinCorpus`
+val hyginusFstUrl = "https://raw.githubusercontent.com/neelsmith/hctexts/master/parser-output/hyginus/hyginus-parses.txt"
+val fstOutput = Source.fromURL(hyginusFstUrl).getLines.toVector
+
+// This step can take a moment, too, as it attempts to associate a
+// morphological analysis with every lexical token.
+val lc = LatinCorpus.fromFstLines(
+  corpus,
+  Latin23Alphabet,
+  fstOutput,
+  strict = false
+)
+
+//////////////////////////END BASIC SETUP ////////////////////////////////////
+// Overview of this corpus:
+
+
+
+// Maybe worth abstracting these as methods on LatinCorpus?
+val unanalyzedLex = lc.noAnalysis.filter(t => t.category == edu.holycross.shot.latin.LexicalToken)
+val maxOccurrences = lc.labelledLexemeHistogram.frequencies.map(fr => fr.count).sum
+
+
+println("Citable passages of text: " + corpus.size)
+println("Total tokens (all categories): " + lc.size) // == lc.tokens.size
+
+println("Lexical tokens: " + lc.lexicalTokens.size)
+println("Lexical tokens analyzed: " + lc.analyzed.size)
+println("\t(Token-level coverage of morphological analysis:\n\t" + lc.analyzed.size + " analyzed / " + lc.lexicalTokens.size + " lexical tokens)")
+
+println("Total analyses: " + lc.allAnalyses.size)
+println("\t(Morphological ambiguity of analyzed tokens: \n\t" + lc.allAnalyses.size  + " analyses / " +  + lc.analyzed.size + " analyzed tokens)" )
+println("Lexical tokens with no analysis: " + unanalyzedLex.size)
+println("Unanalyzed tokens (all categories): " + lc.noAnalysis.size)
+println("All tokens accounted for in analyzed/unanalzyed reports? " + (lc.size == (lc.analyzed.size + lc.noAnalysis.size) ))
+
+
+println("Lexemes recognized: " + lc.labelledLexemeHistogram.size)
+println("\t(Morphological density:\n\t" + lc.analyzed.size + " analyzed tokens / " + lc.labelledLexemeHistogram.size + " lexemes)")
+
+
+
+println("Possible tokens for recognized lexemes: " + maxOccurrences)
+println("\t(Lexical ambiguity of lexeme indexing:\n\t" + maxOccurrences + " possible token occurrences / " + lc.analyzed.size + " tokens)")
+
+edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(95)).total
+
+println("\nOut of " + lc.labelledLexemeHistogram.size + " lexemes:")
+println("\t" + lc.labelledLexemeHistogram.takePercent(100).size + " cover 100% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(100)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(100)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
+
+
+println("\t" + lc.labelledLexemeHistogram.takePercent(95).size + " cover 95% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(95)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(95)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
+
+println("\t" + lc.labelledLexemeHistogram.takePercent(90).size + " cover 90% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(90)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(90)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
+
+println("\t" + lc.labelledLexemeHistogram.takePercent(85).size + " cover 85% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(85)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(85)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
+
+
+
+
+
+
+
+
+
+
+// NEED FREQS PER LEXEME
+// labelledLexemeHistogram
+lc.labelledLexemeHistogram.takePercent(100).size
+
+
+
+
+
+// I'm PRETTY SURE this IS WRONG
+val sampleForm = lc.analyzed.map (a => a.analyses(0))
+sampleForm.size
+val lexemePoSpairing = sampleForm.map (f => f.lemmaId -> f.posLabel)
+val lexemeToPosMap = lexemePoSpairing.toMap
+
+val freqOpts = lc.lexemeHistogram.frequencies.map(
+  fr => {
+    if (lexemeToPosMap.contains(fr.item)) {
+      Some(edu.holycross.shot.histoutils.Frequency(lexemeToPosMap(fr.item),  fr.count))
+    } else {
+      None
+    }
+
+  })
+val freqs = freqOpts.flatten
+
+val top400Freqs = freqs.take(400)
+
+val posGroups = top400Freqs.groupBy(fr => fr.item)
+val posCounts = posGroups.toVector.map{ case (pos, freqsV) => pos -> freqsV.map(f => f.count).sum }
+
+val topPosCounts = posCounts.toVector.sortBy( _._2).map{ case(p,c) => edu.holycross.shot.histoutils.Frequency(p,c)}
+
+val topPosHisto = edu.holycross.shot.histoutils.Histogram(topPosCounts).sorted
+
+
+
+
+// PLOT DISTRIBTION BY PoS:
+val items = topPosHisto.sorted.frequencies.map(fr => fr.item)
+val counts = topPosHisto.sorted.frequencies.map(fr => fr.count)
+
+val topPosPlot = Vector(
+  Bar(x = items, y = counts)
+)
+val layout = Layout(
+  title = "Top 400 lexemes, by analytical type"
+)
+plot(topPosPlot, layout)
+
+//val second400Freqs = freqs.slice(400, 800)
+/*
+val tier2Groups = second400Freqs.groupBy(fr => fr.item)
+val tier2Counts = tier2Groups.toVector.map{ case (pos, freqsV) => pos -> freqsV.map(f => f.count).sum }
+
+val tier2PosCounts = tier2Counts.toVector.sortBy( _._2).map{ case(p,c) => edu.holycross.shot.histoutils.Frequency(p,c)}
+
+val tier2PosHisto = edu.holycross.shot.histoutils.Histogram(tier2PosCounts).sorted
+
+val items = tier2PosHisto.sorted.frequencies.map(fr => fr.item)
+val counts = tier2PosHisto.sorted.frequencies.map(fr => fr.count)
+
+val tierPosPlot = Vector(
+  Bar(x = items, y = counts)
+)
+plot(tierPosPlot)
+*/
