@@ -1,0 +1,115 @@
+val myBT = coursierapi.MavenRepository.of("https://dl.bintray.com/neelsmith/maven")
+interp.repositories() ++= Seq(myBT)
+
+import $ivy.`edu.holycross.shot::ohco2:10.18.2`
+import $ivy.`edu.holycross.shot.cite::xcite:4.2.0`
+import $ivy.`edu.holycross.shot::midvalidator:10.0.0`
+import $ivy.`edu.holycross.shot::latincorpus:2.2.2`
+import $ivy.`edu.holycross.shot::latphone:2.7.2`
+// It would be nice to visualize, so let's use the
+// plotly library with ammonite sh:
+// Make plotly libraries available to this notebook:
+import $ivy.`org.plotly-scala::plotly-almond:0.7.1`
+
+// Import plotly libraries, and set display defaults suggested for use in Jupyter NBs:
+import plotly._, plotly.element._, plotly.layout._, plotly.Almond._
+repl.pprinter() = repl.pprinter().copy(defaultHeight = 3)
+
+
+import edu.holycross.shot.cite._
+import edu.holycross.shot.ohco2._
+import edu.holycross.shot.latin._
+import edu.holycross.shot.mid.validator._
+import edu.holycross.shot.latincorpus._
+
+import scala.io.Source
+
+
+// 1. Load a citable corpus from a URL
+val hyginusUrl = "https://raw.githubusercontent.com/neelsmith/hctexts/master/cex/hyginus.cex"
+val corpus = CorpusSource.fromUrl(hyginusUrl, cexHeader = true)
+
+// 2. Add orthography to create a tokenizable corpus.
+// Be patient: it can take a moment to tokenize your complete corpus.
+val tcorpus = TokenizableCorpus(corpus, Latin23Alphabet )
+val wordList =  tcorpus.wordList
+
+val threshholds = Vector(10,9,8,7,6,5,4,3,2,1)
+val tokenCounts = threshholds.reverse.map(t => tcorpus.lexHistogram.frequencies.filter(_.count >= t).size)
+
+val coveragePlot = Vector(
+  Bar(x = threshholds.reverse, y = tokenCounts)
+)
+val coverageLayout = Layout(
+  title = "Vocabulary: tokens appearing N times",
+  xaxis = Axis(
+      title = "Number of appearances in corpus of " + tcorpus.lexHistogram.total + " tokens",
+      showgrid = false,
+      zeroline = false
+  ),
+  yaxis = Axis(
+      title = "Number of unique tokens"
+  )
+)
+plot(coveragePlot, coverageLayout)
+
+
+
+val tokenPcts = threshholds.reverse.map(t => tcorpus.lexHistogram.percentForCount(t))
+
+val percentLayout = Layout(
+  title = "Percent coverage for tokens appearing N times",
+  xaxis = Axis(
+      title = "Tokens appearing N times",
+      showgrid = false,
+      zeroline = false
+  ),
+  yaxis = Axis(
+      title = "Percent of occurrences in corpus"
+  )
+)
+
+
+
+
+
+
+
+val pctFor2 = tcorpus.lexHistogram.percentForCount(2)
+val histFor2 = edu.holycross.shot.histoutils.Histogram(tcorpus.lexHistogram.takePercent(pctFor2))
+
+
+
+val pctXLabels =  threshholds.reverse.map { t =>
+  val pct = tcorpus.lexHistogram.percentForCount(t)
+  val histForPct = edu.holycross.shot.histoutils.Histogram(tcorpus.lexHistogram.takePercent(pct))
+  histForPct
+
+  histForPct.size + " tokens"
+}
+
+
+val percentPlot = Vector(
+  Bar(
+    x = threshholds.reverse,
+    y = tokenPcts,
+    text = pctXLabels
+  )
+)
+
+plot(percentPlot, percentLayout)
+
+
+
+/*
+val items = tcorpus.lexHistogram.sorted.frequencies.map(fr => fr.item)
+val counts = tcorpus.lexHistogram.sorted.frequencies.map(fr => fr.count)
+
+val topPosPlot = Vector(
+  Bar(x = items, y = counts)
+)
+val layout = Layout(
+  title = "Lexical tokens"
+)
+plot(topPosPlot, layout)
+*/
