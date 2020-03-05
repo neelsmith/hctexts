@@ -25,18 +25,18 @@ import edu.holycross.shot.latincorpus._
 import scala.io.Source
 
 
-// 1. Load a citable corpus from a URL
+// 1. Load citable corpora from a URL
 val livyFile = "cex/livy.cex"
 val livy = CorpusSource.fromFile(livyFile, cexHeader = true)
 
+val mtFile = "cex/livy-mt.cex"
+val mt = CorpusSource.fromFile(mtFile, cexHeader = true)
 
 // 2. Add orthography to create a tokenizable corpus.
 // Be patient: it can take a moment to tokenize your complete corpus.
 val tlivy = TokenizableCorpus(livy, Latin24Alphabet )
+val tmt = TokenizableCorpus(mt, Latin24Alphabet )
 
-
-// What vocab list gives you 90% coverage?
-tlivy.lexHistogram.size
 
 
 def simpleBarForCorpus(tcorpus: TokenizableCorpus, label: String): Bar = {
@@ -44,7 +44,6 @@ def simpleBarForCorpus(tcorpus: TokenizableCorpus, label: String): Bar = {
     val tokensNeeded = pctBrackets.map(pct => tcorpus.lexHistogram.takePercent(pct).size)
     Bar(x = pctBrackets, y = tokensNeeded, name = label)
 }
-
 
 def barForCorpus(tcorpus: TokenizableCorpus): Bar = {
     val pctBrackets = Vector(50,55,60,65,70,75,80,85)
@@ -75,101 +74,41 @@ def pctCoveragePlot(tcorpus: TokenizableCorpus, label: String) = {
 
 
 val livyAllPlot = pctCoveragePlot(tlivy, "Livy")
-plot(livyAllPlot._1, livyAllPlot._2)
-
-
-val mtFile = "cex/livy-mt.cex"
-val mt = CorpusSource.fromFile(mtFile, cexHeader = true)
-val tmt = TokenizableCorpus(mt, Latin24Alphabet )
-
 val mtPlot = pctCoveragePlot(tmt, "Minkova-Tunberg selections from Livy")
-
 
 plot(mtPlot._1, mtPlot._2)
 plot(livyAllPlot._1, livyAllPlot._2)
 
+
+
 val jointLayout = Layout(
-  barmode = BarMode.Group
+  barmode = BarMode.Group,
+    xaxis = Axis(
+        title = "Percent of text covered",
+        showgrid = false,
+        zeroline = false
+    ),
+    yaxis = Axis(
+        title = "Distinct tokens"
+    )
 )
 val jointData = Seq(
-  simpleBarForCorpus(tlivy, "All of Livy"),
-  simpleBarForCorpus(tmt, "Minkova-Tunberg selections")
+  simpleBarForCorpus(tlivy, "Livy (" + tlivy.size + " tokens)"),
+  simpleBarForCorpus(tmt, "Minkova-Tunberg (" + tmt.size + " tokens)")
 )
 plot(jointData, jointLayout)
 
+
+
+
+// THIS IS NOT HELPFUL ON TOKENS:
+// MUST BE LEMMATIZED TO MAKE SENSE
 /*
-val threshholds = Vector(10,9,8,7,6,5,4,3,2,1)
-val tokenCounts = threshholds.reverse.map(t => tcorpus.lexHistogram.frequencies.filter(_.count >= t).size)
+val mtTop400 = tmt.lexHistogram.sorted.frequencies.take(400).map(f => f.item)
+val livyTop400 = tlivy.lexHistogram.sorted.frequencies.take(400).map(f => f.item)
 
-val coveragePlot = Vector(
-  Bar(x = threshholds.reverse, y = tokenCounts)
-)
-val coverageLayout = Layout(
-  title = "Vocabulary: tokens appearing N times",
-  xaxis = Axis(
-      title = "Number of appearances in corpus of " + tcorpus.lexHistogram.total + " tokens",
-      showgrid = false,
-      zeroline = false
-  ),
-  yaxis = Axis(
-      title = "Number of unique tokens"
-  )
-)
-plot(coveragePlot, coverageLayout)
-
-
-
-val tokenPcts = threshholds.reverse.map(t => tcorpus.lexHistogram.percentForCount(t))
-
-val percentLayout = Layout(
-  title = "Hyginus: coverage for tokens appearing X or more times",
-  xaxis = Axis(
-      title = "Tokens appearing X times",
-      showgrid = false,
-      zeroline = false
-  ),
-  yaxis = Axis(
-      title = "Percent of occurrences in corpus"
-  )
-)
-
-
-
-val pctFor2 = tcorpus.lexHistogram.percentForCount(2)
-val histFor2 = edu.holycross.shot.histoutils.Histogram(tcorpus.lexHistogram.takePercent(pctFor2))
-
-
-
-val pctXLabels =  threshholds.reverse.map { t =>
-  val pct = tcorpus.lexHistogram.percentForCount(t)
-  val histForPct = edu.holycross.shot.histoutils.Histogram(tcorpus.lexHistogram.takePercent(pct))
-  histForPct
-
-  histForPct.size + " tokens"
-}
-
-
-val percentPlot = Vector(
-  Bar(
-    x = threshholds.reverse,
-    y = tokenPcts,
-    text = pctXLabels
-  )
-)
-
-plot(percentPlot, percentLayout)
-
-*/
-
-/*
-val items = tcorpus.lexHistogram.sorted.frequencies.map(fr => fr.item)
-val counts = tcorpus.lexHistogram.sorted.frequencies.map(fr => fr.count)
-
-val topPosPlot = Vector(
-  Bar(x = items, y = counts)
-)
-val layout = Layout(
-  title = "Lexical tokens"
-)
-plot(topPosPlot, layout)
+val livDiffs = mtTop400 diff livyTop400
+livDiffs.size
+val livSetDiffs = mtTop400.toSet diff livyTop400.toSet
+//println(livDiffs.sorted.mkString("\n"))
 */
