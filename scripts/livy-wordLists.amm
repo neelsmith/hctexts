@@ -26,39 +26,78 @@ import scala.io.Source
 
 
 // 1. Load a citable corpus from a URL
-val hyginusUrl = "https://raw.githubusercontent.com/neelsmith/hctexts/master/cex/hyginus.cex"
-val corpus = CorpusSource.fromUrl(hyginusUrl, cexHeader = true)
+val livyFile = "cex/livy.cex"
+val livy = CorpusSource.fromFile(livyFile, cexHeader = true)
+
 
 // 2. Add orthography to create a tokenizable corpus.
 // Be patient: it can take a moment to tokenize your complete corpus.
-val tcorpus = TokenizableCorpus(corpus, Latin23Alphabet )
-val wordList =  tcorpus.wordList
+val tlivy = TokenizableCorpus(livy, Latin24Alphabet )
 
-val pctBrackets = Vector(50,55,60,65,70,75,80,85)
-val tokensNeeded = pctBrackets.map(pct => tcorpus.lexHistogram.takePercent(pct).size)
 
-val xLabels = for ((pct, tkns) <- pctBrackets zip tokensNeeded) yield {
-  pct + "% = " + tkns
+// What vocab list gives you 90% coverage?
+tlivy.lexHistogram.size
+
+
+def simpleBarForCorpus(tcorpus: TokenizableCorpus, label: String): Bar = {
+    val pctBrackets = Vector(50,55,60,65,70,75,80,85)
+    val tokensNeeded = pctBrackets.map(pct => tcorpus.lexHistogram.takePercent(pct).size)
+    Bar(x = pctBrackets, y = tokensNeeded, name = label)
 }
-val tokensPercentPlot = Vector(
-  Bar(x = xLabels, y = tokensNeeded)
-)
-val tokensPercentLayout = Layout(
-  title = "Distinct tokens covering X pct of Hyginus",
-  xaxis = Axis(
-      title = "Distinct tokens in corpus of " + tcorpus.lexHistogram.size + " tokens",
-      showgrid = false,
-      zeroline = false
-  ),
-  yaxis = Axis(
-      title = "Percent of text covered"
+
+
+def barForCorpus(tcorpus: TokenizableCorpus): Bar = {
+    val pctBrackets = Vector(50,55,60,65,70,75,80,85)
+    val tokensNeeded = pctBrackets.map(pct => tcorpus.lexHistogram.takePercent(pct).size)
+    val xLabels = for ((pct, tkns) <- pctBrackets zip tokensNeeded) yield {
+      pct + "% = " + tkns
+    }
+    Bar(x = xLabels, y = tokensNeeded)
+}
+def pctCoveragePlot(tcorpus: TokenizableCorpus, label: String) = {
+  val tokensPercentPlot = Vector(
+    barForCorpus(tcorpus)
+    //Bar(x = xLabels, y = tokensNeeded)
   )
+  val tokensPercentLayout = Layout(
+    title = "Distinct tokens covering X pct of " + label,
+    xaxis = Axis(
+        title = "Distinct tokens in corpus of " + tcorpus.lexHistogram.size + " tokens",
+        showgrid = false,
+        zeroline = false
+    ),
+    yaxis = Axis(
+        title = "Percent of text covered"
+    )
+  )
+  (tokensPercentPlot, tokensPercentLayout)
+}
+
+
+val livyAllPlot = pctCoveragePlot(tlivy, "Livy")
+plot(livyAllPlot._1, livyAllPlot._2)
+
+
+val mtFile = "cex/livy-mt.cex"
+val mt = CorpusSource.fromFile(mtFile, cexHeader = true)
+val tmt = TokenizableCorpus(mt, Latin24Alphabet )
+
+val mtPlot = pctCoveragePlot(tmt, "Minkova-Tunberg selections from Livy")
+
+
+plot(mtPlot._1, mtPlot._2)
+plot(livyAllPlot._1, livyAllPlot._2)
+
+val jointLayout = Layout(
+  barmode = BarMode.Group
 )
-plot(tokensPercentPlot, tokensPercentLayout)
+val jointData = Seq(
+  simpleBarForCorpus(tlivy, "All of Livy"),
+  simpleBarForCorpus(tmt, "Minkova-Tunberg selections")
+)
+plot(jointData, jointLayout)
 
-
-
-
+/*
 val threshholds = Vector(10,9,8,7,6,5,4,3,2,1)
 val tokenCounts = threshholds.reverse.map(t => tcorpus.lexHistogram.frequencies.filter(_.count >= t).size)
 
@@ -120,7 +159,7 @@ val percentPlot = Vector(
 
 plot(percentPlot, percentLayout)
 
-
+*/
 
 /*
 val items = tcorpus.lexHistogram.sorted.frequencies.map(fr => fr.item)
