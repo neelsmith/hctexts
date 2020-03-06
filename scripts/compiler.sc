@@ -1,3 +1,4 @@
+// Define a function to compile a FST parser.
 
 import edu.holycross.shot.tabulae.builder._
 import edu.holycross.shot.tabulae._
@@ -38,21 +39,11 @@ val fstinfl = if ( (macInstall / "fst-infl").exists) {
 val make = "/usr/bin/make"
 val repo = "."
 
-
-/** Get string output of executing a system process.
-*
-* @param cmd String of command to execute.
-*/
-def execOutput(cmd: String) : String = {
-  cmd !!
-}
-
-
 // Compile a parser
 def compile (
   corpusList: Vector[String] = Vector("shared", "shared-xls", "lat23"),
-  datasets: File = repo / "morphology-latin" ) = {
-
+  datasets: File = repo / "morphology-latin"
+) = {
   val conf =  Configuration(compiler.toString, fstinfl.toString, make, datasets.toString)
   val parserDir = repo / "parsers"
   val fst = repo / "fst"
