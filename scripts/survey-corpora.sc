@@ -1,3 +1,6 @@
+/*
+Defin
+*/
 import edu.holycross.shot.cite._
 import edu.holycross.shot.ohco2._
 import edu.holycross.shot.latin._
@@ -12,15 +15,13 @@ val livy = CorpusSource.fromFile(livyFile, cexHeader = true)
 val tlivy = TokenizableCorpus(livy, Latin24Alphabet )
 val livyFstFile = "li-work/livy-parsed.txt"
 val livyFstOutput = Source.fromFile(livyFstFile).getLines.toVector
-val livyMorphed = LatinCorpus.fromFstLines(
+lazy val livyMorphed = LatinCorpus.fromFstLines(
   livy,
   Latin24Alphabet,
   livyFstOutput,
   strict = false
 )
-
-val livyHisto = livyMorphed.labelledLexemeHistogram
-
+lazy val livyHisto = livyMorphed.labelledLexemeHistogram
 
 val mtFile = "cex/livy-mt.cex"
 val mt = CorpusSource.fromFile(mtFile, cexHeader = true)
@@ -32,7 +33,6 @@ val mtMorphed = LatinCorpus.fromFstLines(
   strict = false
 )
 val mtHisto = mtMorphed.labelledLexemeHistogram
-
 
 // Compare Hyginus
 val hygFile = "cex/hyginus.cex"
@@ -47,9 +47,6 @@ val hygMorphed = LatinCorpus.fromFstLines(
   strict = false
 )
 val hygHisto = hygMorphed.labelledLexemeHistogram
-
-
-
 
 
 def coverage(lc: LatinCorpus, pct: Int) : String = {
