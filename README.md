@@ -12,12 +12,19 @@ The [lewis-short](/lewis-short) directory mirrors the markdown version of Lewis-
 
 The [morphology-latin](./morphology-latin) directory includes morphological datasets for building parsers with [tabulae](https://github.com/neelsmith/tabulae).  The datasets are organized to minimize effort in developing parsers following different orthographic practices (such as differing use of *i*, *j*, *u* and *v*) by isolating common data in [morphology-latin/shared](./morphology-latin/shared), and factoring out material specific to different orthographies as follows:
 
+
+- [morphology-latin/shared](.morphology-latin/shared): data that can be used in common with `lat23`, `lat24` and `lat25` data sets because it includes no *i/j* or *u/v* characters.  Lexemes are identified with URNs mapped to the URNs in Lewis and Short.
+- [morphology-latin/shared-xls](.morphology-latin/shared-xls): data that can be used in common with `lat23`, `lat24` and `lat25` data sets because it includes no *i/j* or *u/v* characters.  Lexemes do not have a corresponding URN in Lewis and Short.
 - [morphology-latin/lat23](./morphology-latin/lat23): orthography with 23 alphabetic characters (*i* and *u* both vocalic and semivocalic)
 - [morphology-latin/lat24](./morphology-latin/lat24): orthography with 24 alphabetic characters (*i* both vocalic and semivocalic, distinct *u* and *v*)
-- [morphology-latin/lat25](./morphology-latin/lat25): orthography with 23 alphabetic characters (*i*, *j*, *u* and *v* all distinct)
+- [morphology-latin/lat25](./morphology-latin/lat25): orthography with 25 alphabetic characters (*i*, *j*, *u* and *v* all distinct)
 
 
-Working scripts for building morphological parsers and analyzing texts are in the [scripts](./scripts) directory.  
+### Utilities
+
+The [scripts](./scripts) directory includes some useful scripts for building morphological parsers and analyzing texts.  Filenames with an `.sc` extension are Scala scripts that can be loaded in an sbt console  (with `:load FILENAME` in an sbt console). Filenames with an `.amm` extension are Scala scripts that can be run in an [ammonite REPL](https://ammonite.io/), or with the [Atom editor](https://atom.io/) with the [Hydrogen plugin](https://atom.io/packages/hydrogen).
+
+- `compiler.sc` Defines a single function, `compile`, that takes a Vector of directory names for morphological data sets to include. E.g., `compile(Vector("shared", "shared-xls", "lat23"))` compiles a morphological data from the two shared data sets (one with lexemes identified by Lewis-Short URN, and one identified by URNs not appearing in Lewis-Short) together with data in an orthography using 23 alphabetic characters.
 
 
 ## Technological infrastructure
