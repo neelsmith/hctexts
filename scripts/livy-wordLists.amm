@@ -99,6 +99,21 @@ val jointData = Seq(
 plot(jointData, jointLayout)
 
 
+val cex = tlivy.lexHistogram.cex("#")
+
+import java.io.PrintWriter
+new PrintWriter("livy-hist.cex"){write(cex); close;}
+
+
+
+val livyFstFile = "li-work/livy-parsed.txt"
+val livyFstOutput = Source.fromFile(livyFstFile).getLines.toVector
+val livyMorphed = LatinCorpus.fromFstLines(
+  livy,
+  Latin24Alphabet,
+  livyFstOutput,
+  strict = false
+)
 
 
 // THIS IS NOT HELPFUL ON TOKENS:
