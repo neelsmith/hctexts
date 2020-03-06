@@ -82,7 +82,7 @@ def execOutput(cmd: String) : String = {
 
 // Get FST output of parsing list of words in a file.
 def parseWordsFile(wordsFile: String, ortho: String ) : String = {
-  val fstParser = s"parsers/shared-${ortho}-shared-xls/latin.a"
+  val fstParser = s"parsers/shared-shared-xls-${ortho}/latin.a"
 
   val cmd = s"${fstinfl} ${fstParser} ${wordsFile}"
   execOutput(cmd)
@@ -118,22 +118,10 @@ def wordList(label: String) = {
   tokenizableCorpus(label).wordList
 }
 def printWordList(label: String) = {
-
   val words =  wordList(label).mkString("\n")
   val outFile = workDir / s"${label}-words.txt"
   new PrintWriter(outFile.toString){write(words); close;}
 }
-/*
-val idxFile = "scripts/ls_indexData.txt"
-val lines = File(idxFile).lines.toVector
-
-
-
-val lsIdMap = for (ln <- lines) yield {
-  val parts = ln.split("#")
-  s"ls.${parts(0)}" -> parts(1)
-}*/
-
 
 
 def parseWordsFile(wordsFile: String, label: String) : String = {
@@ -280,4 +268,3 @@ def info = {
 
 println("\n\nSee things you can do with this script:")
 println("\n\tinfo")
-//info
