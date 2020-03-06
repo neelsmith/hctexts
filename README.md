@@ -1,7 +1,7 @@
 # `hctexts`
 
 
-This repository hosts a selection of Greek and Latin texts used in teaching at Holy Cross, along with related analytical material, including morphological databases.  The material in this repository is the basis for a pilot program in 2019-2020 restructuring the organization and sequence of our Latin curriculum based on a computational analysis of a target corpus students will read.
+This repository hosts a selection of Greek and Latin texts used in teaching at Holy Cross, along with related analytical material, including morphological databases.  The material in this repository is the basis for a pilot program in 2019-2020 restructuring the organization and sequence of our Latin curriculum based on a computational analysis of a target corpus students are reading.
 
 
 ## What's here
