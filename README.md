@@ -56,6 +56,7 @@ For tabulae:  <https://github.com/neelsmith/tabulae>
 
 Recent and upcoming conference presentations:
 
-- Richard Ciolek, James Garry, Michael Rehab, Neel Smith, Zachary Sowerby, “Corpus-specific morphological analysis for research and teaching” conference “Digital Approaches to Teaching Historical Languages” (Humboldt University, Berlin), March, 2019.
+- Daniel Libatique, Dominic Machado, Neel Smith, "*Caveat magister*: a computational approach to designing a Latin curriculum" (Digital Humanities 2020, Ottawa).
 - Dominic Machado and Daniel Libatique, "*Lector Intende, Laetaberis*: A Research-Based Approach to Introductory Latin," Classical Association of New England Annual Meeting 2020.
 - Neel Smith, “Digital Approaches to Recognizing Latinities (pl.)”, Classical Association of New England Annual Meeting 2020.
+- Richard Ciolek, James Garry, Michael Rehab, Neel Smith, Zachary Sowerby, “Corpus-specific morphological analysis for research and teaching” conference “Digital Approaches to Teaching Historical Languages” (Humboldt University, Berlin), March, 2019.
