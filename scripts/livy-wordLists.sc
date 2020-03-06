@@ -52,6 +52,13 @@ val hygHisto = hygMorphed.labelledLexemeHistogram
 
 
 
+def coverage(lc: LatinCorpus, pct: Int) : String = {
+  val pctTotal = edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(pct)).total
+
+  val tokensPct =  ((pctTotal   / lc.lexicalTokens.size.toDouble) * 100).toInt
+
+  lc.labelledLexemeHistogram.takePercent(pct).size + s" cover ${pct}% of analyses (max. " + pctTotal   + " tokens / "  + lc.lexicalTokens.size  + " = " + tokensPct + "% of lexical tokens)"
+}
 
 def survey(lc: LatinCorpus, corpus: Corpus, label: String) = {
   println("SURVEYING COPRUS " + label)
@@ -81,14 +88,12 @@ def survey(lc: LatinCorpus, corpus: Corpus, label: String) = {
 
   edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(95)).total
 
+  val pcts = Vector(100, 95, 90, 85)
+
   println("\nOut of " + lc.labelledLexemeHistogram.size + " lexemes:")
-  println("\t" + lc.labelledLexemeHistogram.takePercent(100).size + " cover 100% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(100)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(100)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
-
-  println("\t" + lc.labelledLexemeHistogram.takePercent(95).size + " cover 95% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(95)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(95)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
-
-  println("\t" + lc.labelledLexemeHistogram.takePercent(90).size + " cover 90% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(90)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(90)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
-
-  println("\t" + lc.labelledLexemeHistogram.takePercent(85).size + " cover 85% of analyses (max. " + edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(85)).total + " tokens / "  + lc.lexicalTokens.size  + " = " + ((edu.holycross.shot.histoutils.Histogram(lc.labelledLexemeHistogram.takePercent(85)).total   / lc.lexicalTokens.size.toDouble) * 100).toInt + "% of lexical tokens)")
+  for (pct <- pcts) {
+    println("\t" + coverage(lc, pct))
+  }
 }
 
 
