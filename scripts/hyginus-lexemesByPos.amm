@@ -50,28 +50,44 @@ val hygHist = lhyg.lexemeHistogram
 //////////////////////////END BASIC SETUP ////////////////////////////////////
 
 
+// USE TOKENS IN lhyg.analyzed
 
-val posIdCounts = lhyg.analyzed.map(a =>
+
+// Functions to relate PoS and lexeme identifiers
+def posIdCounts(tkns: Vector[LatinToken]): Vector[(String, String, Int)] = {
+  tkns.map(a =>
   {
     val id = a.analyses(0).lemmaId
     val pos = a.analyses(0).posLabel
    (id, pos,hygHist.countForItem(id))
  }).distinct
+}
+def posCountMap(tkns: Vector[LatinToken]): Map[String, Vector[(String, String, Int)]] = {
+  posIdCounts(tkns).groupBy{ case (id,pos,count) => pos }
+}
+def posOccurrences(tkns: Vector[LatinToken]): Vector[(String, Int)] = {
+  posCountMap(tkns).toVector.map{ case (pos,v) => (pos, v.map(_._3).sum)}
+}
+def posLexemeCounts(tkns: Vector[LatinToken]) : Vector[(String, Int)]= {
+   posCountMap(tkns).toVector.map{ case (pos,v) => (pos, v.size) }
+}
+def lexemeDensityByPos(tkns: Vector[LatinToken]) : Vector[Double]= {
+  val occurrenceCounts = posOccurrences(tkns).sortBy( _._1).map(_._2)
+  val lexemeCounts = posLexemeCounts(tkns).sortBy( _._1).map(_._2)
+  lexemeCounts.zip(occurrenceCounts).map {
+    case (lex,occ) => occ / lex.toDouble
+  }
+}
+
+val posList = posLexemeCounts(lhyg.analyzed).sortBy( _._1).map(_._1)
 
 
-val posMap = posIdCounts.groupBy{ case (id,pos,count) => pos }
-val posOccurrences = posMap.toVector.map{ case (pos,v) => (pos, v.map(_._3).sum)}
-val posLexemeCounts = posMap.toVector.map{ case (pos,v) => (pos, v.size) }
+/// HYGINUS:
+val hygPosOccurrences = posOccurrences(lhyg.analyzed).sortBy( _._1).map(_._2)
+val hygLexemeCounts = posLexemeCounts(lhyg.analyzed).sortBy( _._1).map(_._2)
 
-
-
-val lexemeCounts = posLexemeCounts.sortBy( _._1).map(_._2)
-val occurrenceCounts = posOccurrences.sortBy(_._1).map(_._2)
-val posList = posLexemeCounts.sortBy( _._1).map(_._1)
-
-
-val occurrences =  Bar(x = posList, y = occurrenceCounts, name = "Occurrences")
-val lexemes =  Bar(x = posList, y = lexemeCounts, name = "Number of lexemes")
+val occurrencesBar =  Bar(x = posList, y = hygPosOccurrences, name = "Occurrences")
+val lexemesBar =  Bar(x = posList, y = hygLexemeCounts, name = "Number of lexemes")
 
 
 val jointLayout = Layout(
@@ -86,21 +102,25 @@ val jointLayout = Layout(
     )
 )
 val jointData = Seq(
-  occurrences,
-  lexemes
+  occurrencesBar,
+  lexemesBar
 )
 plot(jointData, jointLayout)
 
-val density = lexemeCounts.zip(occurrenceCounts).map {
-  case (lex,occ) => lex.toDouble / occ
-}
+
+
+
+
+
+
+val density = lexemeDensityByPos(lhyg.analyzed)
 
 
 val densityPlot = Vector(
   Bar(x = posList, y = density)
 )
 val densityLayout = Layout(
-  title = "Lexemes per part of speech",
+  title = "Average frequency of individual lexemes",
   xaxis = Axis(
       title = "Analytical type",
       showgrid = false,
