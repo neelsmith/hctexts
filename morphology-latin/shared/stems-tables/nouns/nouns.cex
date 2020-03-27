@@ -1,7 +1,18 @@
 StemUrn#LexicalEntity#Stem#Gender#InflClass
 
 
+latcommon.n2618#ls.n2618#animal#neut#i_0_is
 
+latcommon.n21627#ls.n21627#imb#masc#i_er_ris
+latcommon.n49506#ls.n49506#turr#masc#i_is_is
+
+latcommon.n36785#ls.n36785#poema#neut#0_tis
+latcommon.n10676#ls.n10676#consul#masc#0_is
+latcommon.n11124#ls.n11124#cor#neut#0_dis
+
+latcommon.n29035#ls.n29035#mil#masc#es_itis
+latcommon.n16011#ls.n16011#epitom#fem#e_es
+latcommon.n30316#ls.n30316#myth#masc#os_i
 latcommon.nounn18307#ls.n18307#flamm#fem#a_ae
 latcommon.nounn4742#ls.n4742#ax#masc#is_is
 latcommon.nounn4615#ls.n4615#aust#masc#er_ri
@@ -85,7 +96,7 @@ latcommon.nounn8598#ls.n8598#clien#fem#s_tis
 latcommon.nounn8620#ls.n8620#clipe#masc#us_i
 latcommon.nounn8819#ls.n8819#cocl#masc#es_itis
 latcommon.nounn8930#ls.n8930#cognom#neut#en_inis
-latcommon.nounn8977#ls.n8977#coiti#fem#o_inis
+latcommon.nounn8977#ls.n8977#coiti#fem#o_onis
 latcommon.nounn8979#ls.n8979#coet#masc#us_us
 latcommon.nounn9049#ls.n9049#colleg#masc#a_ae
 latcommon.nounn9199#ls.n9199#column#fem#a_ae
